@@ -1,0 +1,23 @@
+	db DEX_EXEGGCUTE ; pokedex id
+
+	db  80,  65,  80,  40,  80
+	;   hp  atk  def  spd  spc
+
+	db GRASS, PSYCHIC_TYPE ; type
+	db 1 ; catch rate
+	db 158 ; base exp
+
+	INCBIN "gfx/pokemon/front/exeggcute.pic", 0, 1 ; sprite dimensions
+	dw ExeggcutePicFront, ExeggcutePicBack
+
+	db HYPNOSIS, PSYBEAM, EXPLOSION, STUN_SPORE ; level 1 learnset
+	db GROWTH_SLOW ; growth rate
+
+	; tm/hm learnset
+	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         PSYCHIC_M,    \
+	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
+	     SELFDESTRUCT, EGG_BOMB,     REST,         PSYWAVE,      EXPLOSION,    \
+	     SUBSTITUTE
+	; end
+
+	db 0 ; padding

@@ -1,0 +1,17 @@
+CreditsMons:
+; one entry per CRED_TEXT_MON or CRED_TEXT_FADE_MON in CreditsOrder
+	db VENUSAUR
+	db CHARIZARD
+	db BLASTOISE
+	db RAICHU
+	db SNORLAX
+	db JOLTEON
+	db VAPOREON
+	db FLAREON
+	db TAUROS
+	db RHYDON
+	db ARTICUNO
+	db ZAPDOS
+	db MOLTRES
+	db MEWTWO
+	db MEW
