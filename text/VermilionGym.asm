@@ -1,21 +1,23 @@
 _VermilionGymLTSurgePreBattleText::
-	text "Hey, kid! What do"
-	line "you think you're"
-	cont "doing here?"
+	text "I'm ashamed to"
+	line "say it, but the"
+	cont "war on crime did"
+	cont "not go well."
 
-	para "You won't live"
-	line "long in combat!"
-	cont "That's for sure!"
+	para "Guards bought by"
+	line "TEAM ROCKET..."
+	cont "guarding their"
+	cont "HQ!"
 
-	para "I tell you kid,"
-	line "electric #MON"
-	cont "saved me during"
-	cont "the war!"
+	para "...I'm sorry."
+	line "You are here for"
+	cont "the BADGE."
 
-	para "They zapped my"
-	line "enemies into"
-	cont "paralysis!"
+	para "Paralysis is my"
+	line "specialty."
 
-	para "The same as I'll"
-	line "do to you!"
+	para "So, have you"
+	line "brought PARLYZ"
+	cont "HEAL?"
 	done
+

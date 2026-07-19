@@ -1,45 +1,48 @@
 _CinnabarGymBlainePreBattleText::
-	text "Hah!"
+	text "ARISTO: <PLAYER>!"
 
-	para "I am BLAINE! I"
-	line "am the LEADER of"
-	cont "CINNABAR GYM!"
+	para "I was hoping to"
+	line "see you again!"
 
-	para "My fiery #MON"
-	line "will incinerate"
-	cont "all challengers!"
+	para "So you are here"
+	line "for this BADGE."
 
-	para "Hah! You better"
-	line "have BURN HEAL!"
+	para "You must defeat"
+	line "me then!"
+
+	para "I won't go down"
+	line "easy though"
+	cont "<PLAYER>!"
 	done
 
 _CinnabarGymBlaineReceivedVolcanoBadgeText::
-	text "I have"
-	line "burnt out!"
+	text "<PLAYER>!"
+	line "Well done!!!"
 
 	para "You have earned"
-	line "the VOLCANOBADGE!@"
+	line "the PEARLY BADGE!"
 	text_end
 
 _CinnabarGymBlainePostBattleAdviceText::
-	text "FIRE BLAST is the"
-	line "ultimate fire"
-	cont "technique!"
+	text "The BLACKBADGE"
+	line "was given by"
+	cont "the FIGHTING GYM."
 
-	para "Don't waste it on"
-	line "water #MON!"
+	para "TEAM ROCKET's"
+	line "behind this."
 	done
 
 _CinnabarGymBlaineVolcanoBadgeInfoText::
-	text "Hah!"
+	text "Its been so long."
 
-	para "The VOLCANOBADGE"
-	line "heightens the"
-	cont "SPECIAL abilities"
-	cont "of your #MON!"
+	para "These BADGEs are"
+	line "based on the old"
+	cont "ones."
 
-	para "Here, you can"
-	line "have this too!"
+	para "The guards will"
+	line "let you through."
+
+	para "Here!"
 	done
 
 _CinnabarGymBlaineReceivedTM38Text::
@@ -52,57 +55,62 @@ _CinnabarGymBlaineReceivedTM38Text::
 _CinnabarGymBlaineTM38ExplanationText::
 	text_start
 
-	para "TM38 contains"
-	line "FIRE BLAST!"
+	para "The super rod can"
+	line "fish some rare"
+	cont "pokemon!"
 
-	para "Teach it to fire-"
-	line "type #MON!"
+	para "You only have 7?"
 
-	para "CHARMELEON or"
-	line "PONYTA would be"
-	cont "good bets!"
+	para "So KOUMAN's"
+	line "FIGHTING GYM ran"
+	cont "out..."
 	done
 
 _CinnabarGymBlaineTM38NoRoomText::
-	text "Make room for my"
-	line "gift!"
+	text "Don't you want"
+	line "my gift?"
 	done
 
 _CinnabarGymSuperNerd1BattleText::
-	text "Do you know how"
-	line "hot #MON fire"
-	cont "breath can get?"
+	text "Yo! Champ in"
+	line "making!"
+
+	para "Get ready for"
+	line "EXPLOSION!"
 	done
 
 _CinnabarGymSuperNerd1EndBattleText::
-	text "Yow!"
-	line "Hot, hot, hot!"
+	text "I"
+	line "sure fooled you!"
 	prompt
 
 _CinnabarGymSuperNerd1AfterBattleText::
-	text "Fire, or to be"
-	line "more precise,"
-	cont "combustion..."
+	text "You should've"
+	line "seen the look"
+	cont "on your face!"
 
-	para "Blah, blah, blah,"
-	line "blah..."
+	para "The real guide"
+	line "is up ahead."
 	done
 
 _CinnabarGymSuperNerd2BattleText::
-	text "I was a thief, but"
-	line "I became straight"
-	cont "as a trainer!"
+	text "We fish as our"
+	line "1st hobby."
+
+	para "Our 2nd hobby"
+	line "however..."
 	done
 
 _CinnabarGymSuperNerd2EndBattleText::
-	text "I"
-	line "surrender!"
+	text "My"
+	line "OMASTAR!!"
 	prompt
 
 _CinnabarGymSuperNerd2AfterBattleText::
-	text "I can't help"
-	line "stealing other"
-	cont "people's #MON!"
+	text "Okay, I admit it!"
+
+	para "I didn't fish"
+	line "OMASTAR!"
 	done
 
 _CinnabarGymSuperNerd3BattleText::
@@ -123,39 +131,40 @@ _CinnabarGymSuperNerd3AfterBattleText::
 	done
 
 _CinnabarGymSuperNerd4BattleText::
-	text "I just like using"
-	line "fire #MON!"
+	text "I went straight"
+	line "years ago."
 	done
 
 _CinnabarGymSuperNerd4EndBattleText::
-	text "Too hot"
-	line "to handle!"
+	text "You"
+	line "are skilled!"
 	prompt
 
 _CinnabarGymSuperNerd4AfterBattleText::
-	text "I wish there was"
-	line "a thief #MON!"
-	cont "I'd use that!"
+	text "I spied on the"
+	line "ROCKET TRADE for"
+	cont "the POLICE."
 	done
 
 _CinnabarGymSuperNerd5BattleText::
-	text "I know why BLAINE"
-	line "became a trainer!"
+	text "The criminals are"
+	line "quite deceptive."
 	done
 
 _CinnabarGymSuperNerd5EndBattleText::
-	text "Ow!"
+	text "I"
+	line "surrender!"
 	prompt
 
 _CinnabarGymSuperNerd5AfterBattleText::
-	text "BLAINE was lost"
-	line "in the mountains"
-	cont "when a fiery bird"
-	cont "#MON appeared."
-
-	para "Its light enabled"
-	line "BLAINE to find"
-	cont "his way down!"
+	text "I heard that"
+	line "the secret boss"
+	cont "of the TRADE, who"
+	cont "revived TEAM"
+	cont "ROCKET, used"
+	cont "No.0 and Dr.I"
+	cont "as public"
+	cont "SUPERIORs..."
 	done
 
 _CinnabarGymSuperNerd6BattleText::
@@ -165,48 +174,50 @@ _CinnabarGymSuperNerd6BattleText::
 	done
 
 _CinnabarGymSuperNerd6EndBattleText::
-	text "Yowza!"
-	line "Too hot!"
+	text "That"
+	line "misfired!"
 	prompt
 
 _CinnabarGymSuperNerd6AfterBattleText::
-	text "Us fire #MON"
-	line "fans like PONYTA"
-	cont "and NINETALES!"
+	text "The PSYCHIC type"
+	line "are very popular,"
+	cont "but rare."
 	done
 
 _CinnabarGymSuperNerd7BattleText::
-	text "Fire is weak"
-	line "against H2O!"
+	text "Let's see you"
+	line "get past me!"
 	done
 
 _CinnabarGymSuperNerd7EndBattleText::
-	text "Oh!"
-	line "Snuffed out!"
+	text "I'm"
+	line "very shocked!"
 	prompt
 
 _CinnabarGymSuperNerd7AfterBattleText::
-	text "Water beats fire!"
-	line "But, fire melts"
-	cont "ice #MON!"
+	text "Are you prepared"
+	line "to face the"
+	cont "PSYCHIC types?"
 	done
 
 _CinnabarGymGymGuideChampInMakingText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "The hot-headed"
-	line "BLAINE is a fire"
-	cont "#MON pro!"
+	para "This may be the"
+	line "toughest GYM"
+	cont "LEADER yet!"
 
-	para "Douse his spirits"
-	line "with water!"
+	para "He uses PSYCHIC"
+	line "types."
 
-	para "You better take"
-	line "some BURN HEALs!"
+	para "...I don't know"
+	line "their weakness."
+	cont "Sorry <PLAYER>."
 	done
 
 _CinnabarGymGymGuideBeatBlaineText::
-	text "<PLAYER>! You beat"
-	line "that fire brand!"
+	text "<PLAYER>! You are"
+	line "almost there!"
 	done
+

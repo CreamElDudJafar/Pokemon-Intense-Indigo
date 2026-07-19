@@ -4,14 +4,15 @@ _SilphCo5FRockerEndBattleText::
 	prompt
 
 _SilphCo5FRockerAfterBattleText::
-	text "You're only on 5F."
-	line "It's a long way"
-	cont "to my BOSS!"
+	text "You're #MON"
+	line "aren't natural!"
+	para "They can't do"
+	line "that!"
 	done
 
 _SilphCo5FRocket2BattleText::
-	text "Show TEAM ROCKET"
-	line "a little respect!"
+	text "We brought another"
+	line "kid in here!"
 	done
 
 _SilphCo5FRocket2EndBattleText::
@@ -20,36 +21,41 @@ _SilphCo5FRocket2EndBattleText::
 	prompt
 
 _SilphCo5FRocket2AfterBattleText::
-	text "Which reminds me."
+	text "The BOSS was after"
+	line "this kid!"
 
-	para "KOFFING evolves"
-	line "into WEEZING!"
+	para "He had THAT"
+	line "#MON."
 	done
 
 _SilphCo5FPokemonReport1Text::
-	text "It's a #MON"
-	line "REPORT!"
+	text "TRADE REPORT"
 
-	para "#MON LAB"
-	line "created PORYGON,"
-	cont "the first virtual"
-	cont "reality #MON."
+	para "MEW has taken"
+	line "residence with"
+	cont "<RIVAL> OAK."
+
+	para "ROCKETS!"
+
+	para "Find them at once!"
 	done
 
 _SilphCo5FPokemonReport2Text::
-	text "It's a #MON"
-	line "REPORT!"
+	text "TRADE REPORT"
 
-	para "Over 160 #MON"
-	line "techniques have"
-	cont "been confirmed."
+	para "Targets have been"
+	line "captured."
+
+	para "Extraction has"
+	line "begun..."
 	done
 
 _SilphCo5FPokemonReport3Text::
-	text "It's a #MON"
-	line "REPORT!"
+	text "TRADE REPORT"
 
-	para "4 #MON evolve"
-	line "only when traded"
-	cont "by link-cable."
+	para "ROCKET TAGS have"
+	line "been planted in"
+	cont "every TRADE"
+	cont "#MON."
 	done
+

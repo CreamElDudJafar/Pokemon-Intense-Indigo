@@ -64,8 +64,8 @@ _Route13CooltrainerF3AfterBattleText::
 	done
 
 _Route13CooltrainerF4BattleText::
-	text "I found CARBOS in"
-	line "a cave once."
+	text "I show you my  "
+	line "powerful #MON!"
 	done
 
 _Route13CooltrainerF4EndBattleText::
@@ -74,9 +74,9 @@ _Route13CooltrainerF4EndBattleText::
 	prompt
 
 _Route13CooltrainerF4AfterBattleText::
-	text "CARBOS boosted"
-	line "the SPEED of my"
-	cont "#MON."
+	text "I got my #MON"
+	line "from the ROCKET"
+	cont "TRADE..."
 	done
 
 _Route13CooltrainerM2BattleText::
@@ -153,27 +153,27 @@ _Route13CooltrainerM3EndBattleText::
 
 _Route13CooltrainerM3AfterBattleText::
 	text "I wish I could"
-	line "fly like PIDGEY"
-	cont "and PIDGEOTTO..."
+	line "fly like PIDGEOT"
+	cont "and FEAROW.........  "
 	done
 
 _Route13TrainerTips1Text::
-	text "TRAINER TIPS"
-
-	para "Look to the left"
-	line "of that post!"
+	text "ROCKET TRADE"
+	para "More you pay,"
+	line "more lvs a day! "
 	done
 
 _Route13TrainerTips2Text::
-	text "TRAINER TIPS"
-
-	para "Use SELECT to"
-	line "switch items in"
-	cont "the ITEM window!"
+	text "You can be the"
+	line "next WORLD"
+	cont "CHAMPION!"
+	para "Give ROCKET"
+	line "TRADE a try"
 	done
 
 _Route13SignText::
 	text "ROUTE 13"
-	line "North to SILENCE"
-	cont "BRIDGE"
+	para "L:115"
+	para "BRING BIRD"
+	line "#MON! "
 	done

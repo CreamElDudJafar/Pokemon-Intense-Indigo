@@ -1,17 +1,16 @@
 _CeladonMart4FSuperNerdText::
-	text "I'm getting a"
-	line "# DOLL for my"
-	cont "girl friend!"
+	text "This store is"
+	line "our only safe"
+	cont "haven...   "
 	done
 
 _CeladonMart4FYoungsterText::
-	text "I heard something"
-	line "useful."
-
-	para "You can run from"
-	line "wild #MON by"
-	cont "distracting them"
-	cont "with a # DOLL!"
+	text "I heard rumors"
+	line "that the TRADE"
+	cont "is the mastermind"
+	cont "behind all of  "
+	cont "TEAM ROCKET's "
+	cont "actions. "
 	done
 
 _CeladonMart4FCurrentFloorSignText::

@@ -1,22 +1,24 @@
 _SilphCo11FSilphPresidentText::
-	text "PRESIDENT: Thank"
-	line "you for saving"
-	cont "SILPH!"
+	text "Thats impossible."
 
-	para "I will never"
-	line "forget you saved"
-	cont "us in our moment"
-	cont "of peril!"
+	para "There is no way"
+	line "at all to enter"
+	cont "this room!"
 
-	para "I have to thank"
-	line "you in some way!"
+	para "I had the"
+	line "secret passage"
+	cont "sealed."
 
-	para "Because I am rich,"
-	line "I can give you"
-	cont "anything!"
+	para "You must have"
+	line "cheated, how else"
+	cont "can you enter?!"
 
-	para "Here, maybe this"
-	line "will do!"
+	para "Please, do not"
+	line "harm me!"
+
+	para "I'll give you"
+	line "whatever you"
+	cont "want!!"
 	prompt
 
 _SilphCo11FSilphPresidentReceivedMasterBallText::
@@ -27,21 +29,22 @@ _SilphCo11FSilphPresidentReceivedMasterBallText::
 	text_end
 
 _SilphCo11FSilphPresidentMasterBallDescriptionText::
-	text "PRESIDENT: You"
-	line "can't buy that"
-	cont "anywhere!"
+	text "Why are you"
+	line "still here? "
 
-	para "It's our secret"
-	line "prototype MASTER"
-	cont "BALL!"
+	para "I have nothing"
+	line "more to give "
+	cont "to cheaters "
+	cont "like you."
 
-	para "It will catch any"
-	line "#MON without"
-	cont "fail!"
+	para "You'vee"
+	line "done enough"
+	cont "damage."
 
-	para "You should be"
-	line "quiet about using"
-	cont "it, though."
+	para "All I have to"
+	line "say is get the"
+	cont "fuck out of"
+	cont "HEADQUARTERS."
 	done
 
 _SilphCo11FSilphPresidentNoRoomText::
@@ -50,72 +53,77 @@ _SilphCo11FSilphPresidentNoRoomText::
 	done
 
 _SilphCo11FBeautyText::
-	text "SECRETARY: Thank"
-	line "you for rescuing"
-	cont "all of us!"
+	text "Don't get over"
+	line "confident boy."
 
-	para "We admire your"
-	line "courage."
+	para "Our leaders will"
+	line "make you pay for"
+	cont "this!"
 	done
 
 _SilphCo11FGiovanniText::
-	text "Ah <PLAYER>!"
-	line "So we meet again!"
+	text "<PLAYER>."
+	line "We meet again. "
 
-	para "The PRESIDENT and"
-	line "I are discussing"
-	cont "a vital business"
-	cont "proposition."
+	para "Unfortunately"
+	line "boy, I recently"
+	cont "acquired one of"
+	cont "the keys for"
+	cont "conquest."
 
-	para "Keep your nose"
-	line "out of grown-up"
-	cont "matters..."
+	para "The day of"
+	line "reckoning is at"
+	cont "hand."
 
-	para "Or, experience a"
-	line "world of pain!"
+	para "You will sadly"
+	line "not be able to"
+	cont "witness it."
 	done
 
 _SilphCo10FGiovanniILostAgainText::
-	text "Arrgh!!"
-	line "I lost again!?"
+	text "MEW"
+	line "alone isn't"
+	cont "enough."
 	prompt
 
 _SilphCo11FGiovanniYouRuinedOurPlansText::
-	text "Blast it all!"
-	line "You ruined our"
-	cont "plans for SILPH!"
+	text "I must be off"
+	line "to obtain my"
+	cont "newly enhanced"
+	cont "specimen."
 
-	para "But, TEAM ROCKET"
-	line "will never fall!"
+	para "Capable"
+	line "of unmatched"
+	cont "psychokinesis,"
+	cont "manipulation of"
+	cont "all life, and"
+	cont "illusions."
 
-	para "<PLAYER>! Never"
-	line "forget that all"
-	cont "#MON exist"
-	cont "for TEAM ROCKET!"
-
-	para "I must go, but I"
-	line "shall return!"
+	para "The final result"
+	line "of PROJECT 151..."
 	done
 
 _SilphCo11FRocket1BattleText::
-	text "Stop right there!"
-	line "Don't you move!"
+	text "No.0: You'll"
+	line "NEVER escape now"
+	cont "<PLAYER>!"
 	done
 
 _SilphCo11FRocket1EndBattleText::
-	text "Don't..."
-	line "Please!"
+	text "What"
+	line "ARE you?!"
 	prompt
 
 _SilphCo11FRocket1AfterBattleText::
-	text "So, you want to"
-	line "see my BOSS?"
+	text "No.0: Y-you ARE"
+	line "dangerous!!!"
 	done
 
 _SilphCo11FRocket2BattleText::
-	text "Halt! Do you have"
-	line "an appointment"
-	cont "with my BOSS?"
+	text "Dr.I: As CHIEF"
+	line "of my TRADE..."
+
+	para "I will stop you."
 	done
 
 _SilphCo11FRocket2EndBattleText::
@@ -124,9 +132,9 @@ _SilphCo11FRocket2EndBattleText::
 	prompt
 
 _SilphCo11FRocket2AfterBattleText::
-	text "Watch your step,"
-	line "my BOSS likes his"
-	cont "#MON tough!"
+	text "Dr.I: CALIGULA"
+	line "has his weapon."
+	para "You cannot win."
 	done
 
 _SilphCo10FPorygonText::

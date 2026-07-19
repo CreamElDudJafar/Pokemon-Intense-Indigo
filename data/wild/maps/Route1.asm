@@ -1,15 +1,15 @@
 Route1WildMons:
-	def_grass_wildmons 255 ; encounter rate
-	db  3, PIDGEY
-	db  3, WEEDLE
-	db  3, CATERPIE
-	db  3, RATTATA
-	db  3, EKANS
-	db  3, SANDSHREW
-	db  3, SPEAROW
-	db  4, NIDORAN_F
-	db  4, NIDORAN_M
+	def_grass_wildmons 18 ; encounter rate
 	db  5, PIKACHU
+	db  5, RATTATA
+	db  5, EKANS
+	db  5, PIDGEY
+	db  5, SPEAROW
+	db  6, PIDGEY
+	db  2, KAKUNA
+	db  2, WEEDLE
+	db  2, METAPOD
+	db  2, CATERPIE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

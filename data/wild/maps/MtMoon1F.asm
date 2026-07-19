@@ -1,15 +1,15 @@
 MtMoon1FWildMons:
 	def_grass_wildmons 8 ; encounter rate
-	db 16, CLEFAIRY
-	db 16, MACHOP
-	db 16, DIGLETT
-	db 16, ZUBAT
-	db 16, PARAS
-	db 16, GEODUDE
-	db 16, CUBONE
-	db 16, ONIX
-	db 16, RHYHORN
-	db 16, SEEL
+	db 20, ONIX
+	db 20, PARAS
+	db 20, ZUBAT
+	db 20, CLEFAIRY
+	db 20, GRIMER
+	db 20, KOFFING
+	db 20, MAGNEMITE
+	db 20, GEODUDE
+	db 20, VENONAT
+	db 19, MACHOP
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

@@ -1,12 +1,13 @@
 _CeladonPokecenterGentlemanText::
-	text "# FLUTE awakens"
-	line "#MON with a"
-	cont "sound that only"
-	cont "they can hear!"
+	text "No pedestrians"
+	line "are allowed on"
+	cont "CYCLING ROAD!"
 	done
 
 _CeladonPokecenterBeautyText::
-	text "I rode uphill on"
-	line "CYCLING ROAD from"
-	cont "FUCHSIA!"
+	text "CYCLING ROAD is a"
+	line "downhill course"
+	cont "by the sea. It's"
+	cont "a great ride."
 	done
+

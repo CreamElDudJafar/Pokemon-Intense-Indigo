@@ -1,25 +1,27 @@
 _CeruleanCityRivalPreBattleText::
-	text "<RIVAL>: Yo!"
+	text "<RIVAL>: Yo"
 	line "<PLAYER>!"
 
-	para "You're still"
-	line "struggling along"
-	cont "back here?"
+	para "I happen to"
+	line "have some awesome"
+	cont "#MON, being"
+	cont "awesome myself."
 
-	para "I'm doing great!"
-	line "I caught a bunch"
-	cont "of strong and"
-	cont "smart #MON!"
+	para "I bet you don't"
+	line "have anything"
+	cont "NEAR as good as"
+	cont "mine."
 
-	para "Here, let me see"
-	line "what you caught,"
-	cont "<PLAYER>!"
+	para "What DO you have"
+	line "then <PLAYER>?   "
 	done
 
 _CeruleanCityRivalDefeatedText::
-	text "Hey!"
-	line "Take it easy!"
-	cont "You won already!"
+	text "Tch!"
+	line "Really now?"
+
+	para "You cheesed it"
+	line "<PLAYER>!"
 	prompt
 
 _CeruleanCityRivalVictoryText::
@@ -29,43 +31,46 @@ _CeruleanCityRivalVictoryText::
 	prompt
 
 _CeruleanCityRivalIWentToBillsText::
-	text "<RIVAL>: Hey,"
-	line "guess what?"
+	text "<RIVAL>: Funny"
+	line "story actually."
 
-	para "I went to BILL's"
-	line "and got him to"
-	cont "show me his rare"
-	cont "#MON!"
+	para "I went to JEFF's,"
+	line "gave up some "
+	cont "#MON, and"
+	cont "showed off my"
+	cont "MEW."
 
-	para "That added a lot"
-	line "of pages to my"
-	cont "#DEX!"
+	para "He was so amazed,"
+	line "he gave me all of"
+	cont "these #MON!"
 
-	para "After all, BILL's"
-	line "world famous as a"
-	cont "#MANIAC!"
+	para "JEFF is a cool"
+	line "guy, unlike you."
 
-	para "He invented the"
-	line "#MON Storage"
-	cont "System on PC!"
+	para "He even showed"
+	line "me where to get"
+	cont "more!"
 
-	para "Since you're using"
-	line "his system, go"
-	cont "thank him!"
+	para "You're speechless,"
+	line "I know."
 
-	para "Well, I better"
-	line "get rolling!"
-	cont "Smell ya later!"
+	para "Since you don't"
+	line "have a MEW, you"
+	cont "aren't getting"
+	cont "any."
+
+	para "Oh well."
 	done
 
 _CeruleanCityRocketText::
-	text "Hey! Stay out!"
-	line "It's not your"
-	cont "yard! Huh? Me?"
+	text "No.3: Didn't"
+	line "anyone tell you"
+	cont "its rude to"
+	cont "tresspass?"
 
-	para "I'm an innocent"
-	line "bystander! Don't"
-	cont "you believe me?"
+	para "I'm gonna have"
+	line "to teach you a"
+	cont "lesson!  "
 	done
 
 _CeruleanCityRocketReceivedTM28Text::
@@ -76,90 +81,94 @@ _CeruleanCityRocketReceivedTM28Text::
 _CeruleanCityRocketIBetterGetMovingText::
 	text_start
 
-	para "I better get"
-	line "moving! Bye!@"
+	para "You'll pay for"
+	line "this brat!!@"
 	text_end
 
 _CeruleanCityRocketTM28NoRoomText::
-	text "Make room for"
-	line "this!"
-
-	para "I can't run until"
-	line "I give it to you!"
+	text "No.3: Get lost!"
+	line "Or else I'll lash"
+	cont "at you with my"
+	cont "whip!!"
 	done
 
 _CeruleanCityRocketIGiveUpText::
-	text "Stop!"
-	line "I give up! I'll"
-	cont "leave quietly!"
+	text "Arrgh!!"
+
+	para "Thats it, I am"
+	line "done here!!"
 	prompt
 
 _CeruleanCityRocketIllReturnTheTMText::
-	text "OK! I'll return"
-	line "the TM I stole!"
+	text "No.3: I'm not at"
+	line "my strongest."
 	prompt
 
 _CeruleanCityCooltrainerMText::
-	text "You're a trainer"
-	line "too? Collecting,"
-	cont "fighting, it's a"
-	cont "tough life."
+	text "If you aren't"
+	line "above level 90..."
+	para "I wouldn't go"
+	line "in that gym..."
 	done
 
 _CeruleanCitySuperNerd1Text::
-	text "That bush in"
-	line "front of the shop"
-	cont "is in the way."
-
-	para "There might be a"
-	line "way around."
+	text "The PLWT"
+	line "is quite brutal."
+	para "It's up to the"
+	line "trainers to"
+	cont "heal between"
+	cont "rounds..."
 	done
 
 _CeruleanCitySuperNerd2Text::
-	text "You're making an"
-	line "encyclopedia on"
-	cont "#MON? That"
-	cont "sounds amusing."
+	text "Why can't the"
+	line "POLICE stop TEAM"
+	cont "ROCKET?"
+
+	para "Are they that"
+	line "tough?"
 	done
 
 _CeruleanCityGuardText::
 	text "The people here"
-	line "were robbed."
-
-	para "It's obvious that"
-	line "TEAM ROCKET is"
-	cont "behind this most"
-	cont "heinous crime!"
-
-	para "Even our POLICE"
-	line "force has trouble"
-	cont "with the ROCKETs!"
+	line "were attacked."
+	para "Obviously a TEAM"
+	line "ROCKET GRUNT was"
+	cont "responsible since"
+	cont "he's standing in"
+	cont "the backyard.  "
+	para "He's way too "
+	line "strong for me..."
 	done
 
 _CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
 	text "OK! SLOWBRO!"
-	line "Use SONICBOOM!"
+	line "Use AMNESIA!  "
 	cont "Come on, SLOWBRO"
-	cont "pay attention!"
+	cont "stop SLEEPING!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroPunchText::
-	text "SLOWBRO punch!"
-	line "No! You blew it"
-	cont "again!"
+	text "SLOWBRO SUR-"
+	line "No, don't hurt"
+	cont "yourself!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroWithdrawText::
-	text "SLOWBRO, WITHDRAW!"
-	line "No! That's wrong!"
+	text "SLOWBRO, THUNDER"
+	line "WAVE!"
 
-	para "It's so hard to"
-	line "control #MON!"
+	para "TCH!"
 
-	para "Your #MON's"
-	line "obedience depends"
-	cont "on your abilities"
-	cont "as a trainer!"
+	para "I was TRYING to"
+	line "beat everyone"
+	cont "with a lv100"
+	cont "SLOWBRO that I"
+	cont "traded with a"
+	cont "friend."
+
+	para "It doesn't"
+	line "work..."
 	done
 
 _CeruleanCitySlowbroTookASnoozeText::
@@ -183,20 +192,18 @@ _CeruleanCitySlowbroIgnoredOrdersText::
 	done
 
 _CeruleanCityCooltrainerF2Text::
-	text "I want a bright"
-	line "red BICYCLE!"
-
-	para "I'll keep it at"
-	line "home, so it won't"
-	cont "get dirty!"
+	text "Just when you"
+	line "think you easily"
+	cont "beat a ROCKET,"
+	cont "much stronger"
+	cont "ones come."
 	done
 
 _CeruleanCitySuperNerd3Text::
-	text "This is CERULEAN"
-	line "CAVE! Horribly"
-	cont "strong #MON"
-	cont "live in there!"
-
+	text "This is a very"
+	line "dangerous area!"
+	cont "Its the border of"
+	cont "MT.DOOM. "
 	para "The #MON LEAGUE"
 	line "champion is the"
 	cont "only person who"
@@ -204,19 +211,23 @@ _CeruleanCitySuperNerd3Text::
 	done
 
 _CeruleanCitySignText::
-	text "CERULEAN CITY"
-	line "A Mysterious,"
-	cont "Blue Aura"
-	cont "Surrounds It"
+	text "SAKAYUME TOWN "
+
+	para "The Inception of"
+	line "a Grand Adventure!"
 	done
 
 _CeruleanCityTrainerTipsText::
-	text "TRAINER TIPS"
+	text "Lowest level:"
+	line "L:30"
 
-	para "Pressing B Button"
-	line "during evolution"
-	cont "cancels the whole"
-	cont "process."
+	para "Average Level:"
+	line "L:36"
+
+	para "Maximum level:"
+	line "L:100"
+
+	para "JEFF's grass."
 	done
 
 _CeruleanCityBikeShopSign::
@@ -226,10 +237,11 @@ _CeruleanCityBikeShopSign::
 	done
 
 _CeruleanCityGymSign::
-	text "CERULEAN CITY"
+	text "SAKAYUME TOWN"
 	line "#MON GYM"
-	cont "LEADER: MISTY"
+	cont "LEADER: KARMA"
 
-	para "The Tomboyish"
-	line "Mermaid!"
+	para "Your worst"
+	line "nightmare!"
 	done
+

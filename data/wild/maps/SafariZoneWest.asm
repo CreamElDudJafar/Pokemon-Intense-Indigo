@@ -1,15 +1,15 @@
 SafariZoneWestWildMons:
-	def_grass_wildmons 100 ; encounter rate
-	db 26, DRATINI
-	db 30, DRATINI
-	db 52, NIDOQUEEN
-	db 55, NIDOKING
-	db 35, KANGASKHAN
-	db 20, ELECTABUZZ
-	db 35, MAGMAR
-	db 30, RHYDON
-	db 28, MR_MIME
-	db 55, CLEFABLE
+	def_grass_wildmons 12 ; encounter rate
+	db 90, KANGASKHAN
+	db 90, MAGMAR
+	db 90, ELECTABUZZ
+	db 100, SCYTHER
+	db 73, NIDORINO
+	db 92, RHYHORN
+	db 90, DODRIO
+	db 76, VENOMOTH
+	db 65, DODRIO
+	db 58, MEOWTH
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

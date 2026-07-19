@@ -46,13 +46,14 @@ _Route11Youngster1AfterBattleText::
 
 _Route11SuperNerd1BattleText::
 	text "Careful!"
-	line "I'm laying down"
-	cont "some cables!"
+
+	para "I'm laying down"
+	line "some cables!"
 	done
 
 _Route11SuperNerd1EndBattleText::
 	text "That"
-	line "was electric!"
+	line "was intense!"
 	prompt
 
 _Route11SuperNerd1AfterBattleText::
@@ -61,9 +62,9 @@ _Route11SuperNerd1AfterBattleText::
 	done
 
 _Route11Youngster2BattleText::
-	text "I just became a"
-	line "trainer! But, I"
-	cont "think I can win!"
+	text "How long have"
+	line "you been training?"
+	para "I beat 2 GYMS!"
 	done
 
 _Route11Youngster2EndBattleText::
@@ -102,8 +103,8 @@ _Route11Gambler4EndBattleText::
 	prompt
 
 _Route11Gambler4AfterBattleText::
-	text "It's just luck."
-	line "Luck of the draw."
+	text "MYRTLE is an"
+	line "amazing gambler."
 	done
 
 _Route11Youngster3BattleText::
@@ -118,13 +119,13 @@ _Route11Youngster3EndBattleText::
 	prompt
 
 _Route11Youngster3AfterBattleText::
-	text "There's a fat"
-	line "#MON that"
-	cont "comes down from"
-	cont "the mountains."
+	text "Many #MON"
+	line "were driven out"
+	cont "by the TRADE."
 
-	para "It's strong if"
-	line "you can get it."
+	para "You might see"
+	line "some sleeping"
+	cont "#MON nearby."
 	done
 
 _Route11SuperNerd2BattleText::

@@ -9,34 +9,35 @@ _SSAnne2FWaiterText::
 	done
 
 _SSAnne2FRivalText::
-	text "<RIVAL>: Bonjour!"
-	line "<PLAYER>!"
+	text "<RIVAL>: Late"
+	line "again?"
 
-	para "Imagine seeing"
-	line "you here!"
+	para "You missed a"
+	line "great party!"
 
-	para "<PLAYER>, were you"
-	line "really invited?"
+	para "The CAPTAIN"
+	line "was talking"
+	cont "about battle"
+	cont "strategies."
 
-	para "So how's your"
-	line "#DEX coming?"
+	para "After a couple"
+	line "of Margaritas."
 
-	para "I already caught"
-	line "40 kinds, pal!"
+	para "And with JEFF's"
+	line "help... "
 
-	para "Different kinds"
-	line "are everywhere!"
+	para "<PLAYER>, I hate"
+	line "to say it..."
 
-	para "Crawl around in"
-	line "grassy areas!"
+	para "Nah, you're"
+	line "done for."
 	done
 
 _SSAnne2FRivalDefeatedText::
-	text "Humph!"
-
-	para "At least you're"
-	line "raising your"
-	cont "#MON!"
+	text "COME ON!!"
+	para "What kind of"
+	line "cheating is"
+	cont "that?"
 	prompt
 
 _SSAnne2FRivalVictoryText::
@@ -48,16 +49,21 @@ _SSAnne2FRivalVictoryText::
 	prompt
 
 _SSAnne2FRivalCutMasterText::
-	text "<RIVAL>: I heard"
-	line "there was a CUT"
-	cont "master on board."
+	text "The CAPTAIN also"
+	line "said something"
+	cont "about surpassing"
+	cont "the peak."
 
-	para "But, he was just a"
-	line "seasick, old man!"
+	para "The secret to"
+	line "that is..."
 
-	para "But, CUT itself is"
-	line "really useful!"
+	para "CAPTAIN: BLRRGH! "
 
-	para "You should go see"
-	line "him! Smell ya!"
+	para "<RIVAL>: And"
+	line "THAT's my cue to"
+	cont "go."
+
+	para "Try not to fail"
+	line "<PLAYER>."
 	done
+

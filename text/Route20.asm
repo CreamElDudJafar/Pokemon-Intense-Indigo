@@ -13,7 +13,7 @@ _Route20Swimmer1AfterBattleText::
 	done
 
 _Route20Swimmer2BattleText::
-	text "SEAFOAM is a"
+	text "SHOUHOU is a"
 	line "quiet getaway!"
 	done
 
@@ -52,7 +52,7 @@ _Route20Swimmer4EndBattleText::
 	prompt
 
 _Route20Swimmer4AfterBattleText::
-	text "SEAFOAM used to"
+	text "SHOUHOU used to"
 	line "be one island!"
 	done
 
@@ -120,7 +120,7 @@ _Route20Swimmer7AfterBattleText::
 
 _Route20Swimmer8BattleText::
 	text "I swam here from"
-	line "CINNABAR ISLAND!"
+	line "SHOUBAI ISLANDS!"
 	done
 
 _Route20Swimmer8EndBattleText::
@@ -130,15 +130,15 @@ _Route20Swimmer8EndBattleText::
 
 _Route20Swimmer8AfterBattleText::
 	text "#MON have"
-	line "taken over an"
-	cont "abandoned mansion"
-	cont "on CINNABAR!"
+	line "taken over the"
+	cont "abandoned TRADE"
+	cont "HEADQUARTERS!"
 	done
 
 _Route20Swimmer9BattleText::
-	text "CINNABAR, in the"
+	text "SHOUBAI, in the"
 	line "west, has a LAB"
-	cont "for #MON."
+	cont "for #MON. "
 	done
 
 _Route20Swimmer9EndBattleText::
@@ -146,10 +146,11 @@ _Route20Swimmer9EndBattleText::
 	prompt
 
 _Route20Swimmer9AfterBattleText::
-	text "CINNABAR is a "
-	line "volcanic island!"
+	text "The TRADE used "
+	line "to live there! "
 	done
 
 _Route20SeafoamIslandsSignText::
-	text "SEAFOAM ISLANDS"
+	text "SHOUHOU ISLANDS"
 	done
+

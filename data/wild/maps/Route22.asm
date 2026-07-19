@@ -1,15 +1,15 @@
 Route22WildMons:
-	def_grass_wildmons 9 ; encounter rate
-	db  5, CUBONE
-	db  4, NIDORAN_F
-	db  4, NIDORAN_M
-	db  5, BULBASAUR
-	db  5, CHARMANDER
-	db  5, SQUIRTLE
-	db  5, BULBASAUR
-	db  5, CHARMANDER
-	db  5, SQUIRTLE
-	db  5, DITTO
+	def_grass_wildmons 8 ; encounter rate
+	db  7, JIGGLYPUFF
+	db  7, BULBASAUR
+	db  7, CHARMANDER
+	db  7, SQUIRTLE
+	db  7, MACHOP
+	db  7, PONYTA
+	db  7, CHARMANDER
+	db  7, BULBASAUR
+	db  7, SQUIRTLE
+	db  7, DODUO
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

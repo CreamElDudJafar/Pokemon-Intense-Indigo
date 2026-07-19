@@ -1,7 +1,8 @@
 _MtMoon1FHikerBattleText::
-	text "WHOA! You shocked"
-	line "me! Oh, you're"
-	cont "just a kid!"
+	text "WHOA! STAY BACK!!"
+
+	para "Oh, just one of"
+	line "the kids!"
 	done
 
 _MtMoon1FHikerEndBattleText::
@@ -10,9 +11,9 @@ _MtMoon1FHikerEndBattleText::
 	prompt
 
 _MtMoon1FHikerAfterBattleText::
-	text "Kids like you"
-	line "shouldn't be"
-	cont "here!"
+	text "I thought you"
+	line "were one of"
+	cont "THEM."
 	done
 
 _MtMoon1FYoungster1BattleText::
@@ -26,9 +27,9 @@ _MtMoon1FYoungster1EndBattleText::
 	prompt
 
 _MtMoon1FYoungster1AfterBattleText::
-	text "I came down here"
-	line "to show off to"
-	cont "girls."
+	text "We came together,"
+	line "so we don't get"
+	cont "hurt."
 	done
 
 _MtMoon1FCooltrainerF1BattleText::
@@ -48,24 +49,27 @@ _MtMoon1FCooltrainerF1AfterBattleText::
 	done
 
 _MtMoon1FSuperNerdBattleText::
-	text "What! Don't sneak"
-	line "up on me!"
+	text "Heheh."
+
+	para "I beat the 1st"
+	line "GYM."
 	done
 
 _MtMoon1FSuperNerdEndBattleText::
-	text "My"
-	line "#MON won't do!"
+	text "You"
+	line "stalled me!"
 	prompt
 
 _MtMoon1FSuperNerdAfterBattleText::
-	text "I have to find"
-	line "stronger #MON."
+	text "I better go find"
+	line "stronger ones!"
 	done
 
 _MtMoon1FCooltrainerF2BattleText::
-	text "What? I'm waiting"
-	line "for my friends to"
-	cont "find me here."
+	text "My SEADRA is"
+	line "going to wreck"
+	cont "you like the"
+	cont "others."
 	done
 
 _MtMoon1FCooltrainerF2EndBattleText::
@@ -73,9 +77,10 @@ _MtMoon1FCooltrainerF2EndBattleText::
 	prompt
 
 _MtMoon1FCooltrainerF2AfterBattleText::
-	text "I heard there are"
-	line "some very rare"
-	cont "fossils here."
+	text "Careful."
+
+	para "One of our friends"
+	line "has gone missing."
 	done
 
 _MtMoon1FYoungster2BattleText::
@@ -96,9 +101,9 @@ _MtMoon1FYoungster2AfterBattleText::
 	done
 
 _MtMoon1FYoungster3BattleText::
-	text "Go through this"
-	line "cave to get to"
-	cont "CERULEAN CITY!"
+	text "You know that"
+	line "we are in 1 of 2"
+	cont "MT.DOOM caves?"
 	done
 
 _MtMoon1FYoungster3EndBattleText::
@@ -107,13 +112,15 @@ _MtMoon1FYoungster3EndBattleText::
 	prompt
 
 _MtMoon1FYoungster3AfterBattleText::
-	text "ZUBAT is tough!"
-	line "But, it can be"
-	cont "useful if you"
-	cont "catch one."
+	text "The second cave"
+	line "is so dangerous,"
+	cont "it became"
+	cont "blocked off."
 	done
 
 _MtMoon1FBewareZubatSign::
-	text "Beware! ZUBAT is"
-	line "a blood sucker!"
+	text "Highest lv.27"
+
+	para "Beware of VOLTORB!"
 	done
+

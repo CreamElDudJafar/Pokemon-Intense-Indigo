@@ -3,18 +3,18 @@
 	const_export SAFARIZONENORTH_TM_SKULL_BASH
 
 SafariZoneNorth_Object:
-	db $03 ; border block
+	db $02 ; border block
 
 	def_warp_events
-	warp_event  2, 35, SAFARI_ZONE_WEST, 1
-	warp_event  3, 35, SAFARI_ZONE_WEST, 2
-	warp_event  8, 35, SAFARI_ZONE_WEST, 3
-	warp_event  9, 35, SAFARI_ZONE_WEST, 4
+	warp_event 2, 35, SAFARI_ZONE_WEST, 1
+	warp_event 3, 35, SAFARI_ZONE_WEST, 2
+	warp_event 8, 35, SAFARI_ZONE_WEST, 3
+	warp_event 9, 35, SAFARI_ZONE_WEST, 4
 	warp_event 20, 35, SAFARI_ZONE_CENTER, 5
 	warp_event 21, 35, SAFARI_ZONE_CENTER, 6
 	warp_event 39, 30, SAFARI_ZONE_EAST, 1
 	warp_event 39, 31, SAFARI_ZONE_EAST, 2
-	warp_event 35,  3, SAFARI_ZONE_NORTH_REST_HOUSE, 1
+	warp_event 35, 3, SAFARI_ZONE_SECRET_HOUSE, 1
 
 	def_bg_events
 	bg_event 36,  4, TEXT_SAFARIZONENORTH_REST_HOUSE_SIGN
@@ -24,7 +24,7 @@ SafariZoneNorth_Object:
 	bg_event 26, 28, TEXT_SAFARIZONENORTH_TRAINER_TIPS_3
 
 	def_object_events
-	object_event 38,  2, SPRITE_POKE_BALL, STAY, NONE, TEXT_SAFARIZONENORTH_PROTEIN, RARE_CANDY
-	object_event 15, 20, SPRITE_POKE_BALL, STAY, NONE, TEXT_SAFARIZONENORTH_TM_SKULL_BASH, TM_SKULL_BASH
+	object_event 28, 3, SPRITE_POKE_BALL, STAY, NONE, TEXT_SAFARIZONENORTH_PROTEIN, REVIVE
+	object_event 22, 8, SPRITE_POKE_BALL, STAY, NONE, TEXT_SAFARIZONENORTH_TM_SKULL_BASH, REVIVE
 
 	def_warps_to SAFARI_ZONE_NORTH

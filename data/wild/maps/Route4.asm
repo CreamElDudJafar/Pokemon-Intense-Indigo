@@ -1,15 +1,15 @@
 Route4WildMons:
-	def_grass_wildmons 13 ; encounter rate
-	db 15, VOLTORB
-	db 15, MAGNEMITE
-	db 15, PIKACHU
-	db 15, ODDISH
-	db 15, BELLSPROUT
-	db 15, SEEL
-	db 15, KRABBY
-	db 15, GROWLITHE
-	db 15, PSYDUCK
-	db 15, GRIMER
+	def_grass_wildmons 210 ; encounter rate
+	db 19, JIGGLYPUFF
+	db 19, MAGNEMITE
+	db 19, NIDORAN_F
+	db 19, GEODUDE
+	db 19, ODDISH
+	db 19, GROWLITHE
+	db 19, CUBONE
+	db 19, NIDORAN_M
+	db 19, PARAS
+	db 19, DODUO
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

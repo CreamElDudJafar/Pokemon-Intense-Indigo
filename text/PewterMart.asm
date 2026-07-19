@@ -9,9 +9,10 @@ _PewterMartYoungsterText::
 	done
 
 _PewterMartSuperNerdText::
-	text "Good things can"
-	line "happen if you"
-	cont "raise #MON"
-	cont "diligently, even"
-	cont "the weak ones!"
+	text "I heard that"
+	line "the ROCKET CHIEF"
+	cont "was around. "
+	para "He loves dealing"
+	line "with fossils. "
 	done
+

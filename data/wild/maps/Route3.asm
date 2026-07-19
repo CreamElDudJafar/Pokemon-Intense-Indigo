@@ -1,15 +1,15 @@
 Route3WildMons:
-	def_grass_wildmons 255; encounter rate
-	db 12,JIGGLYPUFF
-	db 12, EKANS
-	db 12, PIDGEY
-	db 12, SPEAROW
-	db 12, POLIWAG
-	db 12, PSYDUCK
-	db 12, GEODUDE
-	db 12, MACHOP
-	db 12, PONYTA
-	db 12, RHYHORN
+	def_grass_wildmons 255 ; encounter rate
+	db 18, VENONAT
+	db 19, EKANS
+	db 18, CUBONE
+	db 18, ODDISH
+	db 18, JIGGLYPUFF
+	db 18, GEODUDE
+	db 18, SPEAROW
+	db 18, MANKEY
+	db 18, VULPIX
+	db 17, SANDSHREW
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

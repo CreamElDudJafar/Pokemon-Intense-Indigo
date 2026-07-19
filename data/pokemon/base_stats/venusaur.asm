@@ -1,23 +1,28 @@
 	db DEX_VENUSAUR ; pokedex id
 
-	db  80,  82,  83,  80, 100
-	;   hp  atk  def  spd  spc
+	db 80, 82, 83, 80, 100
+	; hp atk def spd spc
 
 	db GRASS, POISON ; type
-	db 45 ; catch rate
-	db 208 ; base exp
+
+	db 1 ; catch rate
+
+	db 245 ; base exp
 
 	INCBIN "gfx/pokemon/front/venusaur.pic", 0, 1 ; sprite dimensions
 	dw VenusaurPicFront, VenusaurPicBack
 
-	db SLEEP_POWDER, BODY_SLAM, RAZOR_LEAF, DOUBLE_TEAM ; level 1 learnset
+	db BODY_SLAM, RAZOR_LEAF, SLEEP_POWDER, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    MIMIC,        \
-	     DOUBLE_TEAM,  REFLECT,      BIDE,         REST,         SUBSTITUTE,   \
+
+	tmhm SWORDS_DANCE, TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     HYPER_BEAM, RAGE, MEGA_DRAIN, SOLARBEAM, MIMIC, \
+	     DOUBLE_TEAM, REFLECT, BIDE, REST, SUBSTITUTE, \
 	     CUT
+
 	; end
 
 	db 0 ; padding

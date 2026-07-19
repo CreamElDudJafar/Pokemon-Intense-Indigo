@@ -1,16 +1,17 @@
 _ViridianPokecenterGentlemanText::
-	text "You can use that"
-	line "PC in the corner."
-
-	para "The receptionist"
-	line "told me. So kind!"
+	text "The men in black"
+	line "claim that what"
+	cont "they do is a"
+	cont "good service to"
+	cont "AIZOME."
 	done
 
 _ViridianPokecenterCooltrainerMText::
-	text "There's a #MON"
-	line "CENTER in every"
-	cont "town ahead."
+	text "Trainers won't"
+	line "tell you what"
+	cont "#MON they"
+	cont "might send out."
 
-	para "They don't charge"
-	line "any money either!"
+	para "You have to"
+	line "predict."
 	done

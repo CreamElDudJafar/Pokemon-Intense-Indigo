@@ -1,6 +1,6 @@
 _PokemonMansionB1FBurglarBattleText::
-	text "Uh-oh. Where am"
-	line "I now?"
+	text "How good are you,"
+	line "kid?"
 	done
 
 _PokemonMansionB1FBurglarEndBattleText::
@@ -8,32 +8,38 @@ _PokemonMansionB1FBurglarEndBattleText::
 	prompt
 
 _PokemonMansionB1FBurglarAfterBattleText::
-	text "You can find stuff"
-	line "lying around."
+	text "To be fair, I"
+	line "only had one"
+	cont "#MON."
 	done
 
 _PokemonMansionB1FScientistBattleText::
-	text "This place is"
-	line "ideal for a lab."
+	text "The weapon has"
+	line "been delivered."
 	done
 
 _PokemonMansionB1FScientistEndBattleText::
-	text "What"
-	line "was that for?"
+	text "Its"
+	line "too late boy!"
 	prompt
 
 _PokemonMansionB1FScientistAfterBattleText::
-	text "I like it here!"
-	line "It's conducive to"
-	cont "my studies!"
+	text "SUPERIORs Dr.I"
+	line "and No.0 are"
+	cont "pleased with me."
 	done
 
 _PokemonMansionB1FDiaryText::
-	text "Diary; Sept. 1"
-	line "MEWTWO is far too"
-	cont "powerful."
+	text "PROJECT 151"
+	line "NOW COMPLETE"
 
-	para "We have failed to"
-	line "curb its vicious"
-	cont "tendencies..."
+	para "However..."
+
+	para "Specimen has"
+	line "unlimited"
+	cont "potential."
+
+	para "Caution is"
+	line "advised..."
 	done
+

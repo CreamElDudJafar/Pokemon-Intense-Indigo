@@ -12,9 +12,10 @@ _Route12SnorlaxWokeUpText::
 
 _Route12SnorlaxCalmedDownText::
 	text "SNORLAX calmed"
-	line "down! With a big"
-	cont "yawn, it returned"
-	cont "to the mountains!"
+	line "down!"
+	para "With a massive"
+	line "yawn, it returned"
+	cont "to MT.DOOM..."
 	done
 
 _Route12Fisher1BattleText::
@@ -50,8 +51,8 @@ _Route12Fisher2AfterBattleText::
 	done
 
 _Route12CooltrainerMBattleText::
-	text "Have you found a"
-	line "MOON STONE?"
+	text "Have you heard"
+	line "of the TRADE?"
 	done
 
 _Route12CooltrainerMEndBattleText::
@@ -59,14 +60,15 @@ _Route12CooltrainerMEndBattleText::
 	prompt
 
 _Route12CooltrainerMAfterBattleText::
-	text "I could have made"
-	line "my #MON evolve"
-	cont "with MOON STONE!"
+	text "They bought"
+	line "TEAM ROCKET, so"
+	cont "there's less"
+	cont "attacks."
 	done
 
 _Route12SuperNerdBattleText::
-	text "Electricity is my"
-	line "specialty!"
+	text "The TRADE was"
+	line "once revered."
 	done
 
 _Route12SuperNerdEndBattleText::
@@ -74,10 +76,11 @@ _Route12SuperNerdEndBattleText::
 	prompt
 
 _Route12SuperNerdAfterBattleText::
-	text "Water conducts"
-	line "electricity, so"
-	cont "you should zap"
-	cont "sea #MON!"
+	text "The TRADE has"
+	line "influence over"
+	cont "AIZOME."
+
+	para "Then the merge..."
 	done
 
 _Route12Fisher3BattleText::
@@ -124,16 +127,19 @@ _Route12Fisher5EndBattleText::
 	prompt
 
 _Route12Fisher5AfterBattleText::
-	text "I catch MAGIKARP"
-	line "all the time, but"
-	cont "they're so weak!"
+	text "I heard a GYM"
+	line "LEADER used to be"
+	cont "a great fisherman!"
 	done
 
 _Route12SignText::
-	text "ROUTE 12 "
-	line "North to LAVENDER"
+	text "ROUTE 12"
+	line "North to KYUUSOKU"
 	done
 
 _Route12SportFishingSignText::
-	text "SPORT FISHING AREA"
+	text "L:114"
+
+	para "Stock up now"
 	done
+

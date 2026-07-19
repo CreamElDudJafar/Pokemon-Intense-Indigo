@@ -1,21 +1,19 @@
 _MrFujisHouseSuperNerdMrFujiIsntHereText::
-	text "That's odd, MR.FUJI"
-	line "isn't here."
-	cont "Where'd he go?"
+	text "That's odd,"
+	line "ARISTO isn't here."
+	cont "Where'd he go??"
 	done
 
 _MrFujisHouseSuperNerdMrFujiHadBeenPrayingText::
-	text "MR.FUJI had been"
+	text "ARISTO had been"
 	line "praying alone for"
-	cont "CUBONE's mother."
+	cont "CUBONE's father. "
 	done
 
 _MrFujisHouseLittleGirlThisIsMrFujisHouseText::
-	text "This is really"
-	line "MR.FUJI's house."
-
+	text "Have you heard of"
+	line "ARISTO?     "
 	para "He's really kind!"
-
 	para "He looks after"
 	line "abandoned and"
 	cont "orphaned #MON!"
@@ -36,15 +34,14 @@ _MrFujisHouseNidorinoText::
 	text_end
 
 _MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText::
-	text "MR.FUJI: <PLAYER>."
-
-	para "Your #DEX quest"
-	line "may fail without"
+	text "ARISTO: <PLAYER>..."
+	para "Your quest may"
+	line "fail without"
 	cont "love for your"
 	cont "#MON."
-
-	para "I think this may"
-	line "help your quest."
+	para "I believe this"
+	line "will help your"
+	cont "quest."
 	prompt
 
 _MrFujisHouseMrFujiReceivedPokeFluteText::

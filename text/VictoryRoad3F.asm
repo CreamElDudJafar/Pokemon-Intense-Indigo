@@ -9,7 +9,7 @@ _VictoryRoad3FCooltrainerM1EndBattleText::
 	prompt
 
 _VictoryRoad3FCooltrainerM1AfterBattleText::
-	text "You beat GIOVANNI"
+	text "You beat CALIGULA"
 	line "of TEAM ROCKET?"
 	done
 
@@ -29,8 +29,8 @@ _VictoryRoad3FCooltrainerF1AfterBattleText::
 	done
 
 _VictoryRoad3FCooltrainerM2BattleText::
-	text "Only the chosen"
-	line "can pass here!"
+	text "If you can't win,"
+	line "then get out."
 	done
 
 _VictoryRoad3FCooltrainerM2EndBattleText::
@@ -39,16 +39,18 @@ _VictoryRoad3FCooltrainerM2EndBattleText::
 	prompt
 
 _VictoryRoad3FCooltrainerM2AfterBattleText::
-	text "All trainers here"
-	line "are headed to the"
-	cont "#MON LEAGUE!"
-	cont "Be careful!"
+	text "We earned our"
+	line "8 BADGEs!"
+
+	para "No cheap scandal"
+	line "from ROCKET"
+	cont "TRADE!"
 	done
 
 _VictoryRoad3FCooltrainerF2BattleText::
-	text "Trainers live to"
-	line "seek stronger"
-	cont "opponents!"
+	text "Everyone here"
+	line "must beat each"
+	cont "other once!"
 	done
 
 _VictoryRoad3FCooltrainerF2EndBattleText::
@@ -57,7 +59,10 @@ _VictoryRoad3FCooltrainerF2EndBattleText::
 	prompt
 
 _VictoryRoad3FCooltrainerF2AfterBattleText::
-	text "By fighting tough"
-	line "battles, you get"
-	cont "stronger!"
+	text "Don't get so"
+	line "cocky."
+
+	para "Former champs"
+	line "are strong."
 	done
+

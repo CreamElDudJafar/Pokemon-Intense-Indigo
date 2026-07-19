@@ -1,9 +1,12 @@
 _CinnabarLabTradeRoomSuperNerdText::
-	text "I found this very"
-	line "strange fossil in"
-	cont "MT.MOON!"
+	text "The TRADE wasn't"
+	line "so bad before."
 
-	para "I think it's a"
-	line "rare, prehistoric"
-	cont "#MON!"
+	para "PROF.OAK and"
+	line "ARISTO were"
+	cont "former members."
+
+	para "Then Dr.I came"
+	line "in..."
 	done
+

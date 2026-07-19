@@ -1,15 +1,15 @@
 PokemonTower3FWildMons:
-	def_grass_wildmons 31 ; encounter rate
-	db 45, GASTLY
-	db 40, GASTLY
-	db 25, GASTLY
-	db 41, GASTLY
-	db 42, GASTLY
-	db 43, GASTLY
-	db 44, GASTLY
-	db 15, GASTLY
-	db 10, GASTLY
-	db 46, GASTLY
+	def_grass_wildmons 255 ; encounter rate
+	db 100, GASTLY
+	db 98, CUBONE
+	db 75, GASTLY
+	db 99, GOLBAT
+	db 99, MEOWTH
+	db 85, GASTLY
+	db 99, CUBONE
+	db 99, GASTLY
+	db 74, GASTLY
+	db 66, HAUNTER
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

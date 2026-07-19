@@ -1,15 +1,18 @@
 _PewterGymBrockPostBattleAdviceText::
-	text "There are all"
-	line "kinds of trainers"
-	cont "in the world!"
+	text "Be warned though!"
 
-	para "You appear to be"
-	line "very gifted as a"
-	cont "#MON trainer!"
+	para "You aren't the"
+	line "only one after"
+	cont "the championship"
+	cont "title."
 
-	para "Go to the GYM in"
-	line "CERULEAN and test"
-	cont "your abilities!"
+	para "And former champs"
+	line "do participate."
+
+	para "Head to the GYM"
+	line "in SAKAYUME."
+
+	para "Good luck."
 	done
 
 _PewterGymBrockWaitTakeThisText::
@@ -19,31 +22,33 @@ _PewterGymBrockWaitTakeThisText::
 
 _PewterGymReceivedTM34Text::
 	text "<PLAYER> received"
-	line "TM34!@"
+	line "TM21!"
 	text_end
 
 _TM34ExplanationText::
 	text_start
 
-	para "A TM contains a"
-	line "technique that"
-	cont "can be taught to"
-	cont "#MON!"
+	para "Feel free to take"
+	line "this gift. You"
+	cont "earned it."
 
-	para "A TM is good only"
-	line "once! So when you"
-	cont "use one to teach"
-	cont "a new technique,"
-	cont "pick the #MON"
-	cont "carefully!"
+	para "You are now"
+	line "officially in"
+	cont "the Beginner"
+	cont "level."
 
-	para "TM34 contains"
-	line "BIDE!"
+	para "There are 3:"
+	line "Beginner, expert,"
+	cont "Master."
 
-	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+	para "You might be"
+	line "eligible for"
+	cont "the #MON"
+	cont "LEAGUE TOURNAMENT"
+	cont "round. But you"
+	cont "have to get at"
+	cont "least 8 GYM"
+	cont "BADGES."
 	done
 
 _PewterGymTM34NoRoomText::
@@ -52,15 +57,14 @@ _PewterGymTM34NoRoomText::
 	done
 
 _PewterGymBrockReceivedBoulderBadgeText::
-	text "I took"
-	line "you for granted."
-
-	para "As proof of your"
-	line "victory, here's"
-	cont "the BOULDERBADGE!"
-
+	text "So you"
+	line "DO have what it"
+	cont "takes to be the"
+	cont "very best!"
+	para "Take the"
+	line "DIAMONDBADGE!!"
 	para "<PLAYER> received"
-	line "the BOULDERBADGE!@"
+	line "the DIAMONDBADGE!"
 	text_end
 
 _PewterGymBrockBoulderBadgeInfoText::
@@ -80,40 +84,44 @@ _PewterGymBrockBoulderBadgeInfoText::
 	prompt
 
 _PewterGymCooltrainerMBattleText::
-	text "Stop right there,"
-	line "kid!"
+	text "SURPRISE!!!"
 
-	para "You're still light"
-	line "years from facing"
-	cont "BROCK!"
+	para "First time in a"
+	line "GYM?"
+
+	para "Here's your first"
+	line "REAL battle,"
+	cont "<PLAYER>!"
 	done
 
 _PewterGymCooltrainerMEndBattleText::
-	text "Darn!"
+	text "I"
+	line "thought you'd"
+	cont "be really easy!"
 
-	para "Light years isn't"
-	line "time! It measures"
-	cont "distance!"
+	para "Darn that liar"
+	line "<RIVAL>..."
 	prompt
 
 _PewterGymCooltrainerMAfterBattleText::
-	text "You're pretty hot,"
-	line "but not as hot"
-	cont "as BROCK!"
+	text "<RIVAL> told me"
+	line "about you."
+
+	para "He said to"
+	line "ambush <PLAYER>."
 	done
 
 _PewterGymGuidePreAdviceText::
 	text "Hiya! I can tell"
 	line "you have what it"
-	cont "takes to become a"
-	cont "#MON champ!"
-
-	para "I'm no trainer,"
-	line "but I can tell"
-	cont "you how to win!"
-
-	para "Let me take you"
-	line "to the top!"
+	cont "takes to be the"
+	cont "very best!"
+	para "Like no one ever"
+	line "was!"
+	para "I can tell you"
+	line "what team the"
+	cont "guy has! What do"
+	cont "you say?"
 	done
 
 _PewterGymGuideBeginAdviceText::
@@ -122,21 +130,19 @@ _PewterGymGuideBeginAdviceText::
 	prompt
 
 _PewterGymGuideAdviceText::
-	text "The 1st #MON"
-	line "out in a match is"
-	cont "at the top of the"
-	cont "#MON LIST!"
-
-	para "By changing the"
-	line "order of #MON,"
-	cont "matches could be"
-	cont "made easier!"
+	text "There are 2 types"
+	line "of POKeMON that"
+	cont "has one evolution"
+	cont "family!"
+	para "Make sure you"
+	line "are at least"
+	cont "lv.16, and have"
+	cont "alot of POKeMON."
 	done
 
 _PewterGymGuideFreeServiceText::
-	text "It's a free"
-	line "service! Let's"
-	cont "get happening!"
+	text "All right! Let's"
+	line "get happening!"
 	prompt
 
 _PewterGymGuidePostBattleText::

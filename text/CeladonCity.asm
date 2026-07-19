@@ -103,42 +103,45 @@ _CeladonCityTrainerTips1Text::
 	done
 
 _CeladonCitySignText::
-	text "CELADON CITY"
-	line "The City of"
-	cont "Rainbow Dreams"
+	text "DONYOKU CITY"
+	para "A City of Fame"
+	line "and Fortune"
 	done
 
 _CeladonCityGymSignText::
-	text "CELADON CITY"
+	text "DONYOKU CITY"
 	line "#MON GYM"
-	cont "LEADER: ERIKA"
+	cont "LEADER: ANILA"
 
-	para "The Nature Loving"
-	line "Princess!"
+	para "The LEGENDARY"
+	line "SKY QUEEN!   "
 	done
 
 _CeladonCityMansionSignText::
-	text "CELADON MANSION"
+	text "L:110-117-120  "
 	done
 
 _CeladonCityDeptStoreSignText::
 	text "Find what you"
-	line "need at CELADON"
+	line "need at DONYOKU"
 	cont "DEPT. STORE!"
 	done
 
 _CeladonCityTrainerTips2Text::
-	text "TRAINER TIPS"
+	text "We offer"
+	line "protection and"
+	cont "immunity!"
 
-	para "GUARD SPEC."
-	line "protects #MON"
-	cont "against SPECIAL"
-	cont "attacks such as"
-	cont "fire and water!"
+	para "For the right"
+	line "price and"
+	cont "gratification"
+	cont "for our esteemed"
+	cont "service to"
+	cont "society."
 
-	para "Get your items at"
-	line "CELADON DEPT."
-	cont "STORE!"
+	para "ROCKET TRADE"
+
+	para "..."
 	done
 
 _CeladonCityPrizeExchangeSignText::
@@ -148,7 +151,9 @@ _CeladonCityPrizeExchangeSignText::
 	done
 
 _CeladonCityGameCornerSignText::
-	text "ROCKET GAME CORNER"
-	line "The playground"
+	text "ROCKET CASINO"
+	para "The best"
+	line "playground"
 	cont "for grown-ups!"
 	done
+

@@ -1,10 +1,12 @@
 _CeladonMansionRoofHouseHikerText::
-	text "I know everything"
-	line "about the world"
-	cont "of #MON in"
-	cont "your GAME BOY!"
+	text "Nice to meet you"
+	line "<PLAYER>. Are you"
+	cont "familiar with the"
+	cont "BOX TRICK?"
 
-	para "Get together with"
-	line "your friends and"
-	cont "trade #MON!"
+	para "It gets your"
+	line "#MON stronger"
+	cont "even at lv100."
+	cont "Try it!"
 	done
+

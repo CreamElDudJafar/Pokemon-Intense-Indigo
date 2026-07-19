@@ -5,7 +5,7 @@ _ViridianMartClerkSayHiToOakText::
 
 _ViridianMartClerkYouCameFromPalletTownText::
 	text "Hey! You came from"
-	line "PALLET TOWN?"
+	line "ASARAM TOWN?"
 	done
 
 _ViridianMartClerkParcelQuestText::
@@ -17,15 +17,16 @@ _ViridianMartClerkParcelQuestText::
 	cont "to him?"
 
 	para "<PLAYER> got"
-	line "OAK's PARCEL!@"
+	line "VIP TICKETS!@"
 	text_end
-
 _ViridianMartYoungsterText::
-	text "This shop sells"
-	line "many ANTIDOTEs."
+	text "Yes!"
+
+	para "POTIONs can be"
+	line "found here!"
+	done
+_ViridianMartCooltrainerMText::
+	text "Try to search "
+	line "for NUGGETs.   "
 	done
 
-_ViridianMartCooltrainerMText::
-	text "No! POTIONs are"
-	line "all sold out."
-	done

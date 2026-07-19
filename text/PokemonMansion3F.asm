@@ -1,6 +1,6 @@
 _PokemonMansion3FSuperNerdBattleText::
-	text "This place is"
-	line "like, huge!"
+	text "You got a death"
+	line "wish kid?"
 	done
 
 _PokemonMansion3FSuperNerdEndBattleText::
@@ -8,13 +8,15 @@ _PokemonMansion3FSuperNerdEndBattleText::
 	prompt
 
 _PokemonMansion3FSuperNerdAfterBattleText::
-	text "I wonder where"
-	line "my partner went."
+	text "Ha."
+
+	para "The TRADE is"
+	line "behind it all."
 	done
 
 _PokemonMansion3FScientistBattleText::
-	text "My mentor once"
-	line "lived here."
+	text "You angered"
+	line "CALIGULA boy."
 	done
 
 _PokemonMansion3FScientistEndBattleText::
@@ -23,15 +25,19 @@ _PokemonMansion3FScientistEndBattleText::
 	prompt
 
 _PokemonMansion3FScientistAfterBattleText::
-	text "So, you're stuck?"
-	line "Try jumping off"
-	cont "over there!"
+	text "We dominated"
+	line "AIZOME for years."
+
+	para "Why stop now?"
 	done
 
 _PokemonMansion3FDiaryText::
-	text "Diary: Feb. 6"
-	line "MEW gave birth."
+	text "PROJECT 151"
 
-	para "We named the"
-	line "newborn MEWTWO."
+	para "After much"
+	line "funding..."
+
+	para "Specimen is"
+	line "perfected..."
 	done
+

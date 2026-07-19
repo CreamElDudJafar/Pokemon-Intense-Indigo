@@ -1,11 +1,11 @@
 _Route19CooltrainerM1BattleText::
-	text "Have to warm up"
-	line "before my swim!"
+	text "Welcome to the "
+	line "AIZOME COAST!  "
 	done
 
 _Route19CooltrainerM1EndBattleText::
-	text "All"
-	line "warmed up!"
+	text "Nice"
+	line "one kid! "
 	prompt
 
 _Route19CooltrainerM1AfterBattleText::
@@ -14,8 +14,8 @@ _Route19CooltrainerM1AfterBattleText::
 	done
 
 _Route19CooltrainerM2BattleText::
-	text "Wait! You'll have"
-	line "a heart attack!"
+	text "Have you been to"
+	line "the caves yet? "
 	done
 
 _Route19CooltrainerM2EndBattleText::
@@ -24,8 +24,8 @@ _Route19CooltrainerM2EndBattleText::
 	prompt
 
 _Route19CooltrainerM2AfterBattleText::
-	text "Watch out for"
-	line "TENTACOOL!"
+	text "Be wary of the"
+	line "BOULDERs!"
 	done
 
 _Route19Swimmer1BattleText::
@@ -44,8 +44,8 @@ _Route19Swimmer1AfterBattleText::
 	done
 
 _Route19Swimmer2BattleText::
-	text "What's beyond the"
-	line "horizon?"
+	text "SHOUBAI is rather"
+	line "far... "
 	done
 
 _Route19Swimmer2EndBattleText::
@@ -53,14 +53,14 @@ _Route19Swimmer2EndBattleText::
 	prompt
 
 _Route19Swimmer2AfterBattleText::
-	text "I see a couple of"
-	line "islands!"
+	text "Don't forget your"
+	line "HM moves!"
 	done
 
 _Route19Swimmer3BattleText::
-	text "I tried diving"
-	line "for #MON, but"
-	cont "it was a no go!"
+	text "BOULDERs land far"
+	line "from the hole"
+	cont "they fell..."
 	done
 
 _Route19Swimmer3EndBattleText::
@@ -68,8 +68,8 @@ _Route19Swimmer3EndBattleText::
 	prompt
 
 _Route19Swimmer3AfterBattleText::
-	text "You have to fish"
-	line "for sea #MON!"
+	text "You must search"
+	line "for BOULDERs! "
 	done
 
 _Route19Swimmer4BattleText::
@@ -101,7 +101,7 @@ _Route19Swimmer5EndBattleText::
 _Route19Swimmer5AfterBattleText::
 	text "It's still a long"
 	line "way to go to"
-	cont "SEAFOAM ISLANDS."
+	cont "SHOUHOU ISLANDS."
 	done
 
 _Route19Swimmer6BattleText::
@@ -116,7 +116,7 @@ _Route19Swimmer6EndBattleText::
 _Route19Swimmer6AfterBattleText::
 	text "My boy friend"
 	line "wanted to swim to"
-	cont "SEAFOAM ISLANDS."
+	cont "SHOUHOU ISLANDS."
 	done
 
 _Route19Swimmer7BattleText::
@@ -152,6 +152,8 @@ _Route19Swimmer8AfterBattleText::
 
 _Route19SignText::
 	text "SEA ROUTE 19"
-	line "FUCHSIA CITY -"
-	cont "SEAFOAM ISLANDS"
+	para "L:119"
+	para "SHOUHOU ISLANDS"
+	line "ahead..."
 	done
+

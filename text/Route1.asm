@@ -1,12 +1,10 @@
 _Route1Youngster1MartSampleText::
 	text "Hi! I work at a"
 	line "#MON MART."
-
 	para "It's a convenient"
 	line "shop, so please"
 	cont "visit us in"
-	cont "VIRIDIAN CITY."
-
+	cont "RIPPUKU STATE."
 	para "I know, I'll give"
 	line "you a sample!"
 	cont "Here you go!"
@@ -31,20 +29,23 @@ _Route1Youngster1NoRoomText::
 	done
 
 _Route1Youngster2Text::
-	text "See those ledges"
-	line "along the road?"
+	text "There are so many"
+	line "kinds of #MON"
+	cont "in AIZOME!"
 
-	para "It's a bit scary,"
-	line "but you can jump"
-	cont "from them."
+	para "You can get a"
+	line "full team very"
+	cont "easily if you"
+	cont "have enough"
+	cont "money."
 
-	para "You can get back"
-	line "to PALLET TOWN"
-	cont "quicker that way."
+	para "<RIVAL> came"
+	line "here as well..."
 	done
 
 _Route1SignText::
 	text "ROUTE 1"
-	line "PALLET TOWN -"
-	cont "VIRIDIAN CITY"
+	line "ASARAM TOWN -"
+	cont "RIPPUKU STATE"
 	done
+

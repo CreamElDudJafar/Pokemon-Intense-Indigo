@@ -1,15 +1,15 @@
 SeafoamIslandsB1FWildMons:
-	def_grass_wildmons 22 ; encounter rate
-	db 65, PRIMEAPE
-	db 65, DEWGONG
-	db 65, KINGLER
-	db 65, POLIWRATH
-	db 63, BLASTOISE
-	db 63, MAROWAK
-	db 60, MAROWAK
-	db 60, DEWGONG
-	db 64, GRAVELER
-	db 62, DITTO
+	def_grass_wildmons 1 ; encounter rate
+	db 100, HAUNTER
+	db 99, DUGTRIO
+	db 92, VAPOREON
+	db 98, RATICATE
+	db 99, GOLDUCK
+	db 99, PRIMEAPE
+	db 99, BLASTOISE
+	db 100, GRAVELER
+	db 100, HAUNTER
+	db 97, GYARADOS
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

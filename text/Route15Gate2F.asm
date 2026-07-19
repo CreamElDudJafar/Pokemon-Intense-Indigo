@@ -1,18 +1,21 @@
 _Route15Gate2FOaksAideExpAllText::
-	text "EXP.ALL gives"
-	line "EXP points to all"
-	cont "the #MON with"
-	cont "you, even if they"
-	cont "don't fight."
+	text "The MASTER BALL"
+	line "will capture"
+	cont "any #MON,"
+	cont "even with the"
+	cont "lowest catch"
+	cont "rate."
 
-	para "It does, however,"
-	line "reduce the amount"
-	cont "of EXP for each"
-	cont "#MON."
+	para "It should really"
+	line "be used as a"
+	cont "very last resort."
 
-	para "If you don't need"
-	line "it, you should "
-	cont "store it via PC."
+	para "PROF.OAK is"
+	line "very proud of you"
+	cont "<PLAYER>."
+
+	para "Even he couldn't"
+	line "get this many."
 	done
 
 _Route15Gate2FBinocularsText::

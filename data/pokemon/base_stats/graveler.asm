@@ -1,24 +1,29 @@
 	db DEX_GRAVELER ; pokedex id
 
-	db  55,  95, 115,  35,  45
-	;   hp  atk  def  spd  spc
+	db 55, 95, 115, 35, 45
+	; hp atk def spd spc
 
-	db ROCK, GROUND ; type
-	db 60  ; catch rate
-	db 134 ; base exp
+	db GROUND, ROCK ; type
+
+	db 1 ; catch rate
+
+	db 238 ; base exp
 
 	INCBIN "gfx/pokemon/front/graveler.pic", 0, 1 ; sprite dimensions
 	dw GravelerPicFront, GravelerPicBack
 
-	db DIG, SELFDESTRUCT, ROCK_SLIDE, EXPLOSION ; level 1 learnset
+	db EXPLOSION, ROCK_SLIDE, EARTHQUAKE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         EARTHQUAKE,   \
-	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     METRONOME,    SELFDESTRUCT, FIRE_BLAST,   REST,         EXPLOSION,    \
-	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+
+	tmhm MEGA_PUNCH, TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     SUBMISSION, COUNTER, SEISMIC_TOSS, RAGE, EARTHQUAKE, \
+	     FISSURE, DIG, MIMIC, DOUBLE_TEAM, BIDE, \
+	     METRONOME, SELFDESTRUCT, FIRE_BLAST, REST, EXPLOSION, \
+	     ROCK_SLIDE, SUBSTITUTE, STRENGTH
+
 	; end
 
 	db 0 ; padding

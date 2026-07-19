@@ -30,33 +30,28 @@ _CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
 	done
 
 _CinnabarLabMetronomeRoomScientist2Text::
-	text "EEVEE can evolve"
-	line "into 1 of 3 kinds"
-	cont "of #MON."
+	text "We left the TRADE"
+	line "when the merge"
+	cont "was made."
 	done
 
 _CinnabarLabMetronomeRoomPCText::
-	text "There's an e-mail"
-	line "message!"
-
-	para "..."
-
-	para "The 3 legendary"
-	line "bird #MON are"
+	text "..."
+	line "After much"
+	cont "research,"
 	cont "ARTICUNO, ZAPDOS"
-	cont "and MOLTRES."
-
-	para "Their whereabouts"
-	line "are unknown."
-
-	para "We plan to explore"
-	line "the cavern close"
-	cont "to CERULEAN."
-
-	para "From: #MON"
-	line "RESEARCH TEAM"
-
-	para "..."
+	cont "and MOLTRES, has"
+	cont "been confirmed to"
+	cont "have multiple"
+	cont "species."
+	cont "For further"
+	cont "analysis, all"
+	cont "3 wild species"
+	cont "will remain in"
+	cont "captivity."
+	cont "From: TRADE"
+	cont "ADMINISTRATOR"
+	cont "..."
 	done
 
 _CinnabarLabMetronomeRoomAmberPipeText::

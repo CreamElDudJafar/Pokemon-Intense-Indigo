@@ -1,17 +1,20 @@
 _SafariZoneSecretHouseFishingGuruYouHaveWonText::
-	text "Ah! Finally!"
+	text "OKIDO: Well if"
+	line "it isn't <PLAYER>!"
 
-	para "You're the first"
-	line "person to reach"
-	cont "the SECRET HOUSE!"
+	para "I was worried you"
+	line "wouldn't be able"
+	cont "to get here at"
+	cont "all!"
 
-	para "I was getting"
-	line "worried that no"
-	cont "one would win our"
-	cont "campaign prize."
+	para "Its time to"
+	line "battle."
 
-	para "Congratulations!"
-	line "You have won!"
+	para "I'm joking!"
+
+	para "If anyone deserves"
+	line "this HM03 prize,"
+	cont "its you."
 	prompt
 
 _SafariZoneSecretHouseFishingGuruReceivedHM03Text::
@@ -22,20 +25,22 @@ _SafariZoneSecretHouseFishingGuruReceivedHM03Text::
 	text_end
 
 _SafariZoneSecretHouseFishingGuruHM03ExplanationText::
-	text "HM03 is SURF!"
+	text "OKIDO: You came"
+	line "very far on your"
+	cont "quest. Further"
+	cont "than most. "
 
-	para "#MON will be"
-	line "able to ferry you"
-	cont "across water!"
+	para "The question is,"
+	line "will you keep"
+	cont "going?"
 
-	para "And, this HM isn't"
-	line "disposable! You"
-	cont "can use it over"
-	cont "and over!"
+	para "Well, that's up"
+	line "to you and your"
+	cont "#MON."
 
-	para "You're super lucky"
-	line "for winning this"
-	cont "fabulous prize!"
+	para "I will continue"
+	line "my preparations"
+	cont "<PLAYER>."
 	done
 
 _SafariZoneSecretHouseFishingGuruHM03NoRoomText::

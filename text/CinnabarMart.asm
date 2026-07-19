@@ -1,10 +1,10 @@
 _CinnabarMartSilphWorkerFText::
-	text "Don't they have X"
-	line "ATTACK? It's good"
-	cont "for battles!"
+	text "There used to"
+	line "be 3 LABs before"
+	cont "the TRADE left."
 	done
 
 _CinnabarMartScientistText::
-	text "It never hurts to"
-	line "have extra items!"
+	text "The TRADE sealed"
+	line "off another lab..."
 	done

@@ -5,16 +5,16 @@ _SaffronCityRocket1Text::
 
 _SaffronCityRocket2Text::
 	text "BOSS said he'll"
-	line "take this town!"
+	line "take the world!"
 	done
 
 _SaffronCityRocket3Text::
-	text "Get out of the"
-	line "way!"
+	text "GYM's on"
+	line "probation!"
 	done
 
 _SaffronCityRocket4Text::
-	text "SAFFRON belongs"
+	text "KOUMAN belongs"
 	line "to TEAM ROCKET!"
 	done
 
@@ -29,10 +29,12 @@ _SaffronCityRocket6Text::
 	done
 
 _SaffronCityRocket7Text::
-	text "With SILPH under"
-	line "control, we can"
-	cont "exploit #MON"
-	cont "around the world!"
+	text "We can be found"
+	line "everywhere..."
+
+	para "Even in places"
+	line "you'd least"
+	cont "expect!"
 	done
 
 _SaffronCityScientistText::
@@ -42,26 +44,28 @@ _SaffronCityScientistText::
 	done
 
 _SaffronCitySilphWorkerMText::
-	text "Yeah! TEAM ROCKET"
-	line "is gone!"
-	cont "It's safe to go"
-	cont "out again!"
+	text "I'm in so much"
+	line "trouble with the"
+	cont "BOSS and the"
+	cont "POLICE."
 	done
 
 _SaffronCitySilphWorkerFText::
 	text "People should be"
 	line "flocking back to"
-	cont "SAFFRON now."
+	cont "KOUMAN now. "
 	done
 
 _SaffronCityGentlemanText::
-	text "I flew here on my"
-	line "PIDGEOT when I"
-	cont "read about SILPH."
+	text "CHIEF EPIFANIO"
+	line "sent us to take"
+	cont "this city back!"
 
-	para "It's already over?"
-	line "I missed the"
-	cont "media action."
+	para "We got the"
+	line "GOVERNMENT"
+	cont "backing us up!"
+
+	para "Thank you!!"
 	done
 
 _SaffronCityPidgeotText::
@@ -70,83 +74,86 @@ _SaffronCityPidgeotText::
 
 _SaffronCityRockerText::
 	text "I saw ROCKET"
-	line "BOSS escaping"
-	cont "SILPH's building."
+	line "BOSS abandoning"
+	cont "his fortress. "
 	done
 
 _SaffronCityRocket8Text::
-	text "I'm a security"
-	line "guard."
+	text "Stay out."
 
-	para "Suspicious kids I"
-	line "don't allow in!"
+	para "Day after day,"
+	line "no shifts."
+
+	para "I hate this job."
 	done
 
 _SaffronCityRocket9Text::
-	text "..."
+	text "I'm awake!"
+	line "DON'T KILL ME! "
+	para "..."
 	line "Snore..."
-
-	para "Hah! He's taking"
-	line "a snooze!"
 	done
 
 _SaffronCitySignText::
-	text "SAFFRON CITY"
-	line "Shining, Golden"
-	cont "Land of Commerce"
+	text "KOUMAN CAPITAL"
+
+	para "Grand Pinnacle"
+	line "City of AIZOME"
 	done
 
 _SaffronCityFightingDojoSignText::
-	text "FIGHTING DOJO"
+	text "FIGHTING GYM."
 	done
 
 _SaffronCityGymSignText::
-	text "SAFFRON CITY"
+	text "KOUMAN CAPITAL"
 	line "#MON GYM"
-	cont "LEADER: SABRINA"
+	cont "LEADER: ZENOBIA"
 
-	para "The Master of"
-	line "Psychic #MON!"
+	para "Former #MON"
+	line "World Champ!"
 	done
 
 _SaffronCityTrainerTips1Text::
-	text "TRAINER TIPS"
+	text "For a limited"
+	line "time, and price,"
+	cont "we will upgrade"
+	cont "your old PORYGON"
+	cont "into a worthy"
+	cont "fighting specimen!"
 
-	para "FULL HEAL cures"
-	line "all ailments like"
-	cont "sleep and burns."
-
-	para "It costs a bit"
-	line "more, but it's"
-	cont "more convenient."
+	para "-TRADE CORP."
 	done
 
 _SaffronCityTrainerTips2Text::
-	text "TRAINER TIPS"
+	text "TRADE FOSSIL"
+	line "MARKET!"
 
-	para "New GREAT BALL"
-	line "offers improved"
-	cont "capture rates."
+	para "We sell rare"
+	line "resurrected"
+	cont "creatures to"
+	cont "people of all"
+	cont "ages!"
 
-	para "Try it on those"
-	line "hard-to-catch"
-	cont "#MON."
+	para "We create life!"
 	done
 
 _SaffronCitySilphCoSignText::
-	text "SILPH CO."
-	line "OFFICE BUILDING"
+	text "TEAM ROCKET"
+	line "HEADQUARTERS."
 	done
 
 _SaffronCityMrPsychicsHouseSignText::
-	text "MR.PSYCHIC's"
-	line "HOUSE"
+	text "L:109-120-126"
+
+	para "..."
 	done
 
 _SaffronCitySilphCoLatestProductSignText::
-	text "SILPH's latest"
-	line "product!"
+	text "CALLING ALL"
+	line "ROCKETS!"
 
-	para "Release to be"
-	line "determined..."
+	para "In a few days, we"
+	line "shall rule."
 	done
+

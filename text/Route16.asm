@@ -44,8 +44,8 @@ _Route16Biker3AfterBattleText::
 	done
 
 _Route16biker4BattleText::
-	text "Hey, you just"
-	line "bumped me!"
+	text "Hold it right"
+	line "there kid!"
 	done
 
 _Route16Biker4EndBattleText::
@@ -53,15 +53,16 @@ _Route16Biker4EndBattleText::
 	prompt
 
 _Route16Biker4AfterBattleText::
-	text "You can also get"
-	line "to FUCHSIA from"
-	cont "VERMILION using a"
-	cont "coastal road."
+	text "Crap! My bike"
+	line "broke!"
+	para "Now I see how"
+	line "you gave the"
+	cont "ROCKETs trouble!"
 	done
 
 _Route16Biker5BattleText::
 	text "I'm feeling"
-	line "hungry and mean!"
+	line "hungry AND mean!"
 	done
 
 _Route16Biker5EndBattleText::
@@ -97,7 +98,6 @@ _Route16Text7::
 
 _Route16SnorlaxWokeUpText::
 	text "SNORLAX woke up!"
-
 	para "It attacked in a"
 	line "grumpy rage!"
 	done
@@ -115,6 +115,6 @@ _Route16CyclingRoadSignText::
 
 _Route16SignText::
 	text "ROUTE 16"
-	line "CELADON CITY -"
-	cont "FUCHSIA CITY"
+	line "DONYOKU CITY -"
+	cont "DAKKARA TOWN"
 	done

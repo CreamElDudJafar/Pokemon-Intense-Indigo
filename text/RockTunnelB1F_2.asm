@@ -5,8 +5,8 @@ _RockTunnelB1FHiker3AfterBattleText::
 	done
 
 _RockTunnelB1FSuperNerd3BattleText::
-	text "I draw #MON"
-	line "when I'm home."
+	text "Like my RHYDON"
+	line "costume?"
 	done
 
 _RockTunnelB1FSuperNerd3EndBattleText::
@@ -15,6 +15,7 @@ _RockTunnelB1FSuperNerd3EndBattleText::
 	prompt
 
 _RockTunnelB1FSuperNerd3AfterBattleText::
-	text "I'm an artist,"
-	line "not a fighter."
+	text "NIDOKING is"
+	line "badass too!"
 	done
+

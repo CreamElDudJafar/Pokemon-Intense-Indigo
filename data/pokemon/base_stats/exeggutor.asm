@@ -1,23 +1,28 @@
 	db DEX_EXEGGUTOR ; pokedex id
 
-	db  95,  95,  85,  55, 125
-	;   hp  atk  def  spd  spc
+	db 95, 95, 85, 55, 125
+	; hp atk def spd spc
 
 	db GRASS, PSYCHIC_TYPE ; type
-	db 1   ; catch rate
-	db 212 ; base exp
+
+	db 1 ; catch rate
+
+	db 255 ; base exp
 
 	INCBIN "gfx/pokemon/front/exeggutor.pic", 0, 1 ; sprite dimensions
 	dw ExeggutorPicFront, ExeggutorPicBack
 
-	db STUN_SPORE, SLEEP_POWDER, PSYCHIC_M, NO_MOVE ; level 1 learnset
+	db SLEEP_POWDER, PSYCHIC_M, STUN_SPORE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   RAGE,         \
-	     MEGA_DRAIN,   SOLARBEAM,    PSYCHIC_M,    TELEPORT,     MIMIC,        \
-	     DOUBLE_TEAM,  REFLECT,      BIDE,         SELFDESTRUCT, EGG_BOMB,     \
-	     REST,         PSYWAVE,      EXPLOSION,    SUBSTITUTE,   STRENGTH
+
+	tmhm TOXIC, TAKE_DOWN, DOUBLE_EDGE, HYPER_BEAM, RAGE, \
+	     MEGA_DRAIN, SOLARBEAM, PSYCHIC_M, TELEPORT, MIMIC, \
+	     DOUBLE_TEAM, REFLECT, BIDE, SELFDESTRUCT, EGG_BOMB, \
+	     REST, PSYWAVE, EXPLOSION, SUBSTITUTE, STRENGTH
+
 	; end
 
 	db 0 ; padding

@@ -1,22 +1,23 @@
 _CeladonChiefHouseChiefText::
-	text "Hehehe! The slots"
-	line "just reel in the"
-	cont "dough, big time!"
+	text "Dr.I: Heh..."
+	para "Our merge has"
+	line "left so much"
+	cont "progress..."
 	done
 
 _CeladonChiefHouseRocketText::
-	text "CHIEF!"
-
+	text "Dr.I!"
 	para "We just shipped"
-	line "2000 #MON as"
-	cont "slot prizes!"
+	line "TRADE #MON"
+	cont "nationwide!    "
 	done
 
 _CeladonChiefHouseSailorText::
 	text "Don't touch the"
-	line "poster at the"
-	cont "GAME CORNER!"
-
-	para "There's no secret"
-	line "switch behind it!"
+	line "poster in the"
+	cont "CASINO!"
+	para "You don't want"
+	line "your legs broken,"
+	cont "do you?"
 	done
+

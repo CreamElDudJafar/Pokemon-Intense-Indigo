@@ -3,7 +3,7 @@ _VictoryRoad2FMoltresBattleText::
 	text_end
 
 _VictoryRoad2FHikerBattleText::
-	text "VICTORY ROAD is"
+	text "VICTORY CAVE is"
 	line "the final test"
 	cont "for trainers!"
 	done
@@ -19,9 +19,10 @@ _VictoryRoad2FHikerAfterBattleText::
 	done
 
 _VictoryRoad2FSuperNerd1BattleText::
-	text "Ah, so you wish"
-	line "to challenge the"
-	cont "ELITE FOUR?"
+	text "Why not have"
+	line "a little"
+	cont "PRELIMINARY"
+	cont "challenge?"
 	done
 
 _VictoryRoad2FSuperNerd1EndBattleText::
@@ -47,14 +48,15 @@ _VictoryRoad2FCooltrainerMEndBattleText::
 _VictoryRoad2FCooltrainerMAfterBattleText::
 	text "You earned the"
 	line "right to be on"
-	cont "VICTORY ROAD!"
+	cont "VICTORY CAVE!"
 	done
 
 _VictoryRoad2FSuperNerd2BattleText::
-	text "If you can get"
-	line "through here, you"
-	cont "can go meet the"
-	cont "ELITE FOUR!"
+	text "<PLAYER> got a "
+	line "TRAINER BATTLE!"
+
+	para "A very authentic"
+	line "ELECTRODE costume!"
 	done
 
 _VictoryRoad2FSuperNerd2EndBattleText::
@@ -63,14 +65,14 @@ _VictoryRoad2FSuperNerd2EndBattleText::
 	prompt
 
 _VictoryRoad2FSuperNerd2AfterBattleText::
-	text "I can beat you"
-	line "when it comes to"
-	cont "knowledge about"
-	cont "#MON!"
+	text "I hope I don't"
+	line "run into YOU"
+	cont "in the WORLD"
+	cont "TOURNAMENT..."
 	done
 
 _VictoryRoad2FSuperNerd3BattleText::
-	text "Is VICTORY ROAD"
+	text "Is VICTORY CAVE"
 	line "too tough?"
 	done
 
@@ -80,7 +82,8 @@ _VictoryRoad2FSuperNerd3EndBattleText::
 	prompt
 
 _VictoryRoad2FSuperNerd3AfterBattleText::
-	text "Many trainers give"
-	line "up the challenge"
-	cont "here."
+	text "Many TRADE abusers"
+	line "get weeded out"
+	cont "easily."
 	done
+

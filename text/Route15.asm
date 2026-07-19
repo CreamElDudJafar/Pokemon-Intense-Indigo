@@ -1,7 +1,8 @@
 _Route15CooltrainerF1BattleText::
-	text "Let me try out the"
-	line "#MON I just"
-	cont "got in a trade!"
+	text "Let me try out"
+	line "#MON I got"
+	cont "from ROCKET"
+	cont "TRADE!  "
 	done
 
 _Route15CooltrainerF1EndBattleText::
@@ -10,13 +11,12 @@ _Route15CooltrainerF1EndBattleText::
 	prompt
 
 _Route15CooltrainerF1AfterBattleText::
-	text "You can't change"
-	line "the nickname of"
-	cont "any #MON you"
-	cont "get in a trade."
-
-	para "Only the Original"
-	line "Trainer can."
+	text "The ROCKET TRADE?"
+	para "Only people that"
+	line "can pay enough"
+	cont "money can get"
+	cont "#MON past "
+	cont "lv100 from them..."
 	done
 
 _Route15CooltrainerF2BattleText::
@@ -53,9 +53,11 @@ _Route15CooltrainerM1AfterBattleText::
 	done
 
 _Route15CooltrainerM2BattleText::
-	text "Hmm? My birds are"
-	line "shivering! You're"
-	cont "good, aren't you?"
+	text "Hmm?"
+	para "My birds are"
+	line "shivering!"
+	para "You're good,"
+	line "aren't you?"
 	done
 
 _Route15CooltrainerM2EndBattleText::
@@ -64,10 +66,11 @@ _Route15CooltrainerM2EndBattleText::
 	prompt
 
 _Route15CooltrainerM2AfterBattleText::
-	text "Did you know moves"
-	line "like EARTHQUAKE"
-	cont "don't have any"
-	cont "effect on birds?"
+	text "I fought trainers"
+	line "from outside"
+	cont "AIZOME..."
+	para "You're the"
+	line "toughest by far..."
 	done
 
 _Route15Beauty1BattleText::
@@ -103,8 +106,9 @@ _Route15Beauty2AfterBattleText::
 	done
 
 _Route15Biker1BattleText::
-	text "Hey kid! C'mon!"
-	line "I just got these!"
+	text "I LOVE THE"
+	line "ROCKET TRADE SO"
+	cont "MUCH!"
 	done
 
 _Route15Biker1EndBattleText::
@@ -113,10 +117,11 @@ _Route15Biker1EndBattleText::
 	prompt
 
 _Route15Biker1AfterBattleText::
-	text "You only live"
-	line "once, so I live"
-	cont "as an outlaw!"
-	cont "TEAM ROCKET RULES!"
+	text "The ROCKET TRADE"
+	line "knows how to"
+	cont "make #MON"
+	cont "surpass their"
+	cont "limits! "
 	done
 
 _Route15Biker2BattleText::
@@ -137,17 +142,17 @@ _Route15Biker2AfterBattleText::
 
 _Route15CooltrainerF3BattleText::
 	text "What's cool?"
-	line "Trading #MON!"
+	line "ROCKET TRADE!"
 	done
 
 _Route15CooltrainerF3EndBattleText::
-	text "I"
-	line "said trade!"
+	text "But,"
+	line "how?!   "
 	prompt
 
 _Route15CooltrainerF3AfterBattleText::
-	text "I trade #MON"
-	line "with my friends!"
+	text "My mom paid so"
+	line "much for them!"
 	done
 
 _Route15CooltrainerF4BattleText::
@@ -167,6 +172,6 @@ _Route15CooltrainerF4AfterBattleText::
 
 _Route15SignText::
 	text "ROUTE 15"
-	line "West to FUCHSIA"
-	cont "CITY"
+	para "L:117"
+	para "Almost there... "
 	done

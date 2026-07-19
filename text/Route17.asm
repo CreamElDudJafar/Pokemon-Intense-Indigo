@@ -31,7 +31,7 @@ _Route17Biker2AfterBattleText::
 
 _Route17Biker3BattleText::
 	text "You heading to"
-	line "FUCHSIA?"
+	line "DAKKARA?"
 	done
 
 _Route17Biker3EndBattleText::
@@ -59,35 +59,37 @@ _Route17Biker4AfterBattleText::
 	done
 
 _Route17Biker5BattleText::
-	text "Let VOLTORB"
-	line "electrify you!"
+	text "My #MON will"
+	line "crush yours! "
 	done
 
 _Route17Biker5EndBattleText::
-	text "Grounded"
-	line "out!"
+	text "Impossible!"
+	line " "
 	prompt
 
 _Route17Biker5AfterBattleText::
-	text "I got my VOLTORB"
-	line "at the abandoned"
-	cont "POWER PLANT."
+	text "I got my #MON"
+	line "at the ROCKET"
+	cont "TRADE at their"
+	cont "HQ..."
 	done
 
 _Route17Biker6BattleText::
-	text "My #MON won't"
-	line "evolve! Why?"
+	text "My #MON will"
+	line "OHKO yours!!"
 	done
 
 _Route17Biker6EndBattleText::
-	text "Why,"
-	line "you!"
+	text "I"
+	line "missed!"
 	prompt
 
 _Route17Biker6AfterBattleText::
-	text "Maybe some #MON"
-	line "need element"
-	cont "STONEs to evolve."
+	text "You have a"
+	line "bounty on your"
+	cont "head by TEAM"
+	cont "ROCKET!"
 	done
 
 _Route17Biker7BattleText::
@@ -148,45 +150,42 @@ _Route17Biker10AfterBattleText::
 	done
 
 _Route17NoticeSign1Text::
-	text "It's a notice!"
-
-	para "Watch out for"
-	line "discarded items!"
+	text "TEAM ROCKET TRADE"
+	line "recruiting date"
+	cont "is coming!"
 	done
 
 _Route17TrainerTips1Text::
-	text "TRAINER TIPS"
-
-	para "All #MON are"
-	line "unique."
-
-	para "Even #MON of"
-	line "the same type and"
-	cont "level grow at"
-	cont "different rates."
+	text "Who wants to"
+	line "become the TRIAD"
+	cont "members of"
+	cont "TEAM ROCKET?"
+	para "These top 3 will"
+	line "be given a"
+	cont "special #MON!"
 	done
 
 _Route17TrainerTips2Text::
-	text "TRAINER TIPS"
-
-	para "Press the A or B"
-	line "Button to stay in"
-	cont "place while on a"
-	cont "slope."
+	text "Huge reward"
+	line "for the capture"
+	cont "of <PLAYER>..."
+	para "Beware, he is"
+	line "dangerous..."
+	para "-TEAM ROCKET"
 	done
 
 _Route17SignText::
 	text "ROUTE 17"
-	line "CELADON CITY -"
-	cont "FUCHSIA CITY"
+	line "DONYOKU CITY -"
+	cont "DAKKARA TOWN"
 	done
 
 _Route17NoticeSign2Text::
-	text "It's a notice!"
-
-	para "Don't throw the"
-	line "game, throw #"
-	cont "BALLs instead!"
+	text "ROCKET TRADE"
+	para "International"
+	line "phenomenon"
+	cont "sweeping the"
+	cont "nation"
 	done
 
 _Route17CyclingRoadEndsSignText::
