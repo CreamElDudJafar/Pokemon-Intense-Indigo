@@ -1,19 +1,19 @@
 _MtMoonPokecenterYoungsterText::
-	text "I've 6 # BALLs"
-	line "set in my belt."
+	text "A good idea is to"
+	line "have many #MON"
+	cont "with you."
 
-	para "At most, you can"
-	line "carry 6 #MON."
+	para "I have six"
+	line "#MON."
 	done
 
 _MtMoonPokecenterGentlemanText::
-	text "TEAM ROCKET"
-	line "attacks CERULEAN"
-	cont "citizens..."
+	text "The ROCKET TRADE"
+	line "is open to all,"
+	cont "selling..."
 
-	para "TEAM ROCKET is"
-	line "always in the"
-	cont "news!"
+	para "AIZOME was much"
+	line "better off..."
 	done
 
 _MtMoonPokecenterMagikarpSalesmanIGotADealText::

@@ -1,20 +1,19 @@
 _FuchsiaPokecenterRockerText::
-	text "You can't win"
-	line "with just one"
-	cont "strong #MON."
+	text "The ROCKET"
+	line "TRADE has made"
+	cont "nationwide sales."
 
-	para "It's tough, but"
-	line "you have to raise"
-	cont "them evenly."
+	para "Everyone wants"
+	line "to pay for"
+	cont "strong #MON."
 	done
 
 _FuchsiaPokecenterCooltrainerFText::
-	text "There's a narrow"
-	line "trail west of"
-	cont "VIRIDIAN CITY."
-
-	para "It goes to #MON"
-	line "LEAGUE HQ."
-	cont "The HQ governs"
-	cont "all trainers."
+	text "TEAM ROCKET"
+	line "knew every"
+	cont "trainer all over"
+	cont "the world wants"
+	cont "to be CHAMPION of"
+	cont "the #MON WORLD"
+	cont "TOURNAMENT."
 	done

@@ -1,109 +1,122 @@
 _SaffronGymSabrinaText::
-	text "I had a vision of"
-	line "your arrival!"
+	text "You ran out"
+	line "TEAM ROCKET?"
 
-	para "I have had psychic"
-	line "powers since I"
-	cont "was a child."
+	para "I was working on"
+	line "that!"
 
-	para "I first learned"
-	line "to bend spoons"
-	cont "with my mind."
+	para "Hmph."
 
-	para "I dislike fight-"
-	line "ing, but if you"
-	cont "wish, I will show"
-	cont "you my powers!"
+	para "So you think I"
+	line "should give you"
+	cont "a BADGE for "
+	cont "saving KOUMAN? "
+
+	para "I would like to,"
+	line "but its my job"
+	cont "to test you"
+	cont "<PLAYER>."
+
+	para "And my #MON"
+	line "needs excercise!"
 	done
 
 _SaffronGymSabrinaReceivedMarshBadgeText::
-	text "I'm"
-	line "shocked!"
-	cont "But, a loss is a"
-	cont "loss."
+	text "I got"
+	line "really sloppy..."
 
-	para "I admit I didn't"
-	line "work hard enough"
-	cont "to win!"
+	para "Sure I was stuck"
+	line "in this GYM, but"
+	cont "a loss is a loss."
 
-	para "You earned the"
-	line "MARSHBADGE!@"
-	text_end
+	para "You earned the "
+	line "WHITEBADGE!"
+	prompt
 
 _SaffronGymSabrinaPostBattleAdviceText::
-	text "Everyone has"
-	line "psychic power!"
-	cont "People just don't"
-	cont "realize it!"
+	text "Try not to "
+	line "suck at the"
+	cont "TOURNAMENT!"
+
+	para "You'lll embarrass"
+	line "me!"
 	done
 
 _SaffronGymSabrinaMarshBadgeInfoText::
-	text "The MARSHBADGE"
-	line "makes #MON up"
-	cont "to L70 obey you!"
+	text "TEAM ROCKET made"
+	line "quite a mess of"
+	cont "this city."
 
-	para "Stronger #MON"
-	line "will become wild,"
-	cont "ignoring your"
-	cont "orders in battle!"
+	para "They have been"
+	line "expanding too. At"
+	cont "least they're"
+	cont "gone."
 
-	para "Just don't raise"
-	line "your #MON too"
-	cont "much!"
+	para "Can I ask you for"
+	line "a favor? "
 
-	para "Wait, please take"
-	line "this TM with you!"
+	para "Will you take this"
+	line "to my DAD, the"
+	cont "WARDEN at DAKKARA"
+	cont "TOWN?"
 	done
 
 _SaffronGymSabrinaReceivedTM46Text::
-	text "<PLAYER> received"
-	line "TM46!@"
+	text "<PLAYER> got"
+	line "GOLD TEETH!@"
 	text_end
 
 _TM46ExplanationText::
 	text_start
 
-	para "TM46 is PSYWAVE!"
-	line "It uses powerful"
-	cont "psychic waves to"
-	cont "inflict damage!"
+	para "I stole this from"
+	line "the TEAM ROCKET"
+	cont "CHIEF, who stole"
+	cont "it from my DAD."
 	done
 
 _SaffronGymSabrinaTM46NoRoomText::
-	text "Your pack is full"
-	line "of other items!"
+	text "No?"
+
+	para "But my DAD"
+	line "will reward you"
+	cont "<PLAYER>!"
 	done
 
 _SaffronGymGuideChampInMakingText::
-	text "Yo! Champ in"
-	line "making!"
+	text "Hey! LIBERATOR"
+	line "OF KOUMAN! "
 
-	para "SABRINA's #MON"
-	line "use psychic power"
-	cont "instead of force!"
+	para "The GYM LEADER"
+	line "uses NORMAL"
+	cont "types!"
 
 	para "Fighting #MON"
-	line "are weak against"
-	cont "psychic #MON!"
+	line "ARE good against"
+	cont "them."
 
-	para "They get creamed"
-	line "before they can"
-	cont "even aim a punch!"
+	para "But she actually"
+	line "can put up a"
+	cont "fight against"
+	cont "them!"
+
+	para "Be very careful"
+	line "<PLAYER>!"
 	done
 
 _SaffronGymGuideBeatSabrinaText::
-	text "Psychic power,"
-	line "huh?"
+	text "Great job"
+	line "<PLAYER>!!"
 
-	para "If I had that,"
-	line "I'd make a bundle"
-	cont "at the slots!"
+	para "If you make it to"
+	line "the LEAGUE, you"
+	cont "may actually win!"
 	done
 
 _SaffronGymChanneler1BattleText::
-	text "SABRINA is younger"
-	line "than I, but I"
-	cont "respect her!"
+	text "You want to know"
+	line "the secret of the"
+	cont "higher lv?"
 	done
 
 _SaffronGymChanneler1EndBattleText::
@@ -112,19 +125,20 @@ _SaffronGymChanneler1EndBattleText::
 	prompt
 
 _SaffronGymChanneler1AfterBattleText::
-	text "In a battle of"
-	line "equals, the one"
-	cont "with the stronger"
-	cont "will wins!"
+	text "The TRADE had the"
+	line "right idea."
 
-	para "If you wish"
-	line "to beat SABRINA,"
-	cont "focus on winning!"
+	para "But its a misuse."
+
+	para "The secret lvs"
+	line "works best only"
+	cont "for the ones who"
+	cont "earned it."
 	done
 
 _SaffronGymYoungster1BattleText::
-	text "Does our unseen"
-	line "power scare you?"
+	text "Does our levels"
+	line "intimidate you?"
 	done
 
 _SaffronGymYoungster1EndBattleText::
@@ -133,9 +147,9 @@ _SaffronGymYoungster1EndBattleText::
 	prompt
 
 _SaffronGymYoungster1AfterBattleText::
-	text "Psychic #MON"
-	line "fear only ghosts"
-	cont "and bugs!"
+	text "Our levels weren't"
+	line "easy at all to"
+	cont "get!"
 	done
 
 _SaffronGymChanneler2BattleText::
@@ -159,9 +173,9 @@ _SaffronGymChanneler2AfterBattleText::
 	done
 
 _SaffronGymYoungster2BattleText::
-	text "You know that"
-	line "power alone isn't"
-	cont "enough!"
+	text "We are here to"
+	line "COUNTER FIGHTING"
+	cont "types."
 	done
 
 _SaffronGymYoungster2EndBattleText::
@@ -170,9 +184,10 @@ _SaffronGymYoungster2EndBattleText::
 	prompt
 
 _SaffronGymYoungster2AfterBattleText::
-	text "SABRINA just wiped"
-	line "out the KARATE"
-	cont "MASTER next door!"
+	text "Everyone here"
+	line "can easily wipe"
+	cont "out BRUCE next"
+	cont "door!"
 	done
 
 _SaffronGymChanneler3BattleText::
@@ -193,12 +208,12 @@ _SaffronGymChanneler3AfterBattleText::
 	done
 
 _SaffronGymYoungster3BattleText::
-	text "SABRINA is young,"
-	line "but she's also"
-	cont "our LEADER!"
+	text "ZENOBIA actually"
+	line "took out BRUCE's"
+	cont "FIGHTING TYPEs. "
 
-	para "You won't reach"
-	line "her easily!"
+	para "It sucks to be"
+	line "him."
 	done
 
 _SaffronGymYoungster3EndBattleText::
@@ -207,25 +222,27 @@ _SaffronGymYoungster3EndBattleText::
 	prompt
 
 _SaffronGymYoungster3AfterBattleText::
-	text "There used to be"
-	line "2 #MON GYMs in"
-	cont "SAFFRON."
+	text "If that wasn't"
+	line "bad enough... "
 
-	para "The FIGHTING DOJO"
-	line "next door lost"
-	cont "its GYM status"
-	cont "when we went and"
-	cont "creamed them!"
+	para "Every single"
+	line "ROCKET member"
+	cont "trounced him. "
+
+	para "And to spite him,"
+	line "they stole all of"
+	cont "his BADGEs."
 	done
 
 _SaffronGymYoungster4BattleText::
-	text "SAFFRON #MON"
-	line "GYM is famous for"
-	cont "its psychics!"
+	text "We told you scum"
+	line "time after time,"
+	cont "you're not-"
 
-	para "You want to see"
-	line "SABRINA!"
-	cont "I can tell!"
+	para "Wait... "
+
+	para "Wait, an actual"
+	line "challenger?"
 	done
 
 _SaffronGymYoungster4EndBattleText::
@@ -233,7 +250,10 @@ _SaffronGymYoungster4EndBattleText::
 	prompt
 
 _SaffronGymYoungster4AfterBattleText::
-	text "That's right! I"
-	line "used telepathy to"
-	cont "read your mind!"
+	text "Everyone!"
+
+	para "KOUMAN is free"
+	line "from TEAM ROCKET"
+	cont "TRADE!"
 	done
+

@@ -1,13 +1,14 @@
 _SaffronMartSuperNerdText::
-	text "MAX REPEL lasts"
-	line "longer than SUPER"
-	cont "REPEL for keeping"
-	cont "weaker #MON"
-	cont "away!"
+	text "We managed to"
+	line "put TEAM ROCKET"
+	cont "into house"
+	cont "arrest!  "
 	done
 
 _SaffronMartCooltrainerFText::
-	text "REVIVE is costly,"
-	line "but it revives"
-	cont "fainted #MON!"
+	text "ROCKET TRADE"
+	line "made sales and"
+	cont "services"
+	cont "worldwide."
 	done
+

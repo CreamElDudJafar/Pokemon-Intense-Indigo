@@ -1,14 +1,15 @@
 _BluesHouseDaisyRivalAtLabText::
-	text "Hi <PLAYER>!"
-	line "<RIVAL> is out at"
-	cont "Grandpa's lab."
+	text "OKIDO: <RIVAL>"
+	line "is out at my"
+	cont "dad's lab."
 	done
 
 _BluesHouseDaisyOfferMapText::
-	text "Grandpa asked you"
-	line "to run an errand?"
-	cont "Here, this will"
-	cont "help you!"
+	text "OKIDO: Ah <PLAYER>!"
+
+	para "I was hoping to"
+	line "give this to you"
+	cont "before I leave."
 	prompt
 
 _GotMapText::
@@ -24,16 +25,17 @@ _BluesHouseDaisyBagFullText::
 	done
 
 _BluesHouseDaisyUseMapText::
-	text "Use the TOWN MAP"
-	line "to find out where"
-	cont "you are."
+	text "Well, I must go."
+	para "It's good to see"
+	line "you and <RIVAL>."
 	done
 
 _BluesHouseDaisyWalkingText::
-	text "#MON are living"
-	line "things! If they"
-	cont "get tired, give"
-	cont "them a rest!"
+	text "MEW isn't-"
+
+	para "Say one word to"
+	line "ANYONE, and I'll"
+	cont "pay mommy a visit!"
 	done
 
 _BluesHouseTownMapText::

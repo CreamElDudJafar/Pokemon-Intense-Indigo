@@ -16,8 +16,10 @@ _VermilionMartCooltrainerMText::
 	done
 
 _VermilionMartCooltrainerFText::
-	text "I think #MON"
-	line "can be good or"
-	cont "evil. It depends"
-	cont "on the trainer."
+	text "TEAM ROCKET"
+	line "calls their"
+	cont "PORYGONs a"
+	cont "prototype of"
+	cont "PROJECT 151."
 	done
+

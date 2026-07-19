@@ -1,67 +1,78 @@
 _RocketHideoutB4FGiovanniImpressedYouGotHereText::
-	text "So! I must say, I"
-	line "am impressed you"
-	cont "got here!"
+	text "Now <PLAYER>,"
+	line "say goodbye to"
+	cont "your #MON... "
+
+	para "Forever."
 	done
 
 _RocketHideoutB4FGiovanniWhatCannotBeText::
-	text "WHAT!"
-	line "This cannot be!"
+	text "..."
+
+	para "Well played boy. "
 	prompt
 
 _RocketHideoutB4FGiovanniHopeWeMeetAgainText::
-	text "I see that you"
-	line "raise #MON"
-	cont "with utmost care."
+	text "Let me be"
+	line "perfectly clear."
 
-	para "A child like you"
-	line "would never"
-	cont "understand what I"
-	cont "hope to achieve."
+	para "A mere victory in"
+	line "a battle will"
+	cont "never undo my"
+	cont "glorious reign"
+	cont "of terror."
 
-	para "I shall step"
-	line "aside this time!"
+	para "And soon... "
 
-	para "I hope we meet"
-	line "again..."
+	para "The entire world"
+	line "will belong to"
+	cont "LORD CALIGULA.  "
 	done
 
 _RocketHideoutB4FRocket1BattleText::
-	text "I know you! You"
-	line "ruined our plans"
-	cont "at MT.MOON!"
+	text "No.0: At last"
+	line "<PLAYER>."
+
+	para "Now behold, my"
+	line "TRUE POWER! "
 	done
 
 _RocketHideoutB4FRocket1EndBattleText::
-	text "Burned"
-	line "again!"
+	text "I"
+	line "LOST?!"
+
+	para "NOO!"
 	prompt
 
 _RocketHideoutB4FRocket1AfterBattleText::
-	text "Do you have"
-	line "something against"
-	cont "TEAM ROCKET?"
+	text "No.0: Fine. "
+
+	para "Our true leader"
+	line "awaits you"
+	cont "<PLAYER>."
 	done
 
 _RocketHideoutB4FRocket2BattleText::
-	text "How can you not"
-	line "see the beauty of"
-	cont "our evil?"
+	text "No.1: Our evil"
+	line "will spread,"
+	cont "consuming ALL!!"
 	done
 
 _RocketHideoutB4FRocket2EndBattleText::
-	text "Ayaya!"
+	text "How..."
 	prompt
 
 _RocketHideoutB4FRocket2AfterBattleText::
-	text "BOSS! I'm sorry I"
-	line "failed you!"
+	text "No.1: I lost to"
+	line "this scum..."
 	done
 
 _RocketHideoutB4FRocket3BattleText::
 	text "The elevator"
-	line "doesn't work? Who"
-	cont "has the LIFT KEY?"
+	line "doesn't work?"
+
+	para "Awwww, thats too"
+	line "bad!"
 	done
 
 _RocketHideoutB4FRocket3EndBattleText::
@@ -69,6 +80,6 @@ _RocketHideoutB4FRocket3EndBattleText::
 	prompt
 
 _RocketHideoutB4FRocket3AfterBattleText::
-	text "Oh no! I dropped"
-	line "the LIFT KEY!"
+	text "PA: Now give that"
+	line "boy the key."
 	done

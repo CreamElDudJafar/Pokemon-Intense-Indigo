@@ -48,21 +48,22 @@ _Route10SuperNerd2AfterBattleText::
 	done
 
 _Route10CooltrainerF1BattleText::
-	text "I've been to a"
-	line "#MON GYM a few"
-	cont "times. But, I"
-	cont "lost each time."
+	text "I beat the"
+	line "first 3 GYMs"
+	cont "with #MON"
+	cont "above lv100."
+	para "Not others."
 	done
 
 _Route10CooltrainerF1EndBattleText::
-	text "Ohh!"
-	line "Blew it again!"
+	text "But"
+	line "how can you...."
 	prompt
 
 _Route10CooltrainerF1AfterBattleText::
-	text "I noticed some"
-	line "#MANIACs"
-	cont "prowling around."
+	text "The next GYM"
+	line "had higher lvs,"
+	cont "so I lose."
 	done
 
 _Route10Hiker2BattleText::
@@ -100,9 +101,10 @@ _Route10CooltrainerF2AfterBattleText::
 	done
 
 _Route10RockTunnelSignText::
-	text "ROCK TUNNEL"
+	text "DARK TUNNEL"
 	done
 
 _Route10PowerPlantSignText::
-	text "POWER PLANT"
+	text "L:106-L:107"
 	done
+

@@ -7,25 +7,27 @@ _PokemonTower1FReceptionistText::
 
 _PokemonTower1FMiddleAgedWomanText::
 	text "Did you come to"
-	line "pay respects?"
-	cont "Bless you!"
+	line "explore too?"
 	done
 
 _PokemonTower1FBaldingGuyText::
-	text "I came to pray"
-	line "for my CLEFAIRY."
+	text "Sniff!"
 
-	para "Sniff! I can't"
-	line "stop crying..."
+	para "A ROCKET killed"
+	line "my poor little"
+	cont "GROWLITHE..."
+
+	para "Sobs..."
 	done
 
 _PokemonTower1FGirlText::
-	text "My GROWLITHE..."
+	text "JIGGLYPUFF...  "
 	line "Why did you die?"
 	done
 
 _PokemonTower1FChannelerText::
-	text "I am a CHANNELER!"
-	line "There are spirits"
-	cont "up to mischief!"
+	text "I am a CHANNELER."
+	para "There are spirits"
+	line "up to mischief."
 	done
+

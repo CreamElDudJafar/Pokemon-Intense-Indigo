@@ -1,15 +1,15 @@
 Route13WildMons:
-	def_grass_wildmons 255 ; encounter rate
-	db 50, SCYTHER
-	db 50, ARBOK
-	db 50, SANDSLASH
-	db 50, FEAROW
-	db 50, RATICATE
-	db 50, MAROWAK
-	db 50, TANGELA
-	db 50, LICKITUNG
-	db 50, MAROWAK
-	db 50, KRABBY
+	def_grass_wildmons 20 ; encounter rate
+	db 94, GROWLITHE
+	db 94, VULPIX
+	db 94, CHARMANDER
+	db 94, CHARMANDER
+	db 94, PONYTA
+	db 94, VULPIX
+	db 94, PONYTA
+	db 94, GROWLITHE
+	db 94, CHARMELEON
+	db 80, MAGMAR
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

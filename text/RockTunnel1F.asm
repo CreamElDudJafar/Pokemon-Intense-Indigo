@@ -9,9 +9,11 @@ _RockTunnel1FHiker1EndBattleText::
 	prompt
 
 _RockTunnel1FHiker1AfterBattleText::
-	text "Watch for ONIX!"
-	line "It can put the"
-	cont "squeeze on you!"
+	text "Beware of"
+	line "ELECTRODEs!"
+
+	para "They are EVIL"
+	line "exploders!"
 	done
 
 _RockTunnel1FHiker2BattleText::
@@ -48,8 +50,8 @@ _RockTunnel1FHiker3AfterBattleText::
 	done
 
 _RockTunnel1FSuperNerdBattleText::
-	text "#MON fight!"
-	line "Ready, go!"
+	text "#MON fight?"
+	line "Cool! Rumble!"
 	done
 
 _RockTunnel1FSuperNerdEndBattleText::
@@ -58,8 +60,8 @@ _RockTunnel1FSuperNerdEndBattleText::
 	prompt
 
 _RockTunnel1FSuperNerdAfterBattleText::
-	text "Oh well, I'll get"
-	line "a ZUBAT as I go!"
+	text "This costume is"
+	line "heavy, but soft!"
 	done
 
 _RockTunnel1FCooltrainerF1BattleText::
@@ -74,7 +76,7 @@ _RockTunnel1FCooltrainerF1EndBattleText::
 	prompt
 
 _RockTunnel1FCooltrainerF1AfterBattleText::
-	text "I saw a MACHOP"
+	text "I saw VOLTORB"
 	line "in this tunnel!"
 	done
 
@@ -109,7 +111,8 @@ _RockTunnel1FCooltrainerF3AfterBattleText::
 	done
 
 _RockTunnel1FSignText::
-	text "ROCK TUNNEL"
-	line "CERULEAN CITY -"
-	cont "LAVENDER TOWN"
+	text "DARK TUNNEL"
+	line "SAKAYUME TOWN -"
+	cont "KYUUSOKU TOWN"
 	done
+

@@ -16,101 +16,115 @@ _MtMoonB2FReceivedFossilText::
 	text_end
 
 _MtMoonB2FYouHaveNoRoomText::
-	text "Look, you've got"
-	line "no room for this.@"
-	text_end
+	text "You have no"
+	line "room for this."
+	done
 
 _MtMoonB2FSuperNerdTheyreBothMineText::
-	text "Hey, stop!"
+	text "No.0: You got"
+	line "past my men?"
 
-	para "I found these"
-	line "fossils! They're"
-	cont "both mine!"
+	para "Prepare for"
+	line "your doom..."
 	done
 
 _MtMoonB2FSuperNerdOkIllShareText::
-	text "OK!"
-	line "I'll share!"
+	text "..."
+
+	para "<PLAYER> was it?"
 	prompt
 
 _MtMoonB2fSuperNerdEachTakeOneText::
-	text "We'll each take"
-	line "one!"
-	cont "No being greedy!"
+	text "No.0: Fine."
+
+	para "You can have only"
+	line "one..."
 	done
 
 _MtMoonB2FSuperNerdTheresAPokemonLabText::
-	text "Far away, on"
-	line "CINNABAR ISLAND,"
-	cont "there's a #MON"
-	cont "LAB."
+	text "No.0: Understand"
+	line "this boy."
 
-	para "They do research"
-	line "on regenerating"
-	cont "fossils."
+	para "I did not bring"
+	line "my best."
+
+	para "TEAM ROCKET won't"
+	line "forget about you"
+	cont "<PLAYER>..."
 	done
 
 _MtMoonB2FSuperNerdThenThisIsMineText::
-	text "All right. Then"
-	line "this is mine!@"
+	text "Then THIS one"
+	line "belongs to me!@"
 	text_end
 
 _MtMoonB2FRocket1BattleText::
-	text "TEAM ROCKET will"
-	line "find the fossils,"
-	cont "revive and sell"
-	cont "them for cash!"
+	text "Who are you?!"
+
+	para "Are you their"
+	line "spy?"
+
+	para "You will never"
+	line "steal my #MON!"
 	done
 
 _MtMoonB2FRocket1EndBattleText::
-	text "Urgh!"
-	line "Now I'm mad!"
+	text "You're"
+	line "not with..."
 	prompt
 
 _MtMoonB2FRocket1AfterBattleText::
-	text "You made me mad!"
-	line "TEAM ROCKET will"
-	cont "blacklist you!"
+	text "TEAM ROCKET likes"
+	line "robbing, mugging"
+	cont "and selling!"
 	done
 
 _MtMoonB2FRocket2BattleText::
-	text "We, TEAM ROCKET,"
-	line "are #MON"
-	cont "gangsters!"
+	text "Boo."
+
+	para "Give us your"
+	line "#MON!"
+
+	para "HAHAHAHAHAA!"
 	done
 
 _MtMoonB2FRocket2EndBattleText::
-	text "I blew"
-	line "it!"
+	text "A"
+	line "fighter!"
 	prompt
 
 _MtMoonB2FRocket2AfterBattleText::
-	text "Darn it all! My"
-	line "associates won't"
-	cont "stand for this!"
+	text "No way!"
+
+	para "I can't believe"
+	line "you beat all 3"
+	cont "of us!"
 	done
 
 _MtMoonB2FRocket3BattleText::
-	text "We're pulling a"
-	line "big job here!"
-	cont "Get lost, kid!"
+	text "Resisting us"
+	line "now?"
+
+	para "We'll take your"
+	line "money too!"
 	done
 
 _MtMoonB2FRocket3EndBattleText::
-	text "So, you"
-	line "are good."
+	text "This"
+	line "kid is good!"
 	prompt
 
 _MtMoonB2FRocket3AfterBattleText::
-	text "If you find a"
-	line "fossil, give it"
-	cont "to me and scram!"
+	text "SUPERIOR is"
+	line "stronger than"
+	cont "all of us"
+	cont "COMBINED."
 	done
 
 _MtMoonB2FRocket4BattleText::
-	text "Little kids"
-	line "should leave"
-	cont "grown-ups alone!"
+	text "It'll give me"
+	line "great pleasure"
+	cont "to waste you!"
 	done
 
 _MtMoonB2FRocket4EndBattleText::
@@ -119,7 +133,9 @@ _MtMoonB2FRocket4EndBattleText::
 	prompt
 
 _MtMoonB2FRocket4AfterBattleText::
-	text "#MON lived"
-	line "here long before"
-	cont "people came."
+	text "I warn you."
+
+	para "SUPERIOR's at"
+	line "the very end..."
 	done
+

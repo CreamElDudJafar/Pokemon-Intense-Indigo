@@ -1,44 +1,44 @@
 _FightingDojoKarateMasterText::
-	text "I am BRUNO,the"
-	line "new LEADER of the"
-	cont "DOJO!"
-
+	text "I am BRUCE, the"
+	line "second GYM leader"
+	cont "of KOUMAN!"
 	para "<PLAYER>!"
-
 	para "We will grind you"
-	line "down with our"
-	cont "superior power!"
-
-	para "Hoo hah!"
+	line "with our superior"
+	cont "power!"
+	para "HOO HAH!"
 	done
 
 _FightingDojoKarateMasterDefeatedText::
-	text "How"
-	line "could I lose?!"
+	text "Nooo!"
+	line "This can't be!"
 	prompt
 
 _FightingDojoKarateMasterIWillGiveYouAPokemonText::
-	text "Indeed, I have"
-	line "lost!"
+	text "... This gym ran"
+	line "out of badges."
 
-	para "But, I beseech"
-	line "you, do not take"
-	cont "our emblem as"
-	cont "your trophy!"
+	para "Everyone kept"
+	line "defeating me!"
 
-	para "In return, I will"
-	line "give you a prized"
-	cont "fighting #MON!"
+	para "My FIGHTING"
+	line "#MON just"
+	cont "can't win!!"
 
-	para "Choose whichever"
-	line "one you like!"
+	para "I apologize"
+	line "<PLAYER>."
+
+	para "I know its not"
+	line "much, but feel"
+	cont "free to take"
+	cont "ONE #BALL!"
 	done
 
 _FightingDojoKarateMasterStayAndTrainWithUsText::
-	text "Ho!"
+	text "<PLAYER>..."
 
-	para "Stay and train at"
-	line "Karate with us!"
+	para "I'm afraid to say"
+	line "my job is done."
 	done
 
 _FightingDojoBlackbelt1BattleText::
@@ -95,10 +95,9 @@ _FightingDojoBlackbelt3AfterBattleText::
 
 _FightingDojoBlackbelt4BattleText::
 	text "Hoohah!"
-
 	para "You're trespassing"
 	line "in our FIGHTING"
-	cont "DOJO!"
+	cont "GYM! "
 	done
 
 _FightingDojoBlackbelt4EndBattleText::
@@ -125,6 +124,7 @@ _FightingDojoHitmonchanPokeBallText::
 	done
 
 _FightingDojoBetterNotGetGreedyText::
-	text "Better not get"
-	line "greedy..."
+	text "BRUCE: THATS"
+	line "ALL I HAVE!"
 	done
+

@@ -1,23 +1,28 @@
 	db DEX_DODRIO ; pokedex id
 
-	db  60, 110,  70, 100,  60
-	;   hp  atk  def  spd  spc
+	db 60, 110, 70, 100, 60
+	; hp atk def spd spc
 
 	db NORMAL, FLYING ; type
-	db 1   ; catch rate
-	db 158 ; base exp
+
+	db 1 ; catch rate
+
+	db 235 ; base exp
 
 	INCBIN "gfx/pokemon/front/dodrio.pic", 0, 1 ; sprite dimensions
 	dw DodrioPicFront, DodrioPicBack
 
-	db BODY_SLAM, HYPER_BEAM, DRILL_PECK, NO_MOVE ; level 1 learnset
+	db DRILL_PECK, BODY_SLAM, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm WHIRLWIND,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         SKULL_BASH,   SKY_ATTACK,   REST,         TRI_ATTACK,   \
-	     SUBSTITUTE,   FLY
+
+	tmhm WHIRLWIND, TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     HYPER_BEAM, RAGE, MIMIC, DOUBLE_TEAM, REFLECT, \
+	     BIDE, SKULL_BASH, SKY_ATTACK, REST, TRI_ATTACK, \
+	     SUBSTITUTE, FLY
+
 	; end
 
 	db 0 ; padding

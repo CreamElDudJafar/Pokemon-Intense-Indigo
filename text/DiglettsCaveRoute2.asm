@@ -1,9 +1,9 @@
 _DiglettsCaveRoute2FishingGuruText::
-	text "I went to ROCK"
+	text "I went to DARK"
 	line "TUNNEL, but it's"
-	cont "dark and scary."
-
-	para "If a #MON's"
-	line "FLASH could light"
-	cont "it up..."
+	cont "scary inside."
+	para "If only a #MON"
+	line "could light the"
+	cont "way..."
 	done
+

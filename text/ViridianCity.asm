@@ -10,23 +10,23 @@ _ViridianCityYoungster1Text::
 	done
 
 _ViridianCityGambler1GymAlwaysClosedText::
-	text "This #MON GYM"
+	text "This GYM"
 	line "is always closed."
-
-	para "I wonder who the"
-	line "LEADER is?"
+	para "And yet, I hear"
+	line "alot of noise..."
 	done
 
 _ViridianCityGambler1GymLeaderReturnedText::
-	text "VIRIDIAN GYM's"
-	line "LEADER returned!"
+	text "RIPPUKU GYM's"
+	line "now recruiting..."
 	done
 
 _ViridianCityYoungster2YouWantToKnowAboutText::
-	text "You want to know"
-	line "about the 2 kinds"
-	cont "of caterpillar"
-	cont "#MON?"
+	text "You wanna know"
+	line "about the STAT"
+	cont "EXP?"
+	para "You won't"
+	line "regret it!"
 	done
 
 ViridianCityYoungster2OkThenText::
@@ -34,35 +34,35 @@ ViridianCityYoungster2OkThenText::
 	done
 
 ViridianCityYoungster2CaterpieAndWeedleDescriptionText::
-	text "CATERPIE has no"
-	line "poison, but"
-	cont "WEEDLE does."
-
-	para "Watch out for its"
-	line "POISON STING!"
+	text "You get it by"
+	line "beating strong"
+	cont "#MON."
+	para "It doesn't split"
+	line "if you use more"
+	cont "#MON."
 	done
 
 _ViridianCityGirlHasntHadHisCoffeeYetText::
-	text "Oh Grandpa! Don't"
-	line "be so mean!"
-	cont "He hasn't had his"
-	cont "coffee yet."
-	done
+	text "You're blocking"
+	line "everyone's way!"
 
+	para "That'll get you"
+	line "in trouble!"
+	done
 _ViridianCityGirlWhenIGoShopText::
-	text "When I go shop in"
-	line "PEWTER CITY, I"
-	cont "have to take the"
-	cont "winding trail in"
-	cont "VIRIDIAN FOREST."
+	text "Some men in black"
+	line "locked up Gramps"
+	cont "for having to"
+	cont "dri-"
+
+	para "GRAMPS: MISSINGNO!"
+	para "The shore!"
 	done
-
 _ViridianCityOldManSleepyPrivatePropertyText::
-	text "You can't go"
-	line "through here!"
-
-	para "This is private"
-	line "property!"
+	text "Id D OT ugh..."
+	line "catching"
+	cont "weedle..."
+	cont "...MISSINGNO...."
 	done
 
 ViridianCityFisherYouCanHaveThisText::
@@ -139,9 +139,9 @@ _ViridianCityOldManYouNeedToWeakenTheTargetText::
 	done
 
 _ViridianCitySignText::
-	text "VIRIDIAN CITY "
-	line "The Eternally"
-	cont "Green Paradise"
+	text "RIPPUKU STATE "
+	para "Passion and Power"
+	line "Flourishes"
 	done
 
 _ViridianCityTrainerTips1Text::
@@ -157,22 +157,24 @@ _ViridianCityTrainerTips1Text::
 	done
 
 _ViridianCityTrainerTips2Text::
-	text "TRAINER TIPS"
+	text "Last year's"
+	line "CHAMPION"
 
-	para "The battle moves"
-	line "of #MON are"
-	cont "limited by their"
-	cont "POWER POINTs, PP."
+	para "OKIDO for his"
+	line "final battle"
+	cont "with MYRTLE"
 
-	para "To replenish PP,"
-	line "rest your tired"
-	cont "#MON at a"
-	cont "#MON CENTER!"
+	para "Don't miss out"
+	line "on this year's"
+	cont "TOURNAMENT!"
+
+	para "32 participants"
+	line "are minimum"
 	done
 
 _ViridianCityGymSignText::
-	text "VIRIDIAN CITY"
-	line "#MON GYM"
+	text "Battle level:"
+	line "MAXIMUM"
 	done
 
 _ViridianCityGymLockedText::

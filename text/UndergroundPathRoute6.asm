@@ -1,5 +1,5 @@
 _UndergroundPathRoute6GirlText::
-	text "People often lose"
-	line "things in that"
-	cont "UNDERGROUND PATH."
+	text "See these stairs?"
+	para "They are magical."
+	para "Try it out..."
 	done

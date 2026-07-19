@@ -1,19 +1,18 @@
 _PewterSpeechHouseGamblerText::
-	text "#MON learn new"
-	line "techniques as"
-	cont "they grow!"
+	text "TEAM ROCKET was"
+	line "near the RIPPUKU"
+	cont "JUNGLE?"
 
-	para "But, some moves"
-	line "must be taught by"
-	cont "the trainer!"
+	para "They weren't there"
+	line "before when we"
+	cont "passed by..."
 	done
 
 _PewterSpeechHouseYoungsterText::
-	text "#MON become"
-	line "easier to catch"
-	cont "when they are"
-	cont "hurt or asleep!"
-
-	para "But, it's not a"
-	line "sure thing!"
+	text "One of the old"
+	line "CHAMPIONs became"
+	cont "an ADMIN of an"
+	cont "organization"
+	cont "known as the"
+	line "#MON TRADE!"
 	done

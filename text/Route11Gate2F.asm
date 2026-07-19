@@ -1,15 +1,18 @@
 _Route11Gate2FOaksAideItemfinderDescriptionText::
-	text "There are items on"
-	line "the ground that"
-	cont "can't be seen."
+	text "TM50 contains"
+	line "SUBSTITUTE."
 
-	para "ITEMFINDER will"
-	line "detect an item"
-	cont "close to you."
+	para "It cuts 1/4 of"
+	line "the user's HP."
 
-	para "It can't pinpoint"
-	line "it, so you have"
-	cont "to look yourself!"
+	para "It blocks poison"
+	line "and draining"
+	cont "moves, as well"
+	cont "as stat"
+	cont "reduction."
+
+	para "I hope it helps"
+	line "you out. "
 	done
 
 _Route11Gate2FLeftBinocularsSnorlaxText::
@@ -31,10 +34,10 @@ _Route11Gate2FLeftBinocularsNoSnorlaxText::
 _Route11Gate2FRightBinocularsText::
 	text "Looked into the"
 	line "binoculars."
-
 	para "The only way to"
-	line "get from CERULEAN"
-	cont "CITY to LAVENDER"
+	line "get from SAKAYUME"
+	cont "TOWN to KYUUSOKU"
 	cont "is by way of the"
-	cont "ROCK TUNNEL."
+	cont "DARK TUNNEL."
 	done
+

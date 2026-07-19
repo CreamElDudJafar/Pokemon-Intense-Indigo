@@ -6,7 +6,8 @@ _LavenderPokecenterGentlemanText::
 
 _LavenderPokecenterLittleGirlText::
 	text "I saw CUBONE's"
-	line "mother die trying"
-	cont "to escape from"
-	cont "TEAM ROCKET!"
+	line "father die trying"
+	cont "to fight back"
+	cont "TEAM ROCKET!!"
 	done
+

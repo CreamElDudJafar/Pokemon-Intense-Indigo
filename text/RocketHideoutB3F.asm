@@ -1,7 +1,7 @@
 _RocketHideoutB3FRocket1BattleText::
-	text "Stop meddling in"
-	line "TEAM ROCKET's"
-	cont "affairs!"
+	text "No.0 has ordered"
+	line "us to take"
+	cont "you down! "
 	done
 
 _RocketHideoutB3FRocket1EndBattleText::
@@ -10,10 +10,10 @@ _RocketHideoutB3FRocket1EndBattleText::
 	prompt
 
 _RocketHideoutB3FRocket1AfterBattleText::
-	text "SILPH SCOPE?"
-	line "The machine the"
-	cont "BOSS stole. It's"
-	cont "here somewhere."
+	text "We have great "
+	line "power and control"
+	cont "ever since the"
+	cont "TRADE merge."
 	done
 
 _RocketHideout3BattleText::
@@ -28,8 +28,8 @@ _RocketHideout3EndBattleText3::
 	prompt
 
 _RocketHide3AfterBattleText3::
-	text "Go ahead and go!"
-	line "But, you need the"
-	cont "LIFT KEY to run"
-	cont "the elevator!"
+	text "PA: I am head of"
+	line "the feared TEAM"
+	cont "ROCKET and the"
+	cont "beloved TRADE.  "
 	done

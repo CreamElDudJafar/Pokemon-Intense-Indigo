@@ -1,30 +1,33 @@
 _LavenderMartBaldingGuyText::
-	text "I'm searching for"
-	line "items that raise"
-	cont "the abilities of"
-	cont "#MON during a"
-	cont "single battle."
+	text "More robberies,"
+	line "more assaults."
 
-	para "X ATTACK, X"
-	line "DEFEND, X SPEED"
-	cont "and X SPECIAL are"
-	cont "what I'm after."
+	para "No store sells"
+	line "REVIVE or stat"
+	cont "enhancers thanks"
+	cont "to TEAM ROCKET."
 
-	para "Do you know where"
-	line "I can get them?"
+	para "That explains why"
+	line "almost no POLICE"
+	cont "is able to"
+	cont "challenge them..."
+
+	para "Can anyone help?"
 	done
 
 _LavenderMartCooltrainerMReviveText::
-	text "You know REVIVE?"
-	line "It revives any"
-	cont "fainted #MON!"
+	text "Everone's scared"
+	line "of fighting back"
+	cont "TEAM ROCKET."
 	done
 
 _LavenderMartCooltrainerMNuggetText::
-	text "I found a NUGGET"
-	line "in the mountains."
+	text "There is a place"
+	line "called ROCKET"
+	cont "TRADE in DONYOKU."
 
-	para "I thought it was"
-	line "useless, but it"
-	cont "sold for ¥5000!"
+	para "They charge"
+	line "¥10,000 for "
+	cont "services!"
 	done
+

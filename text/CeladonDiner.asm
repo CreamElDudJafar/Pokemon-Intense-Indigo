@@ -1,44 +1,39 @@
 _CeladonDinerCookText::
-	text "Hi!"
-
-	para "We're taking a"
-	line "break now."
+	text "I'm on my break"
+	line "kid, go away!"
+	para "Kids these days."
 	done
 
 _CeladonDinerMiddleAgedWomanText::
 	text "My #MON are"
-	line "weak, so I often"
-	cont "have to go to the"
-	cont "DRUG STORE."
+	line "weak, so I went"
+	cont "to the ROCKET"
+	cont "TRADE for them."
 	done
 
 _CeladonDinerMiddleAgedManText::
-	text "Psst! There's a"
-	line "basement under"
-	cont "the GAME CORNER."
+	text "Shh!"
+	para "<PLAYER>, try the"
+	line "items..."
 	done
 
 _CeladonDinerFisherText::
-	text "Munch..."
-
-	para "The man at that"
-	line "table lost it all"
-	cont "at the slots."
+	text "Buurp!"
+	para "The GAMBLER at"
+	line "that table had to"
+	cont "be escorted out."
 	done
 
 _CeladonDinerGymGuideImFlatOutBustedText::
-	text "Go ahead! Laugh!"
-
-	para "I'm flat out"
-	line "busted!"
-
-	para "No more slots for"
-	line "me! I'm going"
-	cont "straight!"
-
-	para "Here! I won't be"
-	line "needing this any-"
-	cont "more!"
+	text "Are you <PLAYER>?..."
+	para "EPIFANIO sent me"
+	line "to access"
+	cont "their reserves,"
+	cont "until I got"
+	cont "caught..."
+	para "Take this case..."
+	para "And bring them"
+	line "down."
 	prompt
 
 _CeladonDinerGymGuideReceivedCoinCaseText::
@@ -54,7 +49,8 @@ _CeladonDinerGymGuideCoinCaseNoRoomText::
 	done
 
 _CeladonDinerGymGuideWinItBackText::
-	text "I always thought"
-	line "I was going to"
-	cont "win it back..."
+	text "I'm just a drunk"
+	line "GAMBLER, wink"
+	cont "wink, hint hint."
 	done
+

@@ -1,19 +1,26 @@
 _SafariZoneWestRestHouseScientistText::
-	text "Tossing ROCKs at"
-	line "#MON might"
-	cont "make them run,"
-	cont "but they'll be"
-	cont "easier to catch."
+	text "The old TRADE"
+	line "lab has been"
+	cont "condemned when"
+	cont "they have left"
+	cont "to merge with"
+	cont "TEAM ROCKET. "
+
+	para "Many lab #MON"
+	line "live there..."
 	done
 
 _SafariZoneWestRestHouseCooltrainerMText::
-	text "Using BAIT will"
-	line "make #MON"
-	cont "easier to catch."
+	text "TEAM ROCKET has"
+	line "4 deadly soldiers"
+	cont "working with"
+	cont "their SUPERIORs..."
 	done
 
 _SafariZoneWestRestHouseSilphWorkerFText::
-	text "I hiked a lot, but"
-	line "I didn't see any"
-	cont "#MON I wanted."
+	text "TEAM ROCKET took"
+	line "off! We can go"
+	cont "out safely again!"
+	cont "That's great!"
 	done
+

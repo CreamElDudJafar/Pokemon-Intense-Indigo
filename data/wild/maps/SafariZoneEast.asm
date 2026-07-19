@@ -1,15 +1,15 @@
 SafariZoneEastWildMons:
-	def_grass_wildmons 100 ; encounter rate
-	db 52, PORYGON
-	db 53, GOLDUCK
-	db 53, KANGASKHAN
-	db 53, NIDOQUEEN
-	db 53, NIDOKING
-	db 54, VILEPLUME
-	db 15, RHYDON
-	db 54, VICTREEBEL
-	db 55, GOLEM
-	db 15, GOLEM
+	def_grass_wildmons 15 ; encounter rate
+	db 76, MAGMAR
+	db 98, ELECTABUZZ
+	db 41, RHYHORN
+	db 100, SCYTHER
+	db 100, PINSIR
+	db 64, RHYHORN
+	db 71, NIDORINA
+	db 99, PARASECT
+	db 69, KANGASKHAN
+	db 88, DODRIO
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

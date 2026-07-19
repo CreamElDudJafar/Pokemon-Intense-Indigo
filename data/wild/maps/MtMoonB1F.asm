@@ -1,15 +1,15 @@
 MtMoonB1FWildMons:
-	def_grass_wildmons 25 ; encounter rate
-	db 16, VOLTORB
-	db 16, GRIMER
-	db 16, PARAS
-	db 16, RHYHORN
-	db 16, KOFFING
-	db 16, DIGLETT
-	db 16, CLEFAIRY
-	db 16, GEODUDE
-	db 16, ONIX
-	db 16, KOFFING
+	def_grass_wildmons 9 ; encounter rate
+	db 22, SEEL
+	db 22, GRIMER
+	db 22, KOFFING
+	db 22, ONIX
+	db 22, DIGLETT
+	db 23, SEEL
+	db 22, VOLTORB
+	db 23, ONIX
+	db 23, VOLTORB
+	db 23, DIGLETT
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

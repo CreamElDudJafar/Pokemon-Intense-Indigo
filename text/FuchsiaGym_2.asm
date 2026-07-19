@@ -1,26 +1,28 @@
 _FuchsiaGymKogaPostBattleAdviceText::
-	text "When afflicted by"
-	line "TOXIC, #MON"
-	cont "suffer more and"
-	cont "more as battle"
-	cont "progresses!"
+	text "Arrr!"
 
-	para "It will surely"
-	line "terrorize foes!"
+	para "I can get to"
+	line "the S.S.ANNE and"
+	cont "run this GYM,"
+	cont "easily!"
+	
+	para "...with the help"
+	line "of the PSYCHIC"
+	cont "GYM LEADER..."
 	done
 
 _FuchsiaGymKogaSoulBadgeInfoText::
-	text "Now that you have"
-	line "the SOULBADGE,"
-	cont "the DEFENSE of"
-	cont "your #MON"
-	cont "increases!"
+	text "Aye, now ye too"
+	line "can sail from sea"
+	cont "to sea on yer"
+	cont "#MON!"
 
-	para "It also lets you"
-	line "SURF outside of"
-	cont "battle!"
-
-	para "Ah! Take this"
+	para "Such prodigious"
+	line "skill and"
+	cont "adaptation with"
+	cont "yer crew!"
+	
+	para "Arrr! Take this"
 	line "too!"
 	done
 
@@ -33,12 +35,11 @@ _FuchsiaGymKogaReceivedTM06Text::
 
 _FuchsiaGymKogaTM06ExplanationText::
 	text_start
-	para "TM06 contains"
-	line "TOXIC!"
+	para "Those ROCKET bilge"
+	line "rats are no good!"
 
-	para "It is a secret"
-	line "technique over"
-	cont "400 years old!"
+	para "Mark em walk the"
+	line "plank <PLAYER>!"
 	done
 
 _FuchsiaGymKogaTM06NoRoomText::
@@ -47,15 +48,15 @@ _FuchsiaGymKogaTM06NoRoomText::
 	done
 
 _FuchsiaGymRocker1BattleText::
-	text "Strength isn't"
+	text "Strategy isn't"
 	line "the key for"
 	cont "#MON!"
 
-	para "It's strategy!"
+	para "It's strength!"
 
 	para "I'll show you how"
-	line "strategy can beat"
-	cont "brute strength!"
+	line "brute strength"
+	cont "can beat strategy!"
 	done
 
 _FuchsiaGymRocker1EndBattleText::
@@ -70,9 +71,10 @@ _FuchsiaGymRocker1AfterBattleText::
 	done
 
 _FuchsiaGymRocker2BattleText::
-	text "I wanted to become"
-	line "a ninja, so I"
-	cont "joined this GYM!"
+	text "We have standards."
+
+	para "We don't use"
+	line "the ROCKET TRADE! "
 	done
 
 _FuchsiaGymRocker2EndBattleText::
@@ -81,36 +83,37 @@ _FuchsiaGymRocker2EndBattleText::
 	prompt
 
 _FuchsiaGymRocker2AfterBattleText::
-	text "I will keep on"
-	line "training under"
-	cont "KOGA, my ninja"
-	cont "master!"
+	text "It seems you got"
+	line "something no one"
+	cont "else has!"
+
+	para "Pfffft! "
 	done
 
 _FuchsiaGymRocker3BattleText::
-	text "Let's see you"
-	line "beat my special"
-	cont "techniques!"
+	text "I'll show you"
+	line "why I'm first"
+	cont "mate, matey!  "
 	done
 
 _FuchsiaGymRocker3EndBattleText::
-	text "You"
-	line "had me fooled!"
+	text "Yargh!"
+	line "You're good!"
 	prompt
 
 _FuchsiaGymRocker3AfterBattleText::
-	text "I like poison and"
-	line "sleep techniques,"
-	cont "as they linger"
-	cont "after battle!"
+	text "Watch out!"
+	line "CAPTAIN NIMO"
+	cont "is one of the"
+	cont "finest sailors"
+	cont "in the sea!"
 	done
 
 _FuchsiaGymRocker4BattleText::
-	text "Stop right there!"
-
-	para "Our invisible"
-	line "walls have you"
-	cont "frustrated?"
+	text "I can't get the"
+	line "HM03 because the"
+	cont "SAFARI ZONE"
+	cont "is so massive!"
 	done
 
 _FuchsiaGymRocker4EndBattleText::
@@ -119,22 +122,23 @@ _FuchsiaGymRocker4EndBattleText::
 	prompt
 
 _FuchsiaGymRocker4AfterBattleText::
-	text "You impressed me!"
-	line "Here's a hint!"
-
-	para "Look very closely"
-	line "for gaps in the"
-	cont "invisible walls!"
+	text "GYM LEADERs,"
+	line "former champs,"
+	cont "and some"
+	cont "challengers got"
+	cont "past lv100"
+	cont "without the TRADE."
 	done
 
 _FuchsiaGymRocker5BattleText::
-	text "I also study the"
-	line "way of the ninja"
-	cont "with master KOGA!"
+	text "Some trainers"
+	line "figure out how"
+	cont "to get past lv100"
+	cont "on their own."
 
-	para "Ninja have a long"
-	line "history of using"
-	cont "animals!"
+	para "The #MON"
+	line "LEAGUE is full"
+	cont "of them.  "
 	done
 
 _FuchsiaGymRocker5EndBattleText::
@@ -142,17 +146,19 @@ _FuchsiaGymRocker5EndBattleText::
 	prompt
 
 _FuchsiaGymRocker5AfterBattleText::
-	text "I still have much"
-	line "to learn!"
+	text "Pffffffft!"
+
+	para "HAHAHAHAHAHAHA!!"
 	done
 
 _FuchsiaGymRocker6BattleText::
-	text "Master KOGA comes"
-	line "from a long line"
-	cont "of ninjas!"
+	text "A man from the"
+	line "TRADE was the"
+	cont "1st one to"
+	cont "ever get past"
+	cont "lv100."
 
-	para "What did you"
-	line "descend from?"
+	para "He profits."
 	done
 
 _FuchsiaGymRocker6EndBattleText::
@@ -161,34 +167,38 @@ _FuchsiaGymRocker6EndBattleText::
 	prompt
 
 _FuchsiaGymRocker6AfterBattleText::
-	text "Where there is"
-	line "light, there is"
-	cont "shadow!"
+	text "...Shut up guys."
 
-	para "Light and shadow!"
-	line "Which do you"
-	cont "choose?"
+	para "So yea, TEAM"
+	line "ROCKET became"
+	cont "a BIG threat"
+	cont "thanks to the"
+	cont "TRADE."
 	done
 
 _FuchsiaGymGymGuideChampInMakingText::
-	text "Yo! Champ in"
-	line "making!"
+	text "Hey <PLAYER>!"
 
-	para "FUCHSIA GYM is"
-	line "riddled with"
-	cont "invisible walls!"
+	para "NIMO is CAPTAIN"
+	line "of the S.S.ANNE,"
+	cont "and a very tough"
+	cont "opponent!  "
 
-	para "KOGA might appear"
-	line "close, but he's"
-	cont "blocked off!"
+	para "Beat him and"
+	line "you'll be able"
+	cont "to use SURF."
 
-	para "You have to find"
-	line "gaps in the walls"
-	cont "to reach him!"
+	para "Watch out for"
+	line "BLIZZARD and"
+	cont "any kind of"
+	cont "surprise... "
 	done
 
 _FuchsiaGymGymGuideBeatKogaText::
-	text "It's amazing how"
-	line "ninja can terrify"
-	cont "even now!"
+	text "It's amazing"
+	line "<PLAYER>! "
+
+	para "You're finally"
+	line "able to SURF!"
 	done
+

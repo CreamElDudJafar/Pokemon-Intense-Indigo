@@ -1,7 +1,9 @@
 SilphCo9FNurseYouLookTiredText::
-	text "You look tired!"
-	line "You should take a"
-	cont "quick nap!"
+	text "You came to"
+	line "help us?"
+
+	para "I'll help you"
+	line "stop them!"
 	prompt
 
 SilphCo9FNurseDontGiveUpText::
@@ -23,40 +25,46 @@ _SilphCo9FRocket1EndBattleText::
 	prompt
 
 _SilphCo9FRocket1AfterBattleText::
-	text "If I had started"
-	line "as a trainer at"
-	cont "your age..."
+	text "I wanted power,"
+	line "that's why I"
+	cont "joined CALIGULA."
 	done
 
 _SilphCo9FScientistBattleText::
-	text "Your #MON have"
-	line "weak points! I"
-	cont "can nail them!"
+	text "My #MON will"
+	line "recover easily! "
+
+	para "You can't win!"
 	done
 
 _SilphCo9FScientistEndBattleText::
-	text "You"
-	line "hammered me!"
+	text "It"
+	line "can't recover!"
 	prompt
 
 _SilphCo9FScientistAfterBattleText::
-	text "Exploiting weak"
-	line "spots does work!"
-	cont "Think about"
-	cont "element types!"
+	text "I may have lost."
+
+	para "But in the end..."
+
+	para "It's all"
+	line "inconsequential."
 	done
 
 _SilphCo9FRocket2BattleText::
-	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	text "No.4: You fool."
+
+	para "Quake with"
+	line "fearrr!"
 	done
 
 _SilphCo9FRocket2EndBattleText::
-	text "Warg!"
-	line "Brothers, I lost!"
+	text "Avenge"
+	line "me my frrriends!"
 	prompt
 
 _SilphCo9FRocket2AfterBattleText::
-	text "My brothers will"
-	line "avenge me!"
+	text "No.4: My powerrr"
+	line "failed me!"
 	done
+

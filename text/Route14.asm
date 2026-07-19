@@ -10,31 +10,32 @@ _Route14CooltrainerM1EndBattleText::
 	prompt
 
 _Route14CooltrainerM1AfterBattleText::
-	text "You have some HMs"
-	line "right? #MON"
-	cont "can't ever forget"
-	cont "those moves."
+	text "Seems like"
+	line "everybody"
+	cont "went to the"
+	cont "ROCKET TRADE in"
+	cont "DONYOKU...  "
 	done
 
 _Route14CooltrainerM2BattleText::
-	text "My bird #MON"
-	line "should be ready"
-	cont "for battle."
+	text "Ugh these filthy"
+	line "roots and grass!"
+	para "Gross!"
 	done
 
 _Route14CooltrainerM2EndBattleText::
-	text "Not"
-	line "ready yet!"
+	text "This"
+	line "can't be! "
 	prompt
 
 _Route14CooltrainerM2AfterBattleText::
-	text "They need to learn"
-	line "better moves."
+	text "I feel really  "
+	line "tired and itchy..."
 	done
 
 _Route14CooltrainerM3BattleText::
 	text "TMs are on sale"
-	line "in CELADON!"
+	line "in DONYOKU!"
 	cont "But, only a few"
 	cont "people have HMs!"
 	done
@@ -52,19 +53,19 @@ _Route14CooltrainerM3AfterBattleText::
 	done
 
 _Route14CooltrainerM4BattleText::
-	text "Have you taught"
-	line "your bird #MON"
-	cont "how to FLY?"
+	text "I just ran out of"
+	line "REVIVEs... "
+	para "Go easy on me?"
 	done
 
 _Route14CooltrainerM4EndBattleText::
-	text "Shot"
-	line "down in flames!"
+	text "Aww"
+	line "that's not cool!!"
 	prompt
 
 _Route14CooltrainerM4AfterBattleText::
-	text "Bird #MON are"
-	line "my true love!"
+	text "My #MON can't"
+	line "fight anymore!"
 	done
 
 _Route14CooltrainerM5BattleText::
@@ -79,9 +80,9 @@ _Route14CooltrainerM5EndBattleText::
 	prompt
 
 _Route14CooltrainerM5AfterBattleText::
-	text "The 3 legendary"
-	line "#MON are all"
-	cont "birds of prey."
+	text "ANILA is the"
+	line "toughest FLYING"
+	cont "type trainer... "
 	done
 
 _Route14CooltrainerM6BattleText::
@@ -101,19 +102,20 @@ _Route14CooltrainerM6AfterBattleText::
 	done
 
 _Route14Biker1BattleText::
-	text "C'mon, c'mon."
-	line "Let's go, let's"
-	cont "go, let's go!"
+	text "Hey, you're that"
+	line "kid TEAM ROCKET"
+	cont "hates!"
 	done
 
 _Route14Biker1EndBattleText::
-	text "Arrg!"
-	line "Lost! Get lost!"
+	text "Watch"
+	line "your back kid! "
 	prompt
 
 _Route14Biker1AfterBattleText::
-	text "What, what, what?"
-	line "What do you want?"
+	text "TEAM ROCKET"
+	line "put a big bounty"
+	cont "on ya!"
 	done
 
 _Route14Biker2BattleText::
@@ -133,8 +135,8 @@ _Route14Biker2AfterBattleText::
 
 _Route14Biker3BattleText::
 	text "We ride out here"
-	line "because there's"
-	cont "more room!"
+	line "because its"
+	cont "quieter here..."
 	done
 
 _Route14Biker3EndBattleText::
@@ -145,7 +147,6 @@ _Route14Biker3AfterBattleText::
 	text "It's cool you"
 	line "made your #MON"
 	cont "so strong!"
-
 	para "Might is right!"
 	line "And you know it!"
 	done
@@ -168,6 +169,6 @@ _Route14Biker4AfterBattleText::
 
 _Route14SignText::
 	text "ROUTE 14"
-	line "West to FUCHSIA"
-	cont "CITY"
+	para "L:116"
+	para "Marathons..."
 	done

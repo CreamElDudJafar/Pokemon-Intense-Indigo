@@ -1,17 +1,21 @@
 _RocketHideoutB2FRocketBattleText::
-	text "BOSS said you can"
-	line "see GHOSTs with"
-	cont "the SILPH SCOPE!"
+	text "No.4: Herrre's"
+	line "the prrrize!"
+
+	para "A ferrrocious"
+	line "beatdown!"
 	done
 
 _RocketHideoutB2FRocketEndBattleText::
-	text "I"
-	line "surrender!"
+	text "Lost"
+	line "again?!"
 	prompt
 
 _RocketHideoutB2FRocketAfterBattleText::
-	text "The TEAM ROCKET"
-	line "HQ has 4 basement"
-	cont "floors. Can you"
-	cont "reach the BOSS?"
+	text "No.4: Have fun"
+	line "with the floorrr"
+	cont "tiles that arrre"
+	cont "invisible!"
+
+	para "HAHA!"
 	done

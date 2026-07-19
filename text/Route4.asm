@@ -1,35 +1,41 @@
 _Route4CooltrainerF1Text::
-	text "Ouch! I tripped"
-	line "over a rocky"
-	cont "#MON, GEODUDE!"
+	text "You spoke to me."
+	line "Let's battle!"
+
+	para "Just kidding!"
 	done
 
 _Route4CooltrainerF2BattleText::
-	text "I came to get my"
-	line "mushroom #MON!"
+	text "Hey!"
+
+	para "I just healed"
+	line "minutes ago!"
 	done
 
 _Route4CooltrainerF2EndBattleText::
-	text "Oh! My cute"
-	line "mushroom #MON!"
+	text "Now"
+	line "I have to heal"
+	cont "again!"
 	prompt
 
 _Route4CooltrainerF2AfterBattleText::
-	text "There might not"
-	line "be any more"
-	cont "mushrooms here."
+	text "Be careful in"
+	line "MT.DOOM."
 
-	para "I think I got"
-	line "them all."
+	para "It is huge,"
+	line "and there are"
+	cont "strong wild"
+	cont "#MON."
 	done
 
 _Route4MtMoonSignText::
-	text "MT.MOON"
-	line "Tunnel Entrance"
+	text "MT.DOOM"
+	line "West Entrance"
 	done
 
 _Route4SignText::
 	text "ROUTE 4"
-	line "MT.MOON -"
-	cont "CERULEAN CITY"
+	line "MT.DOOM -"
+	cont "SAKAYUME TOWN"
 	done
+

@@ -1,22 +1,27 @@
 	db DEX_FLAREON ; pokedex id
 
-	db  65, 130,  60,  65, 110
-	;   hp  atk  def  spd  spc
+	db 65, 130, 60, 65, 110
+	; hp atk def spd spc
 
 	db FIRE, FIRE ; type
-	db 130 ; catch rate
-	db 198 ; base exp
+
+	db 1 ; catch rate
+
+	db 240 ; base exp
 
 	INCBIN "gfx/pokemon/front/flareon.pic", 0, 1 ; sprite dimensions
 	dw FlareonPicFront, FlareonPicBack
 
-	db BODY_SLAM, SAND_ATTACK, FIRE_BLAST, NO_MOVE ; level 1 learnset
+	db FLAMETHROWER, SAND_ATTACK, BODY_SLAM, FIRE_BLAST ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   \
-	     RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE
+
+	tmhm TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, HYPER_BEAM, \
+	     RAGE, MIMIC, DOUBLE_TEAM, REFLECT, BIDE, \
+	     FIRE_BLAST, SWIFT, SKULL_BASH, REST, SUBSTITUTE
+
 	; end
 
 	db 0 ; padding

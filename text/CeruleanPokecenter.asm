@@ -1,6 +1,5 @@
 _CeruleanPokecenterSuperNerdText::
-	text "That BILL!"
-
+	text "That JEFF!"
 	para "I heard that"
 	line "he'll do whatever"
 	cont "it takes to get"
@@ -9,16 +8,16 @@ _CeruleanPokecenterSuperNerdText::
 
 _CeruleanPokecenterGentlemanText::
 	text "Have you heard"
-	line "about BILL?"
+	line "of a man called"
+	cont "JEFF?"
 
-	para "Everyone calls"
-	line "him a #MANIAC!"
+	para "He has a very"
+	line "large collection"
+	cont "of rare #MON."
 
-	para "I think people"
-	line "are just jealous"
-	cont "of BILL, though."
-
-	para "Who wouldn't want"
-	line "to boast about"
-	cont "their #MON?"
+	para "However, JEFF"
+	line "would do anything"
+	cont "just to see a new"
+	cont "specie of #MON."
 	done
+

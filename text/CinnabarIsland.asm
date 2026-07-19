@@ -4,34 +4,36 @@ _CinnabarIslandDoorIsLockedText::
 	done
 
 _CinnabarIslandGirlText::
-	text "CINNABAR GYM's"
-	line "BLAINE is an odd"
-	cont "man who has lived"
-	cont "here for decades."
+	text "ARISTO is a kind"
+	line "old man, but even"
+	cont "among GYM LEADERs"
+	cont "he's powerful."
 	done
 
 _CinnabarIslandGamblerText::
-	text "Scientists conduct"
-	line "experiments in"
-	cont "the burned out"
-	cont "building."
+	text "I think there's"
+	line "a way in the"
+	cont "abandoned TRADE"
+	cont "HEADQUARTERS."
 	done
 
 _CinnabarIslandSignText::
-	text "CINNABAR ISLAND"
-	line "The Fiery Town of"
-	cont "Burning Desire"
+	text "SHOUBAI ISLANDS"
+
+	para "Birth of the"
+	line "TRADE CORPERATION"
 	done
 
 _CinnabarIslandPokemonLabSignText::
-	text "#MON LAB"
+	text "L1:21-27"
 	done
 
 _CinnabarIslandGymSignText::
-	text "CINNABAR ISLAND"
+	text "SHOUBAI ISLANDS"
 	line "#MON GYM"
-	cont "LEADER: BLAINE"
+	cont "LEADER: ARISTO"
 
-	para "The Hot-Headed"
-	line "Quiz Master!"
+	para "World Renowned"
+	line "Professor."
 	done
+

@@ -156,9 +156,9 @@ _GymStatueText2::
 	done
 
 _ViridianCityPokecenterGuyText::
-	text "#MON CENTERs"
-	line "heal your tired,"
-	cont "hurt or fainted"
+	text "I heard that the"
+	line "men in black"
+	cont "experiment on"
 	cont "#MON!"
 	done
 
@@ -174,11 +174,10 @@ _PewterCityPokecenterGuyText::
 	done
 
 _CeruleanPokecenterGuyText::
-	text "BILL has lots of"
-	line "#MON!"
-
-	para "He collects rare"
-	line "ones too!"
+	text "TEAM ROCKET makes"
+	line "their #MON"
+	cont "attack other"
+	cont "people!"
 	done
 
 _LavenderPokecenterGuyText::
@@ -190,16 +189,16 @@ _LavenderPokecenterGuyText::
 	done
 
 _MtMoonPokecenterBenchGuyText::
-	text "If you have too"
-	line "many #MON, you"
-	cont "should store them"
-	cont "via PC!"
+	text "Don't let TEAM"
+	line "ROCKET beat you."
+	para "They attack the"
+	line "helpless."
 	done
 
 _RockTunnelPokecenterGuyText::
 	text "I heard that"
 	line "GHOSTs haunt"
-	cont "LAVENDER TOWN!"
+	cont "KYUUSOKU TOWN!"
 	done
 
 _UnusedBenchGuyText1::
@@ -213,25 +212,24 @@ _UnusedBenchGuyText2::
 	done
 
 _UnusedBenchGuyText3::
-	text "SILPH's manager"
-	line "is hiding in the"
-	cont "SAFARI ZONE."
+	text "The ROCKET TRADE"
+	line "has alot of "
+	cont "powerful #MON."
 	done
 
 _VermilionPokecenterGuyText::
-	text "It is true that a"
-	line "higher level"
-	cont "#MON will be"
-	cont "more powerful..."
-
-	para "But, all #MON"
-	line "will have weak"
-	cont "points against"
-	cont "specific types."
-
-	para "So, there is no"
-	line "universally"
-	cont "strong #MON."
+	text "Since TEAM ROCKET"
+	line "usually has"
+	cont "PSYCHIC #MON,"
+	cont "among very strong"
+	cont "#MON..."
+	para "Most other"
+	line "#MON, and even"
+	cont "conventional"
+	cont "weapons can't"
+	cont "stop them. "
+	para "So they took"
+	line "over INDIGO..."
 	done
 
 _CeladonCityPokecenterGuyText::
@@ -241,30 +239,30 @@ _CeladonCityPokecenterGuyText::
 	done
 
 _FuchsiaCityPokecenterGuyText::
-	text "If you're studying "
-	line "#MON, visit"
-	cont "the SAFARI ZONE."
-
-	para "It has all sorts"
-	line "of rare #MON."
+	text "TEAM ROCKET stole"
+	line "almost all"
+	cont "PSYCHIC #MON"
+	cont "in AIZOME, making"
+	cont "them hard to"
+	cont "find."
 	done
 
 _CinnabarPokecenterGuyText::
-	text "#MON can still"
-	line "learn techniques"
-	cont "after canceling"
-	cont "evolution."
-
-	para "Evolution can wait"
-	line "until new moves"
-	cont "have been learned."
+	text "The old TRADE"
+	line "lab has been"
+	cont "condemned when"
+	cont "they have left"
+	cont "to merge with"
+	cont "TEAM ROCKET. "
+	para "Many lab #MON"
+	line "live there..."
 	done
 
 _SaffronCityPokecenterGuyText1::
-	text "It would be great"
-	line "if the ELITE FOUR"
-	cont "came and stomped"
-	cont "TEAM ROCKET!"
+	text "TEAM ROCKET has"
+	line "4 deadly soldiers"
+	cont "working with"
+	cont "their SUPERIORs..."
 	done
 
 _SaffronCityPokecenterGuyText2::
@@ -275,8 +273,9 @@ _SaffronCityPokecenterGuyText2::
 	done
 
 _CeladonCityHotelText::
-	text "My sis brought me"
-	line "on this vacation!"
+	text "I only paid"
+	line "10,000 per TRADE"
+	cont "level."
 	done
 
 _BookcaseText::
@@ -319,68 +318,73 @@ _GameOverText::
 	done
 
 _CinnabarGymQuizIntroText::
-	text "#MON Quiz!"
-
-	para "Get it right and"
-	line "the door opens to"
-	cont "the next room!"
-
-	para "Get it wrong and"
-	line "face a trainer!"
-
-	para "If you want to"
-	line "conserve your"
-	cont "#MON for the"
-	cont "GYM LEADER..."
-
-	para "Then get it right!"
-	line "Here we go!"
+	text "VOICE: OPTIONAL"
+	line "QUIZ  "
+	para "Multiple choice"
+	line "questions."
+	para "In the format"
+	line "X or X, its"
+	cont "YES or NO."
+	para "These are GEN 1 "
+	line "questions.   "
+	para "Without guessing"
+	line "or cheating, can"
+	cont "you get it on"
+	cont "the first try?"
 	prompt
 
 _CinnabarQuizQuestionsText1::
+	text "TM50 or TM15"
+	para "Best TM for"
+	line "STADIUM?"
+	done
+
+CinnabarQuizQuestionsText1::
 	text "CATERPIE evolves"
 	line "into BUTTERFREE?"
 	done
 
 _CinnabarQuizQuestionsText2::
-	text "There are 9"
-	line "certified #MON"
-	cont "LEAGUE BADGEs?"
+	text "TAUROS or CHANSEY"
+	para "Best #MON in"
+	line "STADIUM 1?"
 	done
 
 _CinnabarQuizQuestionsText3::
-	text "POLIWAG evolves 3"
-	line "times?"
+	text "R or B"
+	para "Most popular ver."
 	done
 
 _CinnabarQuizQuestionsText4::
-	text "Are thunder moves"
-	line "effective against"
-	cont "ground element-"
-	cont "type #MON?"
+	text "NIDOKING or ABRA"
+	para "What is the best"
+	line "ingame team"
+	cont "member for RBY? "
 	done
 
 _CinnabarQuizQuestionsText5::
-	text "#MON of the"
-	line "same kind and"
-	cont "level are not"
-	cont "identical?"
+	text "STARMIE or LAPRAS"
+	para "Which is one the"
+	line "seven staples?"
+	cont ""
 	done
 
 _CinnabarQuizQuestionsText6::
-	text "TM28 contains"
-	line "TOMBSTONER?"
+	text "TM22 or TM21?"
+	para "Best TM?   "
 	done
 
 _CinnabarGymQuizCorrectText::
-	text "You're absolutely"
+	text "Absolutely "
 	line "correct!"
 
-	para "Go on through!@"
+	para "You PASS the"
+	line "test!@"
 	text_end
 
 _CinnabarGymQuizIncorrectText::
-	text "Sorry! Bad call!"
+	text "Incorrect!"
+	para "FAIL!"
 	prompt
 
 _MagazinesText::
@@ -404,7 +408,7 @@ _BillsHouseInitiatedText::
 	text_end
 
 _BillsHousePokemonListText1::
-	text "BILL's favorite"
+	text "JEFF's favorite"
 	line "#MON list!"
 	prompt
 
@@ -416,25 +420,19 @@ _BillsHousePokemonListText2::
 _OakLabEmailText::
 	text "There's an e-mail"
 	line "message here!"
-
 	para "..."
-
 	para "Calling all"
 	line "#MON trainers!"
-
 	para "The elite trainers"
 	line "of #MON LEAGUE"
 	cont "are ready to take"
 	cont "on all comers!"
-
 	para "Bring your best"
 	line "#MON and see"
 	cont "how you rate as a"
 	cont "trainer!"
-
 	para "#MON LEAGUE HQ"
-	line "INDIGO PLATEAU"
-
+	line "AIZOME PLATEAU"
 	para "PS: PROF.OAK,"
 	line "please visit us!"
 	cont "..."
@@ -470,19 +468,15 @@ _JustAMomentText::
 	done
 
 TMNotebookText::
-	text "It's a pamphlet"
-	line "on TMs."
-
-	para "..."
-
-	para "There are 50 TMs"
-	line "in all."
-
-	para "There are also 5"
-	line "HMs that can be"
-	cont "used repeatedly."
-
-	para "SILPH CO.@"
+	text "The worst is yet"
+	line "to come."
+	para "After PORYGON's"
+	line "upgrade, TEAM"
+	cont "ROCKET has"
+	cont "been seeking"
+	cont "MEW for their"
+	cont "plans..."
+	para "LEAGUE HQ@"
 	text_end
 
 _TurnPageText::
@@ -541,18 +535,15 @@ _ViridianSchoolNotebookText3::
 
 _ViridianSchoolNotebookText4::
 	text "Fourth page..."
-
 	para "The goal for"
 	line "#MON trainers"
 	cont "is to beat the "
 	cont "top 8 #MON"
-	cont "GYM LEADERs."
-
+	cont "GYMs.   "
 	para "Do so to earn the"
-	line "right to face..."
-
-	para "The ELITE FOUR of"
-	line "#MON LEAGUE!"
+	line "right to enter..."
+	para "The #MON LEAGUE"
+	line "WORLD TOURNAMENT!"
 	prompt
 
 _EnemiesOnEverySideText::
@@ -566,11 +557,11 @@ _WhatGoesAroundComesAroundText::
 	done
 
 _FightingDojoText::
-	text "FIGHTING DOJO"
+	text "FIGHTING GYM"
 	done
 
 _IndigoPlateauHQText::
-	text "INDIGO PLATEAU"
+	text "AIZOME PLATEAU"
 	line "#MON LEAGUE HQ"
 	done
 
@@ -584,10 +575,9 @@ _RedBedroomSNESText::
 _Route15UpstairsBinocularsText::
 	text "Looked into the"
 	line "binoculars..."
-
 	para "A large, shining"
 	line "bird is flying"
-	cont "toward the sea."
+	cont "above DONYOKU. "
 	done
 
 _AerodactylFossilText::
@@ -674,26 +664,24 @@ _ViridianBlackboardPoisonText::
 	prompt
 
 _ViridianBlackboardPrlzText::
-	text "Paralysis could"
-	line "make #MON"
-	cont "moves misfire!"
-
-	para "Paralysis remains"
-	line "after battles."
-
-	para "Use PARLYZ HEAL"
-	line "for treatment!"
+	text "Paralysis makes"
+	line "#MON extremely"
+	cont "slow, bad for"
+	cont "wild battles."
+	para "They may not"
+	line "attack."
+	para "Stock some"
+	line "PARLYZ HEALs."
 	prompt
 
 _ViridianBlackboardBurnText::
 	text "A burn reduces"
-	line "power and speed."
+	line "ATTACK."
 	cont "It also causes"
 	cont "ongoing damage."
-
-	para "Burns remain"
-	line "after battles."
-
+	para "FIRE BLAST is the"
+	line "best cause of"
+	cont "BRN."
 	para "Use BURN HEAL to"
 	line "cure a burn!"
 	prompt
@@ -702,26 +690,23 @@ _ViridianBlackboardFrozenText::
 	text "If frozen, a"
 	line "#MON becomes"
 	cont "totally immobile!"
-
 	para "It stays frozen"
 	line "even after the"
-	cont "battle ends."
-
-	para "Use ICE HEAL to"
-	line "thaw out #MON!"
+	cont "battle ends..."
+	para "Pray this never"
+	line "happens..."
 	prompt
 
 _VermilionGymTrashText::
-	text "Nope, there's"
-	line "only trash here."
+	text "Nope, there's "
+	line "nothing here..."
 	done
 
 _VermilionGymTrashSuccessText1::
-	text "Hey! There's a"
-	line "switch under the"
-	cont "trash!"
-	cont "Turn it on!"
-
+	text "BEEP!    "
+	para "Accidentally"
+	line "tripped a"
+	cont "secret button..."
 	para "The 1st electric"
 	line "lock opened!@"
 	text_end
@@ -734,18 +719,21 @@ _VermilionGymTrashSuccessText2::
 	prompt
 
 _VermilionGymTrashSuccessText3::
-	text "The 2nd electric"
-	line "lock opened!"
-
+	text "BEEP!"
+	para "GUARD: Great"
+	line "job idiot!"
 	para "The motorized door"
 	line "opened!@"
 	text_end
 
 _VermilionGymTrashFailText::
-	text "Nope! There's"
-	line "only trash here."
-	cont "Hey! The electric"
-	cont "locks were reset!@"
+	text "BEEP!"
+	para "GUARD: Stop"
+	line "messing with"
+	cont "the buttons"
+	cont "kid!"
+	para "Locks have"
+	line "reset!@"
 	text_end
 
 _FoundHiddenItemText::
@@ -782,7 +770,7 @@ _DroppedHiddenCoinsText::
 	done
 
 _IndigoPlateauStatuesText1::
-	text "INDIGO PLATEAU"
+	text "AIZOME PLATEAU"
 	prompt
 
 _IndigoPlateauStatuesText2::
@@ -889,8 +877,9 @@ _UseNextMonText::
 	done
 
 _Rival1WinText::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: Don't"
+	line "look so surprised"
+	cont "<PLAYER>."
 	prompt
 
 _PlayerBlackedOutText2::
@@ -1267,7 +1256,7 @@ _TrainerWantsToFightText::
 	prompt
 
 _UnveiledGhostText::
-	text "SILPH SCOPE"
+	text "TRADE SCOPE"
 	line "unveiled the"
 	cont "GHOST's identity!"
 	prompt
@@ -1451,7 +1440,7 @@ _TurnedOnPC1Text::
 	prompt
 
 _AccessedBillsPCText::
-	text "Accessed BILL's"
+	text "Accessed JEFF's"
 	line "PC."
 
 	para "Accessed #MON"
@@ -1702,7 +1691,7 @@ _LinkCanceledText::
 _OakSpeechText1::
 	text "Hello there!"
 	line "Welcome to the"
-	cont "world of #MON!"
+	cont "AIZOME region!"
 
 	para "My name is OAK!"
 	line "People call me"
@@ -1710,24 +1699,23 @@ _OakSpeechText1::
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@"
+	text "This is my old"
+	line "#MON MEW,"
+	cont "giving out a"
+	cont "unique cry!@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
 
-	para "For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
-
-	para "Myself..."
-
-	para "I study #MON"
-	line "as a profession."
+	para "A special event"
+	line "is happening."
+	para "The #MON"
+	line "LEAGUE WORLD"
+	cont "TOURNAMENT is"
+	cont "upon us."
+	para "It is at AIZOME"
+	line "PLATEAU."
 	prompt
 
 _IntroducePlayerText::
@@ -1736,13 +1724,16 @@ _IntroducePlayerText::
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "This is my"
+	line "grandson."
+	para "He's very"
+	line "interested in"
+	cont "becoming a"
+	cont "trainer."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "Why don't you"
+	line "introduce"
+	cont "yourself?"
 	prompt
 
 _OakSpeechText3::
@@ -1752,8 +1743,8 @@ _OakSpeechText3::
 	line "#MON legend is"
 	cont "about to unfold!"
 
-	para "A world of dreams"
-	line "and adventures"
+	para "A world of danger"
+	line "and excitement"
 	cont "with #MON"
 	cont "awaits! Let's go!"
 	done
@@ -1777,9 +1768,11 @@ _YourNameIsText::
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "<RIVAL>: My name"
+	line "is <RIVAL> OAK."
+
+	para "Don't ever forget"
+	line "it <PLAYER>!"
 	prompt
 
 _WillBeTradedText::
@@ -1793,7 +1786,7 @@ _WillBeTradedText::
 
 _TextIDErrorText::
 	text_decimal hTextID, 1, 2
-	text " ERROR."
+	text " #MON."
 	done
 
 _ContCharText::

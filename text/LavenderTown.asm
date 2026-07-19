@@ -38,23 +38,22 @@ _LavenderTownSuperNerdText::
 	done
 
 _LavenderTownSignText::
-	text "LAVENDER TOWN"
-	line "The Noble Purple"
-	cont "Town"
+	text "KYUUSOKU TOWN"
+	para "The Town of"
+	line "Departure"
 	done
 
 _LavenderTownSilphScopeSignText::
-	text "New SILPH SCOPE!"
-
+	text "New TRADE SCOPE!"
 	para "Make the Invisible"
 	line "Plain to See!"
-
-	para "SILPH CO."
+	para "The TRADE"
 	done
 
 _LavenderTownPokemonHouseSignText::
-	text "LAVENDER VOLUNTEER"
-	line "#MON HOUSE"
+	text "L:108-111-116-120"
+
+	para "Be ready..."
 	done
 
 _LavenderTownPokemonTowerSignText::

@@ -32,15 +32,16 @@ _WardensHouseWardenTeethPoppedInHisTeethText::
 
 _WardensHouseWardenThanksText::
 	text "WARDEN: Thanks,"
-	line "kid! No one could"
-	cont "understand a word"
-	cont "that I said."
-
-	para "I couldn't work"
-	line "that way."
-	cont "Let me give you"
-	cont "something for"
-	cont "your trouble."
+	line "kid!"
+	para "Those ROCKETs"
+	line "thought it would"
+	cont "be funny, doing"
+	cont "this, for not"
+	cont "letting them"
+	cont "steal more"
+	cont "#MON."
+	para "You can have this"
+	line "HM."
 	prompt
 
 _WardensHouseWardenReceivedHM04Text::
@@ -53,21 +54,17 @@ _WardensHouseWardenReceivedHM04Text::
 _WardensHouseWardenHM04ExplanationText::
 	text "WARDEN: HM04"
 	line "teaches STRENGTH!"
-
 	para "It lets #MON"
 	line "move boulders"
 	cont "when you're out-"
 	cont "side of battle."
-
-	para "Oh yes, did you"
-	line "find SECRET HOUSE"
-	cont "in SAFARI ZONE?"
-
-	para "If you do, you"
-	line "win an HM!"
-
-	para "I hear it's the"
-	line "rare SURF HM."
+	para "So you saved"
+	line "KOUMAN and  "
+	cont "beat my daughter?"
+	para "You are a very"
+	line "skilled trainer!"
+	para "Good luck on"
+	line "your journey.  "
 	done
 
 _WardensHouseWardenHM04NoRoomText::

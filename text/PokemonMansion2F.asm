@@ -1,35 +1,45 @@
 _PokemonMansion2FSuperNerdBattleText::
-	text "I can't get out!"
-	line "This old place is"
-	cont "one big puzzle!"
+	text "You talking to"
+	line "me?"
+
+	para "Fool."
+
+	para "I'm hired by the"
+	line "TRADE!"
 	done
 
 _PokemonMansion2FSuperNerdEndBattleText::
 	text "Oh no!"
-	line "My bag of loot!"
+	line "I failed them!"
 	prompt
 
 _PokemonMansion2FSuperNerdAfterBattleText::
-	text "Switches open and"
-	line "close alternating"
-	cont "sets of doors!"
+	text "The TRIAD"
+	line "could use guys"
+	cont "like you."
+
+	para "But its not us."
 	done
 
 _PokemonMansion2FDiary1Text::
-	text "Diary: July 5"
-	line "Guyana,"
-	cont "South America"
+	text "PROJECT 151"
 
-	para "A new #MON was"
-	line "discovered deep"
-	cont "in the jungle."
+	para "We recently"
+	line "recieved"
+	cont "essential DNA"
+	cont "samples."
+
+	para "We began"
+	line "enhancements..."
 	done
 
 _PokemonMansion2FDiary2Text::
-	text "Diary: July 10"
-	line "We christened the"
-	cont "newly discovered"
-	cont "#MON, MEW."
+	text "PROJECT 151"
+
+	para "Enhancing PORYGON"
+	line "was a success."
+
+	para "We are ready..."
 	done
 
 _PokemonMansion2FSwitchText::

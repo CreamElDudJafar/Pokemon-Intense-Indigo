@@ -1,9 +1,11 @@
 _PokemonTower5FChanneler1Text::
-	text "Come, child! I"
-	line "sealed this space"
-	cont "with white magic!"
+	text "<RIVAL> came"
+	line "through here"
+	cont "recently."
 
-	para "You can rest here!"
+	para "I hear noises at"
+	line "the top of the"
+	cont "tower."
 	done
 
 _PokemonTower5FChanneler2BattleText::

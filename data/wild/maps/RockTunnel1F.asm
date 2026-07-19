@@ -1,15 +1,15 @@
 RockTunnel1FWildMons:
-	def_grass_wildmons 17 ; encounter rate
-	db 24, ONIX
-	db 28, KOFFING
-	db 27, VOLTORB
-	db 20, MACHOP
-	db 20, GOLBAT
-	db 20, GRIMER
-	db 27, DIGLETT
-	db 23, GEODUDE
-	db 26, LICKITUNG
-	db 25, GRAVELER
+	def_grass_wildmons 9 ; encounter rate
+	db 94, GOLBAT
+	db 90, ELECTRODE
+	db 94, WEEZING
+	db 94, PARASECT
+	db 99, ONIX
+	db 94, MUK
+	db 94, MAGNETON
+	db 100, VOLTORB
+	db 100, GRAVELER
+	db 98, ELECTRODE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

@@ -1,12 +1,14 @@
 _RedsHouse1FMomWakeUpText::
-	text "MOM: Right."
-	line "All boys leave"
-	cont "home some day."
-	cont "It said so on TV."
+	text "MOM: You're"
+	line "leaving now?"
 
-	para "PROF.OAK, next"
-	line "door, is looking"
-	cont "for you."
+	para "Be careful out"
+	line "there <PLAYER>."
+
+	para "Oh! Don't forget,"
+	line "I left something"
+	cont "for you in the"
+	cont "PC."
 	done
 
 _RedsHouse1FMomYouShouldRestText::
@@ -24,12 +26,13 @@ _RedsHouse1FMomLookingGreatText::
 	done
 
 _RedsHouse1FTVStandByMeMovieText::
-	text "There's a movie"
-	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	text "TV: WARNING!"
 
-	para "I better go too."
+	para "If anyone happens"
+	line "to see any"
+	cont "men in black,"
+	cont "do NOT make any"
+	cont "contact."
 	done
 
 _RedsHouse1FTVWrongSideText::

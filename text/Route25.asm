@@ -20,7 +20,7 @@ _Route25Youngster2BattleText::
 	text "Dad took me to a"
 	line "great party on"
 	cont "S.S.ANNE at"
-	cont "VERMILION CITY!"
+	cont "PORT HOURITSU! "
 	done
 
 _Route25Youngster2EndBattleText::
@@ -95,13 +95,14 @@ _Route25CooltrainerF2EndBattleText::
 
 _Route25CooltrainerF2AfterBattleText::
 	text "You came from MT."
-	line "MOON? May I have"
-	cont "a CLEFAIRY?"
+	line "DOOM?"
+	para "Not many would"
+	line "try it."
 	done
 
 _Route25Hiker1BattleText::
 	text "I just got down"
-	line "from MT.MOON,"
+	line "from MT.DOOM,"
 	cont "but I'm ready!"
 	done
 
@@ -111,9 +112,8 @@ _Route25Hiker1EndBattleText::
 	prompt
 
 _Route25Hiker1AfterBattleText::
-	text "Drat!"
-	line "A ZUBAT bit me"
-	cont "back in there."
+	text "A VOLTORB shocked"
+	line "me and exploded! "
 	done
 
 _Route25Hiker2BattleText::
@@ -147,7 +147,7 @@ _Route25Hiker3EndBattleText::
 _Route25Hiker3AfterBattleText::
 	text "The trail below"
 	line "is a shortcut to"
-	cont "CERULEAN CITY."
+	cont "SAKAYUME CITY."
 	done
 
 _Route25BillSignText::

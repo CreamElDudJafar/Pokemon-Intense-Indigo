@@ -1,14 +1,19 @@
 _Route11Gate1FGuardText::
-	text "When you catch"
-	line "lots of #MON,"
-	cont "isn't it hard to"
-	cont "think up names?"
+	text "This is a one way"
+	line "gate."
 
-	para "In LAVENDER TOWN,"
-	line "there's a man who"
-	cont "rates #MON"
-	cont "nicknames."
+	para "There is an AIDE"
+	line "upstairs who"
+	cont "has a TM."
 
-	para "He'll help you"
-	line "rename them too!"
+	para "Sigh..."
+
+	para "I wonder how the"
+	line "undercover"
+	cont "KOUMAN POLICE"
+	cont "are doing..."
+
+	para "We could use"
+	line "backup. "
 	done
+

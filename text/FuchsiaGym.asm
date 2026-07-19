@@ -1,26 +1,27 @@
 _FuchsiaGymKogaBeforeBattleText::
-	text "KOGA: Fwahahaha!"
+	text "Ahoy <PLAYER>, I am"
+	line "CAPTAIN NIMO, the"
+	cont "Ice Pirate"
 
-	para "A mere child like"
-	line "you dares to"
-	cont "challenge me?"
+	para "Sailing from sea"
+	line "to sea in search"
+	cont "of strong foes!"
 
-	para "Very well, I"
-	line "shall show you"
-	cont "true terror as a"
-	cont "ninja master!"
+	para "Avast! I knew"
+	line "we would be meet"
+	cont "once again!"
 
-	para "You shall feel"
-	line "the despair of"
-	cont "poison and sleep"
-	cont "techniques!"
+	para "Arrr! Behold"
+	line "the freezing"
+	cont "power of me"
+	cont "crew!"
 	done
 
 _FuchsiaGymKogaReceivedSoulBadgeText::
-	text "Humph!"
-	line "You have proven"
-	cont "your worth!"
+	text "YARGH!"
+	para "I thought my"
+	line "NIDOS would..."
 
-	para "Here! Take the"
-	line "SOULBADGE!"
+	para "Ye earned"
+	line "the RUBYBADGE!"
 	prompt

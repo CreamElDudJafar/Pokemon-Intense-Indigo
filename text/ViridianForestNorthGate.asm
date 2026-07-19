@@ -1,19 +1,27 @@
 _ViridianForestNorthGateSuperNerdText::
-	text "Many #MON live"
-	line "only in forests "
-	cont "and caves."
+	text "This is such a"
+	line "waste of time..."
 
-	para "You need to look"
-	line "everywhere to get"
-	cont "different kinds!"
+	para "Why would that"
+	line "one kid have that"
+	cont "one MEW?"
+
+	para "We'll never find"
+	line "him."
 	done
 
 _ViridianForestNorthGateGrampsText::
-	text "Have you noticed"
-	line "the bushes on the"
-	cont "roadside?"
+	text "Show me your"
+	line "#MON RIGHT"
+	cont "NOW!"
 
-	para "They can be cut"
-	line "down by a special"
-	cont "#MON move."
+	para "..."
+
+	para "Garbage..."
+
+	para "You don't have it"
+	line "either!"
+
+	para "Now get out of"
+	line "here!"
 	done

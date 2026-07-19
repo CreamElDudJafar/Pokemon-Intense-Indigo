@@ -1,16 +1,17 @@
 _CeladonMart2FMiddleAgedManText::
-	text "SUPER REPEL keeps"
-	line "weak #MON at"
-	cont "bay..."
+	text "Our guys know"
+	line "you <PLAYER>!  "
 
-	para "Hmm, it's a more"
-	line "powerful REPEL!"
+	para "We'll give you"
+	line "discount prizes"
+	cont "at the EXCHANGE."
 	done
 
 _CeladonMart2FGirlText::
-	text "For long outings,"
-	line "you should buy"
-	cont "REVIVE."
+	text "We'll take this"
+	line "city back. "
+
+	para "Eventually..."
 	done
 
 _CeladonMart2FCurrentFloorSignText::

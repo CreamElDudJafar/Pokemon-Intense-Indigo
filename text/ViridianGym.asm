@@ -1,157 +1,182 @@
 _ViridianGymGiovanniPreBattleText::
-	text "Fwahahaha! This is"
-	line "my hideout!"
+	text "I have the last"
+	line "GYM BADGE,"
+	cont "<PLAYER>."
 
-	para "I planned to"
-	line "resurrect TEAM"
-	cont "ROCKET here!"
+	para "But I have the"
+	line "strongest #MON"
+	cont "known to man!"
 
-	para "But, you have"
-	line "caught me again!"
-	cont "So be it! This"
-	cont "time, I'm not"
-	cont "holding back!"
+	para "My army is ready."
 
-	para "Once more, you"
-	line "shall face"
-	cont "GIOVANNI, the"
-	cont "greatest trainer!"
+	para "You failed the"
+	line "world <PLAYER>!"
+
+	para "The new era of"
+	line "the TEAM ROCKET"
+	cont "EMPIRE begins"
+	cont "with the genocide"
+	cont "of your beloved"
+	cont "#MON!!"
 	done
 
 _ViridianGymGiovanniReceivedEarthBadgeText::
-	text "Ha!"
-	line "That was a truly"
-	cont "intense fight!"
-	cont "You have won!"
-	cont "As proof, here is"
-	cont "the EARTHBADGE!@"
+	text "..."
+
+	para "You are amazingly"
+	line "skilled."
+
+	para "And I acknowledge"
+	line "your bravery."
+
+	para "Take the"
+	line "BLACKBADGE!"
 	text_end
 
 _ViridianGymGiovanniPostBattleAdviceText::
-	text "Having lost, I"
-	line "cannot face my"
-	cont "underlings!"
-	cont "TEAM ROCKET is"
-	cont "finished forever!"
+	text "Close your eyes"
+	line "<PLAYER>."
 
-	para "I will dedicate my"
-	line "life to the study"
-	cont "of #MON!"
+	para "MEWTWO! USE"
+	line "PSYCHIC ON"
+	cont "<PLAYER> AND HIS"
+	cont "#MON!"
 
-	para "Let us meet again"
-	line "some day!"
-	cont "Farewell!@"
+	para "...AGGH! WHAT ARE"
+	line "YOU DOING?!"
+
+	para "MEWTWO!"
+
+	para "I'M YOUR MASTER!"
+
+	para "...NO...NO!"
+
+	para "...gasp..."
+	line "gasp..."
+
+	para "AAAAAAAAGH!!!"
 	text_end
 
 _ViridianGymGiovanniEarthBadgeInfoText::
-	text "The EARTHBADGE"
-	line "makes #MON of"
-	cont "any level obey!"
+	text "You can have the"
+	line "BLACKBADGE..."
 
-	para "It is evidence of"
-	line "your mastery as a"
-	cont "#MON trainer!"
+	para "As a consolation"
+	line "to my new reign!"
 
-	para "With it, you can"
-	line "enter the #MON"
-	cont "LEAGUE!"
+	para "Did you HONESTLY"
+	line "think defeating"
+	cont "me is going to"
+	cont "stop my empire?!"
 
-	para "It is my gift for"
-	line "your #MON"
-	cont "LEAGUE challenge!"
+	para "HAH!"
+
+	para "Here's a reward"
+	line "from your new"
+	cont "lord and master."
 	done
 
 _ViridianGymGiovanniReceivedTM27Text::
 	text "<PLAYER> received"
-	line "TM27!@"
+	line "TM15!@"
 	text_end
 
 _ViridianGymGiovanniTM27ExplanationText::
 	text_start
 
-	para "TM27 is FISSURE!"
-	line "It will take out"
-	cont "#MON with just"
-	cont "one hit!"
+	para "... The gift is"
+	line "useless, because"
+	cont "you and your"
+	cont "#MON will"
+	cont "never leave"
+	cont "this GYM again."
 
-	para "I made it when I"
-	line "ran the GYM here,"
-	cont "too long ago..."
+	para "Say goodbye to"
+	line "them <PLAYER>."
 	done
 
 _ViridianGymGiovanniTM27NoRoomText::
-	text "You do not have"
-	line "space for this!"
+	text "Delaying the"
+	line "inevitable end,"
+	cont "<PLAYER>?"
 	done
 
 _ViridianGymCooltrainerM1BattleText::
-	text "Heh! You must be"
-	line "running out of"
-	cont "steam by now!"
+	text "We, the TRIAD,"
+	line "are a cut above"
+	cont "the ROCKETs"
+	cont "<PLAYER>!"
 	done
 
 _ViridianGymCooltrainerM1EndBattleText::
-	text "I"
-	line "ran out of gas!"
+	text "How"
+	line "can this be?!"
 	prompt
 
 _ViridianGymCooltrainerM1AfterBattleText::
-	text "You need power to"
-	line "keep up with our"
-	cont "GYM LEADER!"
+	text "We wanted power."
+
+	para "That is why we"
+	line "joined them"
+	cont "<PLAYER>."
 	done
 
 _ViridianGymHiker1BattleText::
-	text "Rrrroar! I'm"
-	line "working myself"
-	cont "into a rage!"
+	text "No.4: Fearrr the"
+	line "powerrr of my"
+	cont "minions!"
 	done
 
 _ViridianGymHiker1EndBattleText::
-	text "Wargh!"
+	text "GRRR!!"
 	prompt
 
 _ViridianGymHiker1AfterBattleText::
-	text "I'm still not"
-	line "worthy!"
+	text "No.4: RRRRGH,"
+	line "WHY?!"
 	done
 
 _ViridianGymRocker1BattleText::
-	text "#MON and I, we"
-	line "make wonderful"
-	cont "music together!"
+	text "Dr.I: Mindless"
+	line "child."
+
+	para "You'll suffer my"
+	line "wrath!"
 	done
 
 _ViridianGymRocker1EndBattleText::
-	text "You are in"
-	line "perfect harmony!"
+	text "No..."
+
+	para "My creation"
+	line "awaits..."
 	prompt
 
 _ViridianGymRocker1AfterBattleText::
-	text "Do you know the"
-	line "identity of our"
-	cont "GYM LEADER?"
+	text "Dr.I: You will"
+	line "have no place"
+	cont "in our world."
 	done
 
 _ViridianGymHiker2BattleText::
-	text "Karate is the"
-	line "ultimate form of"
-	cont "martial arts!"
+	text "No.3: I'm going"
+	line "to enjoy breaking"
+	cont "your #MON."
 	done
 
 _ViridianGymHiker2EndBattleText::
-	text "Atcho!"
+	text "AAAGH!"
 	prompt
 
 _ViridianGymHiker2AfterBattleText::
-	text "If my #MON"
-	line "were as good at"
-	cont "Karate as I..."
+	text "No.3: L-L-LOOK"
+	line "WHAT YOUR #MON"
+	cont "DID TO MEE!"
 	done
 
 _ViridianGymCooltrainerM2BattleText::
-	text "The truly talented"
-	line "win with style!"
+	text "We have watched"
+	line "and studied you"
+	cont "<PLAYER>!"
 	done
 
 _ViridianGymCooltrainerM2EndBattleText::
@@ -160,47 +185,52 @@ _ViridianGymCooltrainerM2EndBattleText::
 	prompt
 
 _ViridianGymCooltrainerM2AfterBattleText::
-	text "The LEADER will"
-	line "scold me!"
+	text "The BOSS wasn't"
+	line "kidding..."
 	done
 
 _ViridianGymHiker3BattleText::
-	text "I'm the KARATE"
-	line "KING! Your fate"
-	cont "rests with me!"
+	text "No.2: How"
+	line "tragic..."
+
+	para "You could've"
+	line "joined us"
+	cont "<PLAYER>!"
 	done
 
 _ViridianGymHiker3EndBattleText::
-	text "Ayah!"
+	text "Sigh."
 	prompt
 
 _ViridianGymHiker3AfterBattleText::
-	text "#MON LEAGUE?"
-	line "You? Don't get"
-	cont "cocky!"
+	text "No.2: You could"
+	line "have been spared."
 	done
 
 _ViridianGymRocker2BattleText::
-	text "Your #MON will"
-	line "cower at the"
-	cont "crack of my whip!"
+	text "No.1: Mwahahaa!"
+
+	para "You fell right"
+	line "into our trap!"
 	done
 
 _ViridianGymRocker2EndBattleText::
-	text "Yowch!"
-	line "Whiplash!"
+	text "I"
+	line "lost 3 TIMES?!"
 	prompt
 
 _ViridianGymRocker2AfterBattleText::
-	text "Wait! I was just"
-	line "careless!"
+	text "No.1: You won't"
+	line "last long."
 	done
 
 _ViridianGymCooltrainerM3BattleText::
-	text "VIRIDIAN GYM was"
-	line "closed for a long"
-	cont "time, but now our"
-	cont "LEADER is back!"
+	text "Once you are"
+	line "defeated..."
+
+	para "Our TEAM ROCKET"
+	line "EMPIRE will"
+	cont "reign supreme!!"
 	done
 
 _ViridianGymCooltrainerM3EndBattleText::
@@ -209,32 +239,36 @@ _ViridianGymCooltrainerM3EndBattleText::
 	prompt
 
 _ViridianGymCooltrainerM3AfterBattleText::
-	text "You can go onto"
-	line "#MON LEAGUE"
-	cont "only by defeating"
-	cont "our GYM LEADER!"
+	text "You could've been"
+	line "made a SUPERIOR"
+	cont "in the TEAM"
+	cont "ROCKET EMPIRE..."
 	done
 
 _ViridianGymGuidePreBattleText::
-	text "Yo! Champ in"
-	line "making!"
+	text "No.0: LORD"
+	line "CALIGULA is"
+	cont "expecting you"
+	cont "<PLAYER>."
 
-	para "Even I don't know"
-	line "VIRIDIAN LEADER's"
-	cont "identity!"
+	para "At long last,"
+	line "you'll know"
+	cont "the true meaning"
+	cont "of fear."
 
-	para "This will be the"
-	line "toughest of all"
-	cont "the GYM LEADERs!"
+	para "Proceed."
 
-	para "I heard that the"
-	line "trainers here"
-	cont "like ground-type"
-	cont "#MON!"
+	para "Once your final"
+	line "match is done,"
+	cont "we shall soon"
+	cont "dominate all"
+	cont "creation!!"
 	done
 
 _ViridianGymGuidePostBattleText::
-	text "Blow me away!"
-	line "GIOVANNI was the"
-	cont "GYM LEADER here?"
+	text "No.0: No..."
+
+	para "Without our"
+	line "leader, we're"
+	cont "finished."
 	done

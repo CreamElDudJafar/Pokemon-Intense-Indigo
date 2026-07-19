@@ -1,10 +1,11 @@
 _SaffronPidgeyHouseBrunetteGirlText::
-	text "Thank you for"
-	line "writing. I hope"
-	cont "to see you soon!"
+	text "We arrested most"
+	line "ROCKETs trying to"
+	cont "escape."
 
-	para "Hey! Don't look"
-	line "at my letter!"
+	para "The rest are"
+	line "trapped in the"
+	cont "HQ. "
 	done
 
 _SaffronPidgeyHousePidgeyText::
@@ -12,16 +13,17 @@ _SaffronPidgeyHousePidgeyText::
 	text_end
 
 _SaffronPidgeyHouseYoungsterText::
-	text "The COPYCAT is"
-	line "cute! I'm getting"
-	cont "her a # DOLL!"
+	text "There are still"
+	line "important members"
+	cont "at large.  "
 	done
 
 _SaffronPidgeyHousePaperText::
-	text "I was given a PP"
-	line "UP as a gift."
+	text "The HQ is strong."
 
-	para "It's used for"
-	line "increasing the PP"
-	cont "of techniques!"
+	para "But if any ROCKET"
+	line "tries to walk out,"
+	cont "we'll nab and bag"
+	cont "em. "
 	done
+

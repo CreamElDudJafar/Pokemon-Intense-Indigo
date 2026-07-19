@@ -1,26 +1,28 @@
 _VermilionGymLTSurgePostBattleAdviceText::
-	text "A little word of"
-	line "advice, kid!"
+	text "With you <PLAYER>,"
+	line "the day TEAM"
+	cont "ROCKET falls may"
+	cont "come at last!"
 
-	para "Electricity is"
-	line "sure powerful!"
+	para "At least I hope."
 
-	para "But, it's useless"
-	line "against ground-"
-	cont "type #MON!"
+	para "Beware of their"
+	line "SUPERIOR...   "
 	done
 
 _VermilionGymLTSurgeThunderBadgeInfoText::
-	text "The THUNDERBADGE"
-	line "cranks up your"
-	cont "#MON's SPEED!"
+	text "I sadly reached"
+	line "the peak of my"
+	cont "strength."
 
-	para "It also lets your"
-	line "#MON FLY any"
-	cont "time, kid!"
+	para "<PLAYER>!"
 
-	para "You're special,"
-	line "kid! Take this!"
+	para "This is only the"
+	line "beginning!"
+
+	para "You'll face foes"
+	line "that surpassed"
+	cont "their limits! "
 	done
 
 _VermilionGymLTSurgeReceivedTM24Text::
@@ -33,32 +35,36 @@ _VermilionGymLTSurgeReceivedTM24Text::
 _TM24ExplanationText::
 	text_start
 
-	para "TM24 contains"
-	line "THUNDERBOLT!"
+	para "Will you keep"
+	line "going?"
 
-	para "Teach it to an"
-	line "electric #MON!"
+	para "Or will you end"
+	line "up like me?"
+
+	para "DECIDE!"
 	done
 
 _VermilionGymLTSurgeTM24NoRoomText::
-	text "Yo kid, make room"
-	line "in your pack!"
+	text "You need HM05"
+	line "for your quest"
+	cont "<PLAYER>."
 	done
 
 _VermilionGymLTSurgeReceivedThunderBadgeText::
-	text "Whoa!"
+	text "You"
+	line "just reached the"
+	cont "expert level"
+	cont "<PLAYER>!"
 
-	para "You're the real"
-	line "deal, kid!"
-
-	para "Fine then, take"
-	line "the THUNDERBADGE!"
+	para "You earned the"
+	line "YELLOW BADGE!"
 	prompt
 
 _VermilionGymGentlemanBattleText::
-	text "When I was in the"
-	line "Army, LT.SURGE"
-	cont "was my strict CO!"
+	text "I will defend"
+	line "this GYM with"
+	cont "my life if I"
+	cont "have to!!"
 	done
 
 _VermilionGymGentlemanEndBattleText::
@@ -69,27 +75,28 @@ _VermilionGymGentlemanEndBattleText::
 _VermilionGymGentlemanAfterBattleText::
 	text "The door won't"
 	line "open?"
-
-	para "LT.SURGE always"
-	line "was cautious!"
+	para "Thats for keeping"
+	line "in inmates!"
 	done
 
 _VermilionGymSuperNerdBattleText::
-	text "I'm a lightweight,"
-	line "but I'm good with"
-	cont "electricity!"
+	text "My debt to"
+	line "society is to"
+	cont "challenge any"
+	cont "trainer!"
 	done
 
 _VermilionGymSuperNerdEndBattleText::
-	text "Fried!"
+	text "Done! "
 	prompt
 
 _VermilionGymSuperNerdAfterBattleText::
-	text "OK, I'll talk!"
+	text "Well, I'm off the"
+	line "hook.    "
 
-	para "LT.SURGE said he"
-	line "hid door switches"
-	cont "inside something!"
+	para "I won't steal"
+	line "#MON from the"
+	cont "SAFARI ZONE."
 	done
 
 _VermilionGymSailorBattleText::
@@ -103,43 +110,46 @@ _VermilionGymSailorEndBattleText::
 	prompt
 
 _VermilionGymSailorAfterBattleText::
-	text "LT.SURGE set up"
-	line "double locks!"
-	cont "Here's a hint!"
+	text "Only good inmates"
+	line "are given"
+	cont "service hours"
+	cont "as GYM TRAINERs"
+	cont "here."
 
-	para "When you open the"
-	line "1st lock, the 2nd"
-	cont "lock is right"
-	cont "next to it!"
+	para "Don't go playing"
+	line "with the prison"
+	cont "locks.   "
 	done
 
 _VermilionGymGymGuideChampInMakingText::
-	text "Yo! Champ in"
-	line "making!"
+	text "This poor guy has"
+	line "a sad history."
 
-	para "LT.SURGE has a"
-	line "nickname. People"
-	cont "refer to him as"
-	cont "the Lightning"
-	cont "American!"
+	para "He fought in a"
+	line "war that has"
+	cont "left many POLICE"
+	cont "officers and"
+	cont "#MON to their"
+	cont "doom."
 
-	para "He's an expert on"
-	line "electric #MON!"
+	para "They fought"
+	line "armies of very"
+	cont "powerful #MON"
+	cont "from TEAM ROCKET."
 
-	para "Birds and water"
-	line "#MON are at"
-	cont "risk! Beware of"
-	cont "paralysis too!"
+	para "They didn't last"
+	line "long..."
 
-	para "LT.SURGE is very"
-	line "cautious!"
+	para "But this guy is"
+	line "tough! "
 
-	para "You'll have to"
-	line "break a code to"
-	cont "get to him!"
+	para "He is good at"
+	line "paralyzing"
+	cont "his foes!"
 	done
 
 _VermilionGymGymGuideBeatLTSurgeText::
-	text "Whew! That match"
-	line "was electric!"
+	text "You are in expert"
+	line "level? Nice!"
 	done
+

@@ -1,15 +1,15 @@
 PokemonMansion3FWildMons:
-	def_grass_wildmons 98 ; encounter rate
-	db 64, MAGMAR
-	db 62, ARCANINE
-	db 62, NINETALES
-	db 64, PARASECT
-	db 63, VILEPLUME
-	db 61, FLAREON
-	db 65, WEEZING
-	db 65, MUK
-	db 51, OMANYTE
-	db 51, KABUTO
+	def_grass_wildmons 8 ; encounter rate
+	db 99, OMASTAR
+	db 99, ELECTRODE
+	db 99, DITTO
+	db 99, MUK
+	db 99, VAPOREON
+	db 99, SCYTHER
+	db 100, HAUNTER
+	db 99, KABUTOPS
+	db 99, MAGNETON
+	db 99, ELECTRODE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

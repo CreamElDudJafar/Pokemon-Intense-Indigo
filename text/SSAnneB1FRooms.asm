@@ -30,9 +30,10 @@ _SSAnneB1FRoomsSailor2EndBattleText::
 	prompt
 
 _SSAnneB1FRoomsSailor2AfterBattleText::
-	text "Did you see the"
-	line "FISHING GURU in"
-	cont "VERMILION CITY?"
+	text "The CAPTAIN's"
+	line "friends with"
+	cont "SHOUBAI's GYM"
+	cont "LEADER."
 	done
 
 _SSAnneB1FRoomsSailor3BattleText::
@@ -79,7 +80,7 @@ _SSAnneB1FRoomsSailor5EndBattleText::
 	prompt
 
 _SSAnneB1FRoomsSailor5AfterBattleText::
-	text "Jellyfish some-"
+	text "TENTACOOL some-"
 	line "times drift into"
 	cont "the ship."
 	done
@@ -105,10 +106,12 @@ _SSAnneB1FRoomsFisherAfterBattleText::
 	done
 
 _SSAnneB1FRoomsSuperNerdText::
-	text "My buddy, MACHOKE,"
-	line "is super strong!"
+	text "I wonder where"
+	line "my buddy "
+	cont "MACHOKE went?"
 
-	para "He has enough"
-	line "STRENGTH to move"
-	cont "big rocks!"
+	para "Probably hanging"
+	line "out with the"
+	cont "SAILORs."
 	done
+

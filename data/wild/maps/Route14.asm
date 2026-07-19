@@ -1,15 +1,15 @@
 Route14WildMons:
-	def_grass_wildmons 255 ; encounter rate
-	db 50, MACHOKE
-	db 50, PARASECT
-	db 50, PONYTA
-	db 51, SCYTHER
-	db 51, PSYDUCK
-	db 50, WIGGLYTUFF
-	db 50, PONYTA
-	db 50, MAROWAK
-	db 50, DODRIO
-	db 50, PIDGEOT
+	def_grass_wildmons 15 ; encounter rate
+	db 80, IVYSAUR
+	db 82, GLOOM
+	db 72, WEEPINBELL
+	db 92, GLOOM
+	db 92, WEEPINBELL
+	db 96, BELLSPROUT
+	db 89, PARAS
+	db 85, PARASECT
+	db 90, ODDISH
+	db 90, BULBASAUR
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

@@ -1,23 +1,28 @@
 	db DEX_MEOWTH ; pokedex id
 
-	db  40,  45,  35,  90,  40
-	;   hp  atk  def  spd  spc
+	db 40, 45, 35, 90, 40
+	; hp atk def spd spc
 
 	db NORMAL, NORMAL ; type
-	db 255 ; catch rate
-	db 69 ; base exp
+
+	db 1 ; catch rate
+
+	db 180 ; base exp
 
 	INCBIN "gfx/pokemon/front/meowth.pic", 0, 1 ; sprite dimensions
 	dw MeowthPicFront, MeowthPicBack
 
 	db BITE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
-	     WATER_GUN,    PAY_DAY,      RAGE,         THUNDERBOLT,  THUNDER,      \
-	     MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        SKULL_BASH,   \
-	     REST,         SUBSTITUTE
+
+	tmhm TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, BUBBLEBEAM, \
+	     WATER_GUN, PAY_DAY, RAGE, THUNDERBOLT, THUNDER, \
+	     MIMIC, DOUBLE_TEAM, BIDE, SWIFT, SKULL_BASH, \
+	     REST, SUBSTITUTE
+
 	; end
 
 	db 0 ; padding

@@ -1,12 +1,15 @@
 _GameCornerPrizeRoomBaldingGuyText::
-	text "I sure do fancy"
-	line "that PORYGON!"
+	text "<PLAYER>, you"
+	line "with us?"
 
-	para "But, it's hard to"
-	line "win at slots!"
+	para "We got some guys"
+	line "infiltrating the"
+	cont "exchange."
 	done
 
 _GameCornerPrizeRoomGamblerText::
-	text "I had a major"
-	line "haul today!"
+	text "Shh!"
+
+	para "<PLAYER>, try the"
+	line "items..."
 	done

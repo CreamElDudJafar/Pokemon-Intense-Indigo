@@ -8,20 +8,20 @@ SilphCo8F_Object:
 	db $2e ; border block
 
 	def_warp_events
-	warp_event 16,  0, SILPH_CO_9F, 2
-	warp_event 14,  0, SILPH_CO_7F, 1
-	warp_event 18,  0, SILPH_CO_ELEVATOR, 1
-	warp_event  3, 11, SILPH_CO_8F, 7
-	warp_event  3, 15, SILPH_CO_2F, 5
-	warp_event 11,  5, SILPH_CO_2F, 6
-	warp_event 11,  9, SILPH_CO_8F, 4
+	warp_event 16, 0, SILPH_CO_9F, 2
+	warp_event 14, 0, SILPH_CO_7F, 1
+	warp_event 18, 0, SILPH_CO_ELEVATOR, 1
+	warp_event 3, 11, SILPH_CO_8F, 7
+	warp_event 3, 15, SILPH_CO_2F, 5
+	warp_event 11, 5, SILPH_CO_2F, 6
+	warp_event 11, 9, SILPH_CO_8F, 4
 
 	def_bg_events
 
 	def_object_events
-	object_event  4,  2, SPRITE_SILPH_WORKER_M, STAY, NONE, TEXT_SILPHCO8F_SILPH_WORKER_M
-	object_event 15,  1, SPRITE_ROCKET, STAY, LEFT, TEXT_SILPHCO8F_ROCKET1, OPP_ROCKET, 35
-	object_event 11,  4, SPRITE_SCIENTIST, STAY, DOWN, TEXT_SILPHCO8F_SCIENTIST, OPP_SCIENTIST, 9
-	object_event  8,  5, SPRITE_ROCKET, STAY, RIGHT, TEXT_SILPHCO8F_ROCKET2, OPP_ROCKET, 36
+	object_event 19, 6, SPRITE_ROCKET, STAY, NONE, TEXT_SILPHCO8F_SILPH_WORKER_M
+	object_event 15, 1, SPRITE_ROCKET, STAY, LEFT, TEXT_SILPHCO8F_ROCKET1, OPP_ROCKET, 37
+	object_event 11, 4, SPRITE_SCIENTIST, STAY, DOWN, TEXT_SILPHCO8F_SCIENTIST, OPP_SCIENTIST, 9
+	object_event 11, 8, SPRITE_ROCKET, STAY, DOWN, TEXT_SILPHCO8F_ROCKET2, OPP_ROCKET, 25
 
 	def_warps_to SILPH_CO_8F

@@ -1,15 +1,15 @@
 PokemonMansionB1FWildMons:
-	def_grass_wildmons 88 ; encounter rate
-	db 63, RATICATE
-	db 63, WEEZING
-	db 63, VENOMOTH
-	db 62, ELECTRODE
-	db 62, MUK
-	db 63, PARASECT
-	db 60, HAUNTER
-	db 53, KABUTOPS
-	db 53, OMASTAR
-	db 53, OMASTAR
+	def_grass_wildmons 6 ; encounter rate
+	db 100, ELECTRODE
+	db 100, WEEZING
+	db 100, DUGTRIO
+	db 100, HAUNTER
+	db 100, VAPOREON
+	db 100, OMASTAR
+	db 100, KABUTOPS
+	db 100, MUK
+	db 100, HAUNTER
+	db 100, DITTO
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

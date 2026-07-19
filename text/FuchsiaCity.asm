@@ -32,19 +32,21 @@ _FuchsiaCityPokemonText::
 	done
 
 _FuchsiaCitySignText::
-	text "FUCHSIA CITY"
-	line "Behold! It's"
-	cont "Passion Pink!"
+	text "DAKKARA TOWN"
+	para "Behold! It's"
+	line "Natural Life!"
 	done
 
 _FuchsiaCitySafariGameSignText::
-	text "SAFARI GAME"
-	line "#MON-U-CATCH!"
+	text "L:119-125"
+
+	para "L:127's the MAX."
 	done
 
 _FuchsiaCityWardensHomeSignText::
-	text "SAFARI ZONE"
-	line "WARDEN's HOME"
+	text "DAKKARA TOWN"
+	para "Behold! It's"
+	line "Natural Life!"
 	done
 
 _FuchsiaCitySafariZoneSignText::
@@ -53,12 +55,11 @@ _FuchsiaCitySafariZoneSignText::
 	done
 
 _FuchsiaCityGymSignText::
-	text "FUCHSIA CITY"
+	text "DAKKARA TOWN"
 	line "#MON GYM"
-	cont "LEADER: KOGA"
-
-	para "The Poisonous"
-	line "Ninja Master"
+	cont "LEADER: NIMO"
+	para "Captain of the"
+	line "frozen seas"
 	done
 
 _FuchsiaCityChanseySignText::

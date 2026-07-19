@@ -1,7 +1,8 @@
 _Route6CooltrainerM1BattleText::
-	text "Who's there?"
-	line "Quit listening in"
-	cont "on us!"
+	text "The route was"
+	line "urbanized."
+
+	para "Let's fight."
 	done
 
 _Route6CooltrainerM1EndBattleText::
@@ -10,14 +11,15 @@ _Route6CooltrainerM1EndBattleText::
 	prompt
 
 _Route6CooltrainerAfterBattleText::
-	text "Whisper..."
-	line "whisper..."
+	text "So many"
+	line "buildings..."
 	done
 
 _Route6CooltrainerF1BattleText::
-	text "Excuse me! This"
-	line "is a private"
-	cont "conversation!"
+	text "So you want me"
+	line "to battle you?"
+
+	para "OK, let's go!"
 	done
 
 _Route6CooltrainerF1EndBattleText::
@@ -26,8 +28,9 @@ _Route6CooltrainerF1EndBattleText::
 	prompt
 
 _Route6Youngster1BattleText::
-	text "There aren't many"
-	line "bugs out here."
+	text "Did you fight"
+	line "some strong"
+	cont "bugs?"
 	done
 
 _Route6Youngster1EndBattleText::
@@ -36,9 +39,10 @@ _Route6Youngster1EndBattleText::
 	prompt
 
 _Route6Youngster1AfterBattleText::
-	text "I like bugs, so"
-	line "I'm going back to"
-	cont "VIRIDIAN FOREST."
+	text "Despite being"
+	line "high leveled,"
+	cont "they are very"
+	cont "weak..."
 	done
 
 _Route6CooltrainerM2BattleText::
@@ -74,24 +78,26 @@ _Route6CooltrainerF2AfterBattleText::
 	done
 
 _Route6Youngster2BattleText::
-	text "I've never seen"
-	line "you around!"
-	cont "Are you good?"
+	text "My BUTTERFREE's"
+	line "named SPRINKLE."
+
+	para "Know why?"
 	done
 
 _Route6Youngster2EndBattleText::
-	text "You"
-	line "are too good!"
+	text "No!"
+	line "My SPRINKLE!!"
 	prompt
 
 _Route6Youngster2AfterBattleText::
-	text "Are my #MON"
-	line "weak? Or, am I"
-	cont "just bad?"
+	text "How can poor"
+	line "SPRINKLE be"
+	cont "defeated..."
 	done
 
 _Route6UndergroundPathSignText::
-	text "UNDERGROUND PATH"
-	line "CERULEAN CITY -"
-	cont "VERMILION CITY"
+	text "MAGIC STAIRHOUSE"
+	line "SAKAYUME TOWN -"
+	cont "PORT HOURITSU"
 	done
+

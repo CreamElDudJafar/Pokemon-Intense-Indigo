@@ -1,19 +1,23 @@
 _SilphCo5FSilphWorkerMThatsYouRightText::
-	text "TEAM ROCKET is"
-	line "in an uproar over"
-	cont "some intruder."
-	cont "That's you right?"
+	text "All TRADE #MON"
+	line "sold will obey"
+	cont "LORD CALIGULA"
+	cont "when the time"
+	cont "comes."
 	done
 
 _SilphCo5FSilphWorkerMYoureOurHeroText::
-	text "TEAM ROCKET took"
-	line "off! You're our"
-	cont "hero! Thank you!"
+	text "This is just"
+	line "perfect!"
+
+	para "POLICE are holding"
+	line "us up!"
 	done
 
 _SilphCo5FRocket1BattleText::
-	text "I heard a kid was"
-	line "wandering around."
+	text "No.3: My #MON"
+	line "will make yours"
+	cont "DIE!!"
 	done
 
 _SilphCo5FRocket1EndBattleText::
@@ -21,15 +25,16 @@ _SilphCo5FRocket1EndBattleText::
 	prompt
 
 _SilphCo5FRocket1AfterBattleText::
-	text "It's not smart"
-	line "to pick a fight"
-	cont "with TEAM ROCKET!"
+	text "No.3: Our BOSS"
+	line "has big plans in"
+	cont "store for you."
 	done
 
 _SilphCo5FScientistBattleText::
-	text "We study #"
-	line "BALL technology"
-	cont "on this floor!"
+	text "You are seriously"
+	line "our worst enemy?"
+
+	para "Wow..."
 	done
 
 _SilphCo5FScientistEndBattleText::
@@ -38,14 +43,15 @@ _SilphCo5FScientistEndBattleText::
 	prompt
 
 _SilphCo5FScientistAfterBattleText::
-	text "We worked on the"
-	line "ultimate #"
-	cont "BALL which would"
-	cont "catch anything!"
+	text "We have money,"
+	line "power, and soon,"
+	cont "control thanks to"
+	cont "our TRADE."
 	done
 
 _SilphCo5FRockerBattleText::
-	text "Whaaat? There"
-	line "shouldn't be any"
-	cont "children here?"
+	text "The #MON I got"
+	line "from the TRADE"
+	cont "will stop you!"
 	done
+

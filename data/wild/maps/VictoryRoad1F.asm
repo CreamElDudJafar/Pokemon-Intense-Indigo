@@ -1,15 +1,15 @@
 VictoryRoad1FWildMons:
-	def_grass_wildmons 25 ; encounter rate
-	db 85, KANGASKHAN
-	db 85, PERSIAN
-	db 85, NIDOQUEEN
-	db 85, ELECTRODE
-	db 85, ELECTABUZZ
-	db 85, GOLEM
-	db 85, NIDOKING
-	db 85, CLEFABLE
-	db 85, GYARADOS
-	db 85, NIDOKING
+	def_grass_wildmons 8 ; encounter rate
+	db 100, KANGASKHAN
+	db 100, KANGASKHAN
+	db 99, VENOMOTH
+	db 100, GRAVELER
+	db 99, GYARADOS
+	db 99, PRIMEAPE
+	db 99, MAGNETON
+	db 99, MAROWAK
+	db 99, CHARIZARD
+	db 100, SANDSLASH
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

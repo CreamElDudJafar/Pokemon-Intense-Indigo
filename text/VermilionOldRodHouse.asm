@@ -24,10 +24,8 @@ _VermilionOldRodHouseFishingGuruTakeThisText::
 
 _VermilionOldRodHouseFishingGuruFishingIsAWayOfLifeText::
 	text_start
-
 	para "Fishing is a way"
 	line "of life!"
-
 	para "From the seas to"
 	line "rivers, go out"
 	cont "and land the big"

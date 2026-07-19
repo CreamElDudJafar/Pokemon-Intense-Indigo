@@ -1,9 +1,9 @@
 _SSAnne2FRoomsGentleman3Text::
-	text "In all my travels"
-	line "I've never seen"
-	cont "any #MON sleep"
-	cont "like this one!"
-
+	text "My, my! This"
+	line "#MON was very"
+	cont "popular during"
+	cont "the last"
+	cont "TOURNAMENT."
 	para "It was something"
 	line "like this!"
 	prompt
@@ -21,29 +21,30 @@ _SSAnne2FRoomsGrampsText::
 	done
 
 _SSAnne2FRoomsGentleman5Text::
-	text "Have you gone to"
-	line "the SAFARI ZONE"
-	cont "in FUCHSIA CITY?"
-
-	para "It had many rare"
-	line "kinds of #MON!!"
+	text "I heard that the"
+	line "TRADE merged with"
+	cont "the ROCKETs."
+	para "They had very"
+	line "successful"
+	cont "business."
 	done
 
 _SSAnne2FRoomsLittleBoyText::
-	text "Me and my Daddy"
-	line "think the SAFARI"
-	cont "ZONE is awesome!"
+	text "How many years"
+	line "was it since"
+	cont "the TRADE"
+	cont "merged?"
 	done
 
 _SSAnne2FRoomsBrunetteGirlText::
-	text "The CAPTAIN looked"
-	line "really sick and"
-	cont "pale!"
+	text "I heard the"
+	line "CAPTAIN was"
+	cont "a GYM leader..."
 	done
 
 _SSAnne2FRoomsBeautyText::
-	text "I hear many people"
-	line "get seasick!"
+	text "DONYOKU used to"
+	line "be a nice city."
 	done
 
 _SSAnne2FRoomsGentleman1BattleText::

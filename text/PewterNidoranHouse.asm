@@ -7,19 +7,19 @@ _PewterNidoranHouseLittleBoyText::
 	done
 
 _PewterNidoranHouseMiddleAgedManText::
-	text "Our #MON's an"
-	line "outsider, so it's"
-	cont "hard to handle."
-
-	para "An outsider is a"
-	line "#MON that you"
-	cont "get in a trade."
-
-	para "It grows fast, but"
-	line "it may ignore an"
-	cont "unskilled trainer"
-	cont "in battle!"
-
-	para "If only we had"
-	line "some BADGEs..."
+	text "We all thought"
+	line "TEAM ROCKET"
+	cont "was disbanded in"
+	cont "KANTO and"
+	cont "JOHTO... "
+	para "But one ROCKET"
+	line "member must've"
+	cont "taken charge,"
+	cont "became the"
+	cont "ROCKET CHIEF, and"
+	cont "revived TEAM"
+	cont "ROCKET. "
+	para "They're much more"
+	line "dangerous now. "
 	done
+

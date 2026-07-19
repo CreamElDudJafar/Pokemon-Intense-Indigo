@@ -1,15 +1,15 @@
 SafariZoneNorthWildMons:
-	def_grass_wildmons 100 ; encounter rate
-	db 15, MAGMAR
-	db 15, MACHAMP
-	db 15, KANGASKHAN
-	db 55, NIDOKING
-	db 55, VILEPLUME
-	db 15, ELECTABUZZ
-	db 55, VICTREEBEL
-	db 55, GOLEM
-	db 55, KANGASKHAN
-	db 55, KANGASKHAN
+	def_grass_wildmons 14 ; encounter rate
+	db 85, ELECTABUZZ
+	db 88, VENOMOTH
+	db 100, PARASECT
+	db 81, KANGASKHAN
+	db 84, FLAREON
+	db 72, DODRIO
+	db 75, MAGMAR
+	db 100, PINSIR
+	db 72, VAPOREON
+	db 28, JOLTEON
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

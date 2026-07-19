@@ -1,15 +1,15 @@
 VictoryRoad3FWildMons:
-	def_grass_wildmons 25 ; encounter rate
-	db 86, VENOMOTH
-	db 86, HYPNO
-	db 86, MR_MIME
-	db 86, PERSIAN
-	db 86, NIDOKING
-	db 86, DUGTRIO
-	db 86, CLEFABLE
-	db 86, HAUNTER
-	db 86, KANGASKHAN
-	db 86, KADABRA
+	def_grass_wildmons 1 ; encounter rate
+	db 99, ELECTRODE
+	db 99, DUGTRIO
+	db 100, KADABRA
+	db 100, KADABRA
+	db 99, VENOMOTH
+	db 99, GYARADOS
+	db 100, HAUNTER
+	db 100, DODRIO
+	db 100, KANGASKHAN
+	db 100, MUK
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

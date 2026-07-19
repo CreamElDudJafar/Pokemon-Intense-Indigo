@@ -1,15 +1,15 @@
 Route6WildMons:
-	def_grass_wildmons 18 ; encounter rate
-	db 23, PIKACHU
-	db 23, NIDORINA
-	db 23, NIDORINO
-	db 23, HITMONCHAN
-	db 23, BUTTERFREE
-	db 23, BEEDRILL
-	db 23, HITMONLEE
-	db 23, PIDGEOTTO
-	db 22, LICKITUNG
-	db 23, DITTO
+	def_grass_wildmons 249 ; encounter rate
+	db 48, MAGNEMITE
+	db 48, PIDGEOTTO
+	db 42, KRABBY
+	db 47, GRIMER
+	db 47, PSYDUCK
+	db 49, FARFETCHD
+	db 48, HITMONCHAN
+	db 43, KOFFING
+	db 43, SCYTHER
+	db 39, HITMONLEE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

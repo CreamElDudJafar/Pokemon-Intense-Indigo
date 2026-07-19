@@ -1,15 +1,15 @@
 Route18WildMons:
-	def_grass_wildmons 255 ; encounter rate
-	db 56, WEEZING
-	db 56, MUK
-	db 56, RATICATE
-	db 56, PIDGEOT
-	db 56, FEAROW
-	db 56, TANGELA
-	db 56, PRIMEAPE
-	db 56, DODRIO
-	db 56, MAGNEMITE
-	db 56, GOLDUCK
+	def_grass_wildmons 15 ; encounter rate
+	db 99, MUK
+	db 99, WEEZING
+	db 99, BEEDRILL
+	db 99, SCYTHER
+	db 99, GOLBAT
+	db 87, NIDORINA
+	db 82, NIDORINO
+	db 99, BUTTERFREE
+	db 79, PINSIR
+	db 15, VENOMOTH
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
