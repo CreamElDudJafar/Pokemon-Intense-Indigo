@@ -1,12 +1,15 @@
 SilphCo2FSilphWorkerFPleaseTakeThisText::
-	text "Eeek!"
-	line "No! Stop! Help!"
+	text "You beat the 1st"
+	line "4 members of"
+	cont "the new army?!"
 
-	para "Oh, you're not"
-	line "with TEAM ROCKET."
-	cont "I thought..."
-	cont "I'm sorry. Here,"
-	cont "please take this!"
+	para "They were the"
+	line "best!"
+
+	para "Don't harm me!"
+
+	para "I'll do what you"
+	line "want!"
 	prompt
 
 _SilphCo2FSilphWorkerFReceivedTM36Text::
@@ -19,11 +22,11 @@ _SilphCo2FSilphWorkerFReceivedTM36Text::
 _SilphCo2FSilphWorkerFTM36ExplanationText::
 	text "TM36 is"
 	line "SELFDESTRUCT!"
-
-	para "It's powerful, but"
-	line "the #MON that"
-	cont "uses it faints!"
-	cont "Be careful."
+	para "ROCKET No.3 tends"
+	line "to use moves"
+	cont "like these!"
+	para "Now leave me"
+	line "be!"
 	done
 
 _SilphCo2FSilphWorkerFTM36NoRoomText::
@@ -32,25 +35,25 @@ _SilphCo2FSilphWorkerFTM36NoRoomText::
 	done
 
 _SilphCo2FScientist1BattleText::
-	text "Help! I'm a SILPH"
-	line "employee."
+	text "I am in need of"
+	line "a lab rat."
 	done
 
 _SilphCo2FScientist1EndBattleText::
-	text "How"
-	line "did you know I"
-	cont "was a ROCKET?"
+	text "You"
+	line "are the most"
+	cont "skilled by far."
 	prompt
 
 _SilphCo2FScientist1AfterBattleText::
-	text "I work for both"
-	line "SILPH and TEAM"
-	cont "ROCKET!"
+	text "You would'vee been"
+	line "a ROCKET TRADE"
+	cont "ELITE."
 	done
 
 _SilphCo2FScientist2BattleText::
-	text "It's off limits"
-	line "here! Go home!"
+	text "You can't simply"
+	line "walk in here!"
 	done
 
 _SilphCo2FScientist2EndBattleText::
@@ -64,8 +67,10 @@ _SilphCo2FScientist2AfterBattleText::
 	done
 
 _SilphCo2FRocket1BattleText::
-	text "No kids are"
-	line "allowed in here!"
+	text "All right!"
+
+	para "No more games"
+	line "<PLAYER>!"
 	done
 
 _SilphCo2FRocket1EndBattleText::
@@ -73,25 +78,28 @@ _SilphCo2FRocket1EndBattleText::
 	prompt
 
 _SilphCo2FRocket1AfterBattleText::
-	text "Diamond shaped"
-	line "tiles are"
-	cont "teleport blocks!"
+	text "LORD CALIGULA"
+	line "discovered how"
+	cont "#MON surpass"
+	cont "their limits."
 
-	para "They're hi-tech"
-	line "transporters!"
+	para "We got rich."
 	done
 
 _SilphCo2FRocket2BattleText::
-	text "Hey kid! What are"
-	line "you doing here?"
+	text "LORD CALIGULA! "
+
+	para "I found that kid!"
 	done
 
 _SilphCo2FRocket2EndBattleText::
-	text "I goofed!"
+	text "Augh!"
+	line "Uh!"
 	prompt
 
 _SilphCo2FRocket2AfterBattleText::
-	text "SILPH CO. will"
-	line "be merged with"
-	cont "TEAM ROCKET!"
+	text "PHONE: What is"
+	line "happening ROCKET"
+	cont "No.96?!"
 	done
+

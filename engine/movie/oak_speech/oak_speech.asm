@@ -109,7 +109,7 @@ ENDC
 	call GBFadeOutToWhite
 	;call ClearScreen
 	call GetNidorinoPalID ; HAX
-	ld a, NIDORINO
+	ld a, MEW
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
 	call GetMonHeader

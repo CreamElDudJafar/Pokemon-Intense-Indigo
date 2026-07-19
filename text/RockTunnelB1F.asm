@@ -30,20 +30,22 @@ _RockTunnelB1FHiker1AfterBattleText::
 	done
 
 _RockTunnelB1FSuperNerd1BattleText::
-	text "You have a"
-	line "#DEX?"
-	cont "I want one too!"
+	text "Check out LAPRAS!"
+
+	para "The real one!"
 	done
 
 _RockTunnelB1FSuperNerd1EndBattleText::
-	text "Shoot!"
-	line "I'm so jealous!"
+	text "You're"
+	line "just jealous!"
 	prompt
 
 _RockTunnelB1FSuperNerd1AfterBattleText::
-	text "When you finish"
-	line "your #DEX, can"
-	cont "I have it?"
+	text "LAPRAS is so"
+	line "cool!"
+
+	para "I'm so sorry for"
+	line "that."
 	done
 
 _RockTunnelB1FSuperNerd2BattleText::
@@ -57,9 +59,9 @@ _RockTunnelB1FSuperNerd2EndBattleText::
 	prompt
 
 _RockTunnelB1FSuperNerd2AfterBattleText::
-	text "Costume players"
-	line "dress up as"
-	cont "#MON for fun."
+	text "CLEFABLE is my"
+	line "favorite to"
+	cont "dress up as!"
 	done
 
 _RockTunnelB1FHiker2BattleText::

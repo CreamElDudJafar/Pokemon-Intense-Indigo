@@ -1,12 +1,15 @@
 _SaffronPokecenterBeautyText::
-	text "#MON growth"
-	line "rates differ from"
-	cont "specie to specie."
+	text "I can't imagine"
+	line "why the TRADE"
+	cont "ADMIN is working"
+	cont "with the ROCKET"
+	cont "CHIEF! "
 	done
 
 _SaffronPokecenterGentlemanText::
-	text "SILPH CO. is very"
-	line "famous. That's"
-	cont "why it attracted"
-	cont "TEAM ROCKET!"
+	text "TEAM ROCKET"
+	line "sells stolen"
+	cont "REVIVEs as  "
+	cont "prizes! "
 	done
+

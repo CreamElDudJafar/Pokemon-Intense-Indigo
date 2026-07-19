@@ -1,15 +1,15 @@
 PokemonTower7FWildMons:
-	def_grass_wildmons 15 ; encounter rate
-	db 45, MAROWAK
-	db 47, MAROWAK
-	db 48, MAROWAK
-	db 44, MAROWAK
-	db 46, MAROWAK
-	db 45, MAROWAK
-	db 40, MAROWAK
-	db 20, MAROWAK
-	db 15, MAROWAK
-	db 10, MAROWAK
+	def_grass_wildmons 1 ; encounter rate
+	db 100, HAUNTER
+	db 99, MAROWAK
+	db 100, HAUNTER
+	db 100, HAUNTER
+	db 99, MAROWAK
+	db 99, MAROWAK
+	db 98, MAROWAK
+	db 98, MAROWAK
+	db 100, HAUNTER
+	db 100, HAUNTER
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

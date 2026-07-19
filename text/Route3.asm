@@ -1,16 +1,16 @@
 _Route3Text1::
-	text "Whew... I better"
-	line "take a rest..."
-	cont "Groan..."
-
-	para "That tunnel from"
-	line "CERULEAN takes a"
-	cont "lot out of you!"
+	text "MT.DOOM is named"
+	line "because many"
+	cont "people went"
+	cont "in one side of"
+	cont "the mountain,"
+	cont "and never came"
+	cont "out."
 	done
 
 _Route3Youngster1BattleText::
 	text "Hey! I met you in"
-	line "VIRIDIAN FOREST!"
+	line "RIPPUKU JUNGLE! "
 	done
 
 _Route3Youngster1EndBattleText::
@@ -22,13 +22,15 @@ _Route3Youngster1AfterBattleText::
 	text "There are other"
 	line "kinds of #MON"
 	cont "than those found"
-	cont "in the forest!"
+	cont "in the jungle!"
 	done
 
 _Route3Youngster2BattleText::
-	text "Hi! I like shorts!"
-	line "They're comfy and"
-	cont "easy to wear!"
+	text "I got stomped"
+	line "badly by GASTLY!"
+
+	para "Huh? You beat"
+	line "him?"
 	done
 
 _Route3Youngster2EndBattleText::
@@ -37,15 +39,17 @@ _Route3Youngster2EndBattleText::
 	prompt
 
 _Route3Youngster2AfterBattleText::
-	text "Are you storing"
-	line "your #MON on"
-	cont "PC? Each BOX can"
-	cont "hold 20 #MON!"
+	text "You actually"
+	line "beat the first"
+	cont "GYM?"
+
+	para "Even we couldn't"
+	line "do it..."
 	done
 
 _Route3CooltrainerF1BattleText::
-	text "You looked at me,"
-	line "didn't you?"
+	text "Did you beat the"
+	line "GYM LEADER?"
 	done
 
 _Route3CooltrainerF1EndBattleText::
@@ -54,9 +58,9 @@ _Route3CooltrainerF1EndBattleText::
 	prompt
 
 _Route3CooltrainerF1AfterBattleText::
-	text "Quit staring if"
-	line "you don't want to"
-	cont "fight!"
+	text "Will you tell me"
+	line "how did you beat"
+	cont "him?"
 	done
 
 _Route3Youngster3BattleText::
@@ -71,16 +75,17 @@ _Route3Youngster3EndBattleText::
 	prompt
 
 _Route3Youngster3AfterBattleText::
-	text "If a #MON BOX"
-	line "on the PC gets"
-	cont "full, just switch"
-	cont "to another BOX!"
+	text "We were training"
+	line "here because"
+	cont "the GYM LEADER"
+	cont "is pretty tough."
 	done
 
 _Route3CooltrainerF2BattleText::
-	text "That look you"
-	line "gave me, it's so"
-	cont "intriguing!"
+	text "I'm training my"
+	line "POKeMON."
+
+	para "Want to practice?"
 	done
 
 _Route3CooltrainerF2EndBattleText::
@@ -88,9 +93,9 @@ _Route3CooltrainerF2EndBattleText::
 	prompt
 
 _Route3CooltrainerF2AfterBattleText::
-	text "Avoid fights by"
-	line "not letting"
-	cont "people see you!"
+	text "GYM's GHOST and"
+	line "DRAGON types are"
+	cont "so tough..."
 	done
 
 _Route3Youngster4BattleText::
@@ -110,8 +115,8 @@ _Route3Youngster4AfterBattleText::
 	done
 
 _Route3Youngster5BattleText::
-	text "You can fight my"
-	line "new #MON!"
+	text "I got some cool"
+	line "POKeMON."
 	done
 
 _Route3Youngster5EndBattleText::
@@ -120,14 +125,14 @@ _Route3Youngster5EndBattleText::
 	prompt
 
 _Route3Youngster5AfterBattleText::
-	text "Trained #MON"
-	line "are stronger than"
-	cont "the wild ones!"
+	text "I heard that"
+	line "TEAM ROCKET is"
+	cont "inside MT.DOOM..."
 	done
 
 _Route3CooltrainerF3BattleText::
-	text "Eek! Did you"
-	line "touch me?"
+	text "I wonder if I'm"
+	line "ready?"
 	done
 
 _Route3CooltrainerF3EndBattleText::
@@ -135,11 +140,12 @@ _Route3CooltrainerF3EndBattleText::
 	prompt
 
 _Route3CooltrainerF3AfterBattleText::
-	text "ROUTE 4 is at the"
-	line "foot of MT.MOON."
+	text "I'm never going"
+	line "to get any BADGEs."
 	done
 
 _Route3SignText::
 	text "ROUTE 3"
-	line "MT.MOON AHEAD"
+	line "MT.DOOM AHEAD"
 	done
+

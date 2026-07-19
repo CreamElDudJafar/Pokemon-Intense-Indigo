@@ -8,14 +8,12 @@ _GameCornerBeauty1Text::
 	done
 
 _GameCornerClerk1DoYouNeedSomeGameCoinsText::
-	text "Welcome to ROCKET"
-	line "GAME CORNER!"
-
+	text "Welcome to"
+	line "ROCKET CASINO!"
 	para "Do you need some"
-	line "game coins?"
-
+	line "game coins kid? "
 	para "It's ¥1000 for 50"
-	line "coins. Would you"
+	line "coins, Would you"
 	cont "like some?"
 	done
 
@@ -45,11 +43,10 @@ _GameCornerClerk1DontHaveCoinCaseText::
 	done
 
 _GameCornerMiddleAgedMan1Text::
-	text "Keep this quiet."
-
-	para "It's rumored that"
-	line "this place is run"
-	cont "by TEAM ROCKET."
+	text "It's rumored that"
+	line "the TEAM ROCKET"
+	cont "CHIEF works with"
+	cont "the TRADE ADMIN."
 	done
 
 _GameCornerBeauty2Text::
@@ -85,19 +82,17 @@ _GameCornerMiddleAgedWomanText::
 
 _GameCornerGymGuideChampInMakingText::
 	text "Hey!"
-
-	para "You have better"
-	line "things to do,"
-	cont "champ in making!"
-
-	para "CELADON GYM's"
-	line "LEADER is ERIKA!"
-	cont "She uses grass-"
-	cont "type #MON!"
-
-	para "She might appear"
-	line "docile, but don't"
-	cont "be fooled!"
+	para "How did you find"
+	line "me here?"
+	cont "Well then..."
+	para "DONYOKU GYM's"
+	line "LEADER is a"
+	cont "master of FLYING"
+	cont "types!"
+	para "This might be the"
+	line "end though..."
+	para "She is far beyond"
+	line "level 100!"
 	done
 
 _GameCornerGymGuideTheyOfferRarePokemonText::
@@ -150,7 +145,7 @@ _GameCornerGentlemanReceived20CoinsText::
 	text_end
 
 _GameCornerGentlemanYouGotYourOwnCoinsText::
-	text "You've got your"
+	text "You'vee got your"
 	line "own coins!"
 	done
 
@@ -161,19 +156,21 @@ _GameCornerGentlemanCloselyWatchTheReelsText::
 	done
 
 _GameCornerRocketImGuardingThisPosterText::
-	text "I'm guarding this"
-	line "poster!"
-	cont "Go away, or else!"
+	text "No.4: If you"
+	line "can win, you'll"
+	cont "get a prrrize!"
 	done
 
 _GameCornerRocketBattleEndText::
-	text "Dang!"
+	text "... !"
 	prompt
 
 _GameCornerRocketAfterBattleText::
-	text "Our hideout might"
-	line "be discovered! I"
-	cont "better tell BOSS!"
+	text "No.4: Hold on."
+
+	para "I shall go and"
+	line "get yourrr"
+	cont "prrrize..."
 	done
 
 _GameCornerPosterSwitchBehindPosterText::

@@ -14,17 +14,17 @@ _DexCompletionText::
 	prompt
 
 _DexRatingText_Own0To9::
-	text "You still have"
-	line "lots to do."
-	cont "Look for #MON"
-	cont "in grassy areas!"
+	text "Hmmm. Try to see "
+	line "if my AIDE will"
+	cont "give you an"
+	cont "ITEMFINDER!"
 	done
 
 _DexRatingText_Own10To19::
 	text "You're on the"
-	line "right track! "
-	cont "Get a FLASH HM"
-	cont "from my AIDE!"
+	line "right track!  "
+	cont "Check all the"
+	cont "grassy areas!"
 	done
 
 _DexRatingText_Own20To29::
@@ -36,28 +36,27 @@ _DexRatingText_Own20To29::
 
 _DexRatingText_Own30To39::
 	text "Good, you're"
-	line "trying hard!"
-	cont "Get an ITEMFINDER"
-	cont "from my AIDE!"
+	line "trying hard!   "
+	para "Get an EXP.ALL"
+	line "from my AIDE!"
 	done
 
 _DexRatingText_Own40To49::
 	text "Looking good!"
-	line "Go find my AIDE"
-	cont "when you get 50!"
+	line "Let's see if you"
+	cont "get 50 #MON!"
 	done
 
 _DexRatingText_Own50To59::
 	text "You finally got at"
 	line "least 50 species!"
-	cont "Be sure to get"
-	cont "EXP.ALL from my"
-	cont "AIDE!"
+	para "My son could learn"
+	line "a thing from you!"
 	done
 
 _DexRatingText_Own60To69::
-	text "Ho! This is geting"
-	line "even better!"
+	text "Ho! This is just"
+	line "got better!"
 	done
 
 _DexRatingText_Own70To79::
@@ -92,9 +91,10 @@ _DexRatingText_Own110To119::
 	done
 
 _DexRatingText_Own120To129::
-	text "Excellent! Trade"
-	line "with friends to"
-	cont "get some more!"
+	text "Excellent! Try"
+	line "to search in"
+	cont "MT.DOOM east"
+	cont "cave!"
 	done
 
 _DexRatingText_Own130To139::
@@ -104,10 +104,10 @@ _DexRatingText_Own130To139::
 	done
 
 _DexRatingText_Own140To149::
-	text "I have nothing"
-	line "left to say!"
-	cont "You're the"
-	cont "authority now!"
+	text "My last AIDE has"
+	line "a gift! "
+	cont "Gramps would've"
+	cont "been proud!"
 	done
 
 _DexRatingText_Own150To151::

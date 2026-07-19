@@ -1,11 +1,13 @@
 	db DEX_GEODUDE ; pokedex id
 
-	db  40,  80, 100,  20,  30
-	;   hp  atk  def  spd  spc
+	db 40, 80, 100, 20, 30
+	; hp atk def spd spc
 
-	db ROCK, GROUND ; type
-	db 255 ; catch rate
-	db 86 ; base exp
+	db GROUND, ROCK ; type
+
+	db 1 ; catch rate
+
+	db 210 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/geodude.pic", 0, 1 ; sprite dimensions
@@ -15,14 +17,17 @@ ENDC
 	dw GeodudePicFront, GeodudePicBack
 
 	db SELFDESTRUCT, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         EARTHQUAKE,   \
-	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     METRONOME,    SELFDESTRUCT, FIRE_BLAST,   REST,         EXPLOSION,    \
-	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+
+	tmhm MEGA_PUNCH, TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     SUBMISSION, COUNTER, SEISMIC_TOSS, RAGE, EARTHQUAKE, \
+	     FISSURE, DIG, MIMIC, DOUBLE_TEAM, BIDE, \
+	     METRONOME, SELFDESTRUCT, FIRE_BLAST, REST, EXPLOSION, \
+	     ROCK_SLIDE, SUBSTITUTE, STRENGTH
+
 	; end
 
 	db BANK(GeodudePicFront)

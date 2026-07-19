@@ -1,11 +1,13 @@
 	db DEX_VILEPLUME ; pokedex id
 
-	db  95,  80,  85,  50, 110
-	;   hp  atk  def  spd  spc
+	db 75, 80, 85, 50, 100
+	; hp atk def spd spc
 
 	db GRASS, POISON ; type
-	db 110 ; catch rate
-	db 184 ; base exp
+
+	db 1 ; catch rate
+
+	db 237 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/vileplume.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw VileplumePicFront, VileplumePicBack
 
-	db SLEEP_POWDER, STUN_SPORE, PETAL_DANCE, NO_MOVE ; level 1 learnset
+	db MEGA_DRAIN, SLEEP_POWDER, STUN_SPORE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    MIMIC,        \
-	     DOUBLE_TEAM,  REFLECT,      BIDE,         REST,         SUBSTITUTE,   \
+
+	tmhm SWORDS_DANCE, TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     HYPER_BEAM, RAGE, MEGA_DRAIN, SOLARBEAM, MIMIC, \
+	     DOUBLE_TEAM, REFLECT, BIDE, REST, SUBSTITUTE, \
 	     CUT
+
 	; end
 
 	db BANK(VileplumePicFront)

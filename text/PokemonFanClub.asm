@@ -1,28 +1,27 @@
 _PokemonFanClubPikachuFanNormalText::
-	text "Won't you admire"
-	line "my PIKACHU's"
-	cont "adorable tail?"
+	text "Thanks to the"
+	line "TRADE, the"
+	cont "ROCKETs surpassed"
+	cont "their limit!"
 	done
 
 _PokemonFanClubPikachuFanBetterText::
-	text "Humph! My PIKACHU"
-	line "is twice as cute"
-	cont "as that one!"
+	text "My PIKACHU"
+	line "sends TEAM ROCKET"
+	cont "blasting off!"
 	done
 
 _PokemonFanClubSeelFanNormalText::
-	text "I just love my"
-	line "SEEL!"
-
-	para "It squeals when I"
-	line "hug it!"
+	text "The TRADE owns"
+	line "the ROCKETs"
+	cont "and the"
+	cont "GOVERNMENT."
 	done
 
 _PokemonFanClubSeelFanBetterText::
-	text "Oh dear!"
-
-	para "My SEEL is far"
-	line "more attractive!"
+	text "SEEL is all we"
+	line "need to keep"
+	cont "away TEAM ROCKET!"
 	done
 
 _PokemonFanClubPikachuText::

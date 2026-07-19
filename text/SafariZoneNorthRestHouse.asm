@@ -1,27 +1,32 @@
 _SafariZoneNorthRestHouseScientistText::
-	text "You can keep any"
-	line "item you find on"
-	cont "the ground here."
+	text "Since TEAM ROCKET"
+	line "usually has"
+	cont "PSYCHIC #MON,"
+	cont "among very strong"
+	cont "#MON..."
 
-	para "But, you'll run"
-	line "out of time if"
-	cont "you try for all"
-	cont "of them at once!"
+	para "Most other"
+	line "#MON, and even"
+	cont "conventional"
+	cont "weapons can't"
+	cont "stop them. "
+
+	para "So they took"
+	line "over INDIGO..."
 	done
 
 _SafariZoneNorthRestHouseSafariZoneWorkerText::
-	text "Go to the deepest"
-	line "part of the"
-	cont "SAFARI ZONE. You"
-	cont "will win a prize!"
+	text "If I had a BIKE,"
+	line "I would go to"
+	cont "CYCLING ROAD!"
 	done
 
 _SafariZoneNorthRestHouseGentlemanText::
-	text "My EEVEE evolved"
-	line "into FLAREON!"
-
-	para "But, a friend's"
-	line "EEVEE turned into"
-	cont "a VAPOREON!"
-	cont "I wonder why?"
+	text "TEAM ROCKET stole"
+	line "almost all"
+	cont "PSYCHIC #MON"
+	cont "in AIZOME, making"
+	cont "them hard to"
+	cont "find."
 	done
+

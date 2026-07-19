@@ -1,21 +1,22 @@
 _CinnabarPokecenterCooltrainerFText::
-	text "You can cancel"
-	line "evolution."
+	text "The trade wasn't"
+	line "so bad before."
 
-	para "When a #MON is"
-	line "evolving, you can"
-	cont "stop it and leave"
-	cont "it the way it is."
+	para "PROF.OAK and"
+	line "ARISTO were"
+	cont "former members."
+
+	para "Then Dr. I came"
+	line "in..."
 	done
 
 _CinnabarPokecenterGentlemanText::
-	text "Do you have any"
-	line "friends?"
+	text "The TRADE"
+	line "dedicated to the"
+	cont "study of #MON"
+	line "in the past."
 
-	para "#MON you get"
-	line "in trades grow"
-	cont "very quickly."
-
-	para "I think it's"
-	line "worth a try!"
+	para "The TRADE ADMIN"
+	line "Dr. I changed"
+	cont "things."
 	done

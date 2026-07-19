@@ -1,8 +1,8 @@
 PrizeMonLevelDictionary:
-	db IVYSAUR,    35
-	db CHARMELEON, 35
-	db WARTORTLE,  35
+	db BULBASAUR,   95
+	db CHARMANDER,  95
+	db SQUIRTLE,    95
 
-	db NIDOKING,   40
-	db NIDOQUEEN,  40
-	db PORYGON,    40
+	db KANGASKHAN, 100
+	db DITTO,       40
+	db SEEL,        30

@@ -1,11 +1,13 @@
 	db DEX_KABUTOPS ; pokedex id
 
-	db  60, 115, 105,  80,  70
-	;   hp  atk  def  spd  spc
+	db 60, 115, 105, 80, 70
+	; hp atk def spd spc
 
 	db ROCK, WATER ; type
-	db 1   ; catch rate
-	db 201 ; base exp
+
+	db 1 ; catch rate
+
+	db 231 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/kabutops.pic", 0, 1 ; sprite dimensions
@@ -14,15 +16,18 @@ ELSE
 ENDC
 	dw KabutopsPicFront, KabutopsPicBack
 
-	db HYDRO_PUMP, BLIZZARD, SLASH, DIG ; level 1 learnset
+	db BODY_SLAM, HYDRO_PUMP, SLASH, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   SWORDS_DANCE, MEGA_KICK,    TOXIC,        BODY_SLAM,    \
-	     TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     \
-	     BLIZZARD,     HYPER_BEAM,   SUBMISSION,   SEISMIC_TOSS, RAGE,         \
-	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   SURF
+
+	tmhm RAZOR_WIND, SWORDS_DANCE, MEGA_KICK, TOXIC, BODY_SLAM, \
+	     TAKE_DOWN, DOUBLE_EDGE, BUBBLEBEAM, WATER_GUN, ICE_BEAM, \
+	     BLIZZARD, HYPER_BEAM, SUBMISSION, SEISMIC_TOSS, RAGE, \
+	     MIMIC, DOUBLE_TEAM, REFLECT, BIDE, SKULL_BASH, \
+	     REST, SUBSTITUTE, SURF
+
 	; end
 
 	db BANK(KabutopsPicFront)

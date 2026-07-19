@@ -1,11 +1,13 @@
 	db DEX_VOLTORB ; pokedex id
 
-	db  40,  30,  50, 100,  55
-	;   hp  atk  def  spd  spc
+	db 40, 30, 50, 100, 55
+	; hp atk def spd spc
 
 	db ELECTRIC, ELECTRIC ; type
-	db 160 ; catch rate
-	db 103 ; base exp
+
+	db 1 ; catch rate
+
+	db 213 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/voltorb.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw VoltorbPicFront, VoltorbPicBack
 
-	db SONICBOOM, SELFDESTRUCT, EXPLOSION, THUNDER_WAVE ; level 1 learnset
+	db SELFDESTRUCT, EXPLOSION, THUNDER_WAVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    RAGE,         THUNDERBOLT,  THUNDER,      \
-	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SELFDESTRUCT, SWIFT,        REST,         THUNDER_WAVE, EXPLOSION,    \
-	     SUBSTITUTE,   FLASH
+
+	tmhm TOXIC, TAKE_DOWN, RAGE, THUNDERBOLT, THUNDER, \
+	     TELEPORT, MIMIC, DOUBLE_TEAM, REFLECT, BIDE, \
+	     SELFDESTRUCT, SWIFT, REST, THUNDER_WAVE, EXPLOSION, \
+	     SUBSTITUTE, FLASH
+
 	; end
 
 	db BANK(VoltorbPicFront)

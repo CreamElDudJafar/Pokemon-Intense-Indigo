@@ -1,19 +1,20 @@
 _CeruleanMartCooltrainerMText::
-	text "Use REPEL to keep"
-	line "bugs and weak"
-	cont "#MON away."
+	text "The TRADE built"
+	line "a deep train"
+	cont "tunnel under the"
+	cont "east cave."
 
-	para "Put your strongest"
-	line "#MON at the"
-	cont "top of the list"
-	cont "for best results!"
+	para "Rumor has it that"
+	line "a lab was built"
+	cont "underground too."
 	done
 
 _CeruleanMartCooltrainerFText::
-	text "Have you seen any"
-	line "RARE CANDY?"
+	text "Some GYM leaders"
+	line "are foreign to"
+	cont "AIZOME."
 
-	para "It's supposed to"
-	line "make #MON go"
-	cont "up one level!"
+	para "One might have"
+	line "some exotic"
+	cont "#MON!"
 	done

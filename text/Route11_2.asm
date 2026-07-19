@@ -24,5 +24,5 @@ _Route11Youngster4AfterBattleText::
 	done
 
 _Route11DiglettsCaveSignText::
-	text "DIGLETT's CAVE"
+	text "L:80 to L:100"
 	done

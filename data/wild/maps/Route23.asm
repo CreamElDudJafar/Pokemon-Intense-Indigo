@@ -1,15 +1,15 @@
 Route23WildMons:
-	def_grass_wildmons 255 ; encounter rate
-	db 81, JOLTEON
-	db 81, VAPOREON
-	db 81, FLAREON
-	db 81, DUGTRIO
-	db 80, SANDSLASH
-	db 72, EXEGGCUTE
-	db 80, DODRIO
-	db 73, DROWZEE
-	db 72, SLOWPOKE
-	db 73, ABRA
+	def_grass_wildmons 2 ; encounter rate
+	db 99, JOLTEON
+	db 99, VAPOREON
+	db 99, FLAREON
+	db 99, DUGTRIO
+	db 100, SCYTHER
+	db 100, ABRA
+	db  7, MR_MIME
+	db  3, DROWZEE
+	db  2, EXEGGCUTE
+	db  2, ABRA
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

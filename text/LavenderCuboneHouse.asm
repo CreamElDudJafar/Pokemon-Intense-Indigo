@@ -5,21 +5,19 @@ _LavenderCuboneHouseCuboneText::
 _LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText::
 	text "I hate those"
 	line "horrible ROCKETs!"
-
 	para "That poor CUBONE's"
-	line "mother..."
-
+	line "father... "
 	para "It was killed"
-	line "trying to escape"
-	cont "from TEAM ROCKET!"
+	line "trying to fight"
+	cont "back TEAM ROCKET!"
 	done
 
 _LavenderCuboneHouseBrunetteGirlGhostIsGoneText::
-	text "The GHOST of"
-	line "#MON TOWER is"
-	cont "gone!"
-
+	text "The GHOSTS of"
+	line "#MON TOWER are"
+	cont "gone..."
 	para "Someone must have"
-	line "soothed its"
-	cont "restless soul!"
+	line "soothed their"
+	cont "souls..."
 	done
+

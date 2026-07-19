@@ -1,10 +1,11 @@
 _VermilionCityBeautyText::
-	text "We're careful"
-	line "about pollution!"
+	text "EPIFANIO is"
+	line "the head of the"
+	cont "AIZOME POLICE"
+	cont "FORCE."
 
-	para "We've heard GRIMER"
-	line "multiplies in"
-	cont "toxic sludge!"
+	para "He's very good in"
+	line "battles."
 	done
 
 _VermilionCityGambler1DidYouSeeText::
@@ -14,11 +15,10 @@ _VermilionCityGambler1DidYouSeeText::
 	done
 
 _VermilionCityGambler1SSAnneDepartedText::
-	text "So, S.S.ANNE has"
-	line "departed!"
-
-	para "She'll be back in"
-	line "about a year."
+	text "Once the S.S.ANNE"
+	line "returns, you"
+	cont "can enter if"
+	cont "you got SURF."
 	done
 
 _VermilionCitySailor1WelcomeToSSAnneText::
@@ -58,12 +58,13 @@ _VermilionCitySailor1ShipSetSailText::
 	done
 
 _VermilionCityGambler2Text::
-	text "I'm putting up a"
-	line "building on this"
-	cont "plot of land."
+	text "The TRADE"
+	line "influences the"
+	cont "GOVERNMENT."
 
-	para "My #MON is"
-	line "tamping the land."
+	para "Now they bought"
+	line "TEAM ROCKET"
+	cont "muscle..."
 	done
 
 _VermilionCityMachopText::
@@ -81,47 +82,45 @@ _VermilionCityMachopStompingTheLandFlatText::
 _VermilionCitySailor2Text::
 	text "S.S.ANNE is a"
 	line "famous luxury"
-	cont "cruise ship."
-
-	para "We visit VERMILION"
+	cont "cruise ship. "
+	para "We visit HOURITSU"
 	line "once a year."
 	done
 
 _VermilionCitySignText::
-	text "VERMILION CITY"
-	line "The Port of"
-	cont "Exquisite Sunsets"
+	text "PORT HOURITSU"
+	para "Don't miss out"
+	line "on the S.S.ANNE!"
 	done
 
 _VermilionCityNoticeSignText::
 	text "NOTICE!"
-
 	para "ROUTE 12 may be"
 	line "blocked off by a"
 	cont "sleeping #MON."
-
 	para "Detour through"
-	line "ROCK TUNNEL to"
-	cont "LAVENDER TOWN."
-
-	para "VERMILION POLICE"
+	line "DARK TUNNEL to"
+	cont "KYUUSOKU TOWN. "
+	para "HOURITSU POLICE"
 	done
 
 _VermilionCityPokemonFanClubSignText::
-	text "#MON FAN CLUB"
-	line "All #MON fans"
-	cont "welcome!"
+	text "AIZOME HOUSE"
+
+	para "DEPARTMENT OF"
+	line "DEFENSE  "
 	done
 
 _VermilionCityGymSignText::
-	text "VERMILION CITY"
+	text "PORT HOURITSU "
 	line "#MON GYM"
-	cont "LEADER: LT.SURGE"
+	cont "LEADER: EPIFANIO"
 
-	para "The Lightning "
-	line "American!"
+	para "AIZOME POLICE"
+	line "COMMANDER."
 	done
 
 _VermilionCityHarborSignText::
-	text "VERMILION HARBOR"
+	text "HOURITSU HARBOR "
 	done
+

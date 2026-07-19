@@ -14,18 +14,19 @@ _Route21Fisher1AfterBattleText::
 	done
 
 _Route21Fisher2BattleText::
-	text "I got a big haul!"
-	line "Wanna go for it?"
+	text "I got a nice"
+	line "catch! You ready"
+	cont "kid?"
 	done
 
 _Route21Fisher2EndBattleText::
-	text "Darn"
-	line "MAGIKARP!"
+	text "Come"
+	line "off it!  "
 	prompt
 
 _Route21Fisher2AfterBattleText::
-	text "I seem to only"
-	line "catch MAGIKARP!"
+	text "Some #MON can"
+	line "only be fished. "
 	done
 
 _Route21Swimmer1BattleText::

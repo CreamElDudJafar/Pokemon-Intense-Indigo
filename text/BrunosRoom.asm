@@ -1,36 +1,37 @@
 _BrunoBeforeBattleText::
-	text "Surprised to see"
-	line "me?"
-
-	para "I was requested"
-	line "by the ElITE FOUR"
-	cont "to substitute a"
-	cont "a member who just"
-	cont "recently retired"
-	cont "from his duties."
-
-	para "Well <PLAYER>..."
-
-	para "Care to show me"
-	line "how much YOU've"
-	cont "grown with your"
-	cont "#MON?"
+	text "I'd figure I'd"
+	line "see you again"
+	cont "<PLAYER>."
+	para "You got lucky"
+	line "in the first"
+	cont "round."
+	para "Do you have the"
+	line "wits and"
+	cont "resources to"
+	cont "best ME in"
+	cont "battle?"
+	para "Show me <PLAYER>!"
+	para "VOICE: Who will"
+	line "win? SCARLET or"
+	cont "<PLAYER>?"
+	para "Round 2 begins"
+	line "now."
 	done
 
 _BrunoEndBattleText::
-	text "Well"
-	line "done <PLAYER>!"
-
-	para "You won!"
+	text "I did"
+	line "not expect this!"
 	prompt
 
 _BrunoAfterBattleText::
-	text "My job is done!"
-	line "Go face your next"
-	cont "challenge!"
+	text "VOICE: <PLAYER> may"
+	line "proceed to the"
+	cont "quarter finals."
 	done
 
 _BrunosRoomBrunoDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "VOICE:"
+	line "You don't want"
+	cont "to leave."
 	done
+

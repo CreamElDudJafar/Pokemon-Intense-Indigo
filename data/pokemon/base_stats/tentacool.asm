@@ -1,11 +1,13 @@
 	db DEX_TENTACOOL ; pokedex id
 
-	db  40,  40,  35,  70, 100
-	;   hp  atk  def  spd  spc
+	db 40, 40, 35, 70, 100
+	; hp atk def spd spc
 
 	db WATER, POISON ; type
-	db 100 ; catch rate
-	db 105 ; base exp
+
+	db 55 ; catch rate
+
+	db 200 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/tentacool.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw TentacoolPicFront, TentacoolPicBack
 
-	db WRAP, SUPERSONIC, TOXIC, BUBBLEBEAM ; level 1 learnset
+	db ACID, WATER_GUN, TOXIC, NO_MOVE ; level 1 learnset
+
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
-	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         MEGA_DRAIN,   \
-	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   CUT,          SURF
+
+	tmhm SWORDS_DANCE, TOXIC, TAKE_DOWN, DOUBLE_EDGE, BUBBLEBEAM, \
+	     WATER_GUN, ICE_BEAM, BLIZZARD, RAGE, MEGA_DRAIN, \
+	     MIMIC, DOUBLE_TEAM, REFLECT, BIDE, SKULL_BASH, \
+	     REST, SUBSTITUTE, CUT, SURF
+
 	; end
 
 	db BANK(TentacoolPicFront)

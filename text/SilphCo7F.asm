@@ -1,86 +1,96 @@
 _SilphCo7FSilphWorkerM1HaveThisPokemonText::
-	text "Oh! Hi! You're"
-	line "not a ROCKET! You"
-	cont "came to save us?"
-	cont "Why, thank you!"
+	text "We tried facing"
+	line "the BOSS, but"
+	cont "it went BADLY."
 
-	para "I want you to"
-	line "have this #MON"
-	cont "for saving us."
+	para "I stole this"
+	line "from the TEAM"
+	cont "ROCKET TRADE."
+
+	para "I hope it helps"
+	line "you."
 	prompt
 
 _SilphCo7FSilphWorkerM1LaprasDescriptionText::
-	text "It's LAPRAS. It's"
-	line "very intelligent."
+	text "TEAM ROCKET stole"
+	line "very rare #MON"
+	cont "from the SAFARI"
+	cont "ZONE for the"
+	cont "TRADE years ago."
 
-	para "We kept it in our"
-	line "lab, but it will"
-	cont "be much better"
-	cont "off with you!"
+	para "When they merged,"
+	line "all of the stolen"
+	cont "#MON became"
+	cont "trained killers."
 
-	para "I think you will"
-	line "be a good trainer"
-	cont "for LAPRAS!"
-
-	para "It's a good"
-	line "swimmer. It'll"
-	cont "give you a lift!"
+	para "The ROCKET EMPIRE"
+	line "emerged, ruling"
+	cont "AIZOME."
 	done
 
 _SilphCo7FSilphWorkerM1IsOurPresidentOkText::
-	text "TEAM ROCKET's"
-	line "BOSS went to the"
-	cont "boardroom! Is our"
-	cont "PRESIDENT OK?"
+	text "Their BOSS is as"
+	line "strong as he is"
+	cont "cruel. "
+
+	para "You're our last"
+	line "hope."
 	done
 
 _SilphCo7FSilphWorkerM1SavedText::
-	text "Saved at last!"
-	line "Thank you!"
+	text "I called in the"
+	line "calvary!"
 	done
 
 _SilphCo7FSilphWorkerM2AfterTheMasterBallText::
-	text "TEAM ROCKET was"
-	line "after the MASTER"
-	cont "BALL which will"
-	cont "catch any #MON!"
+	text "Those fools"
+	line "pay us, we level"
+	cont "their #MON,"
+	cont "then we'll"
+	cont "control them."
 	done
 
 _SilphCo7FSilphWorkerM2CancelledMasterBallText::
-	text "We canceled the"
-	line "MASTER BALL"
-	cont "project because"
-	cont "of TEAM ROCKET."
+	text "PORYGON was the"
+	line "first to be"
+	cont "enhanced."
+
+	para "The clone is"
+	line "next..."
 	done
 
 _SilphCo7FSilphWorkerM3ItWouldBeBadText::
-	text "It would be bad"
-	line "if TEAM ROCKET"
-	cont "took over SILPH"
-	cont "or our #MON!"
+	text "ROCKET TRADE"
+	line "made sales all"
+	cont "over worldwide!"
+
+	para "We won the war."
 	done
 
 _SilphCo7FSilphWorkerM3YouChasedOffTeamRocketText::
-	text "Wow! You chased"
-	line "off TEAM ROCKET"
-	cont "all by yourself?"
+	text "Its too late"
+	line "for the POLICE"
+	cont "due to PROJECT"
+	cont "151."
 	done
 
 _SilphCo7FSilphWorkerM4ItsReallyDangerousHereText::
-	text "You! It's really"
-	line "dangerous here!"
-	cont "You came to save"
-	cont "me? You can't!"
+	text "No.0 is the"
+	line "CHIEF of "
+	cont "TEAM ROCKET."
+
+	para "Dr.I is CHIEF of"
+	line "the TRADE."
 	done
 
 _SilphCo7FSilphWorkerM4SafeAtLastText::
-	text "Safe at last!"
-	line "Oh thank you!"
+	text "Where did our"
+	line "founders go?"
 	done
 
 _SilphCo7FRocket1BattleText::
-	text "Oh ho! I smell a"
-	line "little rat!"
+	text "PA: Do not deny"
+	line "your fate."
 	done
 
 _SilphCo7FRocket1EndBattleText::
@@ -89,16 +99,17 @@ _SilphCo7FRocket1EndBattleText::
 	prompt
 
 _SilphCo7FRocket1AfterBattleText::
-	text "You won't find my"
-	line "BOSS by just"
-	cont "scurrying around!"
+	text "How can such"
+	line "complete scum"
+	cont "beat our elite"
+	cont "#MON?"
 	done
 
 _SilphCo7FScientistBattleText::
 	text "Heheh!"
-
-	para "You mistook me for"
-	line "a SILPH worker?"
+	para "Teleporters are"
+	line "patrolled as"
+	cont "well!"
 	done
 
 _SilphCo7FScientistEndBattleText::
@@ -113,24 +124,27 @@ _SilphCo7FScientistAfterBattleText::
 	done
 
 _SilphCo7FRocket2BattleText::
-	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	text "PA: What do you"
+	line "hope to achieve"
+	cont "<PLAYER>?"
 	done
 
 _SilphCo7FRocket2EndBattleText::
-	text "Aack!"
-	line "Brothers, I lost!"
+	text "You're"
+	line "way too strong!!!"
 	prompt
 
 _SilphCo7FRocket2AfterBattleText::
-	text "Doesn't matter."
-	line "My brothers will"
-	cont "repay the favor!"
+	text "You just don't"
+	line "get it do you?!"
+
+	para "We have an EMPIRE!"
 	done
 
 _SilphCo7FRocket3BattleText::
-	text "A child intruder?"
-	line "That must be you!"
+	text "PA: Soon, all"
+	line "enemies shall"
+	cont "perish."
 	done
 
 _SilphCo7FRocket3EndBattleText::
@@ -139,37 +153,41 @@ _SilphCo7FRocket3EndBattleText::
 	prompt
 
 _SilphCo7FRocket3AfterBattleText::
-	text "Go on home"
-	line "before my BOSS"
-	cont "gets ticked off!"
+	text "4 high ranking"
+	line "soldiers are"
+	cont "ready for you!"
 	done
 
 _SilphCo7FRivalText::
-	text "<RIVAL>: What"
-	line "kept you <PLAYER>?"
-	done
+	text "<RIVAL>: Someone's"
+	line "coming!"
+	prompt
 
 _SilphCo7FRivalWaitedHereText::
-	text "<RIVAL>: Hahaha!"
-	line "I thought you'd"
-	cont "turn up if I"
-	cont "waited here!"
+	text "<RIVAL>: Don't tell"
+	line "me you were"
+	cont "caught too!"
 
-	para "I guess TEAM"
-	line "ROCKET slowed you"
-	cont "down! Not that I"
-	cont "care!"
+	para "The BOSS managed"
+	line "to experiment on"
+	cont "MEW!"
 
-	para "I saw you in"
-	line "SAFFRON, so I"
-	cont "decided to see if"
-	cont "you got better!"
+	para "He's a dangerous"
+	line "psycho..."
+
+	para "For your own sake,"
+	line "if you can't beat"
+	cont "me, you don't"
+	cont "stand a chance!"
 	done
 
 _SilphCo7FRivalDefeatedText::
-	text "Oh ho!"
-	line "So, you are ready"
-	cont "for BOSS ROCKET!"
+	text "Good"
+	line "<PLAYER>!"
+
+	para "You actually"
+	line "might have a"
+	cont "chance!"
 	prompt
 
 _SilphCo7FRivalVictoryText::
@@ -182,28 +200,30 @@ _SilphCo7FRivalVictoryText::
 	prompt
 
 _SilphCo7FRivalGoodLuckToYouText::
-	text "Well, <PLAYER>!"
+	text "Thanks for"
+	line "clearing the"
+	cont "way."
 
-	para "I'm moving on up"
-	line "and ahead!"
+	para "The BOSS cloned"
+	line "my MEW a while"
+	cont "ago..."
 
-	para "By checking my"
-	line "#DEX, I'm"
-	cont "starting to see"
-	cont "what's strong and"
-	cont "how they evolve!"
+	para "MEW managed to"
+	line "escape and come"
+	cont "back."
 
-	para "I'm going to the"
-	line "#MON LEAGUE"
-	cont "to boot out the"
-	cont "ELITE FOUR!"
+	para "The BOSS kept"
+	line "gloating about"
+	cont "obtaining the"
+	cont "key to enhancing"
+	cont "his ultimate"
+	cont "creation."
 
-	para "I'll become the"
-	line "world's most"
-	cont "powerful trainer!"
+	para "And that it"
+	line "could control its"
+	cont "hidden army"
+	cont "around the world."
 
-	para "<PLAYER>, well"
-	line "good luck to you!"
-	cont "Don't sweat it!"
-	cont "Smell ya!"
+	para "Now to escape!"
 	done
+

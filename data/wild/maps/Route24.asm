@@ -1,15 +1,15 @@
 Route24WildMons:
-	def_grass_wildmons 14 ; encounter rate
-	db 19, FARFETCHD
-	db 19, PIDGEOTTO
-	db 19, DODUO
-	db 19, KRABBY
-	db 19, BELLSPROUT
-	db 19, ODDISH
-	db 19, PONYTA
-	db 19, VULPIX
-	db 19, GROWLITHE
-	db 14, POLIWHIRL
+	def_grass_wildmons 13 ; encounter rate
+	db 30, PIDGEOTTO
+	db 30, BEEDRILL
+	db 30, GROWLITHE
+	db 30, FARFETCHD
+	db 30, KRABBY
+	db 30, MANKEY
+	db 30, CUBONE
+	db 30, SPEAROW
+	db 30, PIKACHU
+	db 30, FLAREON
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

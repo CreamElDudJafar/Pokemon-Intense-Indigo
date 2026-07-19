@@ -1,11 +1,13 @@
 	db DEX_OMASTAR ; pokedex id
 
-	db  70,  60, 125,  55, 115
-	;   hp  atk  def  spd  spc
+	db 70, 60, 125, 55, 115
+	; hp atk def spd spc
 
 	db ROCK, WATER ; type
-	db 1   ; catch rate
-	db 199 ; base exp
+
+	db 1 ; catch rate
+
+	db 235 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/omastar.pic", 0, 1 ; sprite dimensions
@@ -14,15 +16,18 @@ ELSE
 ENDC
 	dw OmastarPicFront, OmastarPicBack
 
-	db HYDRO_PUMP, BLIZZARD, SEISMIC_TOSS, BODY_SLAM ; level 1 learnset
+	db BODY_SLAM, HYDRO_PUMP, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        HORN_DRILL,   BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   \
-	     SUBMISSION,   SEISMIC_TOSS, RAGE,         MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         SKULL_BASH,   REST,         SUBSTITUTE,   \
+
+	tmhm TOXIC, HORN_DRILL, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     BUBBLEBEAM, WATER_GUN, ICE_BEAM, BLIZZARD, HYPER_BEAM, \
+	     SUBMISSION, SEISMIC_TOSS, RAGE, MIMIC, DOUBLE_TEAM, \
+	     REFLECT, BIDE, SKULL_BASH, REST, SUBSTITUTE, \
 	     SURF
+
 	; end
 
 	db BANK(OmastarPicFront)

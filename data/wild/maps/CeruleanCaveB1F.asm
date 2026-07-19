@@ -1,15 +1,15 @@
 CeruleanCaveB1FWildMons:
-	def_grass_wildmons 40 ; encounter rate
-	db 100, ALAKAZAM
+	def_grass_wildmons 5 ; encounter rate
 	db 100, TAUROS
 	db 100, STARMIE
+	db 100, ALAKAZAM
 	db 100, LAPRAS
-	db 100, GENGAR
-	db 100, ELECTRODE
 	db 100, SNORLAX
 	db 100, EXEGGUTOR
-	db 100, ZAPDOS
-	db 100, MEW
+	db 100, CHANSEY
+	db 100, GENGAR
+	db 100, JYNX
+	db 30, MEW
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

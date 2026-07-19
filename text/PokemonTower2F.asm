@@ -1,21 +1,25 @@
 _PokemonTower2FRivalWhatBringsYouHereText::
-	text "<RIVAL>: Hey,"
-	line "<PLAYER>! What"
-	cont "brings you here?"
-	cont "Your #MON"
-	cont "don't look dead!"
+	text "<RIVAL>: <PLAYER>!"
+	line "What gives?"
 
-	para "I can at least"
-	line "make them faint!"
-	cont "Let's go, pal!"
+	para "I'm MUCH stronger"
+	line "than I ever was."
+
+	para "You can't cheese"
+	line "it this time!"
+
+	para "Now meet your"
+	line "match."
 	done
 
 _PokemonTower2FRivalDefeatedText::
-	text "What?"
-	line "You stinker!"
+	text "HOW?"
 
-	para "I took it easy on"
-	line "you too!"
+	para "I'm levels"
+	line "HIGHER!"
+
+	para "...okay, you're"
+	line "strong."
 	prompt
 
 _PokemonTower2FRivalVictoryText::
@@ -28,30 +32,32 @@ _PokemonTower2FRivalVictoryText::
 	prompt
 
 _PokemonTower2FRivalHowsYourDexText::
-	text "How's your #DEX"
-	line "coming, pal?"
-	cont "I just caught a"
-	cont "CUBONE!"
+	text "TEAM ROCKET has"
+	line "been following"
+	cont "me for some time."
 
-	para "I can't find the"
-	line "grown-up MAROWAK"
-	cont "yet!"
+	para "Since you beat"
+	line "me, you can take"
+	cont "them on. But be"
+	cont "careful up there."
 
-	para "I doubt there are"
-	line "any left! Well, I"
-	cont "better get going!"
-	cont "I've got a lot to"
-	cont "accomplish, pal!"
+	para "I heard a rumor"
+	line "that ANOTHER"
+	cont "ghost haunts this"
+	cont "tower."
 
-	para "Smell ya later!"
+	para "Eh, you should"
+	line "be fine!"
 	done
 
 _PokemonTower2FChannelerText::
-	text "Even we could not"
-	line "identify the"
-	cont "wayward GHOSTs!"
+	text "ARISTO came up"
+	line "here to confront"
+	cont "2 ROCKETs."
 
-	para "A SILPH SCOPE"
-	line "might be able to"
-	cont "unmask them."
+	para "One of them is"
+	line "well known for"
+	cont "murdering"
+	cont "#MON."
 	done
+

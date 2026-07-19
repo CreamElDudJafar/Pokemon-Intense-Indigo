@@ -1,7 +1,7 @@
 _Route9CooltrainerF1BattleText::
-	text "You have #MON"
-	line "with you!"
-	cont "You're mine!"
+	text "Check out the"
+	line "#MON I got"
+	cont "from MOM!"
 	done
 
 _Route9CooltrainerF1EndBattleText::
@@ -10,15 +10,17 @@ _Route9CooltrainerF1EndBattleText::
 	prompt
 
 _Route9CooltrainerF1AfterBattleText::
-	text "You need light to"
-	line "get through that"
-	cont "dark tunnel ahead."
+	text "My MOM got these"
+	line "guys from the"
+	cont "TRADE in DONYOKU"
+	cont "city."
 	done
 
 _Route9CooltrainerM1BattleText::
-	text "Who's that walking"
-	line "with those good"
-	cont "looking #MON?"
+	text "Everyone came"
+	line "from DONYOKU"
+	cont "with powerful"
+	cont "#MON."
 	done
 
 _Route9CooltrainerM1EndBattleText::
@@ -31,9 +33,9 @@ _Route9CooltrainerM1AfterBattleText::
 	done
 
 _Route9CooltrainerM2BattleText::
-	text "I'm taking ROCK"
-	line "TUNNEL to go to"
-	cont "LAVENDER..."
+	text "I'm never going"
+	line "back to DARK"
+	cont "TUNNEL again."
 	done
 
 _Route9CooltrainerM2EndBattleText::
@@ -42,8 +44,8 @@ _Route9CooltrainerM2EndBattleText::
 	prompt
 
 _Route9CooltrainerM2AfterBattleText::
-	text "Are you off to"
-	line "ROCK TUNNEL too?"
+	text "Don't go without"
+	line "light in there!"
 	done
 
 _Route9CooltrainerF2BattleText::
@@ -99,23 +101,23 @@ _Route9Hiker2AfterBattleText::
 	done
 
 _Route9Youngster1BattleText::
-	text "I got up early"
-	line "every day to"
-	cont "raise my #MON"
-	cont "from cocoons!"
+	text "Look at this!"
+	line "I got some super"
+	cont "cool bugs from"
+	cont "my dad!"
 	done
 
 _Route9Youngster1EndBattleText::
-	text "WHAT?"
+	text "WHA-"
 
-	para "What a total"
-	line "waste of time!"
+	para "How did my bugs"
+	line "lose to you?"
 	prompt
 
 _Route9Youngster1AfterBattleText::
-	text "I have to collect"
-	line "more than bugs to"
-	cont "get stronger..."
+	text "DAD's a SCIENTIST"
+	line "who works for the"
+	cont "TRADE in KOUMAN."
 	done
 
 _Route9Hiker3BattleText::
@@ -152,6 +154,9 @@ _Route9Youngster2AfterBattleText::
 
 _Route9SignText::
 	text "ROUTE 9"
-	line "CERULEAN CITY-"
-	cont "ROCK TUNNEL"
+	line "SAKAYUME"
+	cont "DARK TUNNEL"
+
+	para "L:105"
 	done
+

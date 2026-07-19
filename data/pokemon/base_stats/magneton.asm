@@ -1,11 +1,13 @@
 	db DEX_MAGNETON ; pokedex id
 
-	db  50,  60,  95,  70, 120
-	;   hp  atk  def  spd  spc
+	db 50, 60, 95, 70, 120
+	; hp atk def spd spc
 
 	db ELECTRIC, ELECTRIC ; type
-	db 30 ; catch rate
-	db 161 ; base exp
+
+	db 1 ; catch rate
+
+	db 230 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/magneton.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw MagnetonPicFront, MagnetonPicBack
 
-	db THUNDER_WAVE, THUNDERBOLT, DOUBLE_TEAM, DOUBLE_EDGE ; level 1 learnset
+	db THUNDERBOLT, THUNDER_WAVE, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   RAGE,         \
-	     THUNDERBOLT,  THUNDER,      TELEPORT,     MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         SWIFT,        REST,         THUNDER_WAVE, \
-	     SUBSTITUTE,   FLASH
+
+	tmhm TOXIC, TAKE_DOWN, DOUBLE_EDGE, HYPER_BEAM, RAGE, \
+	     THUNDERBOLT, THUNDER, TELEPORT, MIMIC, DOUBLE_TEAM, \
+	     REFLECT, BIDE, SWIFT, REST, THUNDER_WAVE, \
+	     SUBSTITUTE, FLASH
+
 	; end
 
 	db BANK(MagnetonPicFront)

@@ -1,44 +1,43 @@
 _AgathaBeforeBattleText::
-	text "I am AGATHA of"
-	line "the ELITE FOUR!"
-
-	para "OAK's taken a lot"
-	line "of interest in"
-	cont "you, child!"
-
-	para "That old duff was"
-	line "once tough and"
-	cont "handsome! That"
-	cont "was decades ago!"
-
-	para "Now he just wants"
-	line "to fiddle with"
-	cont "his #DEX! He's"
-	cont "wrong! #MON"
-	cont "are for fighting!"
-
-	para "<PLAYER>! I'll show"
-	line "you how a real"
-	cont "trainer fights!"
+	text "You may be strong,"
+	line "<PLAYER>, but are"
+	cont "you lucky too?"
+	para "...You don't say"
+	line "much do you"
+	cont "<PLAYER>?"
+	para "VOICE: Welcome to"
+	line "the annual"
+	cont "#MON LEAGUE"
+	cont "WORLD TOURNAMENT."
+	para "Who among the"
+	line "best of the best,"
+	cont "will emerge, and"
+	cont "go home as a"
+	cont "celebrated"
+	cont "CHAMPION?"
+	para "Let Round 1 of"
+	line "this tournament"
+	cont "commence."
 	done
 
 _AgathaEndBattleText::
-	text "Oh ho!"
-	line "You're something"
-	cont "special, child!"
+	text "HUH?"
+	para "I lost?!"
+	para "I CAN'T RESTART?!"
+	para "HUMPH!"
 	prompt
 
 _AgathaAfterBattleText::
-	text "You win! I see"
-	line "what the old duff"
-	cont "sees in you now!"
-
-	para "I have nothing"
-	line "else to say! Run"
-	cont "along now, child!"
+	text "You ruined my"
+	line "chance for fame!"
+	para "VOICE: All winners"
+	line "may procede to"
+	cont "Round 2, in the"
+	cont "very next room."
 	done
 
 _AgathasRoomAgathaDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "VOICE: YOU CANNOT"
+	line "TURN BACK <PLAYER>."
 	done
+

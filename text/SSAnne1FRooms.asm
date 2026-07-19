@@ -4,21 +4,22 @@ _SSAnne1FRoomsWigglytuffText::
 	text_end
 
 _SSAnne1FRoomsGentleman1BattleText::
-	text "I travel alone"
-	line "on my journeys!"
+	text "DON'T YOU EVER"
+	line "KNOCK?!"
 
-	para "My #MON are my"
-	line "only friends!"
+	para "This mess wasn't"
+	line "mine you rude"
+	cont "child!"
 	done
 
 _SSAnne1FRoomsGentleman1EndBattleText::
-	text "My, my"
-	line "friends..."
+	text "My"
+	line "horrid luck..."
 	prompt
 
 _SSAnne1FRoomsGentleman1AfterBattleText::
-	text "You should be"
-	line "nice to friends!"
+	text "This puddle is"
+	line "so filthy..."
 	done
 
 _SSAnne1FRoomsGentleman2BattleText::
@@ -55,51 +56,64 @@ _SSAnne1FRoomsYoungsterAfterBattleText::
 	done
 
 _SSAnne1FRoomsCooltrainerFBattleText::
-	text "I collected these"
-	line "#MON from all"
-	cont "around the world!"
+	text "Eek! You can't"
+	line "just walk in!"
+
+	para "WIGGLYTUFF, get"
+	line "him!"
 	done
 
 _SSAnne1FRoomsCooltrainerFEndBattleText::
-	text "Oh no!"
-	line "I went around the"
-	cont "world for these!"
+	text "Darn!"
+
+	para "My poor"
+	line "WIGGLYTUFF!"
+
+	para "Get out you..."
 	prompt
 
 _SSAnne1FRoomsCooltrainerFAfterBattleText::
-	text "You hurt my poor"
-	line "worldly #MON!"
+	text "WIGGLYTUFF's"
+	line "better now..."
 
-	para "I demand that you"
-	line "heal them at a"
-	cont "#MON CENTER!"
+	para "Did you come to"
+	line "see the party? "
+
+	para "Go upstairs"
+	line "kid..."
 	done
 
 _SSAnne1FRoomsGirl1Text::
-	text "Waiter, I would"
-	line "like a cherry pie"
-	cont "please!"
+	text "We got plans for"
+	line "the #MON"
+	cont "in these boxes."
 	done
 
 _SSAnne1FRoomsMiddleAgedManText::
-	text "A cruise is so"
-	line "elegant yet cozy!"
+	text "Relax guys!"
+
+	para "We'll ship them"
+	line "#MON!"
 	done
 
 _SSAnne1FRoomsLittleGirlText::
-	text "I always travel"
-	line "with WIGGLYTUFF!"
+	text "Ship our TRADE  "
+	line "#MON worldwide!"
 	done
 
 _SSAnne1FRoomsGirl2Text::
-	text "We are cruising"
-	line "around the world."
+	text "SUPERIOR does   "
+	line "not want delays."
 	done
 
 _SSAnne1FRoomsGentleman3Text::
-	text "Ssh! I'm a GLOBAL"
-	line "POLICE agent!"
+	text "We're cargo"
+	line "guards."
 
-	para "I'm on the trail"
-	line "of TEAM ROCKET!"
+	para "Nobody's dumb"
+	line "enough to stand"
+	cont "up to us."
+
+	para "Out!"
 	done
+

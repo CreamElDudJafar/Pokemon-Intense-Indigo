@@ -1,11 +1,13 @@
 	db DEX_ELECTABUZZ ; pokedex id
 
-	db  65,  95,  60, 110,  100
-	;   hp  atk  def  spd  spc
+	db 65, 83, 57, 105, 85
+	; hp atk def spd spc
 
 	db ELECTRIC, ELECTRIC ; type
-	db 200 ; catch rate
-	db 156 ; base exp
+
+	db 25 ; catch rate
+
+	db 236 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/electabuzz.pic", 0, 1 ; sprite dimensions
@@ -14,16 +16,19 @@ ELSE
 ENDC
 	dw ElectabuzzPicFront, ElectabuzzPicBack
 
-	db PSYCHIC_M, THUNDERBOLT, ICE_PUNCH, THUNDER_WAVE ; level 1 learnset
+	db THUNDER_WAVE, THUNDERBOLT, PSYCHIC_M, ICE_PUNCH ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     DOUBLE_EDGE,  HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
-	     RAGE,         THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     \
-	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
-	     SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, PSYWAVE,      \
-	     SUBSTITUTE,   STRENGTH,     FLASH
+
+	tmhm MEGA_PUNCH, MEGA_KICK, TOXIC, BODY_SLAM, TAKE_DOWN, \
+	     DOUBLE_EDGE, HYPER_BEAM, SUBMISSION, COUNTER, SEISMIC_TOSS, \
+	     RAGE, THUNDERBOLT, THUNDER, PSYCHIC_M, TELEPORT, \
+	     MIMIC, DOUBLE_TEAM, REFLECT, BIDE, METRONOME, \
+	     SWIFT, SKULL_BASH, REST, THUNDER_WAVE, PSYWAVE, \
+	     SUBSTITUTE, STRENGTH, FLASH
+
 	; end
 
 	db BANK(ElectabuzzPicFront)

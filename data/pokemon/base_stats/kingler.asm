@@ -1,11 +1,13 @@
 	db DEX_KINGLER ; pokedex id
 
-	db  55, 130, 115,  75,  50
-	;   hp  atk  def  spd  spc
+	db 55, 130, 115, 75, 50
+	; hp atk def spd spc
 
 	db WATER, WATER ; type
-	db 30 ; catch rate
-	db 206 ; base exp
+
+	db 1 ; catch rate
+
+	db 225 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/kingler.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw KinglerPicFront, KinglerPicBack
 
-	db CRABHAMMER, BODY_SLAM, GUILLOTINE, NO_MOVE ; level 1 learnset
+	db GUILLOTINE, BODY_SLAM, CRABHAMMER, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   \
-	     RAGE,         MIMIC,        DOUBLE_TEAM,  BIDE,         REST,         \
-	     SUBSTITUTE,   CUT,          SURF,         STRENGTH
+
+	tmhm SWORDS_DANCE, TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     BUBBLEBEAM, WATER_GUN, ICE_BEAM, BLIZZARD, HYPER_BEAM, \
+	     RAGE, MIMIC, DOUBLE_TEAM, BIDE, REST, \
+	     SUBSTITUTE, CUT, SURF, STRENGTH
+
 	; end
 
 	db BANK(KinglerPicFront)

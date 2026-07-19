@@ -1,11 +1,13 @@
 	db DEX_CHARIZARD ; pokedex id
 
-	db  78,  84,  78, 100,  85
-	;   hp  atk  def  spd  spc
+	db 78, 84, 78, 100, 85
+	; hp atk def spd spc
 
 	db FIRE, FLYING ; type
-	db 45 ; catch rate
-	db 209 ; base exp
+
+	db 1 ; catch rate
+
+	db 235 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/charizard.pic", 0, 1 ; sprite dimensions
@@ -14,16 +16,19 @@ ELSE
 ENDC
 	dw CharizardPicFront, CharizardPicBack
 
-	db FLAMETHROWER, SLASH, BODY_SLAM, EARTHQUAKE ; level 1 learnset
+	db BODY_SLAM, EARTHQUAKE, FIRE_BLAST, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   SWORDS_DANCE, MEGA_KICK,    TOXIC,        BODY_SLAM,    \
-	     TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   SUBMISSION,   COUNTER,      \
-	     SEISMIC_TOSS, RAGE,         DRAGON_RAGE,  EARTHQUAKE,   FISSURE,      \
-	     DIG,          MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     CUT,          STRENGTH
+
+	tmhm MEGA_PUNCH, SWORDS_DANCE, MEGA_KICK, TOXIC, BODY_SLAM, \
+	     TAKE_DOWN, DOUBLE_EDGE, HYPER_BEAM, SUBMISSION, COUNTER, \
+	     SEISMIC_TOSS, RAGE, DRAGON_RAGE, EARTHQUAKE, FISSURE, \
+	     DIG, MIMIC, DOUBLE_TEAM, REFLECT, BIDE, \
+	     FIRE_BLAST, SWIFT, SKULL_BASH, REST, SUBSTITUTE, \
+	     CUT, STRENGTH
+
 	; end
 
 	db BANK(CharizardPicFront)

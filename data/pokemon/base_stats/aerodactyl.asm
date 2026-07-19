@@ -1,11 +1,13 @@
 	db DEX_AERODACTYL ; pokedex id
 
-	db  80, 105,  65, 130,  60
-	;   hp  atk  def  spd  spc
+	db 80, 105, 65, 130, 60
+	; hp atk def spd spc
 
 	db ROCK, FLYING ; type
-	db 1   ; catch rate
-	db 202 ; base exp
+
+	db 1 ; catch rate
+
+	db 255 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/aerodactyl.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw AerodactylPicFront, AerodactylPicBack
 
-	db FLY, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db DRAGON_RAGE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         DRAGON_RAGE,  MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        SKY_ATTACK,   \
-	     REST,         SUBSTITUTE,   FLY
+
+	tmhm RAZOR_WIND, WHIRLWIND, TOXIC, TAKE_DOWN, DOUBLE_EDGE, \
+	     HYPER_BEAM, RAGE, DRAGON_RAGE, MIMIC, DOUBLE_TEAM, \
+	     REFLECT, BIDE, FIRE_BLAST, SWIFT, SKY_ATTACK, \
+	     REST, SUBSTITUTE, FLY
+
 	; end
 
 	db BANK(AerodactylPicFront)

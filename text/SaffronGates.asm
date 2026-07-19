@@ -1,10 +1,13 @@
 _SaffronGateGuardGeeImThirstyText::
-	text "I'm on guard duty."
-	line "Gee, I'm thirsty,"
-	cont "though!"
+	text "I have strict"
+	line "orders."
 
-	para "Oh wait there,"
-	line "the road's closed."
+	para "No one"
+	line "unauthorized can"
+	cont "enter!"
+
+	para "Man, I need a"
+	line "drink..."
 	done
 
 _SaffronGateGuardImParchedText::
@@ -18,21 +21,24 @@ _SaffronGateGuardImParchedText::
 
 _SaffronGateGuardYouCanGoOnThroughText::
 	text_start
-
 	para "..."
 	line "Glug glug..."
 	cont "..."
-	cont "Gulp..."
-	cont "If you want to go"
-	cont "to SAFFRON CITY..."
-	cont "..."
-	cont "You can go on"
-	cont "through. I'll"
-	cont "share this with"
-	cont "the other guards!"
+	para "Gulp..."
+	para "We will grant you"
+	line "safe passage"
+	cont "inside... "
+	para ""
+	line "Just don't tell"
+	cont "our employer!"
+	para "That would be"
+	line "very dangerous."
 	done
 
 _SaffronGateGuardThanksForTheDrinkText::
-	text "Hi, thanks for"
-	line "the cool drinks!"
+	text "I hate those"
+	line "ROCKETs. "
+
+	para "So much."
 	done
+

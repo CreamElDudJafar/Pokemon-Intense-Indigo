@@ -1,11 +1,13 @@
 	db DEX_BELLSPROUT ; pokedex id
 
-	db  50,  75,  35,  40,  70
-	;   hp  atk  def  spd  spc
+	db 50, 75, 35, 40, 70
+	; hp atk def spd spc
 
 	db GRASS, POISON ; type
+
 	db 150 ; catch rate
-	db 84 ; base exp
+
+	db 180 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/bellsprout.pic", 0, 1 ; sprite dimensions
@@ -14,13 +16,16 @@ ELSE
 ENDC
 	dw BellsproutPicFront, BellsproutPicBack
 
-	db TOXIC, STUN_SPORE, DOUBLE_EDGE, NO_MOVE ; level 1 learnset
+	db TOXIC, STUN_SPORE, ACID, MEGA_DRAIN ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
-	     MEGA_DRAIN,   SOLARBEAM,    MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         REST,         SUBSTITUTE,   CUT
+
+	tmhm SWORDS_DANCE, TOXIC, TAKE_DOWN, DOUBLE_EDGE, RAGE, \
+	     MEGA_DRAIN, SOLARBEAM, MIMIC, DOUBLE_TEAM, REFLECT, \
+	     BIDE, REST, SUBSTITUTE, CUT
+
 	; end
 
 	db BANK(BellsproutPicFront)

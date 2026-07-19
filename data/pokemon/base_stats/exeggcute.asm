@@ -1,11 +1,13 @@
 	db DEX_EXEGGCUTE ; pokedex id
 
-	db  80,  65,  80,  40,  80
-	;   hp  atk  def  spd  spc
+	db 60, 40, 80, 40, 60
+	; hp atk def spd spc
 
 	db GRASS, PSYCHIC_TYPE ; type
+
 	db 1 ; catch rate
-	db 158 ; base exp
+
+	db 200 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/exeggcute.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw ExeggcutePicFront, ExeggcutePicBack
 
-	db HYPNOSIS, PSYBEAM, EXPLOSION, STUN_SPORE ; level 1 learnset
+	db EXPLOSION, HYPNOSIS, STUN_SPORE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         PSYCHIC_M,    \
-	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SELFDESTRUCT, EGG_BOMB,     REST,         PSYWAVE,      EXPLOSION,    \
+
+	tmhm TOXIC, TAKE_DOWN, DOUBLE_EDGE, RAGE, PSYCHIC_M, \
+	     TELEPORT, MIMIC, DOUBLE_TEAM, REFLECT, BIDE, \
+	     SELFDESTRUCT, EGG_BOMB, REST, PSYWAVE, EXPLOSION, \
 	     SUBSTITUTE
+
 	; end
 
 	db BANK(ExeggcutePicFront)

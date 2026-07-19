@@ -1,21 +1,25 @@
 _CeladonHotelGrannyText::
-	text "#MON? No, this"
-	line "is a hotel for"
-	cont "people."
+	text "Welcome to the-"
 
-	para "We're full up."
+	para "ITS YOU!"
+	para "No way YOU are"
+	line "buying any!"
 	done
 
 _CeladonHotelBeautyText::
-	text "I'm on vacation"
-	line "with my brother"
-	cont "and boy friend."
+	text "Ha! We heard of"
+	line "you!"
+	
+	para "Do you have"
+	line "1,000,000,000?"
 
-	para "CELADON is such a"
-	line "pretty city!"
+	para "No?"
+
+	para "Then get out of"
+	line "my store!"
 	done
 
 _CeladonHotelSuperNerdText::
-	text "Why did she bring"
-	line "her brother?"
+	text "We are making such"
+	line "a killing!"
 	done

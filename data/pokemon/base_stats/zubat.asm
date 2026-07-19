@@ -1,11 +1,13 @@
 	db DEX_ZUBAT ; pokedex id
 
-	db  40,  45,  35,  55,  40
-	;   hp  atk  def  spd  spc
+	db 40, 45, 35, 55, 40
+	; hp atk def spd spc
 
 	db POISON, FLYING ; type
+
 	db 255 ; catch rate
-	db 54 ; base exp
+
+	db 180 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/zubat.pic", 0, 1 ; sprite dimensions
@@ -14,13 +16,16 @@ ELSE
 ENDC
 	dw ZubatPicFront, ZubatPicBack
 
-	db WING_ATTACK, TOXIC, CONFUSE_RAY, NO_MOVE ; level 1 learnset
+	db TOXIC, MEGA_DRAIN, BITE, WING_ATTACK ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
-	     RAGE,         MEGA_DRAIN,   MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     SWIFT,        REST,         SUBSTITUTE
+
+	tmhm RAZOR_WIND, WHIRLWIND, TOXIC, TAKE_DOWN, DOUBLE_EDGE, \
+	     RAGE, MEGA_DRAIN, MIMIC, DOUBLE_TEAM, BIDE, \
+	     SWIFT, REST, SUBSTITUTE
+
 	; end
 
 	db BANK(ZubatPicFront)

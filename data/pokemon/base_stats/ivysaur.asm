@@ -1,11 +1,13 @@
 	db DEX_IVYSAUR ; pokedex id
 
-	db  60,  62,  63,  60,  80
-	;   hp  atk  def  spd  spc
+	db 60, 62, 63, 60, 80
+	; hp atk def spd spc
 
 	db GRASS, POISON ; type
+
 	db 45 ; catch rate
-	db 141 ; base exp
+
+	db 225 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/ivysaur.pic", 0, 1 ; sprite dimensions
@@ -14,13 +16,16 @@ ELSE
 ENDC
 	dw IvysaurPicFront, IvysaurPicBack
 
-	db SLEEP_POWDER, BODY_SLAM, RAZOR_LEAF, NO_MOVE ; level 1 learnset
+	db BODY_SLAM, SLEEP_POWDER, RAZOR_LEAF, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     RAGE,         MEGA_DRAIN,   SOLARBEAM,    MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         REST,         SUBSTITUTE,   CUT
+
+	tmhm SWORDS_DANCE, TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     RAGE, MEGA_DRAIN, SOLARBEAM, MIMIC, DOUBLE_TEAM, \
+	     REFLECT, BIDE, REST, SUBSTITUTE, CUT
+
 	; end
 
 	db BANK(IvysaurPicFront)

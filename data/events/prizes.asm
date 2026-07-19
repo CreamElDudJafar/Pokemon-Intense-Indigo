@@ -7,37 +7,37 @@ NoThanksText:
 	db "NO THANKS@"
 
 PrizeMenuMon1Entries:
-	db IVYSAUR
-	db CHARMELEON
-	db WARTORTLE
+	db BULBASAUR
+	db CHARMANDER
+	db SQUIRTLE
 	db "@"
 
 PrizeMenuMon1Cost:
-	bcd2 950
-	bcd2 950
-	bcd2 1050
+	bcd2 6500
+	bcd2 6500
+	bcd2 6500
 	db "@"
 
 PrizeMenuMon2Entries:
-	db NIDOKING
-	db NIDOQUEEN
-	db PORYGON
+	db KANGASKHAN
+	db DITTO
+	db SEEL
 	db "@"
 
 PrizeMenuMon2Cost:
-	bcd2 4600
+	bcd2 6500
 	bcd2 4600
 	bcd2 1000
 	db "@"
 
 PrizeMenuTMsEntries:
-	db TM_ROCK_SLIDE
-	db TM_HYPER_BEAM
-	db TM_SUBSTITUTE
+	db NUGGET
+	db ETHER
+	db MOON_STONE
 	db "@"
 
 PrizeMenuTMsCost:
-	bcd2 3300
-	bcd2 5555
-	bcd2 9900
+	bcd2 1
+	bcd2 7777
+	bcd2 9999
 	db "@"

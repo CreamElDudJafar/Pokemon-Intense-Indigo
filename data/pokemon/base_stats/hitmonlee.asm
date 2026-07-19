@@ -1,11 +1,13 @@
 	db DEX_HITMONLEE ; pokedex id
 
-	db  50, 120,  53,  87,  35
-	;   hp  atk  def  spd  spc
+	db 50, 120, 53, 87, 35
+	; hp atk def spd spc
 
 	db FIGHTING, FIGHTING ; type
-	db 255 ; catch rate
-	db 139 ; base exp
+
+	db 15 ; catch rate
+
+	db 195 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/hitmonlee.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw HitmonleePicFront, HitmonleePicBack
 
-	db HI_JUMP_KICK, BODY_SLAM, SEISMIC_TOSS, NO_MOVE ; level 1 learnset
+	db HI_JUMP_KICK, SEISMIC_TOSS, BODY_SLAM, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     DOUBLE_EDGE,  SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     MIMIC,        DOUBLE_TEAM,  BIDE,         METRONOME,    SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   STRENGTH
+
+	tmhm MEGA_PUNCH, MEGA_KICK, TOXIC, BODY_SLAM, TAKE_DOWN, \
+	     DOUBLE_EDGE, SUBMISSION, COUNTER, SEISMIC_TOSS, RAGE, \
+	     MIMIC, DOUBLE_TEAM, BIDE, METRONOME, SWIFT, \
+	     SKULL_BASH, REST, SUBSTITUTE, STRENGTH
+
 	; end
 
 	db BANK(HitmonleePicFront)

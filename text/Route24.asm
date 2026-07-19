@@ -50,8 +50,8 @@ _Route24CooltrainerM1JoinTeamRocketText::
 	done
 
 _Route24CooltrainerM1DefeatedText::
-	text "Arrgh!"
-	line "You are good!"
+	text "Yargh!"
+	line "You're good!"
 	prompt
 
 _Route24CooltrainerM1YouCouldBecomeATopLeaderText::

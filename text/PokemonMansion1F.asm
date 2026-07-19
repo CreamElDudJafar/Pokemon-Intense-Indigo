@@ -1,7 +1,11 @@
 _PokemonMansion1FScientistBattleText::
-	text "Who are you? There"
-	line "shouldn't be"
-	cont "anyone here."
+	text "Who are you?!"
+
+	para "Are you their"
+	line "spy?"
+
+	para "You will never"
+	line "steal my #MON!"
 	done
 
 _PokemonMansion1FScientistEndBattleText::
@@ -9,9 +13,9 @@ _PokemonMansion1FScientistEndBattleText::
 	prompt
 
 _PokemonMansion1FScientistAfterBattleText::
-	text "A key? I don't"
-	line "know what you're"
-	cont "talking about."
+	text "My SUPERIORs"
+	line "know what you"
+	cont "are up to boy..."
 	done
 
 _PokemonMansion1FSwitchText::

@@ -1,11 +1,13 @@
 	db DEX_NIDOKING ; pokedex id
 
-	db  81,  92,  77,  85,  75
-	;   hp  atk  def  spd  spc
+	db 81, 92, 77, 85, 75
+	; hp atk def spd spc
 
 	db POISON, GROUND ; type
-	db 110 ; catch rate
-	db 195 ; base exp
+
+	db 1 ; catch rate
+
+	db 247 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/nidoking.pic", 0, 1 ; sprite dimensions
@@ -14,17 +16,20 @@ ELSE
 ENDC
 	dw NidokingPicFront, NidokingPicBack
 
-	db BLIZZARD, THUNDERBOLT, LOVELY_KISS, EARTHQUAKE ; level 1 learnset
+	db EARTHQUAKE, LOVELY_KISS, BLIZZARD, THUNDERBOLT ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        HORN_DRILL,   BODY_SLAM,    \
-	     TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     \
-	     BLIZZARD,     HYPER_BEAM,   PAY_DAY,      SUBMISSION,   COUNTER,      \
-	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
-	     FISSURE,      MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
-	     SURF,         STRENGTH
+
+	tmhm MEGA_PUNCH, MEGA_KICK, TOXIC, HORN_DRILL, BODY_SLAM, \
+	     TAKE_DOWN, DOUBLE_EDGE, BUBBLEBEAM, WATER_GUN, ICE_BEAM, \
+	     BLIZZARD, HYPER_BEAM, PAY_DAY, SUBMISSION, COUNTER, \
+	     SEISMIC_TOSS, RAGE, THUNDERBOLT, THUNDER, EARTHQUAKE, \
+	     FISSURE, MIMIC, DOUBLE_TEAM, REFLECT, BIDE, \
+	     FIRE_BLAST, SKULL_BASH, REST, ROCK_SLIDE, SUBSTITUTE, \
+	     SURF, STRENGTH
+
 	; end
 
 	db BANK(NidokingPicFront)

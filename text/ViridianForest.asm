@@ -1,49 +1,55 @@
 _ViridianForestYoungster1Text::
-	text "I came here with"
-	line "some friends!"
+	text "I'm not selling"
+	line "KABUTOs or"
+	cont "OMANYTEs today."
 
-	para "They're out for"
-	line "#MON fights!"
+	para "Run along now..."
 	done
 
 _ViridianForestYoungster2BattleText::
-	text "Hey! You have"
-	line "#MON! Come on!"
-	cont "Let's battle'em!"
+	text "Hi!"
+
+	para "Do you have"
+	line "#MON?"
+
+	para "Wanna see my"
+	line "BUG #MON?"
 	done
 
 _ViridianForestYoungster2EndBattleText::
 	text "No!"
-	line "CATERPIE can't"
-	cont "cut it!"
+	line "VENONAT can't"
+	cont "hax it!"
 	prompt
 
 _ViridianForestYoungster2AfterBattleText::
-	text "Ssh! You'll scare"
-	line "the bugs away!"
+	text "I'm the weakest"
+	line "trainer of them."
 	done
 
 _ViridianForestYoungster3BattleText::
-	text "Yo! You can't jam"
-	line "out if you're a"
-	cont "#MON trainer!"
+	text "What's the hurry?"
+
+	para "I got some    "
+	line "awesome #MON."
 	done
 
 _ViridianForestYoungster3EndBattleText::
-	text "Huh?"
-	line "I ran out of"
-	cont "#MON!"
+	text "No!"
+
+	para "My poor"
+	line "BUTTERFREE!"
 	prompt
 
 _ViridianForestYoungster3AfterBattleText::
-	text "Darn! I'm going"
-	line "to catch some"
-	cont "stronger ones!"
+	text "I'm going to  "
+	line "make my other "
+	cont "#MON stronger!"
 	done
 
 _ViridianForestYoungster4BattleText::
-	text "Hey, wait up!"
-	line "What's the hurry?"
+	text "There are scary"
+	line "men out there."
 	done
 
 _ViridianForestYoungster4EndBattleText::
@@ -53,71 +59,78 @@ _ViridianForestYoungster4EndBattleText::
 	prompt
 
 _ViridianForestYoungster4AfterBattleText::
-	text "Sometimes, you"
-	line "can find stuff on"
-	cont "the ground!"
+	text "There's a strong"
+	line "BUG CATCHER in"
+	cont "the end.    "
 
-	para "I'm looking for"
-	line "the stuff I"
-	cont "dropped!"
+	para "I think he used"
+	line "to have a"
+	cont "METAPOD..."
 	done
 
 _ViridianForestYoungster5Text::
-	text "I ran out of #"
-	line "BALLs to catch"
-	cont "#MON with!"
+	text "No.1: Out of my"
+	line "way worm!"
 
-	para "You should carry"
-	line "extras!"
+	para "I must find a MEW"
+	line "for the ROCKET"
+	cont "CHIEF!"
 	done
 
 _ViridianForestTrainerTips1Text::
-	text "TRAINER TIPS"
+	text "Level 13. "
 
-	para "If you want to"
-	line "avoid battles,"
-	cont "stay away from"
-	cont "grassy areas!"
+	para "This is the"
+	line "highest level"
+	cont "you'll encounter."
+
+	para "Plan accordingly."
 	done
 
 _ViridianForestUseAntidoteSignText::
-	text "For poison, use"
-	line "ANTIDOTE! Get it"
-	cont "at #MON MARTs!"
+	text "RIPPUKU STATE"
+	line "JUNGLE..."
+
+	para "Naturally..."
+
+	para "Unnatural."
 	done
 
 _ViridianForestTrainerTips2Text::
-	text "TRAINER TIPS"
+	text "GYM level 15."
 
-	para "Contact PROF.OAK"
-	line "via PC to get"
-	cont "your #DEX"
-	cont "evaluated!"
+	para "The highest"
+	line "level #MON"
+	cont "in the gym..."
+
+	para "Plan well..."
 	done
 
 _ViridianForestTrainerTips3Text::
-	text "TRAINER TIPS"
+	text "#MON MART"
+	line "has upgraded"
+	cont "to SUPER POTIONS!"
 
-	para "No stealing of"
-	line "#MON from"
-	cont "other trainers!"
-	cont "Catch only wild"
-	cont "#MON!"
+	para "Save up your"
+	line "cash for your"
+	cont "#MON..."
 	done
 
 _ViridianForestTrainerTips4Text::
-	text "TRAINER TIPS"
+	text "This sign is"
+	line "old..."
 
-	para "Weaken #MON"
-	line "before attempting"
-	cont "capture!"
+	para "Never forget our"
+	line "countless"
+	cont "contributions to"
+	cont "AIZOME."
 
-	para "When healthy,"
-	line "they may escape!"
+	para "-The TRADE"
 	done
 
 _ViridianForestLeavingSignText::
-	text "LEAVING"
-	line "VIRIDIAN FOREST"
-	cont "PEWTER CITY AHEAD"
+	text "LEAVING "
+	line "RIPPUKU JUNGLE"
+	cont "PAGADO TOWN AHEAD"
 	done
+

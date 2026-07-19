@@ -1,11 +1,13 @@
 	db DEX_VICTREEBEL ; pokedex id
 
-	db  80, 105,  65,  70, 100
-	;   hp  atk  def  spd  spc
+	db 80, 105, 65, 70, 100
+	; hp atk def spd spc
 
 	db GRASS, POISON ; type
-	db 45 ; catch rate
-	db 191 ; base exp
+
+	db 1 ; catch rate
+
+	db 238 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/victreebel.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw VictreebelPicFront, VictreebelPicBack
 
-	db RAZOR_LEAF, STUN_SPORE, BODY_SLAM, LOVELY_KISS ; level 1 learnset
+	db SLEEP_POWDER, STUN_SPORE, LOVELY_KISS, RAZOR_LEAF ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    MIMIC,        \
-	     DOUBLE_TEAM,  REFLECT,      BIDE,         REST,         SUBSTITUTE,   \
+
+	tmhm SWORDS_DANCE, TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, \
+	     HYPER_BEAM, RAGE, MEGA_DRAIN, SOLARBEAM, MIMIC, \
+	     DOUBLE_TEAM, REFLECT, BIDE, REST, SUBSTITUTE, \
 	     CUT
+
 	; end
 
 	db BANK(VictreebelPicFront)

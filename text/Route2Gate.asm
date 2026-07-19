@@ -1,12 +1,14 @@
 _Route2GateOaksAideFlashExplanationText::
-	text "The HM FLASH"
-	line "lights even the"
-	cont "darkest dungeons."
+	text "ITEMFINDER"
+	line "will indicate"
+	cont "a hidden item"
+	cont "nearby."
 	done
 
 _Route2GateYoungsterText::
-	text "Once a #MON"
-	line "learns FLASH, you"
-	cont "can get through"
-	cont "ROCK TUNNEL."
+	text "Darn it, if a"
+	line "#MON can"
+	cont "somehow light"
+	cont "up DARK TUNNEL..."
 	done
+

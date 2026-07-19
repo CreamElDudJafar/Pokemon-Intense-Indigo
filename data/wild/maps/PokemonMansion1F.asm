@@ -1,15 +1,15 @@
 PokemonMansion1FWildMons:
-	def_grass_wildmons 100 ; encounter rate
-	db 60, MAGMAR
-	db 60, MUK
-	db 58, WEEZING
-	db 59, FLAREON
-	db 60, MAGMAR
-	db 58, ARCANINE
-	db 57, FLAREON
-	db 59, NINETALES
-	db 60, CHARIZARD
-	db 58, CLEFABLE
+	def_grass_wildmons 8 ; encounter rate
+	db 99, WEEZING
+	db 99, FLAREON
+	db 99, VAPOREON
+	db 99, FLAREON
+	db 99, VAPOREON
+	db 99, MAGNETON
+	db 30, OMANYTE
+	db 30, KABUTO
+	db 100, MUK
+	db 100, WEEZING
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

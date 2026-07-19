@@ -4,51 +4,51 @@ TrainerAIPointers:
 	; first byte, number of times (per Pokémon) it can occur
 	; next two bytes, pointer to AI subroutine for trainer class
 	; subroutines are defined in engine/battle/trainer_ai.asm
-	dbw 3, GenericAI  ; youngster
-	dbw 3, GenericAI ; bugcatcher
-	dbw 5, AgathaAI ; lass
-	dbw 5, LoreleiAI ; sailor
-	dbw 5, LoreleiAI ; jr trainer m
-	dbw 5, LoreleiAI ; jr trainer f
-	dbw 5, Rival3AI ; pokemanic
-	dbw 5, CooltrainerFAI ; supernerd
-	dbw 5, AgathaAI ; hiker
-	dbw 3, JugglerAI ; biker
-	dbw 5, Rival3AI ; burglar
-	dbw 5, AgathaAI ; engineer
+	dbw 9, AgathaAI ; youngster
+	dbw 9, AgathaAI ; bug catcher
+	dbw 42, LanceAI ; lass
+	dbw 9, CooltrainerFAI ; sailor
+	dbw 3, JugglerAI ; jr trainer m
+	dbw 3, JugglerAI ; jr trainer f
+	dbw 10, CooltrainerFAI ; pokemaniac
+	dbw 3, JugglerAI ; super nerd
+	dbw 3, JugglerAI ; hiker
+	dbw 6, Rival3AI ; biker
+	dbw 15, CooltrainerFAI ; burglar
+	dbw 153, BrockAI ; superior
 	dbw 3, JugglerAI ; unused juggler
-	dbw 5, CooltrainerFAI ; fisher
-	dbw 3, GenericAI ; swimmer
-	dbw 5, Rival3AI ; cueball
-	dbw 5, AgathaAI ; gambler
-	dbw 5, CooltrainerFAI  ; beauty
-	dbw 5, CooltrainerFAI ; psychic
-	dbw 5, LoreleiAI ; rocker
-	dbw 5, CooltrainerFAI ; juggler
-	dbw 5, Rival3AI ; tamer
-	dbw 3, GenericAI ; birdkeeper
-	dbw 5, Rival3AI ; blackbelt
-	dbw 3, AgathaAI  ; rival1
-	dbw 255, BrockAI ; oak
-	dbw 1, GenericAI ; chief
-	dbw 5, CooltrainerFAI ; scientist
-	dbw 5,  Rival3AI ; giovanni
-	dbw 5, CooltrainerFAI ; rocket
-	dbw 5, Rival3AI ; cooltrainerm
-	dbw 5, CooltrainerFAI ; cooltrainerf
-	dbw 5, Rival3AI ; bruno
-	dbw 5, BrockAI ; brock
-	dbw 5, LoreleiAI ; misty
-	dbw 5, Rival3AI ; surge
-	dbw 255, BrockAI ; erika
-	dbw 255, BrockAI; koga
-	dbw 255, BrockAI ; blaine
-	dbw 255, BrockAI ; sabrina
-	dbw 3, Rival3AI ; Gentleman
-	dbw 5, CooltrainerFAI ; rival2
-	dbw 255, BrockAI ; rival3
-	dbw 255, BrockAI ; lorelei
-	dbw 5, Rival3AI ; Channeler
-	dbw 255, BrockAI ; agatha
-	dbw 255, BrockAI ; lance
+	dbw 10, CooltrainerFAI ; fisherman
+	dbw 5, Rival3AI ; swimmer
+	dbw 3, JugglerAI ; cue ball
+	dbw 7, Rival3AI ; gambler
+	dbw 3, $6559 ; beauty ; BUG VALUE AI
+	dbw 13, LanceAI ; psychic
+	dbw 9, CooltrainerFAI ; rocker
+	dbw 13, CooltrainerFAI ; juggler
+	dbw 7, Rival3AI ; tamer
+	dbw 7, Rival3AI ; bird keeper
+	dbw 7, Rival3AI ; blackbelt
+	dbw 8, AgathaAI ; rival1
+	dbw 251, CooltrainerFAI ; prof. oak
+	dbw 240, BrockAI ; chief
+	dbw 58, BrockAI ; scientist
+	dbw 255, BrockAI ; caligula
+	dbw 58, CooltrainerFAI ; rocket
+	dbw 58, CooltrainerFAI ; cooltrainer m
+	dbw 58, CooltrainerFAI ; cooltrainer f
+	dbw 9, CooltrainerFAI ; bruce
+	dbw 9, LoreleiAI ; simil
+	dbw 15, LanceAI ; karma
+	dbw 15, CooltrainerFAI ; epifanio
+	dbw 58, LanceAI ; anila
+	dbw 58, BrockAI ; nimo
+	dbw 90, LanceAI ; aristo
+	dbw 74, LanceAI ; zenobia
+	dbw 7, Rival3AI ; gentleman
+	dbw 153, CooltrainerFAI ; rival2
+	dbw 250, BrockAI ; rival3
+	dbw 249, CooltrainerFAI ; scarlet
+	dbw 9, CooltrainerFAI ; channeler
+	dbw 253, LanceAI ; myrtle
+	dbw 253, BrockAI ; okido
 	assert_table_length NUM_TRAINERS

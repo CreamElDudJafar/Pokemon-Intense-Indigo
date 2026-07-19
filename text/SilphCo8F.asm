@@ -1,11 +1,11 @@
 __SilphCo8FSilphWorkerMThanksForSavingUsText::
-	text "I wonder if SILPH"
-	line "is finished..."
+	text "Our empire has"
+	line "been successful."
 	done
 
 _SilphCo8FSilphWorkerMThanksForSavingUsText::
-	text "Thanks for saving"
-	line "us!"
+	text "Oh geez its the"
+	line "cops!"
 	done
 
 _SilphCo8FRocket1BattleText::
@@ -14,14 +14,14 @@ _SilphCo8FRocket1BattleText::
 	done
 
 _SilphCo8FRocket1EndBattleText::
-	text "Not"
-	line "enough grit!"
+	text "Forgive"
+	line "me BOSS!"
 	prompt
 
 _SilphCo8FRocket1AfterBattleText::
-	text "If you don't turn"
-	line "back, I'll call"
-	cont "for backup!"
+	text "If our plan goes"
+	line "through, all"
+	cont "is forgiven."
 	done
 
 _SilphCo8FScientistBattleText::
@@ -36,21 +36,22 @@ _SilphCo8FScientistEndBattleText::
 
 _SilphCo8FScientistAfterBattleText::
 	text "So, what do you"
-	line "think of SILPH"
-	cont "BUILDING's maze?"
+	line "think of ROCKET"
+	cont "HEADQUARTERS?"
 	done
 
 _SilphCo8FRocket2BattleText::
-	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	text "No.2: Now no one"
+	line "can save you now."
 	done
 
 _SilphCo8FRocket2EndBattleText::
-	text "Whoo!"
-	line "Oh brothers!"
+	text "This"
+	line "might be bad."
 	prompt
 
 _SilphCo8FRocket2AfterBattleText::
-	text "I'll leave you up"
-	line "to my brothers!"
+	text "No.2: Its my job"
+	line "to stall you..."
 	done
+

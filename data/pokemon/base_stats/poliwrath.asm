@@ -1,11 +1,13 @@
 	db DEX_POLIWRATH ; pokedex id
 
-	db  90,  85,  95,  70,  70
-	;   hp  atk  def  spd  spc
+	db 90, 85, 95, 70, 75
+	; hp atk def spd spc
 
 	db WATER, FIGHTING ; type
-	db 150 ; catch rate
-	db 185 ; base exp
+
+	db 1 ; catch rate
+
+	db 235 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/poliwrath.pic", 0, 1 ; sprite dimensions
@@ -14,16 +16,19 @@ ELSE
 ENDC
 	dw PoliwrathPicFront, PoliwrathPicBack
 
-	db WATERFALL, ICE_BEAM, EARTHQUAKE, LOVELY_KISS ; level 1 learnset
+	db SURF, LOVELY_KISS, EARTHQUAKE, BODY_SLAM ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
-	     EARTHQUAKE,   FISSURE,      PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  \
-	     BIDE,         METRONOME,    SKULL_BASH,   REST,         PSYWAVE,      \
-	     SUBSTITUTE,   SURF,         STRENGTH
+
+	tmhm MEGA_PUNCH, MEGA_KICK, TOXIC, BODY_SLAM, TAKE_DOWN, \
+	     DOUBLE_EDGE, BUBBLEBEAM, WATER_GUN, ICE_BEAM, BLIZZARD, \
+	     HYPER_BEAM, SUBMISSION, COUNTER, SEISMIC_TOSS, RAGE, \
+	     EARTHQUAKE, FISSURE, PSYCHIC_M, MIMIC, DOUBLE_TEAM, \
+	     BIDE, METRONOME, SKULL_BASH, REST, PSYWAVE, \
+	     SUBSTITUTE, SURF, STRENGTH
+
 	; end
 
 	db BANK(PoliwrathPicFront)

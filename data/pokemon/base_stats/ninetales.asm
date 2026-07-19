@@ -1,11 +1,13 @@
 	db DEX_NINETALES ; pokedex id
 
-	db  73,  76,  75, 100, 100
-	;   hp  atk  def  spd  spc
+	db 73, 76, 75, 100, 100
+	; hp atk def spd spc
 
 	db FIRE, FIRE ; type
-	db 66 ; catch rate
-	db 178 ; base exp
+
+	db 1 ; catch rate
+
+	db 244 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/ninetales.pic", 0, 1 ; sprite dimensions
@@ -15,13 +17,16 @@ ENDC
 	dw NinetalesPicFront, NinetalesPicBack
 
 	db FIRE_SPIN, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   \
-	     RAGE,         DIG,          MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         FIRE_BLAST,   SWIFT,        SKULL_BASH,   REST,         \
+
+	tmhm TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, HYPER_BEAM, \
+	     RAGE, DIG, MIMIC, DOUBLE_TEAM, REFLECT, \
+	     BIDE, FIRE_BLAST, SWIFT, SKULL_BASH, REST, \
 	     SUBSTITUTE
+
 	; end
 
 	db BANK(NinetalesPicFront)

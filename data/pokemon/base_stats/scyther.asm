@@ -1,11 +1,13 @@
 	db DEX_SCYTHER ; pokedex id
 
-	db  70, 110,  80, 105,  55
-	;   hp  atk  def  spd  spc
+	db 70, 110, 80, 105, 55
+	; hp atk def spd spc
 
 	db BUG, FLYING ; type
-	db 20  ; catch rate
-	db 187 ; base exp
+
+	db 45 ; catch rate
+
+	db 230 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/scyther.pic", 0, 1 ; sprite dimensions
@@ -14,13 +16,16 @@ ELSE
 ENDC
 	dw ScytherPicFront, ScytherPicBack
 
-	db SUBSTITUTE, SLASH, QUICK_ATTACK, WING_ATTACK ; level 1 learnset
+	db SLASH, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   \
-	     RAGE,         MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   CUT
+
+	tmhm SWORDS_DANCE, TOXIC, TAKE_DOWN, DOUBLE_EDGE, HYPER_BEAM, \
+	     RAGE, MIMIC, DOUBLE_TEAM, BIDE, SWIFT, \
+	     SKULL_BASH, REST, SUBSTITUTE, CUT
+
 	; end
 
 	db BANK(ScytherPicFront)

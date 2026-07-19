@@ -59,10 +59,10 @@ _CeladonMart3FGameBoyKid3Text::
 	done
 
 _CeladonMart3FLittleBoyText::
-	text "You can identify"
-	line "#MON you got"
-	cont "in trades by"
-	cont "their ID Numbers!"
+	text "We found out that"
+	line "Dr.I may be one"
+	cont "of the two"
+	cont "SUPERIORS..."
 	done
 
 _CeladonMart3FSNESText::

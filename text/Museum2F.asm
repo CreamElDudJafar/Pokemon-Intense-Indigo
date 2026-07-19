@@ -1,36 +1,33 @@
 _Museum2FYoungsterText::
-	text "MOON STONE?"
-
-	para "What's so special"
-	line "about it?"
+	text "The TRADE"
+	line "constructed"
+	cont "train tunnels..."
 	done
 
 _Museum2FGrampsText::
-	text "July 20, 1969!"
-
-	para "The 1st lunar"
-	line "landing!"
-
-	para "I bought a color"
-	line "TV to watch it!"
+	text "The #MON"
+	line "LEAGUE battle"
+	cont "arenas will have"
+	cont "special effects"
+	cont "for trainers."
 	done
 
 _Museum2FScientistText::
-	text "We have a space"
-	line "exhibit now."
+	text "This is the"
+	line "arrival section."
 	done
 
 _Museum2FBrunetteGirlText::
-	text "I want a PIKACHU!"
-	line "It's so cute!"
-
-	para "I asked my Daddy"
-	line "to catch me one!"
+	text "The train to the"
+	line "PLATEAU will come"
+	cont "when all"
+	cont "challengers"
+	cont "arrive."
 	done
 
 _Museum2FHikerText::
-	text "Yeah, a PIKACHU"
-	line "soon, I promise!"
+	text "Sorry, the train"
+	line "hasn't come yet."
 	done
 
 _Museum2FSpaceShuttleSignText::
@@ -40,6 +37,7 @@ _Museum2FSpaceShuttleSignText::
 
 _Museum2FMoonStoneSignText::
 	text "Meteorite that"
-	line "fell on MT.MOON."
+	line "fell on MT.DOOM."
 	cont "(MOON STONE?)"
 	done
+

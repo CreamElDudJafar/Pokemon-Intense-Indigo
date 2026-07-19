@@ -3,23 +3,23 @@ _RocketHideoutB1FRocket5EndBattleText::
 	text_end
 
 _RocketHideoutB1FRocket1BattleText::
-	text "Who are you? How"
-	line "did you get here?"
+	text "Ha ha ha! You can"
+	line "NEVER defeat us!"
 	done
 
 _RocketHideoutB1FRocket1EndBattleText::
-	text "Oww!"
-	line "Beaten!"
+	text "Crush"
+	line "him!!!"
 	prompt
 
 _RocketHideoutB1FRocket1AfterBattleText::
-	text "Are you dissing"
-	line "TEAM ROCKET?"
+	text "SUPERIOR's going"
+	line "to kill us. "
 	done
 
 _RocketHideoutB1FRocket2BattleText::
-	text "You broke into"
-	line "our operation?"
+	text "You're not      "
+	line "WELCOME HERE!"
 	done
 
 _RocketHideoutB1FRocket2EndBattleText::
@@ -27,9 +27,9 @@ _RocketHideoutB1FRocket2EndBattleText::
 	prompt
 
 _RocketHideoutB1FRocket2AfterBattleText::
-	text "You're not going"
-	line "to get away with"
-	cont "this, brat!"
+	text "Our guys at "
+	line "MT.DOOM didn't"
+	cont "stand a chance..."
 	done
 
 _RocketHideoutB1FRocket3BattleText::
@@ -42,9 +42,9 @@ _RocketHideoutB1FRocket3EndBattleText::
 	prompt
 
 _RocketHideoutB1FRocket3AfterBattleText::
-	text "SILPH SCOPE?"
-	line "I don't know"
-	cont "where it is!"
+	text "Everyone of us"
+	line "knows who you"
+	cont "are, <PLAYER>! "
 	done
 
 _RocketHideoutB1FRocket4BattleText::
@@ -58,17 +58,21 @@ _RocketHideoutB1FRocket4EndBattleText::
 	prompt
 
 _RocketHideoutB1FRocket4AfterBattleText::
-	text "OK, I'll talk!"
-	line "Take the elevator"
-	cont "to see my BOSS!"
+	text "GET OUT!"
+
+	para "Before my"
+	line "superior members"
+	cont "find you..."
 	done
 
 _RocketHideoutB1FRocket5BattleText::
-	text "Are you lost, you"
-	line "little rat?"
+	text "I'll give you a"
+	line "place to stay!"
 	done
 
 _RocketHideoutB1FRocket5AfterBattleText::
-	text "Uh-oh, that fight"
-	line "opened the door!"
+	text "PA: Ah! You must"
+	line "be <PLAYER>!"
+
+	para "Come forth!"
 	done

@@ -1,11 +1,13 @@
 	db DEX_WARTORTLE ; pokedex id
 
-	db  59,  63,  80,  58,  65
-	;   hp  atk  def  spd  spc
+	db 59, 63, 80, 58, 65
+	; hp atk def spd spc
 
 	db WATER, WATER ; type
+
 	db 45 ; catch rate
-	db 143 ; base exp
+
+	db 215 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/wartortle.pic", 0, 1 ; sprite dimensions
@@ -14,15 +16,18 @@ ELSE
 ENDC
 	dw WartortlePicFront, WartortlePicBack
 
-	db WATERFALL, BLIZZARD, BODY_SLAM, DIG ; level 1 learnset
+	db SEISMIC_TOSS, BODY_SLAM, WATERFALL, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
-	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
-	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         DIG,          \
-	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   SURF,         STRENGTH
+
+	tmhm MEGA_PUNCH, MEGA_KICK, TOXIC, BODY_SLAM, TAKE_DOWN, \
+	     DOUBLE_EDGE, BUBBLEBEAM, WATER_GUN, ICE_BEAM, BLIZZARD, \
+	     SUBMISSION, COUNTER, SEISMIC_TOSS, RAGE, DIG, \
+	     MIMIC, DOUBLE_TEAM, REFLECT, BIDE, SKULL_BASH, \
+	     REST, SUBSTITUTE, SURF, STRENGTH
+
 	; end
 
 	db BANK(WartortlePicFront)

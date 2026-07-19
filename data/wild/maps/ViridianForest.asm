@@ -1,14 +1,14 @@
 ViridianForestWildMons:
-	def_grass_wildmons 5 ; encounter rate
-	db  3, PIKACHU
-	db  5, METAPOD
-	db  5, KAKUNA
-	db  5, PARAS
-	db  5, VENONAT
-	db  6, PIDGEY
-	db  5, ODDISH
-	db  5, BELLSPROUT
-	db  5, POLIWAG
+	def_grass_wildmons 6 ; encounter rate
+	db  9, PIKACHU
+	db  9, POLIWAG
+	db  9, BELLSPROUT
+	db  9, GROWLITHE
+	db  9, KRABBY
+	db  9, PARAS
+	db  9, PSYDUCK
+	db  9, VULPIX
+	db  9, MANKEY
 	db  9, PONYTA
 	end_grass_wildmons
 

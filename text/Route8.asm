@@ -40,14 +40,14 @@ _Route8SuperNerd2EndBattleText::
 	prompt
 
 _Route8SuperNerd2AfterBattleText::
-	text "Go with GRIMER"
+	text "Go with ELECTRODE"
 	line "first...and..."
-	cont "...and...then..."
+	cont "...then..."
 	done
 
 _Route8CooltrainerF1BattleText::
-	text "I like NIDORAN, so"
-	line "I collect them!"
+	text "I like EVASION!"
+	line "It annoys enemies!"
 	done
 
 _Route8CooltrainerF1EndBattleText::
@@ -55,10 +55,11 @@ _Route8CooltrainerF1EndBattleText::
 	prompt
 
 _Route8CooltrainerF1AfterBattleText::
-	text "When #MON grow"
-	line "up they get ugly!"
-	cont "They shouldn't"
-	cont "evolve!"
+	text "Why didn't DOUBLE"
+	line "TEAM work?"
+
+	para "You should always"
+	line "miss!"
 	done
 
 _Route8SuperNerd3BattleText::
@@ -74,40 +75,41 @@ _Route8SuperNerd3EndBattleText::
 _Route8SuperNerd3AfterBattleText::
 	text "We're stuck here"
 	line "because of the"
-	cont "gates at SAFFRON."
+	cont "gates at KOUMAN."
 	done
 
 _Route8CooltrainerF2BattleText::
-	text "MEOWTH is so cute,"
-	line "meow, meow, meow!"
+	text "My pets don't"
+	line "like each other"
+	cont "much..."
 	done
 
 _Route8CooltrainerF2EndBattleText::
-	text "Meow!"
+	text "Tch!"
 	prompt
 
 _Route8CooltrainerF2AfterBattleText::
-	text "I think PIDGEY"
-	line "and RATTATA"
-	cont "are cute too!"
+	text "I buffed my pets"
+	line "from the ROCKET"
+	cont "TRADE."
 	done
 
 _Route8CooltrainerF3BattleText::
-	text "We must look"
-	line "silly standing"
-	cont "here like this!"
+	text "Lady ANILA has"
+	line "traveled all"
+	cont "over the world."
 	done
 
 _Route8CooltrainerF3EndBattleText::
-	text "Look what"
-	line "you did!"
+	text "Look"
+	line "what you did!"
 	prompt
 
 _Route8CooltrainerF3AfterBattleText::
-	text "SAFFRON's gate"
-	line "keeper won't let"
-	cont "us through."
-	cont "He's so mean!"
+	text "ANILA returned"
+	line "recently, and"
+	cont "wasn't happy"
+	cont "with DONYOKU."
 	done
 
 _Route8Gambler2BattleText::
@@ -128,27 +130,33 @@ _Route8Gambler2AfterBattleText::
 	done
 
 _Route8CooltrainerF4BattleText::
-	text "What's a cute,"
-	line "round and fluffy"
-	cont "#MON?"
+	text "Bird #MON"
+	line "are cool!"
+
+	para "Don't believe"
+	line "me?"
 	done
 
 _Route8CooltrainerF4EndBattleText::
 	text "Stop!"
-
-	para "Don't be so mean"
-	line "to my CLEFAIRY!"
+	para "Don't be so rough"
+	line "to my DODRIO!"
 	prompt
 
 _Route8CooltrainerF4AfterBattleText::
 	text "I heard that"
-	line "CLEFAIRY evolves"
-	cont "when it's exposed"
-	cont "to a MOON STONE."
+	line "the TRADE used"
+	cont "to deal in"
+	cont "urbanization of"
+	cont "ROUTEs."
 	done
 
 _Route8UndergroundSignText::
-	text "UNDERGROUND PATH"
-	line "CELADON CITY -"
-	cont "LAVENDER TOWN"
+	text "L:108"
+
+	para "Stay Sharp."
+
+	para "KYUUSOKU TOWN -"
+	line "The CAPITAL"
 	done
+

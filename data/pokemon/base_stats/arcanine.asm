@@ -1,11 +1,13 @@
 	db DEX_ARCANINE ; pokedex id
 
-	db  90, 110,  80,  95,  80
-	;   hp  atk  def  spd  spc
+	db 90, 110, 80, 95, 80
+	; hp atk def spd spc
 
 	db FIRE, FIRE ; type
-	db 30 ; catch rate
-	db 213 ; base exp
+
+	db 1 ; catch rate
+
+	db 240 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/arcanine.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw ArcaninePicFront, ArcaninePicBack
 
-	db FIRE_BLAST, BODY_SLAM, DIG, NO_MOVE ; level 1 learnset
+	db BODY_SLAM, DOUBLE_TEAM, FIRE_BLAST, FIRE_SPIN ; level 1 learnset
+
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   \
-	     RAGE,         DRAGON_RAGE,  DIG,          TELEPORT,     MIMIC,        \
-	     DOUBLE_TEAM,  REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE
+
+	tmhm TOXIC, BODY_SLAM, TAKE_DOWN, DOUBLE_EDGE, HYPER_BEAM, \
+	     RAGE, DRAGON_RAGE, DIG, TELEPORT, MIMIC, \
+	     DOUBLE_TEAM, REFLECT, BIDE, FIRE_BLAST, SWIFT, \
+	     SKULL_BASH, REST, SUBSTITUTE
+
 	; end
 
 	db BANK(ArcaninePicFront)

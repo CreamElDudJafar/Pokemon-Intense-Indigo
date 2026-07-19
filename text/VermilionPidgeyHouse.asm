@@ -1,8 +1,8 @@
 _VermilionPidgeyHouseYoungsterText::
-	text "I'm getting my"
+	text "I'm getting my "
 	line "PIDGEY to fly a"
-	cont "letter to SAFFRON"
-	cont "in the north!"
+	cont "letter to KOUMAN"
+	cont "in the north."
 	done
 
 _VermilionPidgeyHousePidgeyText::
@@ -10,13 +10,16 @@ _VermilionPidgeyHousePidgeyText::
 	text_end
 
 _VermilionPidgeyHouseLetterText::
-	text "Dear PIPPI, I hope"
-	line "to see you soon."
+	text "The ROCKETs have"
+	line "not taken "
+	cont "HOURITSU yet."
 
-	para "I heard SAFFRON"
-	line "has problems with"
-	cont "TEAM ROCKET."
+	para "I heard they"
+	line "settled in"
+	cont "DONYOKU and"
+	cont "KOUMAN. "
 
-	para "VERMILION appears"
-	line "to be safe."
+	para "I hope you"
+	line "are safe MIKE."
 	done
+

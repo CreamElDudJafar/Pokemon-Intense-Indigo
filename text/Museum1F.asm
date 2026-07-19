@@ -53,31 +53,33 @@ _Museum1FScientist1TakePlentyOfTimeText::
 	done
 
 _Museum1FGamblerText::
-	text "That is one"
-	line "magnificent"
-	cont "fossil!"
+	text "Heh..."
+
+	para "SUPERIOR loved"
+	line "this one."
 	done
 
 _Museum1FScientist2TakeThisToAPokemonLabText::
-	text "Ssh! I think that"
-	line "this chunk of"
-	cont "AMBER contains"
-	cont "#MON DNA!"
+	text "I am assistant"
+	line "manager SCARLET."
 
-	para "It would be great"
-	line "if #MON could"
-	cont "be resurrected"
-	cont "from it!"
+	para "I work here"
+	line "part time."
 
-	para "But, my colleagues"
-	line "just ignore me!"
+	para "This amber"
+	line "contains DNA from"
+	cont "a prehistoric"
+	cont "#MON!"
 
-	para "So I have a favor"
-	line "to ask!"
+	para "I've been meaning"
+	line "to deliver it to"
+	cont "the #MON LAB,"
+	cont "but something"
+	cont "came up."
 
-	para "Take this to a"
-	line "#MON LAB and"
-	cont "get it examined!"
+	para "Can I ask you"
+	line "to deliver this"
+	cont "in my stead?"
 	prompt
 
 _Museum1FScientist2ReceivedOldAmberText::
@@ -86,8 +88,9 @@ _Museum1FScientist2ReceivedOldAmberText::
 	text_end
 
 _Museum1FScientist2GetTheOldAmberCheckText::
-	text "Ssh! Get the OLD"
-	line "AMBER checked!"
+	text "Has the OLD"
+	line "AMBER been"
+	cont "checked?"
 	done
 
 _Museum1FScientist2YouDontHaveSpaceText::
@@ -96,10 +99,10 @@ _Museum1FScientist2YouDontHaveSpaceText::
 	done
 
 _Museum1FScientist3Text::
-	text "We are proud of 2"
-	line "fossils of very"
-	cont "rare, prehistoric"
-	cont "#MON!"
+	text "I came all this"
+	line "way by train to"
+	cont "see the #MON"
+	cont "TOURNAMENT."
 	done
 
 _Museum1FOldAmberText::

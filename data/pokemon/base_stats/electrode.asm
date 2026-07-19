@@ -1,11 +1,13 @@
 	db DEX_ELECTRODE ; pokedex id
 
-	db  60,  50,  70, 140,  80
-	;   hp  atk  def  spd  spc
+	db 60, 50, 70, 140, 80
+	; hp atk def spd spc
 
 	db ELECTRIC, ELECTRIC ; type
-	db 1   ; catch rate
-	db 150 ; base exp
+
+	db 1 ; catch rate
+
+	db 220 ; base exp
 
 IF GEN_2_GRAPHICS
 	INCBIN "gfx/pokemon/gsfront/electrode.pic", 0, 1 ; sprite dimensions
@@ -14,14 +16,17 @@ ELSE
 ENDC
 	dw ElectrodePicFront, ElectrodePicBack
 
-	db EXPLOSION, THUNDERBOLT, THUNDER_WAVE, NO_MOVE ; level 1 learnset
+	db EXPLOSION, THUNDER_WAVE, NO_MOVE, NO_MOVE ; level 1 learnset
+
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
-	tmhm TOXIC,        TAKE_DOWN,    HYPER_BEAM,   RAGE,         THUNDERBOLT,  \
-	     THUNDER,      TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         SELFDESTRUCT, SWIFT,        SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, EXPLOSION,    SUBSTITUTE,   FLASH
+
+	tmhm TOXIC, TAKE_DOWN, HYPER_BEAM, RAGE, THUNDERBOLT, \
+	     THUNDER, TELEPORT, MIMIC, DOUBLE_TEAM, REFLECT, \
+	     BIDE, SELFDESTRUCT, SWIFT, SKULL_BASH, REST, \
+	     THUNDER_WAVE, EXPLOSION, SUBSTITUTE, FLASH
+
 	; end
 
 	db BANK(ElectrodePicFront)
