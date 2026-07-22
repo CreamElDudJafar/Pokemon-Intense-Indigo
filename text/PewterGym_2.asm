@@ -22,7 +22,7 @@ _PewterGymBrockWaitTakeThisText::
 
 _PewterGymReceivedTM34Text::
 	text "<PLAYER> received"
-	line "TM21!"
+	line "TM21!@"
 	text_end
 
 _TM34ExplanationText::
@@ -64,7 +64,7 @@ _PewterGymBrockReceivedBoulderBadgeText::
 	para "Take the"
 	line "DIAMONDBADGE!!"
 	para "<PLAYER> received"
-	line "the DIAMONDBADGE!"
+	line "the DIAMONDBADGE!@"
 	text_end
 
 _PewterGymBrockBoulderBadgeInfoText::

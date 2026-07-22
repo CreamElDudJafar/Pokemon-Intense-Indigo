@@ -42,7 +42,7 @@ _CeruleanGymMistyCascadeBadgeInfoText::
 
 _CeruleanGymMistyReceivedTM11Text::
 	text "<PLAYER> received"
-	line "TM06!"
+	line "TM06!@"
 	text_end
 
 _CeruleanGymMistyTM11NoRoomText::
@@ -56,7 +56,7 @@ _CeruleanGymMistyReceivedCascadeBadgeText::
 	para "OK fine!"
 	para "You can have the"
 	line "SAPHIREBADGE to"
-	cont "show you beat me!"
+	cont "show you beat me!@"
 	text_end
 
 _CeruleanGymBattleText1::
