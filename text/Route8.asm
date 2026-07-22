@@ -152,7 +152,7 @@ _Route8CooltrainerF4AfterBattleText::
 	done
 
 _Route8UndergroundSignText::
-	text "L:108"
+	text "L:63 "
 
 	para "Stay Sharp."
 

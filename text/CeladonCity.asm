@@ -118,7 +118,7 @@ _CeladonCityGymSignText::
 	done
 
 _CeladonCityMansionSignText::
-	text "L:110-117-120  "
+	text "L:105-108-110  "
 	done
 
 _CeladonCityDeptStoreSignText::

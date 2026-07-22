@@ -33,7 +33,7 @@ PrizeMenuMon2Cost:
 PrizeMenuTMsEntries:
 	db NUGGET
 	db ETHER
-	db MOON_STONE
+	db REVIVE
 	db "@"
 
 PrizeMenuTMsCost:

@@ -152,7 +152,7 @@ _Route19Swimmer8AfterBattleText::
 
 _Route19SignText::
 	text "SEA ROUTE 19"
-	para "L:119"
+	para "L:107"
 	para "SHOUHOU ISLANDS"
 	line "ahead..."
 	done

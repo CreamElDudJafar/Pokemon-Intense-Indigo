@@ -144,7 +144,7 @@ _SaffronCitySilphCoSignText::
 	done
 
 _SaffronCityMrPsychicsHouseSignText::
-	text "L:109-120-126"
+	text "L:105-108-114"
 
 	para "..."
 	done

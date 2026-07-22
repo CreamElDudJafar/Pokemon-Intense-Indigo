@@ -47,7 +47,7 @@ _Route18CooltrainerM3AfterBattleText::
 
 _Route18SignText::
 	text "ROUTE 18"
-	para "L:118"
+	para "L:106"
 	para "Hold A or B on"
 	line "slope "
 	done

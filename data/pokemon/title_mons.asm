@@ -1,17 +1,17 @@
 TitleMons:
 ; mons on the title screen are randomly chosen from here
-	db LAPRAS
-	db GOLEM
-	db STARMIE
-	db DRAGONITE
-	db EXEGGUTOR
-	db RHYDON
-	db CHANSEY
-	db CLOYSTER
-	db ZAPDOS
-	db SNORLAX
-	db GENGAR
-	db JYNX
-	db SLOWBRO
-	db TAUROS
-	db ALAKAZAM
+	db ARCANINE
+	db MAGMAR
+	db VENUSAUR
+	db KABUTOPS
+	db NIDOKING
+	db GYARADOS
+	db HITMONCHAN
+	db BLASTOISE
+	db SANDSLASH
+	db PIDGEOT
+	db VICTREEBEL
+	db CHARIZARD
+	db LICKITUNG
+	db KANGASKHAN
+	db KOFFING

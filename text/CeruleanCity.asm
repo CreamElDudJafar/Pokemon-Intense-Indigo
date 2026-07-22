@@ -106,9 +106,10 @@ _CeruleanCityRocketIllReturnTheTMText::
 
 _CeruleanCityCooltrainerMText::
 	text "If you aren't"
-	line "above level 90..."
-	para "I wouldn't go"
-	line "in that gym..."
+	line "above level 30..."
+
+	para "I wouldn't go "
+	line "in that gym... "
 	done
 
 _CeruleanCitySuperNerd1Text::
@@ -219,17 +220,16 @@ _CeruleanCitySignText::
 
 _CeruleanCityTrainerTipsText::
 	text "Lowest level:"
-	line "L:30"
+	line "L:30."
 
 	para "Average Level:"
-	line "L:36"
+	line "L:36."
 
 	para "Maximum level:"
-	line "L:100"
+	line "L:41 "
 
 	para "JEFF's grass."
 	done
-
 _CeruleanCityBikeShopSign::
 	text "Grass and caves"
 	line "handled easily!"
