@@ -3,7 +3,8 @@
 ; Pallet Town events
 	const_def
 	const EVENT_FOLLOWED_OAK_INTO_LAB
-	const_skip 2
+	const EVENT_PRESSED_FOR_INFO_IN_STATUS_SCREEN ; new
+	const_skip 1
 	const EVENT_HALL_OF_FAME_DEX_RATING
 	const_skip 2
 	const EVENT_PALLET_AFTER_GETTING_POKEBALLS
@@ -712,6 +713,10 @@
 	const_next $8C0
 	const_skip
 	const EVENT_BEAT_MEWTWO
+
+; Arbitray flags
+	const_next $8D0
+	const FLAG_SKIP_DELAY_IN_GBC_PALETTE_FUNC
 
 ; Indigo Plateau events
 	const_next $8E0

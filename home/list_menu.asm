@@ -30,14 +30,6 @@ DisplayListMenuID::
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; draw the menu text box
 	call UpdateSprites ; disable sprites behind the text box
-; the code up to .skipMovingSprites appears to be useless
-	hlcoord 4, 2 ; coordinates of upper left corner of menu text box
-	lb de, 9, 14 ; height and width of menu text box
-	ld a, [wListMenuID]
-	and a ; PCPOKEMONLISTMENU?
-	jr nz, .skipMovingSprites
-	call UpdateSprites
-.skipMovingSprites
 	ld a, 1 ; max menu item ID is 1 if the list has less than 2 entries
 	ld [wMenuWatchMovingOutOfBounds], a
 	ld a, [wListCount]
@@ -142,8 +134,14 @@ DisplayListMenuIDLoop::
 .skipGettingQuantity
 	ld a, [wCurItem]
 	ld [wNameListIndex], a
+	cp HM01
 	ld a, BANK(ItemNames)
 	ld [wPredefBank], a
+	jr c, .go_get_name
+;else it's a tm/hm
+	ld a, BANK(tmhmNames)
+	ld [wPredefBank], a	
+.go_get_name
 	call GetName
 	jr .storeChosenEntry
 .pokemonList

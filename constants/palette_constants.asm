@@ -1,3 +1,5 @@
+DEF NUM_ACTIVE_PALS EQU 4
+
 ; pal/blk packets
 ; SetPalFunctions indexes (see engine/gfx/palettes.asm)
 	const_def
@@ -59,4 +61,9 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_BADGE     ; $22
 	const PAL_CAVE      ; $23
 	const PAL_GAMEFREAK ; $24
+	const PAL_BLACKMON  ; $25
+	const PAL_WHITEMON  ; $26
+	const PAL_BLUEGREENMON ; $27
+	const PAL_BLACK2    ; $28
+	const PAL_SAFARIBALL ; $29
 DEF NUM_SGB_PALS EQU const_value

@@ -92,7 +92,6 @@ DisplayNamingScreen:
 	call RunPaletteCommand
 	call LoadHpBarAndStatusTilePatterns
 	call LoadEDTile
-	farcall LoadMonPartySpriteGfx
 	hlcoord 0, 4
 	ld b, 9
 	ld c, 18
@@ -326,8 +325,7 @@ DisplayNamingScreen:
 LoadEDTile:
 	ld de, ED_Tile
 	ld hl, vFont tile $70
-	; BUG: BANK("Home") should be BANK(ED_Tile), although it coincidentally works as-is
-	lb bc, BANK("Home"), (ED_TileEnd - ED_Tile) / TILE_1BPP_SIZE
+	lb bc, BANK(ED_Tile), (ED_TileEnd - ED_Tile) / TILE_1BPP_SIZE
 	jp CopyVideoDataDouble
 
 ED_Tile:
@@ -462,7 +460,7 @@ PrintNamingText:
 	ld a, [wCurPartySpecies]
 	ld [wMonPartySpriteSpecies], a
 	push af
-	farcall WriteMonPartySpriteOAMBySpecies
+	farcall LoadSinglePartyMonSprite
 	pop af
 	ld [wNamedObjectIndex], a
 	call GetMonName

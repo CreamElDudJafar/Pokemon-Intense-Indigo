@@ -20,12 +20,13 @@ ExternalClockTradeAnim:
 TradeAnimCommon:
 	ld a, [wOptions]
 	push af
+	and SOUND_MASK
+	ld [wOptions], a
 	ldh a, [hSCY]
 	push af
 	ldh a, [hSCX]
 	push af
 	xor a
-	ld [wOptions], a
 	ldh [hSCY], a
 	ldh [hSCX], a
 	push de
@@ -182,6 +183,7 @@ LoadTradingGFXAndMonNames:
 	ld a, $f0 ; SGB OBP0
 .next
 	ldh [rOBP0], a
+	call UpdateCGBPal_OBP0
 	call EnableLCD
 	xor a
 	ldh [hAutoBGTransferEnabled], a
@@ -199,6 +201,7 @@ LoadTradingGFXAndMonNames:
 Trade_LoadMonPartySpriteGfx:
 	ld a, %11010000
 	ldh [rOBP1], a
+	call UpdateCGBPal_OBP1
 	farjp LoadMonPartySpriteGfx
 
 Trade_SwapNames:
@@ -303,6 +306,7 @@ Trade_AnimateBallEnteringLinkCable:
 	call DelayFrames
 	ld a, %11100100
 	ldh [rOBP0], a
+	call UpdateCGBPal_OBP0
 	xor a
 	ld [wLinkCableAnimBulgeToggle], a
 	lb bc, $20, $60
@@ -384,6 +388,7 @@ Trade_AnimLeftToRight:
 	ld [wTradedMonMovingRight], a
 	ld a, %11100100
 	ldh [rOBP0], a
+	call UpdateCGBPal_OBP0
 	ld a, $54
 	ld [wBaseCoordX], a
 	ld a, $1c
@@ -448,6 +453,8 @@ Trade_InitGameboyTransferGfx:
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
 	call ClearScreen
+	ld b, SET_PAL_GENERIC
+	call RunPaletteCommand
 	xor a
 	ldh [hAutoBGTransferEnabled], a
 	call Trade_LoadMonPartySpriteGfx
@@ -601,23 +608,32 @@ Trade_AnimCircledMon:
 	ldh a, [rBGP]
 	xor $3c ; make link cable flash
 	ldh [rBGP], a
+	call UpdateCGBPal_BGP
 	ld hl, wShadowOAMSprite00TileID
 	ld de, OBJ_SIZE
-	ld c, $14
-.loop
+	ld c, $4
+.mon_loop
+	ld a, [hl]
+	xor 2
+	ld [hl], a
+	add hl, de
+	dec c
+	jr nz, .mon_loop
+	ld c, $10
+.circle_loop
 	ld a, [hl]
 	xor ICONOFFSET
 	ld [hl], a
 	add hl, de
 	dec c
-	jr nz, .loop
+	jr nz, .circle_loop
 	pop hl
 	pop bc
 	pop de
 	ret
 
 Trade_WriteCircledMonOAM:
-	farcall WriteMonPartySpriteOAMBySpecies
+	farcall LoadSinglePartyMonSprite
 	call Trade_WriteCircleOAMBlock
 
 Trade_AddOffsetsToOAMCoords:

@@ -2,9 +2,51 @@ StartMenu_Pokedex::
 	predef ShowPokedexMenu
 	call LoadScreenTilesFromBuffer2
 	call Delay3
-	call LoadGBPal
+;	call LoadGBPal
 	call UpdateSprites
 	jp RedisplayStartMenu
+
+StartMenu_PortablePC:: ; new
+	; if none of the above cp is met, let's open the pc and do the things
+	; next piece is to preserve the map text pointers
+    ld hl, wCurMapTextPtr
+    call SetMapTextPointer
+	ld a, [wCurMap] ; we don't want to cheese the Elite4, do we?
+	cp LORELEIS_ROOM
+	jr z, .cantUseItHere
+	cp BRUNOS_ROOM
+	jr z, .cantUseItHere
+	cp AGATHAS_ROOM
+	jr z, .cantUseItHere
+	cp LANCES_ROOM
+	jr z, .cantUseItHere
+; if none of the above cp is met, let's open the pc and do the things
+; next piece is to preserve the map text pointers
+    	ld hl, wCurMapTextPtr
+    	ld a, [hli]
+    	ld [wUnusedMapVariable], a
+    	ld a, [hl]
+    	ld [wUnusedMapVariable+1], a
+; normal stuff
+	callfar ActivatePC ; main part
+	jr .done
+.cantUseItHere ; no cheese!
+	ld hl, CantUsePCHere
+	call PrintText
+.done
+; next piece is to preserve the map text pointers
+    push hl
+    call RestoreMapTextPointer
+    pop hl
+; normal stuff
+	call LoadScreenTilesFromBuffer2 ; restore saved screen
+	call LoadTextBoxTilePatterns
+	call UpdateSprites
+	jp RedisplayStartMenu
+
+CantUsePCHere:
+	text_far _CantUsePCHere
+	text_end
 
 StartMenu_Pokemon::
 	ld a, [wPartyCount]
@@ -26,7 +68,7 @@ StartMenu_Pokemon::
 .exitMenu
 	call GBPalWhiteOutWithDelay3
 	call RestoreScreenTilesAndReloadTilePatterns
-	call LoadGBPal
+;	call LoadGBPal
 	jp RedisplayStartMenu
 .chosePokemon
 	call SaveScreenTilesToBuffer1
@@ -307,6 +349,7 @@ StartMenu_Item::
 	call PrintText
 	jr .exitMenu
 .notInCableClubRoom
+	callfar DrawItemCountBox
 	ld bc, wNumBagItems
 	ld hl, wListPointer
 	ld a, c
@@ -469,7 +512,7 @@ StartMenu_TrainerInfo::
 	call LoadScreenTilesFromBuffer2
 	call RunDefaultPaletteCommand
 	call ReloadMapData
-	call LoadGBPal
+;	call LoadGBPal
 	pop af
 	ldh [hTileAnimations], a
 	jp RedisplayStartMenu
@@ -478,6 +521,12 @@ StartMenu_TrainerInfo::
 DrawTrainerInfo:
 	ld de, RedPicFront
 	lb bc, BANK(RedPicFront), $01
+	ld a, [wPlayerGender]
+	and a
+	jr z, .AreBoy
+	ld de, GreenPicFront
+	lb bc, BANK(GreenPicFront), $01
+.AreBoy
 	predef DisplayPicCenteredOrUpperRight
 	call DisableLCD
 	hlcoord 0, 2
@@ -663,7 +712,7 @@ SwitchPartyMon::
 	call SwitchPartyMon_ClearGfx
 	ld a, [wCurrentMenuItem]
 	call SwitchPartyMon_ClearGfx
-	jp RedrawPartyMenu_
+	jp RedrawPartyMenu_ReloadSprites
 
 SwitchPartyMon_ClearGfx:
 	push af

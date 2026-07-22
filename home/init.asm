@@ -43,7 +43,7 @@ Init::
 	call ClearVram
 
 	ld hl, STARTOF(HRAM)
-	ld bc, SIZEOF(HRAM)
+	ld bc, SIZEOF(HRAM) - 1
 	call FillMemory
 
 	call ClearSprites
@@ -84,6 +84,7 @@ Init::
 
 	ei
 
+	callfar CopyOptionsFromSRAM
 	predef LoadSGB
 
 	ld a, BANK(SFX_Shooting_Star)
@@ -122,5 +123,4 @@ StopAllSounds::
 	ld [wAudioFadeOutControl], a
 	ld [wNewSoundID], a
 	ld [wLastMusicSoundID], a
-	dec a
-	jp PlaySound
+	jp StopAllMusic

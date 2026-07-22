@@ -377,7 +377,8 @@ wNPCMovementDirections:: ds 180
 NEXTU
 wDexRatingNumMonsSeen:: db
 wDexRatingNumMonsOwned:: db
-wDexRatingText:: db
+wDexRatingText::
+wTrainerCardBadgeAttributes:: db
 
 NEXTU
 ; If a random number greater than this value is generated, then the player is
@@ -782,10 +783,7 @@ wTrainerInfoTextBoxWidth:: db
 wTrainerInfoTextBoxNextRowOffset:: db
 
 NEXTU
-wOptionsTextSpeedCursorX:: db
-wOptionsBattleAnimCursorX:: db
-wOptionsBattleStyleCursorX:: db
-wOptionsCancelCursorX:: db
+wOptionsCursorLocation:: db
 
 NEXTU
 ; tile ID of the badge number being drawn
@@ -871,7 +869,9 @@ wRightGBMonSpecies:: db
 
 wMiscFlags:: db
 
-	ds 9
+wNewInGameFlags:: db
+
+	ds 8
 
 ; This has overlapping related uses.
 ; When the player tries to use an item or use certain field moves, 0 is stored
@@ -1033,10 +1033,7 @@ wNPCMovementScriptSpriteOffset:: db
 
 wScriptedNPCWalkCounter:: db
 
-	ds 1
-
-; always 0 since full CGB support was not implemented
-wOnCGB:: db
+	ds 2
 
 ; if running on SGB, it's 1, else it's 0
 wOnSGB:: db
@@ -1069,7 +1066,10 @@ wPalPacket::
 
 ; This union spans 49 bytes.
 UNION
-wPartyMenuBlkPacket:: ds $30
+wPartyMenuBlkPacket:: ; ds $30 bytes
+	ds 9
+wPartyHPBarAttributes::
+	ds 20
 
 NEXTU
 	ds 29
@@ -1426,10 +1426,16 @@ wEndBattleLoseTextPointer:: dw
 	ds 2
 wEndBattleTextRomBank:: db
 
+UNION
+
+w2CharStringBuffer:: ds 3 ; don't use this buffer during attack animations
+
+NEXTU
 	ds 1
 
 ; the address _of the address_ of the current subanimation entry
 wSubAnimAddrPtr:: dw
+ENDU
 
 UNION
 ; the address of the current subentry of the current subanimation
@@ -1756,9 +1762,7 @@ wPokedexOwnedEnd::
 wPokedexSeen:: flag_array NUM_POKEMON
 wPokedexSeenEnd::
 
-wNumBagItems:: db
-; item, quantity
-wBagItems:: ds BAG_ITEM_CAPACITY * 2 + 1
+	ds 42
 
 wPlayerMoney:: ds 3 ; BCD
 
@@ -1833,7 +1837,17 @@ wWarpEntries:: ds MAX_WARP_EVENTS * 4 ; Y, X, warp ID, map ID
 ; if $ff, the player's coordinates are not updated when entering the map
 wDestinationWarpID:: db
 
+; note: CHANGED: this empty space is now used for bigger bag space
+UNION
+	; original size of this empty space
 	ds 128
+
+NEXTU
+wNumBagItems:: db
+; item, quantity
+wBagItems:: ds BAG_ITEM_CAPACITY * 2 + 1
+; 7 bytes left to use
+ENDU
 
 ; number of signs in the current map (up to MAX_BG_EVENTS)
 wNumSigns:: db
@@ -2040,10 +2054,29 @@ wSeafoamIslandsB3FCurScript:: db
 wRoute23CurScript:: db
 wSeafoamIslandsB4FCurScript:: db
 wRoute18Gate1FCurScript:: db
-	ds 78
+	ds 6
 wGameProgressFlagsEnd::
 
-	ds 56
+UNION
+	ds 128
+NEXTU
+
+wCGBBasePalPointers:: ds NUM_ACTIVE_PALS * 2 ; 8 bytes
+wCGBPal:: ds PAL_SIZE ; 8 bytes
+wLastBGP::db
+wLastOBP0::db
+wLastOBP1::db 
+wBGPPalsBuffer:: ds (NUM_ACTIVE_PALS + 1) * PAL_SIZE ; 32 bytes
+wdef4:: db
+
+wPlayerGender:: db
+	; $00 = boy
+	; $01 = girl
+
+wStatusKitStatus:: db
+
+ENDU
+
 
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 
@@ -2054,7 +2087,9 @@ wObtainedHiddenCoinsFlags:: flag_array MAX_HIDDEN_COINS
 ; $02 = surfing
 wWalkBikeSurfState:: db
 
-	ds 10
+	ds 9
+
+wDumbByteToToggleStatusScreen:: db ; new
 
 wTownVisitedFlag:: flag_array NUM_CITY_MAPS
 
@@ -2188,7 +2223,9 @@ ENDU
 
 wTrainerHeaderPtr:: dw
 
-	ds 6
+	ds 5
+
+wMultiUseBuffer:: db ; new, for various buffer purposes
 
 ; the trainer the player must face after getting a wrong answer in the Cinnabar
 ; gym quiz
@@ -2198,7 +2235,13 @@ wOpponentAfterWrongAnswer:: db
 ; mostly copied from map-specific map script pointer and written back later
 wCurMapScript:: db
 
-	ds 7
+	ds 6
+
+; bits 0-1 = Palette setting 
+; 00 = Original
+; 01 = SGB
+; 11 = Yellow
+wOptions2:: db
 
 wPlayTimeHours:: db
 wPlayTimeMaxed:: db

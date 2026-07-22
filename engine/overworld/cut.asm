@@ -37,6 +37,7 @@ UsedCut:
 	call GBPalWhiteOutWithDelay3
 	call ClearSprites
 	call RestoreScreenTilesAndReloadTilePatterns
+	call ReloadMapData
 	ld a, SCREEN_HEIGHT_PX
 	ldh [hWY], a
 	call Delay3
@@ -46,6 +47,8 @@ UsedCut:
 	call Delay3
 	xor a
 	ldh [hWY], a
+	; fallthrough
+Cut2::
 	ld hl, UsedCutText
 	call PrintText
 	call LoadScreenTilesFromBuffer2
@@ -76,6 +79,7 @@ InitCutAnimOAM:
 	ld [wWhichAnimationOffsets], a
 	ld a, %11100100
 	ldh [rOBP1], a
+	call UpdateCGBPal_OBP1
 	ld a, [wCutTile]
 	cp $52
 	jr z, .grass
@@ -124,10 +128,10 @@ WriteCutOrBoulderDustAnimationOAMBlock:
 
 .OAMBlock:
 ; tile ID, attributes
-	db $fc, OAM_PAL1
-	db $fd, OAM_PAL1
-	db $fe, OAM_PAL1
-	db $ff, OAM_PAL1
+	db $fc, OAM_PAL1 | OAM_HIGH_PALS
+	db $fd, OAM_PAL1 | OAM_HIGH_PALS
+	db $fe, OAM_PAL1 | OAM_HIGH_PALS
+	db $ff, OAM_PAL1 | OAM_HIGH_PALS
 
 GetCutOrBoulderDustAnimationOffsets:
 	ld hl, wSpritePlayerStateData1YPixels

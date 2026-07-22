@@ -63,10 +63,18 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 	ld a, c
 	ldh [hSCX], a
 	call DelayFrame
-	ld a, %11100100 ; inverted palette for silhouette effect
+	call DelayFrame
+	ld a, [wOnSGB]
+	and a
+	ldpal a, SHADE_BLACK, SHADE_DARK, SHADE_LIGHT, SHADE_WHITE
+	jr nz, .silhouette
+	ldpal a, SHADE_BLACK, SHADE_BLACK, SHADE_BLACK, SHADE_WHITE ; different silhouette on DMG
+.silhouette
 	ldh [rBGP], a
 	ldh [rOBP0], a
 	ldh [rOBP1], a
+	call UpdateCGBPal_OBP0
+	call UpdateCGBPal_OBP1
 .slideSilhouettesLoop ; slide silhouettes of the player's pic and the enemy's pic onto the screen
 	ld h, b
 	ld l, $40
@@ -76,6 +84,11 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 	ld h, $0
 	ld l, $60
 	call SetScrollXForSlidingPlayerBodyLeft ; end background scrolling on line $60
+	push af
+	ld a, b
+	cp $72
+	call z, UpdateCGBPal_BGP
+	pop af
 	call SlidePlayerHeadLeft
 	ld a, c
 	ldh [hSCX], a
@@ -93,6 +106,14 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 	ldh [rWY], a
 	inc a
 	ldh [hAutoBGTransferEnabled], a
+	ld a, [wOnSGB]
+	and a
+	jr nz, .notDmg
+	ldpal a, SHADE_BLACK, SHADE_DARK, SHADE_LIGHT, SHADE_WHITE
+	ldh [rBGP], a
+	ldh [rOBP0], a
+	ldh [rOBP1], a
+.notDmg
 	call Delay3
 	ld b, SET_PAL_BATTLE
 	call RunPaletteCommand
@@ -118,11 +139,7 @@ SlidePlayerHeadLeft:
 	ret
 
 SetScrollXForSlidingPlayerBodyLeft:
-	ldh a, [rLY]
-	cp l
-	jr nz, SetScrollXForSlidingPlayerBodyLeft
-	ld a, h
-	ldh [rSCX], a
+	predef BGLayerScrollingUpdate
 .loop
 	ldh a, [rLY]
 	cp h
@@ -891,8 +908,18 @@ AnyEnemyPokemonAliveCheck:
 ; stores whether enemy ran in Z flag
 ReplaceFaintedEnemyMon:
 	ld hl, wEnemyHPBarColor
-	ld e, $30
+;	ld e, $00 ; was $30, get health bar palette of an HP bar E pixels long
+
+	ld a, HP_BAR_GREEN
+	ld [hl], a	;reset the enemy HP bar to green because GetBattleHealthBarColor only works on differing colors
+	ld e, 0	;now prepare to load the color for a 0-pixel health bar (that being red)
+
 	call GetBattleHealthBarColor
+	ldpal a, SHADE_BLACK, SHADE_DARK, SHADE_LIGHT, SHADE_WHITE
+	ld [rOBP0], a
+	ld [rOBP1], a
+	call UpdateCGBPal_OBP0
+	call UpdateCGBPal_OBP1
 	callfar DrawEnemyPokeballs
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
@@ -1573,6 +1600,11 @@ TryRunningFromBattle:
 	ld hl, CantEscapeText
 	jr .printCantEscapeOrNoRunningText
 .trainerBattle
+IF DEF(_DEBUG)
+	call FaintEnemyPokemon
+	call TrainerBattleVictory
+	jp _InitBattleCommon.endOfBattle
+ENDC
 	ld hl, NoRunningText
 .printCantEscapeOrNoRunningText
 	call PrintText
@@ -1880,6 +1912,23 @@ DrawEnemyHUDAndHPBar:
 	lb bc, 4, 12
 	call ClearScreenArea
 	callfar PlaceEnemyHUDTiles
+	push hl
+	ld a, [wEnemyMonSpecies2]
+	ld [wPokedexNum], a
+	callfar IndexToPokedex
+	ld a, [wPokedexNum]
+	dec a
+	ld c, a
+	ld b, FLAG_TEST
+	ld hl, wPokedexOwned
+	predef FlagActionPredef
+	ld a, c
+	and a
+	jr z, .notOwned
+	hlcoord 1, 1
+	ld [hl], $72 ; replace this with your Poké Ball icon or other character
+.notOwned
+	pop hl
 	ld de, wEnemyMonNick
 	hlcoord 1, 0
 	call CenterMonName
@@ -6202,12 +6251,21 @@ SwapPlayerAndEnemyLevels:
 LoadPlayerBackPic:
 	ld a, [wBattleType]
 	dec a ; is it the old man tutorial?
-	ld de, RedPicBack
-	jr nz, .next
 	ld de, OldManPicBack
-.next
+	ld a, BANK(RedPicBack) ; Default Red back sprite will be used as a means to load in the Old Man back sprite
+  	jr z, .next
+	ld a, [wPlayerGender]
+	and a
+	jr z, .RedBack
+	ld de, GreenPicBack
+	ld a, BANK(GreenPicBack) ; load female back sprite
+	jr .next
+.RedBack
+	ld de, RedPicBack
 	ld a, BANK(RedPicBack)
-	ASSERT BANK(RedPicBack) == BANK(OldManPicBack)
+.next
+        ASSERT BANK(GreenPicBack) == BANK(OldManPicBack) ; These two ASSERTs make sure to cover
+        ASSERT BANK(RedPicBack) == BANK(OldManPicBack)   ; both sprite cases
 	call UncompressSpriteFromDE
 	predef ScaleSpriteByTwo
 	ld hl, wShadowOAM
@@ -6230,6 +6288,8 @@ LoadPlayerBackPic:
 	ld [hli], a ; OAM tile number
 	inc a ; increment tile number
 	ldh [hOAMTile], a
+	ld a, $2
+	ld [hl], a
 	inc hl
 	dec c
 	jr nz, .innerLoop
@@ -6733,6 +6793,7 @@ InitWildBattle:
 
 ; common code that executes after init battle code specific to trainer or wild battles
 _InitBattleCommon:
+	callfar CGBSetCPU1xSpeed
 	ld b, SET_PAL_BATTLE_BLACK
 	call RunPaletteCommand
 	call SlidePlayerAndEnemySilhouettesOnScreen
@@ -6761,6 +6822,7 @@ _InitBattleCommon:
 	dec a ; is it a wild battle?
 	call z, DrawEnemyHUDAndHPBar ; draw enemy HUD and HP bar if it's a wild battle
 	call StartBattle
+.endOfBattle
 	callfar EndOfBattle
 	pop af
 	ld [wLetterPrintingDelayFlags], a

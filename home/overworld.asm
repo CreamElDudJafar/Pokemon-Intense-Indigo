@@ -42,6 +42,7 @@ OverworldLoop::
 	call DelayFrame
 OverworldLoopLessDelay::
 	call DelayFrame
+	callfar CGBSetCPU2xSpeed
 	call LoadGBPal
 	ld a, [wMovementFlags]
 	bit BIT_LEDGE_OR_FISHING, a
@@ -94,7 +95,9 @@ OverworldLoopLessDelay::
 	call IsSpriteOrSignInFrontOfPlayer
 	ldh a, [hTextID]
 	and a
-	jp z, OverworldLoop
+	jr nz, .displayDialogue
+	predef TryFieldMove 
+	jp OverworldLoop
 .displayDialogue
 	predef GetTileAndCoordsInFrontOfPlayer
 	call UpdateSprites
@@ -113,15 +116,6 @@ OverworldLoopLessDelay::
 	ld a, 0
 	ld [wEnteringCableClub], a
 	jr z, .changeMap
-; XXX can this code be reached?
-	predef TryLoadSaveFile
-	ld a, [wCurMap]
-	ld [wDestinationMap], a
-	call PrepareForSpecialWarp
-	ld a, [wCurMap]
-	call SwitchToMapRomBank
-	ld hl, wCurMapTileset
-	set BIT_NO_PREVIOUS_MAP, [hl]
 .changeMap
 	jp EnterMap
 .checkForOpponent
@@ -283,7 +277,22 @@ OverworldLoopLessDelay::
 	bit BIT_LEDGE_OR_FISHING, a
 	jr nz, .normalPlayerSpriteAdvancement
 	call DoBikeSpeedup
+	call DoBikeSpeedup
+	call DoBikeSpeedup
+	jr .notRunning
 .normalPlayerSpriteAdvancement
+	; surf at 2x walking speed
+	ld a, [wWalkBikeSurfState]
+	cp $02
+	jr z, .surfFaster
+	; Holding B makes you run at 2x walking speed
+	ld a, [hJoyHeld]
+	and PAD_B
+	jr z, .notRunning
+.surfFaster
+	call DoBikeSpeedup
+.notRunning
+	;original .normalPlayerSpriteAdvancement continues here
 	call AdvancePlayerSprite
 	ld a, [wWalkCounter]
 	and a
@@ -1863,7 +1872,7 @@ JoypadOverworld::
 ; if done simulating button presses
 .doneSimulating
 	xor a
-	ld [wUnusedOverrideSimulatedJoypadStatesIndex], a
+;	ld [wUnusedOverrideSimulatedJoypadStatesIndex], a
 	ld [wSimulatedJoypadStatesIndex], a
 	ld [wSimulatedJoypadStatesEnd], a
 	ld [wJoyIgnore], a
@@ -1972,6 +1981,11 @@ RunMapScript::
 
 LoadWalkingPlayerSpriteGraphics::
 	ld de, RedSprite
+	ld a, [wPlayerGender]
+	and a
+	jr z, .AreGuy1
+	ld de, GreenSprite
+.AreGuy1
 	ld hl, vNPCSprites
 	jr LoadPlayerSpriteGraphicsCommon
 
@@ -1982,7 +1996,12 @@ LoadSurfingPlayerSpriteGraphics::
 
 LoadBikePlayerSpriteGraphics::
 	ld de, RedBikeSprite
-	ld hl, vNPCSprites
+	ld a, [wPlayerGender]
+	and a
+	jr z, .AreGuy2
+	ld de, GreenBikeSprite
+.AreGuy2
+    	ld hl, vNPCSprites
 
 LoadPlayerSpriteGraphicsCommon::
 	push de

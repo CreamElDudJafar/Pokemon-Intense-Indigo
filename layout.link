@@ -68,6 +68,7 @@ ROMX $8
 	"Bill's PC"
 	"Audio Engine 2"
 	"Music 2"
+	"Splash Animation"
 ROMX $9
 	"Pics 1"
 	"Battle Engine 3"
@@ -175,8 +176,19 @@ ROMX $2A
 	"Text 11"
 ROMX $2B
 	"Pokédex Text"
+	"Pics 6"
 ROMX $2C
 	"Move Names"
+	"NPC Sprites 3"
+ROMX $30
+	"CGB Mode Code"
+ROMX $31
+	org $4000
+	"Party Mon Sprites Gfx 1"
+ROMX $32
+	org $4000
+	"Party Mon Sprites Gfx 2"
+	"Party Mon Sprites Routines"
 WRAM0
 	"Audio RAM"
 	org $c100

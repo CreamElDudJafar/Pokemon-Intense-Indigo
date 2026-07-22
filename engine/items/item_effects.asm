@@ -60,13 +60,13 @@ ItemUsePtrTable:
 	dw UnusableItem      ; DOME_FOSSIL
 	dw UnusableItem      ; HELIX_FOSSIL
 	dw UnusableItem      ; SECRET_KEY
-	dw UnusableItem      ; ITEM_2C
+	dw ItemUseRepellent  ; REPELLENT
 	dw UnusableItem      ; BIKE_VOUCHER
 	dw UnusableItem      ; X_ACCURACY
 	dw ItemUseEvoStone   ; LEAF_STONE
 	dw ItemUseCardKey    ; CARD_KEY
 	dw UnusableItem      ; NUGGET
-	dw UnusableItem      ; ITEM_32
+	dw ItemUseHealingKit ; HEALING_KIT
 	dw ItemUsePokeDoll   ; POKE_DOLL
 	dw ItemUseVitamin    ; FULL_HEAL
 	dw ItemUseVitamin    ; REVIVE
@@ -100,6 +100,221 @@ ItemUsePtrTable:
 	dw ItemUsePPUp       ; MAX_ETHER
 	dw ItemUsePPUp       ; ELIXER
 	dw ItemUsePPUp       ; MAX_ELIXER
+	dw ItemUseVitamin    ; CANDY_BAG
+	dw ItemUseStatusKit  ; STATUS_KIT
+
+ItemUseHealingKit:
+	ld a, [wIsInBattle]
+	and a
+	jp nz, ItemUseNotTime
+
+	ld a, [wPartyCount]
+	and a
+	jr z, .canceled
+
+	ld hl, AskHealingKitText
+	call PrintText
+
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .canceled
+
+	ld hl, UsedHealingKitText
+	call PrintText
+
+	ld a, SFX_HEAL_AILMENT
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+
+	predef_jump HealParty
+
+.canceled
+	xor a
+	ld [wActionResultOrTookBattleTurn], a
+	ret
+
+UsedHealingKitText:
+	text_far _UsedHealingKitText
+	text_end
+
+AskHealingKitText:
+	text_far _AskHealingKitText
+	text_end
+
+ItemUseStatusKit:
+	ld a, [wIsInBattle]
+	and a
+	jp nz, ItemUseNotTime
+
+	ld a, [wPartyCount]
+	and a
+	jp z, .canceled
+
+	call StatusKitChooseStatus
+	jp c, .canceled
+	ld [wStatusKitStatus], a
+
+	ld a, [wWhichPokemon]
+	push af
+	ld a, [wCurItem]
+	push af
+
+	ld a, USE_ITEM_PARTY_MENU
+	ld [wPartyMenuTypeOrMessageID], a
+	ld a, $ff
+	ld [wUpdateSpritesEnabled], a
+	call DisplayPartyMenu
+	jr c, .canceledItemUse
+
+	ld hl, wPartyMons
+	ld bc, PARTYMON_STRUCT_LENGTH
+	ld a, [wWhichPokemon]
+	call AddNTimes
+	ld bc, MON_STATUS
+	add hl, bc
+
+	ld a, [hl]
+	and a
+	jr nz, .alreadyHasStatus
+
+	ld a, [wStatusKitStatus]
+	ld [hl], a
+
+	ld a, SFX_HEAL_AILMENT
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+
+	ld a, [wWhichPokemon]
+	ld hl, wPartyMonNicks
+	call GetPartyMonName
+
+	ld hl, StatusKitWasAffectedText
+	call PrintText
+
+	ld a, 1
+	ld [wActionResultOrTookBattleTurn], a
+	jr .done
+
+.alreadyHasStatus
+	ld a, [wWhichPokemon]
+	ld hl, wPartyMonNicks
+	call GetPartyMonName
+
+	ld hl, AlreadyStatusText
+	call PrintText
+
+.canceledItemUse
+	xor a
+	ld [wActionResultOrTookBattleTurn], a
+
+.done
+	pop af
+	ld [wCurItem], a
+	pop af
+	ld [wWhichPokemon], a
+
+	xor a
+	ld [wPartyMenuAnimMonEnabled], a
+
+	call GBPalWhiteOut
+	call z, RunDefaultPaletteCommand
+
+	ld a, [wIsInBattle]
+	and a
+	ret nz
+
+	ld a, $01
+	ld [wUpdateSpritesEnabled], a
+
+	ld c, 2
+	call DelayFrames
+	call RestoreScreenTilesAndReloadTilePatterns
+	jp ReloadMapData
+
+.canceled
+	xor a
+	ld [wActionResultOrTookBattleTurn], a
+	ret
+
+StatusKitChooseStatus:
+	ld hl, StatusKitParalyzePromptText
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr z, .paralyze
+
+	ld hl, StatusKitBurnPromptText
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr z, .burn
+
+	ld hl, StatusKitPoisonPromptText
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr z, .poison
+
+	scf
+	ret
+
+.paralyze
+	ld a, 1 << PAR
+	and a
+	ret
+
+.burn
+	ld a, 1 << BRN
+	and a
+	ret
+
+.poison
+	ld a, 1 << PSN
+	and a
+	ret
+
+StatusKitParalyzePromptText:
+	text_far _StatusKitParalyzePromptText
+	text_end
+
+StatusKitBurnPromptText:
+	text_far _StatusKitBurnPromptText
+	text_end
+
+StatusKitPoisonPromptText:
+	text_far _StatusKitPoisonPromptText
+	text_end
+
+StatusKitWasAffectedText:
+	text_ram wNameBuffer
+	text " became"
+	line "affected!"
+	prompt
+
+AlreadyStatusText:
+	text_ram wNameBuffer
+	text " already"
+	line "has a status!"
+	prompt
+
+_StatusKitParalyzePromptText::
+	text "PARALYZE a"
+	line "#MON?"
+	done
+
+_StatusKitBurnPromptText::
+	text "BURN a"
+	line "#MON?"
+	done
+
+_StatusKitPoisonPromptText::
+	text "POISON a"
+	line "#MON?"
+	done
 
 ItemUseBall:
 
@@ -190,8 +405,11 @@ ItemUseBall:
 	ld hl, wCurItem
 	ld a, [hl]
 
-; The Master Ball always succeeds.
+; The Master Ball and Safari Ball will always succeeds.
 	cp MASTER_BALL
+	jp z, .captured
+
+	cp SAFARI_BALL
 	jp z, .captured
 
 ; Anything will do for the basic Poké Ball.
@@ -492,6 +710,16 @@ ItemUseBall:
 .skip6
 	ld a, [wCurPartySpecies]
 	push af
+
+	push de
+	ld d, CONVERT_OBP0
+	ld e, 3
+	ld a, PAL_MEWMON
+	add NUM_POKEMON_INDEXES+1
+	ld [wCurPartySpecies], a
+	callfar TransferMonPal
+	pop de
+
 	ld a, [wEnemyMonSpecies2]
 	ld [wCurPartySpecies], a
 	ld a, [wEnemyMonLevel]
@@ -564,6 +792,7 @@ ItemUseBall:
 	ld hl, ItemUseBallText08
 .printTransferredToPCText
 	call PrintText
+	call PrintRemainingBoxSpacePrompt
 	jr .done
 
 .oldManCaughtMon
@@ -619,6 +848,16 @@ ItemUseBallText07:
 ItemUseBallText08:
 ;"X was transferred to someone's PC"
 	text_far _ItemUseBallText08
+	text_end
+
+NoBoxSlotsLeftText:
+;"0 slots left in Box X! Time to change boxes!"
+	text_far _NoBoxSlotsLeftText
+	text_end
+
+BoxSlotsLeftText:
+;"X slots left in box X"
+	text_far _BoxSlotsLeftText
 	text_end
 
 ItemUseBallText06:
@@ -856,6 +1095,8 @@ ItemUseMedicine:
 	jr z, ItemUseMedicine ; if so, force another choice
 .checkItemType
 	ld a, [wCurItem]
+	cp CANDY_BAG
+	jp z, .useVitamin
 	cp REVIVE
 	jr nc, .healHP ; if it's a Revive or Max Revive
 	cp FULL_HEAL
@@ -1270,6 +1511,8 @@ ItemUseMedicine:
 	ld a, [wCurItem]
 	cp RARE_CANDY
 	jp z, .useRareCandy
+	cp CANDY_BAG
+	jp z, .useRareCandy
 	push hl
 	sub HP_UP
 	add a
@@ -1415,6 +1658,9 @@ ItemUseMedicine:
 	ld [wCurItem], a
 	pop af
 	ld [wWhichPokemon], a
+	ld a, [wCurItem]
+	cp CANDY_BAG
+	ret z
 	jp RemoveUsedItem
 
 VitaminStatRoseText:
@@ -1626,6 +1872,26 @@ ItemUseSuperRepel:
 ItemUseMaxRepel:
 	ld b, 250
 	jp ItemUseRepelCommon
+
+ItemUseRepellent:
+	ld a, [wIsInBattle]
+	and a
+	jp nz, ItemUseNotTime
+
+	ld a, 250
+	ld [wRepelRemainingSteps], a
+
+	ld hl, UsedRepellentText
+	call PrintText
+
+	ld a, SFX_HEAL_AILMENT
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+	ret
+
+UsedRepellentText:
+	text_far _UsedRepellentText
+	text_end
 
 ItemUseDireHit:
 	ld a, [wIsInBattle]
@@ -2184,6 +2450,10 @@ ItemUseTMHM:
 	ld a, [wCurrentMenuItem]
 	and a
 	jr z, .useMachine
+;;;;;;;;;; Vimescarrotnote: FIXED: fixes a rare bug where booting up a TM and then going back can freeze up the game on booting up another
+    	ld a, ITEM_NAME
+    	ld [wNameListType], a; if you decide not to use the machine, change the list type back to item list.
+;;;;;;;;;;
 	ld a, 2
 	ld [wActionResultOrTookBattleTurn], a ; item not used
 	ret
@@ -2952,4 +3222,40 @@ CheckMapForMon:
 	dec b
 	jr nz, .loop
 	dec hl
+	ret
+
+PrintRemainingBoxSpace:
+	ld hl, wBoxNumString
+	ld a, [wCurrentBoxNum]
+	and %01111111 ; last bit of wCurrentBoxNum is used as a flag and should be ignored
+	inc a ; wCurrentBoxNum starts at 0 but we want 1
+	call Load2DigitNumberBelow20
+	ld a, [wBoxCount]
+	cp MONS_PER_BOX
+	jr nz, .notFullBox
+	ld hl, NoBoxSlotsLeftText
+	call PrintText
+	ret
+.notFullBox
+	n_sub_a MONS_PER_BOX
+	ld hl, w2CharStringBuffer
+	call Load2DigitNumberBelow20
+	ld hl, BoxSlotsLeftText
+	call PrintText
+	ret
+
+PrintRemainingBoxSpacePrompt:
+	call PrintRemainingBoxSpace
+	jp DisplayTextPromptButton
+
+Load2DigitNumberBelow20:
+	cp 10
+	jr c, .singleDigit
+	sub 10
+	ld [hl], '1'
+	inc hl
+.singleDigit
+	add NUMBER_CHAR_OFFSET
+	ld [hli], a
+	ld [hl], '@'
 	ret
