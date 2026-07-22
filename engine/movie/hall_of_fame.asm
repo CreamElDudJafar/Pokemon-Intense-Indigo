@@ -226,19 +226,14 @@ HoFLoadMonPlayerPicTileIDs:
 HoFDisplayPlayerStats:
 	SetEvent EVENT_HALL_OF_FAME_DEX_RATING
 	predef DisplayDexRating
-	hlcoord 11, 0 ; Kaizo Text Box
+	hlcoord 11, 0 ; Indigo Text Box
 	lb bc, 2, 7
 	call TextBoxBorder
 	hlcoord 12, 1
-IF DEF(_RED)
-	ld de, RedText
-ENDC
-IF DEF(_BLUE)
-	ld de, BlueText
-ENDC
+	ld de, IntenseText
 	call PlaceString
 	hlcoord 12, 2
-	ld de, KaizoText
+	ld de, IndigoText
 	call PlaceString
 	jp .Next1
 .Next1
@@ -283,14 +278,11 @@ HoFPrintTextAndDelay:
 	ld c, 120
 	jp DelayFrames
 
-RedText:
-	db "RED@"
+IntenseText:
+	db "INTENSE@"
 
-BlueText:
-	db "BLUE@"
-
-KaizoText:
-	db "KAIZO@"
+IndigoText:
+	db "INDIGO@"
 
 HoFPlayTimeText:
 	db "PLAY TIME@"
