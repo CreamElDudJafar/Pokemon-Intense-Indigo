@@ -138,7 +138,7 @@ _Route12SignText::
 	done
 
 _Route12SportFishingSignText::
-	text "L:114"
+	text "L:105"
 
 	para "Stock up now"
 	done

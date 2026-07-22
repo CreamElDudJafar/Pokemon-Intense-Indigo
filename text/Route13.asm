@@ -173,7 +173,7 @@ _Route13TrainerTips2Text::
 
 _Route13SignText::
 	text "ROUTE 13"
-	para "L:115"
+	para "L:105"
 	para "BRING BIRD"
 	line "#MON! "
 	done

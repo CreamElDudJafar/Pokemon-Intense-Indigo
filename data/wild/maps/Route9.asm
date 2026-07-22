@@ -1,16 +1,15 @@
 Route9WildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 87, RATICATE
-	db 100, DIGLETT
-	db 100, VOLTORB
-	db 90, BUTTERFREE
-	db 88, FEAROW
-	db 90, GLOOM
-	db 96, NIDORINA
-	db 90, PRIMEAPE
-	db 73, PARASECT
-	db  2, RHYHORN
+	db 48, RATICATE
+	db 48, DIGLETT
+	db 48, VOLTORB
+	db 48, BUTTERFREE
+	db 48, FEAROW
+	db 48, GLOOM
+	db 48, NIDORINA
+	db 48, PRIMEAPE
+	db 42, PARASECT
+	db 21, RHYHORN
 	end_grass_wildmons
-
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons

@@ -172,6 +172,6 @@ _Route15CooltrainerF4AfterBattleText::
 
 _Route15SignText::
 	text "ROUTE 15"
-	para "L:117"
+	para "L:106"
 	para "Almost there... "
 	done

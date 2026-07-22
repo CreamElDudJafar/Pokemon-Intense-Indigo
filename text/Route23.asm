@@ -37,5 +37,5 @@ _Route23GoRightAheadText::
 
 _Route23VictoryRoadGateSignText::
 	text "VICTORY CAVE GATE"
-	para "L:125-126-127"
+	para "L:109-110-115"
 	done

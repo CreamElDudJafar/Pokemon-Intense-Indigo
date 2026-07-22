@@ -25,7 +25,7 @@ _CinnabarIslandSignText::
 	done
 
 _CinnabarIslandPokemonLabSignText::
-	text "L1:21-27"
+	text "L1:07-15"
 	done
 
 _CinnabarIslandGymSignText::

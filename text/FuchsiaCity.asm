@@ -38,9 +38,9 @@ _FuchsiaCitySignText::
 	done
 
 _FuchsiaCitySafariGameSignText::
-	text "L:119-125"
+	text "L:106-112"
 
-	para "L:127's the MAX."
+	para "L:115's the MAX."
 	done
 
 _FuchsiaCityWardensHomeSignText::
