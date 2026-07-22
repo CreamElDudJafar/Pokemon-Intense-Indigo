@@ -157,6 +157,6 @@ _Route9SignText::
 	line "SAKAYUME"
 	cont "DARK TUNNEL"
 
-	para "L:105"
+	para "L:55 "
 	done
 

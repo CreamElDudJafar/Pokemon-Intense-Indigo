@@ -50,8 +50,8 @@ _Route10SuperNerd2AfterBattleText::
 _Route10CooltrainerF1BattleText::
 	text "I beat the"
 	line "first 3 GYMs"
-	cont "with #MON"
-	cont "above lv100."
+	cont "with high"
+	cont "level #MON."
 	para "Not others."
 	done
 
@@ -105,6 +105,6 @@ _Route10RockTunnelSignText::
 	done
 
 _Route10PowerPlantSignText::
-	text "L:106-L:107"
+	text "L:55-L:60  "
 	done
 
