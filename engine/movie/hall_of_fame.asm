@@ -241,10 +241,10 @@ HoFDisplayPlayerStats:
 	lb bc, 2, 7
 	call TextBoxBorder
 	hlcoord 12, 1
-	ld de, IntenseText
+	ld de, IndigoText
 	call PlaceString
 	hlcoord 12, 2
-	ld de, IndigoText
+	ld de, LiteText
 	call PlaceString
 	jp .Next1
 .Next1
@@ -289,11 +289,11 @@ HoFPrintTextAndDelay:
 	ld c, 120
 	jp DelayFrames
 
-IntenseText:
-	db "INTENSE@"
-
 IndigoText:
 	db "INDIGO@"
+
+LiteText:
+	db "LITE@"
 
 HoFPlayTimeText:
 	db "PLAY TIME@"
