@@ -20,7 +20,7 @@ _CinnabarGymBlaineReceivedVolcanoBadgeText::
 	line "Well done!!!"
 
 	para "You have earned"
-	line "the PEARLY BADGE!"
+	line "the PEARLY BADGE!@"
 	text_end
 
 _CinnabarGymBlainePostBattleAdviceText::
