@@ -49,6 +49,6 @@ _LancesRoomLanceAfterBattleText::
 	line "awaits you within"
 	cont "the last room..."
 	para "Believe in your"
-	line "#MON <PLAYER>."
+	line "#MON <PLAYER>.@"
 	text_end
 

@@ -92,7 +92,7 @@ _OaksLabOak1DeliverParcelText::
 	para "What? You have"
 	line "something for me?"
 	para "<PLAYER> delivered"
-	line "VIP TICKETS."
+	line "VIP TICKETS.@"
 	text_end
 
 _OaksLabOak1ParcelThanksText::

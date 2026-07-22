@@ -30,7 +30,7 @@ _ViridianGymGiovanniReceivedEarthBadgeText::
 	line "your bravery."
 
 	para "Take the"
-	line "BLACKBADGE!"
+	line "BLACKBADGE!@"
 	text_end
 
 _ViridianGymGiovanniPostBattleAdviceText::
@@ -54,7 +54,7 @@ _ViridianGymGiovanniPostBattleAdviceText::
 	para "...gasp..."
 	line "gasp..."
 
-	para "AAAAAAAAGH!!!"
+	para "AAAAAAAAGH!!!@"
 	text_end
 
 _ViridianGymGiovanniEarthBadgeInfoText::
