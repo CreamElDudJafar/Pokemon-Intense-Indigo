@@ -10,7 +10,7 @@ _SSAnneCaptainsRoomRubCaptainsBackText::
 	cont "back!"
 
 	para "Rub-rub..."
-	line "Rub-rub..."
+	line "Rub-rub...@"
 	text_end
 
 _SSAnneCaptainsRoomCaptainIFeelMuchBetterText::
