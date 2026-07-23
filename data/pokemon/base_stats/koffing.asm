@@ -7,7 +7,11 @@
 	db 255 ; catch rate
 	db 114 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/koffing.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/koffing.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw KoffingPicFront, KoffingPicBack
 
 	db SMOKESCREEN, SLUDGE, EXPLOSION, TOXIC ; level 1 learnset
@@ -19,4 +23,4 @@
 	     EXPLOSION,    SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(KoffingPicFront)

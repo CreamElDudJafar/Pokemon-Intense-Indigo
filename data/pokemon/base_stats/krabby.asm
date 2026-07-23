@@ -7,7 +7,11 @@
 	db 255 ; catch rate
 	db 115 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/krabby.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/krabby.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw KrabbyPicFront, KrabbyPicBack
 
 	db CRABHAMMER, VICEGRIP, NO_MOVE, NO_MOVE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     CUT,          SURF,         STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(KrabbyPicFront)

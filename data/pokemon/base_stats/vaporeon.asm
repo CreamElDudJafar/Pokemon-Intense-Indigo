@@ -7,7 +7,11 @@
 	db 1   ; catch rate
 	db 196 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/vaporeon.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/vaporeon.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw VaporeonPicFront, VaporeonPicBack
 
 	db ICE_BEAM, WATERFALL, SAND_ATTACK, BODY_SLAM ; level 1 learnset
@@ -20,4 +24,4 @@
 	     SKULL_BASH,   REST,         SUBSTITUTE,   SURF
 	; end
 
-	db 0 ; padding
+	db BANK(VaporeonPicFront)

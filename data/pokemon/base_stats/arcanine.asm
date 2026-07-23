@@ -7,7 +7,11 @@
 	db 30 ; catch rate
 	db 213 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/arcanine.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/arcanine.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw ArcaninePicFront, ArcaninePicBack
 
 	db FIRE_BLAST, BODY_SLAM, DIG, NO_MOVE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     SKULL_BASH,   REST,         SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(ArcaninePicFront)

@@ -7,7 +7,11 @@
 	db 255 ; catch rate
 	db 90 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/grimer.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/grimer.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw GrimerPicFront, GrimerPicBack
 
 	db TOXIC, SLUDGE, EXPLOSION, NO_MOVE ; level 1 learnset
@@ -19,4 +23,4 @@
 	     FIRE_BLAST,   REST,         EXPLOSION,    SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(GrimerPicFront)

@@ -7,7 +7,11 @@
 	db 200 ; catch rate
 	db 156 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/electabuzz.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/electabuzz.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw ElectabuzzPicFront, ElectabuzzPicBack
 
 	db PSYCHIC_M, THUNDERBOLT, ICE_PUNCH, THUNDER_WAVE ; level 1 learnset
@@ -22,4 +26,4 @@
 	     SUBSTITUTE,   STRENGTH,     FLASH
 	; end
 
-	db 0 ; padding
+	db BANK(ElectabuzzPicFront)

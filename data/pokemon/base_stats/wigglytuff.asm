@@ -7,7 +7,11 @@
 	db 30 ; catch rate
 	db 109 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/wigglytuff.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/wigglytuff.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw WigglytuffPicFront, WigglytuffPicBack
 
 	db PSYCHIC_M, BLIZZARD, DOUBLE_EDGE, THUNDER_WAVE ; level 1 learnset
@@ -23,4 +27,4 @@
 	     SUBSTITUTE,   STRENGTH,     FLASH
 	; end
 
-	db 0 ; padding
+	db BANK(WigglytuffPicFront)

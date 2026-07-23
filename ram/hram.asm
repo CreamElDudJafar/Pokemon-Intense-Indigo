@@ -384,7 +384,7 @@ hWhoseTurn:: db ; 0 on player's turn, 1 on enemy's turn
 
 hClearLetterPrintingDelayFlags:: db
 
-	ds 1
+hColorHackTmp2:: db
 
 ; bit 0: draw HP fraction to the right of bar instead of below (for party menu)
 ; bit 1: menu is double spaced
@@ -397,6 +397,14 @@ hJoyInput:: db
 
 hDisableJoypadPolling:: db
 
-	ds 5
+; This byte is used by the color hack, in the "DelayFrameHook" function. It stores the
+; bank that the interrupt wrapper should switch to if an interrupt occurs in the middle of
+; "DelayFrameHook". The bank # is incremented by one, so if this is 0, it's ignored.
+hDelayFrameHookBank:: db
+
+; Used for convenience in color hack (in the _ColorOverworldSprite function)
+hColorHackTmp:: db
+
+	ds 3
 
 ENDSECTION

@@ -7,7 +7,11 @@
 	db 255 ; catch rate
 	db 180 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/butterfree.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/butterfree.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw ButterfreePicFront, ButterfreePicBack
 
 	db PSYBEAM, STUN_SPORE, SLEEP_POWDER, NO_MOVE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     SWIFT,        REST,         PSYWAVE,      SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(ButterfreePicFront)

@@ -952,6 +952,12 @@ _ItemsCantBeUsedHereText::
 	line "used here."
 	prompt
 
+_CantUsePCHere:: ; new, for portablePC
+	text "You cannot use"
+	line "this here!"
+	prompt
+
+
 _AlreadyOutText::
 	text_ram wBattleMonNick
 	text " is"
@@ -1759,6 +1765,11 @@ _DoYouWantToNicknameText::
 	text_ram wNameBuffer
 	text "?"
 	done
+
+_BoyGirlText::
+    	text "Play as a boy, or"
+    	line "as a girl?"
+    	done
 
 _YourNameIsText::
 	text "Right! So your"

@@ -7,7 +7,11 @@
 	db 1   ; catch rate
 	db 199 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/omastar.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/omastar.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw OmastarPicFront, OmastarPicBack
 
 	db HYDRO_PUMP, BLIZZARD, SEISMIC_TOSS, BODY_SLAM ; level 1 learnset
@@ -21,4 +25,4 @@
 	     SURF
 	; end
 
-	db 0 ; padding
+	db BANK(OmastarPicFront)

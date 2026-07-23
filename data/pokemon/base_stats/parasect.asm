@@ -7,7 +7,11 @@
 	db 200 ; catch rate
 	db 128 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/parasect.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/parasect.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw ParasectPicFront, ParasectPicBack
 
 	db STUN_SPORE, MEGA_DRAIN, BODY_SLAM, SPORE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     REST,         SUBSTITUTE,   CUT
 	; end
 
-	db 0 ; padding
+	db BANK(ParasectPicFront)

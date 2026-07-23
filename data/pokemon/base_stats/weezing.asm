@@ -7,7 +7,11 @@
 	db 30 ; catch rate
 	db 173 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/weezing.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/weezing.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw WeezingPicFront, WeezingPicBack
 
 	db TOXIC, EXPLOSION, SLUDGE, FIRE_BLAST ; level 1 learnset
@@ -19,4 +23,4 @@
 	     REST,         EXPLOSION,    SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(WeezingPicFront)

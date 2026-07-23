@@ -7,7 +7,11 @@
 	db 155 ; catch rate
 	db 174 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/golduck.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/golduck.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw GolduckPicFront, GolduckPicBack
 
 	db WATERFALL, PSYCHIC_M, BODY_SLAM, HYPNOSIS ; level 1 learnset
@@ -22,4 +26,4 @@
 	     STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(GolduckPicFront)

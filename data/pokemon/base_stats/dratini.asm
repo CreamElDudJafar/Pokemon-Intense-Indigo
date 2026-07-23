@@ -7,7 +7,11 @@
 	db 35 ; catch rate
 	db 67 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/dratini.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/dratini.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw DratiniPicFront, DratiniPicBack
 
 	db WRAP, THUNDER_WAVE, DRAGON_RAGE, NO_MOVE ; level 1 learnset
@@ -21,4 +25,4 @@
 	     THUNDER_WAVE, SUBSTITUTE,   SURF
 	; end
 
-	db 0 ; padding
+	db BANK(DratiniPicFront)

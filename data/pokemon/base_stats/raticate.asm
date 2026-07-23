@@ -7,7 +7,11 @@
 	db 120 ; catch rate
 	db 116 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/raticate.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/raticate.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw RaticatePicFront, RaticatePicBack
 
 	db BODY_SLAM, SUPER_FANG, DIG, HYPER_BEAM ; level 1 learnset
@@ -20,4 +24,4 @@
 	     BIDE,         SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(RaticatePicFront)

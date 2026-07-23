@@ -7,7 +7,11 @@
 	db 1   ; catch rate
 	db 204 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/rhydon.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/rhydon.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw RhydonPicFront, RhydonPicBack
 
 	db EARTHQUAKE, BODY_SLAM, ROCK_SLIDE, NO_MOVE ; level 1 learnset
@@ -23,4 +27,4 @@
 	     SURF,         STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(RhydonPicFront)

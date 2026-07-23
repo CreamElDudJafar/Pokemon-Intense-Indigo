@@ -7,7 +7,11 @@
 	db 66 ; catch rate
 	db 178 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/ninetales.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/ninetales.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw NinetalesPicFront, NinetalesPicBack
 
 	db FIRE_SPIN, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(NinetalesPicFront)

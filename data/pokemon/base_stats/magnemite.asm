@@ -7,7 +7,11 @@
 	db 255 ; catch rate
 	db 89 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/magnemite.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/magnemite.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw MagnemitePicFront, MagnemitePicBack
 
 	db THUNDERBOLT, SONICBOOM, THUNDER_WAVE, DOUBLE_EDGE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     FLASH
 	; end
 
-	db 0 ; padding
+	db BANK(MagnemitePicFront)

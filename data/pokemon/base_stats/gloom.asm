@@ -7,7 +7,11 @@
 	db 255 ; catch rate
 	db 132 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/gloom.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/gloom.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw GloomPicFront, GloomPicBack
 
 	db PETAL_DANCE, SLEEP_POWDER, STUN_SPORE, NO_MOVE ; level 1 learnset
@@ -19,4 +23,4 @@
 	     BIDE,         REST,         SUBSTITUTE,   CUT
 	; end
 
-	db 0 ; padding
+	db BANK(GloomPicFront)

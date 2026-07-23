@@ -7,7 +7,11 @@
 	db 1   ; catch rate
 	db 245 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/dragonite.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/dragonite.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw DragonitePicFront, DragonitePicBack
 
 	db WRAP, BLIZZARD, THUNDER_WAVE, NO_MOVE ; level 1 learnset
@@ -22,4 +26,4 @@
 	     SURF,         STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(DragonitePicFront)

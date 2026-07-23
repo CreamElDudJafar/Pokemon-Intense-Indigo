@@ -7,7 +7,11 @@
 	db 255 ; catch rate
 	db 60 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/nidoranm.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/nidoranm.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw NidoranMPicFront, NidoranMPicBack
 
 	db DOUBLE_KICK, HORN_ATTACK, TOXIC, NO_MOVE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(NidoranMPicFront)

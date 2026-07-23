@@ -7,7 +7,11 @@
 	db 150 ; catch rate
 	db 84 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/bellsprout.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/bellsprout.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw BellsproutPicFront, BellsproutPicBack
 
 	db TOXIC, STUN_SPORE, DOUBLE_EDGE, NO_MOVE ; level 1 learnset
@@ -19,4 +23,4 @@
 	     BIDE,         REST,         SUBSTITUTE,   CUT
 	; end
 
-	db 0 ; padding
+	db BANK(BellsproutPicFront)

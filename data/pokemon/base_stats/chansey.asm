@@ -7,7 +7,11 @@
 	db 1   ; catch rate
 	db 255 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/chansey.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/chansey.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw ChanseyPicFront, ChanseyPicBack
 
 	db MINIMIZE, SEISMIC_TOSS, THUNDER_WAVE, SOFTBOILED ; level 1 learnset
@@ -24,4 +28,4 @@
 	     FLASH
 	; end
 
-	db 0 ; padding
+	db BANK(ChanseyPicFront)

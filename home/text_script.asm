@@ -209,8 +209,13 @@ PlayerBlackedOutText::
 DisplayRepelWoreOffText::
 	ld hl, RepelWoreOffText
 	call PrintText
-	jp AfterDisplayingTextID
+	callfar UseAnotherRepel
+	jp CloseTextDisplay
 
 RepelWoreOffText::
 	text_far _RepelWoreOffText
 	text_end
+
+DisplayTextPromptButton::
+	ld hl, TextScriptPromptButton
+	jp TextCommandProcessor

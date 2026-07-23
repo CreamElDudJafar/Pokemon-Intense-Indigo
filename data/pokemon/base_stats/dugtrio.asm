@@ -7,7 +7,11 @@
 	db 1 ; catch rate
 	db 153 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/dugtrio.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/dugtrio.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw DugtrioPicFront, DugtrioPicBack
 
 	db DIG, SAND_ATTACK, BODY_SLAM, FISSURE ; level 1 learnset
@@ -19,4 +23,4 @@
 	     DOUBLE_TEAM,  BIDE,         REST,         ROCK_SLIDE,   SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(DugtrioPicFront)

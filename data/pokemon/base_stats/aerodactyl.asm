@@ -7,7 +7,11 @@
 	db 1   ; catch rate
 	db 202 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/aerodactyl.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/aerodactyl.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw AerodactylPicFront, AerodactylPicBack
 
 	db FLY, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     REST,         SUBSTITUTE,   FLY
 	; end
 
-	db 0 ; padding
+	db BANK(AerodactylPicFront)

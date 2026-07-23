@@ -7,7 +7,11 @@
 	db 210 ; catch rate
 	db 96 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/doduo.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/doduo.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw DoduoPicFront, DoduoPicBack
 
 	db PECK, TAKE_DOWN, DOUBLE_KICK, NO_MOVE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     FLY
 	; end
 
-	db 0 ; padding
+	db BANK(DoduoPicFront)

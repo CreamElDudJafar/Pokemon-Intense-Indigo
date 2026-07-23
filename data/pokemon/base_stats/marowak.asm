@@ -7,7 +7,11 @@
 	db 180 ; catch rate
 	db 124 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/marowak.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/marowak.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw MarowakPicFront, MarowakPicBack
 
 	db BONEMERANG, ROCK_SLIDE, EARTHQUAKE, BODY_SLAM ; level 1 learnset
@@ -22,4 +26,4 @@
 	     STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(MarowakPicFront)

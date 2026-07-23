@@ -7,7 +7,11 @@
 	db 100 ; catch rate
 	db 105 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/tentacool.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/tentacool.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw TentacoolPicFront, TentacoolPicBack
 
 	db WRAP, SUPERSONIC, TOXIC, BUBBLEBEAM ; level 1 learnset
@@ -20,4 +24,4 @@
 	     REST,         SUBSTITUTE,   CUT,          SURF
 	; end
 
-	db 0 ; padding
+	db BANK(TentacoolPicFront)

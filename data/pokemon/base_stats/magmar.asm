@@ -7,7 +7,11 @@
 	db 200 ; catch rate
 	db 167 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/magmar.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/magmar.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw MagmarPicFront, MagmarPicBack
 
 	db CONFUSE_RAY, THUNDERBOLT, BODY_SLAM, FIRE_BLAST ; level 1 learnset
@@ -21,4 +25,4 @@
 	     PSYWAVE,      SUBSTITUTE,   STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(MagmarPicFront)

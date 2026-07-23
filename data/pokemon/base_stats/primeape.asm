@@ -7,7 +7,11 @@
 	db 175 ; catch rate
 	db 149 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/primeape.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/primeape.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw PrimeapePicFront, PrimeapePicBack
 
 	db SUBMISSION, BODY_SLAM, SEISMIC_TOSS, ROCK_SLIDE ; level 1 learnset
@@ -21,4 +25,4 @@
 	     SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(PrimeapePicFront)

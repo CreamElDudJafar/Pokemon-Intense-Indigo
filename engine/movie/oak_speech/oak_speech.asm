@@ -51,16 +51,52 @@ OakSpeech:
 	call PrepareOakSpeech
 	predef InitPlayerData2
 	ld hl, wNumBoxItems
-	ld a, POTION
+	ld a, MASTER_BALL
+	ld [wCurItem], a
+	ld a, 99
+	ld [wItemQuantity], a
+	call AddItemToInventory
+	ld a, HEALING_KIT
 	ld [wCurItem], a
 	ld a, 1
 	ld [wItemQuantity], a
-	call AddItemToInventory
+	call AddItemToInventory  ; give HEALING_KIT
+	ld a, CANDY_BAG
+	ld [wCurItem], a
+	ld a, 1
+	ld [wItemQuantity], a
+	call AddItemToInventory  ; give CANDY_BAG
+	ld a, REPELLENT
+	ld [wCurItem], a
+	ld a, 1
+	ld [wItemQuantity], a
+	call AddItemToInventory  ; give REPELLENT
+	ld a, STATUS_KIT         
+	ld [wCurItem], a
+	ld a, 1
+	ld [wItemQuantity], a
+	call AddItemToInventory  ; give STATUS_KIT
 	ld a, [wDefaultMap]
 	ld [wDestinationMap], a
 	call PrepareForSpecialWarp
 	xor a
 	ldh [hTileAnimations], a
+IF GEN_2_GRAPHICS
+	ld a, PAL_OAK
+ELSE
+	ld a, PAL_BROWNMON
+ENDC
+	call GotPalID ; HAX
+	nop
+	nop
+	nop
+; Gender Menu
+	ld hl, BoyGirlText  ; added to the same file as the other oak text
+	call PrintText     ; show this text
+	call BoyGirlChoice ; added routine at the end of this file
+	ld a, [wCurrentMenuItem]
+	ld [wPlayerGender], a ; store player's gender. 00 for boy, 01 for girl
+	call ClearScreen ; clear the screen before resuming normal intro	
 	ld a, [wStatusFlags6]
 	bit BIT_DEBUG_MODE, a
 	jp nz, .skipSpeech
@@ -71,7 +107,8 @@ OakSpeech:
 	ld hl, OakSpeechText1
 	call PrintText
 	call GBFadeOutToWhite
-	call ClearScreen
+	;call ClearScreen
+	call GetNidorinoPalID ; HAX
 	ld a, NIDORINO
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
@@ -82,16 +119,23 @@ OakSpeech:
 	ld hl, OakSpeechText2
 	call PrintText
 	call GBFadeOutToWhite
-	call ClearScreen
+	call GetRedPalID ; HAX
 	ld de, RedPicFront
 	lb bc, BANK(RedPicFront), $00
+	ld a, [wPlayerGender]
+	and a
+	jr z, .NotGreen1
+	call GetGreenPalID ; HAX
+	ld de, GreenPicFront
+	lb bc, BANK(GreenPicFront), $00
+.NotGreen1:
 	call IntroDisplayPicCenteredOrUpperRight
 	call MovePicLeft
 	ld hl, IntroducePlayerText
 	call PrintText
 	call ChoosePlayerName
 	call GBFadeOutToWhite
-	call ClearScreen
+	call GetRivalPalID ; HAX
 	ld de, Rival1Pic
 	lb bc, BANK(Rival1Pic), $00
 	call IntroDisplayPicCenteredOrUpperRight
@@ -101,10 +145,23 @@ OakSpeech:
 	call ChooseRivalName
 .skipSpeech
 	call GBFadeOutToWhite
-	call ClearScreen
+	call GetRedPalID ; HAX
 	ld de, RedPicFront
 	lb bc, BANK(RedPicFront), $00
+	ld a, [wPlayerGender]
+	and a
+	jr z, .NotGreen2
+	call GetGreenPalID ; HAX
+	ld de, GreenPicFront
+	lb bc, Bank(GreenPicFront), $00
+.NotGreen2:
 	call IntroDisplayPicCenteredOrUpperRight
+
+; Set flag to prevent FadeInFromWhite from using SetPal_Overworld during the intro,
+; which would result in messed up colors in Red Picture before Shrink
+	ld hl, wCurrentMapScriptFlags
+	set 0, [hl]
+
 	call GBFadeInFromWhite
 	ld a, [wStatusFlags3]
 	and a ; ???
@@ -127,6 +184,13 @@ OakSpeech:
 	ld de, RedSprite
 	ld hl, vSprites
 	lb bc, BANK(RedSprite), $0C
+	ld a, [wPlayerGender]
+	and a
+	jr z, .NotGreen3
+	ld de, GreenSprite
+	lb bc, BANK(GreenSprite), $0C
+.NotGreen3:
+	ld hl, vSprites
 	call CopyVideoData
 	ld de, ShrinkPic1
 	lb bc, BANK(ShrinkPic1), $00
@@ -187,6 +251,10 @@ IntroduceRivalText:
 OakSpeechText3:
 	text_far _OakSpeechText3
 	text_end
+
+BoyGirlText:
+    	text_far _BoyGirlText
+    	text_end
 
 FadeInIntroPic:
 	ld hl, IntroFadePalettes
@@ -249,3 +317,22 @@ IntroDisplayPicCenteredOrUpperRight:
 	xor a
 	ldh [hStartTileID], a
 	predef_jump CopyUncompressedPicToTilemap
+
+; displays boy/girl choice
+BoyGirlChoice::
+	call SaveScreenTilesToBuffer1
+	call InitBoyGirlTextBoxParameters
+	jr DisplayBoyGirlChoice
+
+InitBoyGirlTextBoxParameters::
+   	ld a, $1 ; loads the value for the unused North/West choice, that was changed to say Boy/Girl
+	ld [wTwoOptionMenuID], a
+	hlcoord 6, 5 
+	ld bc, $607
+	ret
+	
+DisplayBoyGirlChoice::
+	ld a, $14
+	ld [wTextBoxID], a
+	call DisplayTextBoxID
+	jp LoadScreenTilesFromBuffer1

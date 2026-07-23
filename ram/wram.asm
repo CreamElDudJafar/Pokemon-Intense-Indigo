@@ -1426,10 +1426,16 @@ wEndBattleLoseTextPointer:: dw
 	ds 2
 wEndBattleTextRomBank:: db
 
+UNION
+
+w2CharStringBuffer:: ds 3 ; don't use this buffer during attack animations
+
+NEXTU
 	ds 1
 
 ; the address _of the address_ of the current subanimation entry
 wSubAnimAddrPtr:: dw
+ENDU
 
 UNION
 ; the address of the current subentry of the current subanimation
@@ -1543,7 +1549,7 @@ wMonHBackSprite:: dw
 wMonHMoves:: ds NUM_MOVES
 wMonHGrowthRate:: db
 wMonHLearnset:: flag_array NUM_TMS + NUM_HMS
-	ds 1
+wMonHPicBank:: db
 wMonHeaderEnd::
 
 ; saved at the start of a battle and then written back at the end of the battle
@@ -1756,9 +1762,7 @@ wPokedexOwnedEnd::
 wPokedexSeen:: flag_array NUM_POKEMON
 wPokedexSeenEnd::
 
-wNumBagItems:: db
-; item, quantity
-wBagItems:: ds BAG_ITEM_CAPACITY * 2 + 1
+	ds 42
 
 wPlayerMoney:: ds 3 ; BCD
 
@@ -1833,7 +1837,17 @@ wWarpEntries:: ds MAX_WARP_EVENTS * 4 ; Y, X, warp ID, map ID
 ; if $ff, the player's coordinates are not updated when entering the map
 wDestinationWarpID:: db
 
+; note: CHANGED: this empty space is now used for bigger bag space
+UNION
+	; original size of this empty space
 	ds 128
+
+NEXTU
+wNumBagItems:: db
+; item, quantity
+wBagItems:: ds BAG_ITEM_CAPACITY * 2 + 1
+; 7 bytes left to use
+ENDU
 
 ; number of signs in the current map (up to MAX_BG_EVENTS)
 wNumSigns:: db
@@ -1913,7 +1927,11 @@ wPlayerCoins:: dw ; BCD
 wToggleableObjectFlags:: flag_array $100
 wToggleableObjectFlagsEnd::
 
-	ds 7
+	ds 6
+
+wPartySpritePaletteSlot::
+; saved copy of SPRITESTATEDATA1_PICTUREID
+wSavedSpritePictureID:: db
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db
@@ -2043,7 +2061,13 @@ wRoute18Gate1FCurScript:: db
 	ds 78
 wGameProgressFlagsEnd::
 
-	ds 56
+wPlayerGender:: db
+	; $00 = boy
+	; $01 = girl
+
+wStatusKitStatus:: db
+
+	ds 54
 
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 
@@ -2054,7 +2078,9 @@ wObtainedHiddenCoinsFlags:: flag_array MAX_HIDDEN_COINS
 ; $02 = surfing
 wWalkBikeSurfState:: db
 
-	ds 10
+	ds 9
+
+wDumbByteToToggleStatusScreen:: db ; new
 
 wTownVisitedFlag:: flag_array NUM_CITY_MAPS
 
@@ -2188,7 +2214,9 @@ ENDU
 
 wTrainerHeaderPtr:: dw
 
-	ds 6
+	ds 5
+
+wMultiUseBuffer:: db ; new, for various buffer purposes
 
 ; the trainer the player must face after getting a wrong answer in the Cinnabar
 ; gym quiz
@@ -2250,6 +2278,14 @@ ENDR
 wBoxMonNicksEnd::
 
 wBoxDataEnd::
+
+IF GEN_2_GRAPHICS
+wEXPBarPixelLength::  ds 1
+wEXPBarBaseEXP::      ds 3
+wEXPBarCurEXP::       ds 3
+wEXPBarNeededEXP::    ds 3
+wEXPBarKeepFullFlag:: ds 1
+ENDC
 
 
 SECTION "Stack", WRAM0

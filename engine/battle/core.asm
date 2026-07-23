@@ -46,7 +46,6 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 .noCarry
 	dec b
 	jr nz, .copyRowLoop
-	call EnableLCD
 	ld a, $90
 	ldh [hWY], a
 	ldh [rWY], a
@@ -55,18 +54,26 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 	ldh [hSCY], a
 	dec a
 	ld [wUpdateSpritesEnabled], a
-	call Delay3
-	xor a
+	;call Delay3
+	nop
+	nop
+	ld a, 1 ; HAX: don't disable bg transfer. Makes the battle transition smoother.
 	ldh [hAutoBGTransferEnabled], a
 	ld b, $70
 	ld c, $90
 	ld a, c
 	ldh [hSCX], a
-	call DelayFrame
+	;call DelayFrame
+	nop
+	nop
+	nop
 	ld a, %11100100 ; inverted palette for silhouette effect
 	ldh [rBGP], a
 	ldh [rOBP0], a
 	ldh [rOBP1], a
+	; HAX: LCD is enabled far later than in vanilla game. This prevents flickering
+	; when entering battle. Also had to remove "delay" calls above.
+	call EnableLCD
 .slideSilhouettesLoop ; slide silhouettes of the player's pic and the enemy's pic onto the screen
 	ld h, b
 	ld l, $40
@@ -94,9 +101,9 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 	inc a
 	ldh [hAutoBGTransferEnabled], a
 	call Delay3
-	ld b, SET_PAL_BATTLE
-	call RunPaletteCommand
 	call HideSprites
+	ld b, SET_PAL_BATTLE_AFTER_BLACK
+	call RunPaletteCommand
 	jpfar PrintBeginningBattleText
 
 ; when a battle is starting, silhouettes of the player's pic and the enemy's pic are slid onto the screen
@@ -1573,6 +1580,11 @@ TryRunningFromBattle:
 	ld hl, CantEscapeText
 	jr .printCantEscapeOrNoRunningText
 .trainerBattle
+IF DEF(_DEBUG)
+	call FaintEnemyPokemon
+	call TrainerBattleVictory
+	jp _InitBattleCommon.endOfBattle
+ENDC
 	ld hl, NoRunningText
 .printCantEscapeOrNoRunningText
 	call PrintText
@@ -1823,8 +1835,13 @@ DrawPlayerHUDAndHPBar:
 	ld [hl], $73
 	ld de, wBattleMonNick
 	hlcoord 10, 7
+IF GEN_2_GRAPHICS
+	call PlaceString ; Note: "CenterMonName" not called to be consistent with gen 2
+	call PrintEXPBarAt1711
+ELSE
 	call CenterMonName
 	call PlaceString
+ENDC
 	ld hl, wBattleMonSpecies
 	ld de, wLoadedMon
 	ld bc, wBattleMonDVs - wBattleMonSpecies
@@ -1880,11 +1897,32 @@ DrawEnemyHUDAndHPBar:
 	lb bc, 4, 12
 	call ClearScreenArea
 	callfar PlaceEnemyHUDTiles
+	push hl
+	ld a, [wEnemyMonSpecies2]
+	ld [wPokedexNum], a
+	callfar IndexToPokedex
+	ld a, [wPokedexNum]
+	dec a
+	ld c, a
+	ld b, FLAG_TEST
+	ld hl, wPokedexOwned
+	predef FlagActionPredef
+	ld a, c
+	and a
+	jr z, .notOwned
+	hlcoord 1, 1
+	ld [hl], $E9 ; replace this with your Poké Ball icon or other character
+.notOwned
+	pop hl
 	ld de, wEnemyMonNick
 	hlcoord 1, 0
 	call CenterMonName
 	call PlaceString
+IF GEN_2_GRAPHICS
+	hlcoord 6, 1
+ELSE
 	hlcoord 4, 1
+ENDC
 	push hl
 	inc hl
 	ld de, wEnemyMonStatus
@@ -6202,14 +6240,32 @@ SwapPlayerAndEnemyLevels:
 LoadPlayerBackPic:
 	ld a, [wBattleType]
 	dec a ; is it the old man tutorial?
-	ld de, RedPicBack
-	jr nz, .next
 	ld de, OldManPicBack
-.next
+	ld a, BANK(RedPicBack) ; Default Red back sprite will be used as a means to load in the Old Man back sprite
+  	jr z, .next
+	ld a, [wPlayerGender]
+	and a
+	jr z, .RedBack
+	ld de, GreenPicBack
+	ld a, BANK(GreenPicBack) ; load female back sprite
+	jr .next
+.RedBack
+	ld de, RedPicBack
 	ld a, BANK(RedPicBack)
-	ASSERT BANK(RedPicBack) == BANK(OldManPicBack)
+.next
+        ASSERT BANK(GreenPicBack) == BANK(OldManPicBack) ; These two ASSERTs make sure to cover
+        ASSERT BANK(RedPicBack) == BANK(OldManPicBack)   ; both sprite cases
 	call UncompressSpriteFromDE
+
+IF GEN_2_GRAPHICS
+	call LoadMonBackSpriteHook ; No pixelated backsprites
+	nop
+	nop
+ELSE
+	; This is unchanged
 	predef ScaleSpriteByTwo
+ENDC
+
 	ld hl, wShadowOAM
 	xor a
 	ldh [hOAMTile], a ; initial tile number
@@ -6241,8 +6297,15 @@ LoadPlayerBackPic:
 	ld e, a
 	dec b
 	jr nz, .loop
+IF GEN_2_GRAPHICS
+	REPT 6
+	nop
+	ENDR
+ELSE
+	; unchanged
 	ld de, vBackPic
 	call InterlaceMergeSpriteBuffers
+ENDC
 	ld a, RAMG_SRAM_ENABLE
 	ld [rRAMG], a
 	xor a
@@ -6761,6 +6824,7 @@ _InitBattleCommon:
 	dec a ; is it a wild battle?
 	call z, DrawEnemyHUDAndHPBar ; draw enemy HUD and HP bar if it's a wild battle
 	call StartBattle
+.endOfBattle
 	callfar EndOfBattle
 	pop af
 	ld [wLetterPrintingDelayFlags], a
@@ -6902,12 +6966,237 @@ LoadMonBackPic:
 	call ClearScreenArea
 	ld hl, wMonHBackSprite - wMonHeader
 	call UncompressMonSprite
-	predef ScaleSpriteByTwo
-	ld de, vBackPic
-	call InterlaceMergeSpriteBuffers ; combine the two buffers to a single 2bpp sprite
+	predef_id ScaleSpriteByTwo
+
+	IF GEN_2_GRAPHICS
+		call LoadMonBackSpriteHook
+		nop
+		nop
+		nop
+		nop
+		nop
+		nop
+	ELSE
+		call Predef ; ScaleSpriteByTwo
+		ld de, vBackPic
+		call InterlaceMergeSpriteBuffers ; combine the two buffers to a single 2bpp sprite
+	ENDC
+
 	ld hl, vSprites
 	ld de, vBackPic
 	ld c, (2 * SPRITEBUFFERSIZE) / TILE_SIZE ; count of 16-byte chunks to be copied
 	ldh a, [hLoadedROMBank]
 	ld b, a
 	jp CopyVideoData
+
+INCLUDE "engine/battle/effects.asm"
+
+; HAX: Following are hooks for pokered_color. This is the end of the bank so it won't
+; cause data shifting.
+
+IF GEN_2_GRAPHICS
+
+LoadMonBackSpriteHook:
+	ld a, $66
+	ld de, vBackPic
+	ld c, a
+	jp LoadUncompressedSpriteData
+
+PrintEXPBarAt1711:
+	coord de, 17, 11
+PrintEXPBar:
+	push de
+	call CalcEXPBarPixelLength
+	ldh a, [hQuotient + 3] ; pixel length
+	ld [wEXPBarPixelLength], a
+	ld b, a
+	ld c, $08
+	ld d, $08
+	pop hl
+.loop
+	ld a, b
+	sub c
+	jr nc, .skip
+	ld c, b
+	jr .loop
+.skip
+	ld b, a
+	ld a, $c0
+	add c
+.loop2
+	ld [hld], a
+	dec d
+	ret z
+	ld a, b
+	and a
+	jr nz, .loop
+	ld a, $c0
+	jr .loop2
+
+CalcEXPBarPixelLength:
+	ld hl, wEXPBarKeepFullFlag
+	bit 0, [hl]
+	jr z, .start
+	res 0, [hl]
+	ld a, $40
+	ldh [hQuotient + 3], a
+	ret
+
+.start
+	ld hl, wStatusFlags2
+	bit BIT_NO_AUDIO_FADE_OUT, [hl]
+	jr z, .isBattleScreen
+	ld hl, wLoadedMonSpecies
+	jr .skip
+
+.isBattleScreen
+	; get the base exp needed for the current level
+	ld a, [wPlayerBattleStatus3]
+	ld hl, wBattleMonSpecies
+	bit 3, a ; Check if transformed
+	jr z, .skip
+	ld hl, wPartyMon1
+	call BattleMonPartyAttr
+	
+.skip
+	ld a, [hl]
+	ld [wCurSpecies], a
+	call GetMonHeader
+	ld a, [wBattleMonLevel]
+	ld d, a
+	callfar CalcExperience
+	ld hl, hMultiplicand
+	ld de, wEXPBarBaseEXP
+	ld a, [hli]
+	ld [de], a
+	inc de
+	ld a, [hli]
+	ld [de], a
+	inc de
+	ld a, [hl]
+	ld [de], a
+
+	; get the exp needed to gain a level
+	ld a, [wBattleMonLevel]
+	ld d, a
+	inc d
+	callfar CalcExperience
+
+	; get the address of the active Pokemon's current experience
+	ld hl, wStatusFlags2
+	bit BIT_NO_AUDIO_FADE_OUT, [hl]
+	jr z, .isBattleScreen2
+	ld hl, wLoadedMonExp
+	jr .skip2
+.isBattleScreen2	
+	ld hl, wPartyMon1Exp
+	call BattleMonPartyAttr
+	
+.skip2
+	; current exp - base exp
+	ld b, h
+	ld c, l
+	ld hl, wEXPBarBaseEXP
+	ld de, wEXPBarCurEXP
+	call SubThreeByteNum
+
+	; exp needed - base exp
+	ld bc, hMultiplicand
+	ld hl, wEXPBarBaseEXP
+	ld de, wEXPBarNeededEXP
+	call SubThreeByteNum
+
+	; make the divisor an 8-bit number
+	ld hl, wEXPBarNeededEXP
+	ld de, wEXPBarCurEXP + 1
+	ld a, [hli]
+	and a
+	jr z, .twoBytes
+	ld a, [hli]
+	ld [hld], a
+	dec hl
+	ld a, [hli]
+	ld [hld], a
+	ld a, [de]
+	inc de
+	ld [de], a
+	dec de
+	dec de
+	ld a, [de]
+	inc de
+	ld [de], a
+	dec de
+	xor a
+	ld [hli], a
+	ld [de], a
+	inc de
+.twoBytes
+	ld a, [hl]
+	and a
+	jr z, .oneByte
+	srl a
+	ld [hli], a
+	ld a, [hl]
+	rr a
+	ld [hld], a
+	ld a, [de]
+	srl a
+	ld [de], a
+	inc de
+	ld a, [de]
+	rr a
+	ld [de], a
+	dec de
+	jr .twoBytes
+.oneByte
+
+	; current exp * (8 tiles * 8 pixels)
+	ld hl, hMultiplicand
+	ld de, wEXPBarCurEXP
+	ld a, [de]
+	inc de
+	ld [hli], a
+	ld a, [de]
+	inc de
+	ld [hli], a
+	ld a, [de]
+	ld [hl], a
+	ld a, $40
+	ldh [hMultiplier], a
+	call Multiply
+
+	; product / needed exp = pixel length
+	ld a, [wEXPBarNeededEXP + 2]
+	ldh [hDivisor], a
+	ld b, $04
+	jp Divide
+
+; calculates the three byte number starting at [bc]
+; minus the three byte number starting at [hl]
+; and stores it into the three bytes starting at [de]
+; assumes that [hl] is smaller than [bc]
+SubThreeByteNum:
+	call .subByte
+	call .subByte
+.subByte
+	ld a, [bc]
+	inc bc
+	sub [hl]
+	inc hl
+	ld [de], a
+	jr nc, .noCarry
+	dec de
+	ld a, [de]
+	dec a
+	ld [de], a
+	inc de
+.noCarry
+	inc de
+	ret
+
+; return the address of the BattleMon's party struct attribute in hl
+BattleMonPartyAttr:
+	ld a, [wPlayerMonNumber]
+	ld bc, wPartyMon2 - wPartyMon1
+	jp AddNTimes
+ENDC

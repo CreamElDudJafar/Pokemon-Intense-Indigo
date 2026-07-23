@@ -28,21 +28,20 @@ GetItemName::
 ; given an item ID at [wNamedObjectIndex], store the name of the item in wNameBuffer
 	push hl
 	push bc
-	ld a, [wNamedObjectIndex]
-	cp HM01 ; is this a TM/HM?
-	jr nc, .Machine
-
-	ld [wNameListIndex], a
 	ld a, ITEM_NAME
 	ld [wNameListType], a
+	ld a, [wNamedObjectIndex]
+	ld [wNameListIndex], a 
+	cp HM01
+	jr nc, .Machine
 	ld a, BANK(ItemNames)
-	ld [wPredefBank], a
-	call GetName
 	jr .Finish
 
 .Machine
-	call GetMachineName
+	ld a, BANK(tmhmNames)
 .Finish
+	ld [wPredefBank], a
+	call GetName
 	ld de, wNameBuffer
 	pop bc
 	pop hl
@@ -118,13 +117,13 @@ IsItemHM::
 
 ; sets carry if move is an HM, clears carry if move is not an HM
 ; Input: a = move ID
-IsMoveHM::
-	ld hl, HMMoves
-	ld de, 1
-	jp IsInArray
+;IsMoveHM::
+;	ld hl, HMMoves
+;	ld de, 1
+;	jp IsInArray
 
-HMMoves::
-INCLUDE "data/moves/hm_moves.asm"
+;HMMoves::
+;INCLUDE "data/moves/hm_moves.asm"
 
 GetMoveName::
 	push hl

@@ -7,7 +7,11 @@
 	db 255 ; catch rate
 	db 70 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/paras.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/paras.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw ParasPicFront, ParasPicBack
 
 	db LEECH_LIFE, TOXIC, MEGA_DRAIN, STUN_SPORE ; level 1 learnset
@@ -20,4 +24,4 @@
 	     SUBSTITUTE,   CUT
 	; end
 
-	db 0 ; padding
+	db BANK(ParasPicFront)

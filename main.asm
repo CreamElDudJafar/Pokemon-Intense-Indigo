@@ -39,6 +39,14 @@ INCLUDE "engine/pokemon/remove_mon.asm"
 INCLUDE "engine/events/display_pokedex.asm"
 
 
+; Hooks for color hack
+INCLUDE "color/cable_club.asm"
+INCLUDE "color/oak_intro.asm"
+IF GEN_2_GRAPHICS
+INCLUDE "color/load_hp_and_exp_bar.asm"
+ENDC
+
+
 SECTION "bank3", ROMX
 
 INCLUDE "engine/joypad.asm"
@@ -74,6 +82,8 @@ INCLUDE "engine/events/hidden_events/elevator.asm"
 INCLUDE "engine/events/hidden_events/town_map.asm"
 INCLUDE "engine/events/hidden_events/pokemon_stuff.asm"
 
+INCLUDE "color/update_hp_bar.asm"
+
 
 SECTION "Font Graphics", ROMX
 
@@ -96,6 +106,13 @@ INCLUDE "engine/battle/move_effects/conversion.asm"
 INCLUDE "engine/battle/move_effects/haze.asm"
 INCLUDE "engine/battle/get_trainer_name.asm"
 INCLUDE "engine/math/random.asm"
+
+INCLUDE "color/status_screen.asm"
+
+IF GEN_2_GRAPHICS
+EXPBarGraphics:  INCBIN "gfx/gs/exp_bar.2bpp"
+EXPBarGraphicsEnd:
+ENDC
 
 
 SECTION "Battle Engine 2", ROMX
@@ -197,11 +214,13 @@ INCLUDE "engine/battle/move_effects/heal.asm"
 INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
 
+INCLUDE "color/draw_hud_pokeball_gfx.asm"
+
 
 SECTION "Battle Core", ROMX
 
 INCLUDE "engine/battle/core.asm"
-INCLUDE "engine/battle/effects.asm"
+;INCLUDE "engine/battle/effects.asm"
 
 
 SECTION "bank10", ROMX
@@ -210,6 +229,9 @@ INCLUDE "engine/menus/pokedex.asm"
 INCLUDE "engine/movie/trade.asm"
 INCLUDE "engine/movie/intro.asm"
 INCLUDE "engine/movie/trade2.asm"
+
+; Hooks for color hack
+INCLUDE "color/trade.asm"
 
 
 SECTION "Pokédex Rating", ROMX
@@ -261,6 +283,10 @@ INCLUDE "engine/events/diploma.asm"
 SECTION "Trainer Sight", ROMX
 
 INCLUDE "engine/overworld/trainer_sight.asm"
+
+IF GEN_2_GRAPHICS
+INCLUDE "color/exp_bar.asm"
+ENDC
 
 
 SECTION "Battle Engine 10", ROMX
@@ -321,7 +347,21 @@ INCLUDE "engine/items/town_map.asm"
 INCLUDE "engine/gfx/mon_icons.asm"
 INCLUDE "engine/events/in_game_trades.asm"
 INCLUDE "engine/gfx/palettes.asm"
+INCLUDE "engine/items/tm_prices.asm" ; moved from bank1E
+
+
+SECTION "Engine Save", ROMX
+
 INCLUDE "engine/menus/save.asm"
+ 
+BlackTile:
+	REPT 16
+	db $ff
+	ENDR
+BlackTileEnd:
+
+INCLUDE "color/ghost_marowak_anim.asm"
+INCLUDE "color/color.asm"
 
 
 SECTION "Itemfinder 1", ROMX
@@ -353,4 +393,14 @@ INCLUDE "data/battle_anims/subanimations.asm"
 INCLUDE "data/battle_anims/frame_blocks.asm"
 INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
-INCLUDE "engine/items/tm_prices.asm"
+
+INCLUDE "color/animations.asm"
+
+
+SECTION "Engine Spillover", ROMX
+
+INCLUDE "engine/overworld/use_another_repel.asm"
+INCLUDE "engine/overworld/field_moves.asm"
+INCLUDE "engine/menus/item_display_count.asm"
+INCLUDE "text/tmhm_names.asm"
+tmhmNamesEnd:

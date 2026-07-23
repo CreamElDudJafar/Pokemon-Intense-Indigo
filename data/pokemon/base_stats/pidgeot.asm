@@ -7,7 +7,11 @@
 	db 145 ; catch rate
 	db 172 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/pidgeot.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/pidgeot.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw PidgeotPicFront, PidgeotPicBack
 
 	db RAZOR_WIND, SAND_ATTACK, QUICK_ATTACK, HYPER_BEAM ; level 1 learnset
@@ -20,4 +24,4 @@
 	     FLY
 	; end
 
-	db 0 ; padding
+	db BANK(PidgeotPicFront)

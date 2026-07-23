@@ -70,7 +70,7 @@ ENDM
 ; Trade_SwapNames to swap the player and enemy names for some functions.
 
 InternalClockTradeFuncSequence:
-	tradefunc LoadTradingGFXAndMonNames
+	tradefunc LoadTradingGFXAndMonNames_ColorHook
 	tradefunc Trade_ShowPlayerMon
 	tradefunc Trade_DrawOpenEndOfLinkCable
 	tradefunc Trade_AnimateBallEnteringLinkCable
@@ -89,7 +89,7 @@ InternalClockTradeFuncSequence:
 	db -1 ; end
 
 ExternalClockTradeFuncSequence:
-	tradefunc LoadTradingGFXAndMonNames
+	tradefunc LoadTradingGFXAndMonNames_ColorHook
 	tradefunc Trade_ShowClearedWindow
 	tradefunc PrintTradeWillTradeText
 	tradefunc PrintTradeFarewellText
@@ -113,7 +113,7 @@ ExternalClockTradeFuncSequence:
 	db -1 ; end
 
 TradeFuncPointerTable:
-	addtradefunc LoadTradingGFXAndMonNames
+	addtradefunc LoadTradingGFXAndMonNames_ColorHook
 	addtradefunc Trade_ShowPlayerMon
 	addtradefunc Trade_DrawOpenEndOfLinkCable
 	addtradefunc Trade_AnimateBallEnteringLinkCable
@@ -179,7 +179,7 @@ LoadTradingGFXAndMonNames:
 	and a
 	ld a, $e4 ; non-SGB OBP0
 	jr z, .next
-	ld a, $f0 ; SGB OBP0
+	ld a, $e4 ; SGB OBP0
 .next
 	ldh [rOBP0], a
 	call EnableLCD
@@ -197,7 +197,7 @@ LoadTradingGFXAndMonNames:
 	jp GetMonName
 
 Trade_LoadMonPartySpriteGfx:
-	ld a, %11010000
+	ld a, %11100000
 	ldh [rOBP1], a
 	farjp LoadMonPartySpriteGfx
 
@@ -223,6 +223,9 @@ Trade_Cleanup:
 	ret
 
 Trade_ShowPlayerMon:
+	ld b, SET_PAL_POKEMON_WHOLE_SCREEN
+	ld c, 2
+	call Trade_LoadCablePalettes ; Ignores values of b, c
 	ld a, LCDC_ON | LCDC_WIN_9800 | LCDC_WIN_ON | LCDC_BLOCK21 | LCDC_BG_9C00 | LCDC_OBJ_8 | LCDC_OBJ_ON | LCDC_BG_ON
 	ldh [rLCDC], a
 	ld a, $50
@@ -265,11 +268,14 @@ Trade_ShowPlayerMon:
 	ret
 
 Trade_DrawOpenEndOfLinkCable:
+	ld a, %11100100
+	ldh [rOBP0], a
 	call Trade_ClearTileMap
 	ld b, HIGH(vBGMap0)
 	call CopyScreenTileBufferToVRAM
-	ld b, SET_PAL_GENERIC
-	call RunPaletteCommand
+	ld b, SET_PAL_POKEMON_WHOLE_SCREEN
+	ld c, 2
+	call Trade_LoadCablePalettes ; Ignores values of b, c
 
 ; This function call is pointless. It just copies blank tiles to VRAM that was
 ; already filled with blank tiles.
@@ -379,7 +385,7 @@ Trade_ShowEnemyMon:
 
 Trade_AnimLeftToRight:
 ; Animates the mon moving from the left GB to the right one.
-	call Trade_InitGameboyTransferGfx
+	call Trade_InitGameboyTransferGfx_ColorHook
 	ld a, $1
 	ld [wTradedMonMovingRight], a
 	ld a, %11100100
@@ -413,7 +419,7 @@ Trade_AnimLeftToRight:
 
 Trade_AnimRightToLeft:
 ; Animates the mon moving from the right GB to the left one.
-	call Trade_InitGameboyTransferGfx
+	call Trade_InitGameboyTransferGfx_ColorHook
 	xor a
 	ld [wTradedMonMovingRight], a
 	ld a, $64
@@ -601,23 +607,36 @@ Trade_AnimCircledMon:
 	ldh a, [rBGP]
 	xor $3c ; make link cable flash
 	ldh [rBGP], a
+
+	ldh a, [rOBP1]
+	xor $30 ; make Circle flash
+	ldh [rOBP1], a
+
 	ld hl, wShadowOAMSprite00TileID
 	ld de, OBJ_SIZE
-	ld c, $14
-.loop
+	ld c, $4
+.mon_loop
+	ld a, [hl]
+	xor 2
+	ld [hl], a
+	add hl, de
+	dec c
+	jr nz, .mon_loop
+	ld c, $10
+.circle_loop
 	ld a, [hl]
 	xor ICONOFFSET
 	ld [hl], a
 	add hl, de
 	dec c
-	jr nz, .loop
+	jr nz, .circle_loop
 	pop hl
 	pop bc
 	pop de
 	ret
 
 Trade_WriteCircledMonOAM:
-	farcall WriteMonPartySpriteOAMBySpecies
+	farcall LoadSinglePartyMonSprite
 	call Trade_WriteCircleOAMBlock
 
 Trade_AddOffsetsToOAMCoords:

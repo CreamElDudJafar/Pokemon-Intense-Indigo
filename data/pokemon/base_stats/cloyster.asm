@@ -7,7 +7,11 @@
 	db 1   ; catch rate
 	db 203 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/cloyster.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/cloyster.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw CloysterPicFront, CloysterPicBack
 
 	db EXPLOSION, BLIZZARD, CLAMP, NO_MOVE ; level 1 learnset
@@ -21,4 +25,4 @@
 	     SURF
 	; end
 
-	db 0 ; padding
+	db BANK(CloysterPicFront)

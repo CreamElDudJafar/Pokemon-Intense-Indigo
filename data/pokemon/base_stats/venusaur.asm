@@ -7,7 +7,11 @@
 	db 45 ; catch rate
 	db 208 ; base exp
 
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/venusaur.pic", 0, 1 ; sprite dimensions
+ELSE
 	INCBIN "gfx/pokemon/front/venusaur.pic", 0, 1 ; sprite dimensions
+ENDC
 	dw VenusaurPicFront, VenusaurPicBack
 
 	db SLEEP_POWDER, BODY_SLAM, RAZOR_LEAF, DOUBLE_TEAM ; level 1 learnset
@@ -20,4 +24,4 @@
 	     CUT
 	; end
 
-	db 0 ; padding
+	db BANK(VenusaurPicFront)
