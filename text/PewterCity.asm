@@ -60,17 +60,17 @@ _PewterCitySuperNerd2ImSprayingRepelText::
 	done
 
 _PewterCityYoungsterYoureATrainerFollowMeText::
-	text "You're a trainer"
-	line "right? BROCK's"
-	cont "looking for new"
-	cont "challengers!"
-	cont "Follow me!"
+	text "You don't have"
+	line "CUT? That's OK."
+	cont "I'm a PSYCHIC!"
+	cont "I'll take you"
+	cont "to the GYM!"
 	done
 
 _PewterCityYoungsterGoTakeOnBrockText::
 	text "If you have the"
 	line "right stuff, you"
-	cont "MIGHT win.   "
+	cont "MIGHT win."
 	done
 
 _PewterCityTrainerTipsText::

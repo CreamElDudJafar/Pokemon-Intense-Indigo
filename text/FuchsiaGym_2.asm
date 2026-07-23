@@ -38,13 +38,13 @@ _FuchsiaGymKogaTM06ExplanationText::
 	para "Those ROCKET bilge"
 	line "rats are no good!"
 
-	para "Mark em walk the"
+	para "Make em walk the"
 	line "plank <PLAYER>!"
 	done
 
 _FuchsiaGymKogaTM06NoRoomText::
-	text "Make space for"
-	line "this, child!"
+	text "Make some room for"
+	line "this, <PLAYER>!"
 	done
 
 _FuchsiaGymRocker1BattleText::

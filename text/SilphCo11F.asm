@@ -37,7 +37,7 @@ _SilphCo11FSilphPresidentMasterBallDescriptionText::
 	cont "to cheaters "
 	cont "like you."
 
-	para "You'vee"
+	para "You've"
 	line "done enough"
 	cont "damage."
 

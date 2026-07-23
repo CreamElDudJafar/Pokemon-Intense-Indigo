@@ -27,13 +27,14 @@ _CeladonMart3FClerkTM18NoRoomText::
 	done
 
 _CeladonMart3FGameBoyKid1Text::
-	text "Captured #MON"
-	line "are registered"
-	cont "with an ID No."
-	cont "and OT, the name"
-	cont "of the Original"
-	cont "Trainer that"
-	cont "caught it!"
+	text "We hid the POLICE"
+	line "in the EXCHANGE."
+
+	para "They'll sell"
+	line "NUGGETs only"
+	cont "to people they"
+	cont "trust. But"
+	cont "nobody else..."
 	done
 
 _CeladonMart3FGameBoyKid2Text::
