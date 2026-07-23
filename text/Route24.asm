@@ -24,29 +24,28 @@ _Route24CooltrainerM1NoRoomText::
 	done
 
 _Route24CooltrainerM1JoinTeamRocketText::
-	text "By the way, would"
-	line "you like to join"
-	cont "TEAM ROCKET?"
+	text "I am the second"
+	line "member of the new"
+	cont "TEAM ROCKET."
 
-	para "We're a group"
-	line "dedicated to evil"
-	cont "using #MON!"
+	para "You too can be"
+	line "one of us!"
 
-	para "Want to join?"
+	para "You become super"
+	line "strong, you get"
+	cont "respect and you"
+	cont "pretty much own"
+	cont "AIZOME."
 
-	para "Are you sure?"
+	para "Oh, and something"
+	line "about taking over"
+	cont "the world."
 
-	para "Come on, join us!"
+	para "Want to join up?"
 
-	para "I'm telling you"
-	line "to join!"
+	para "No?"
 
-	para "OK, you need"
-	line "convincing!"
-
-	para "I'll make you an"
-	line "offer you can't"
-	cont "refuse!"
+	para "BAD MOVE."
 	done
 
 _Route24CooltrainerM1DefeatedText::
@@ -55,10 +54,12 @@ _Route24CooltrainerM1DefeatedText::
 	prompt
 
 _Route24CooltrainerM1YouCouldBecomeATopLeaderText::
-	text "With your ability,"
-	line "you could become"
-	cont "a top leader in"
-	cont "TEAM ROCKET!"
+	text "No.2: Reconsider"
+	line "your option."
+
+	para "Because I'm not"
+	line "even at full"
+	cont "power."
 	done
 
 _Route24CooltrainerM2BattleText::

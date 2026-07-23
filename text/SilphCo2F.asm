@@ -46,7 +46,7 @@ _SilphCo2FScientist1EndBattleText::
 	prompt
 
 _SilphCo2FScientist1AfterBattleText::
-	text "You would'vee been"
+	text "You would've been"
 	line "a ROCKET TRADE"
 	cont "ELITE."
 	done

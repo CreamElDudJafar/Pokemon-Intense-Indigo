@@ -38,7 +38,7 @@ _SaffronGymSabrinaPostBattleAdviceText::
 	line "suck at the"
 	cont "TOURNAMENT!"
 
-	para "You'lll embarrass"
+	para "You'll embarrass"
 	line "me!"
 	done
 
@@ -63,7 +63,7 @@ _SaffronGymSabrinaMarshBadgeInfoText::
 
 _SaffronGymSabrinaReceivedTM46Text::
 	text "<PLAYER> got"
-	line "GOLD TEETH!@"
+	line "GOLD TEETH@"
 	text_end
 
 _TM46ExplanationText::

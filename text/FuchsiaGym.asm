@@ -1,7 +1,7 @@
 _FuchsiaGymKogaBeforeBattleText::
-	text "Ahoy <PLAYER>, I am"
+	text "Ahoy <PLAYER>! I am"
 	line "CAPTAIN NIMO, the"
-	cont "Ice Pirate"
+	cont "Ice Pirate!"
 
 	para "Sailing from sea"
 	line "to sea in search"
