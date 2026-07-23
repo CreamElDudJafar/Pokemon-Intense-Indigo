@@ -1,12 +1,12 @@
 _CinnabarPokecenterCooltrainerFText::
-	text "The trade wasn't"
+	text "The TRADE wasn't"
 	line "so bad before."
 
 	para "PROF.OAK and"
 	line "ARISTO were"
 	cont "former members."
 
-	para "Then Dr. I came"
+	para "Then Dr.I came"
 	line "in..."
 	done
 
@@ -16,7 +16,7 @@ _CinnabarPokecenterGentlemanText::
 	cont "study of #MON"
 	line "in the past."
 
-	para "The TRADE ADMIN"
-	line "Dr. I changed"
+	para "Then TRADE ADMIN"
+	line "Dr.I changed"
 	cont "things."
 	done

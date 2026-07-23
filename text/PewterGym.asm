@@ -1,5 +1,5 @@
 _PewterGymBrockPreBattleText::
-	text "I'm the GYM!"
+	text "I'm the GYM"
 	line "LEADER SIMIL!"
 
 	para "I use very"
