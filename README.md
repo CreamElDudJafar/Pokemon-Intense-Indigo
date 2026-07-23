@@ -1,8 +1,11 @@
 # Pokémon Intense Indigo
 
 This is a disassembly of Pokémon Intense Indigo and Intense Indigo Lite.
-
-
+<img width="741" height="675" alt="Indigo" src="https://github.com/user-attachments/assets/d11e536f-447b-4806-a08b-3e0199385d10" />
+<img width="727" height="673" alt="lite" src="https://github.com/user-attachments/assets/221eba04-72a7-41fe-80e1-8f43761b9a4f" />
+<img width="733" height="672" alt="IndigoY" src="https://github.com/user-attachments/assets/704659a4-ed8e-452c-bf5a-b0c8606188cf" />
+<img width="732" height="679" alt="IndigoFC1" src="https://github.com/user-attachments/assets/2d256ab2-fb08-4cfe-83d5-f720f69761a2" />
+<img width="721" height="667" alt="IndigoFC2" src="https://github.com/user-attachments/assets/ed1f3496-ad68-4f02-bec6-fd88b048f820" />
 
 Intense Indigo started as a binary/hex edit hack by SinisterHoodedFigure (SHF) in 2012.
 
