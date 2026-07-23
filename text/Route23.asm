@@ -1,23 +1,23 @@
 _Route23YouDontHaveTheBadgeYetText::
 	text "You can pass here"
-	line "only if you have"
+	line "ONLY if you have"
 	cont "the @"
 	text_ram wNameBuffer
 	text "!"
 
-	para "You don't have the"
+	para "You do not have  "
 	line "@"
 	text_ram wNameBuffer
-	text " yet!"
+	text "... "
 
-	para "You have to have"
-	line "it to get to"
-	cont "#MON LEAGUE!@"
+	para "Only those with"
+	line "the BADGE can go"
+	cont "past here!@"
 	text_end
 
 _Route23OhThatIsTheBadgeText::
 	text "You can pass here"
-	line "only if you have"
+	line "ONLY if you have"
 	cont "the @"
 	text_ram wNameBuffer
 	text "!"

@@ -54,13 +54,13 @@ _MrFujisHouseMrFujiReceivedPokeFluteText::
 _MrFujisHouseMrFujiPokeFluteExplanationText::
 	text_start
 
-	para "Upon hearing #"
-	line "FLUTE, sleeping"
-	cont "#MON will"
-	cont "spring awake."
+	para "I hear that you"
+	line "are collecting"
+	cont "BADGEs."
 
-	para "It works on all"
-	line "sleeping #MON."
+	para "I wish you good"
+	line "luck. I hope to"
+	cont "see you again."
 	done
 
 _MrFujisHouseMrFujiPokeFluteNoRoomText::
@@ -69,8 +69,9 @@ _MrFujisHouseMrFujiPokeFluteNoRoomText::
 	done
 
 _MrFujisHouseMrFujiHasMyFluteHelpedYouText::
-	text "MR.FUJI: Has my"
-	line "FLUTE helped you?"
+	text "ARISTO: Don't"
+	line "ever give up"
+	cont "hope <PLAYER>."
 	done
 
 _MrFujisHouseMrFujiPokedexText::

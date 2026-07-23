@@ -1,31 +1,37 @@
 _CeladonCityLittleGirlText::
-	text "I got my KOFFING"
-	line "in CINNABAR!"
+	text "I got my SNORLAX"
+	line "from the TRADE!"
 
-	para "It's nice, but it"
-	line "breathes poison"
-	cont "when it's angry!"
+	para "This baby is so"
+	line "strong, I could"
+	cont "be CHAMPION!"
 	done
 
 _CeladonCityGramps1Text::
-	text "Heheh! This GYM"
-	line "is great! It's"
-	cont "full of women!"
+	text "Ah..."
+
+	para "This GYM has"
+	line "such lovely"
+	cont "little girls."
 	done
 
 _CeladonCityGirlText::
-	text "The GAME CORNER"
-	line "is bad for our"
-	cont "city's image!"
+	text "The ROCKET TRADE"
+	line "is just ahead!"
+
+	para "Go for it!"
 	done
 
 _CeladonCityGramps2Text::
-	text "Moan! I blew it"
-	line "all at the slots!"
+	text "Hi kid!"
 
-	para "I knew I should"
-	line "have cashed in my"
-	cont "coins for prizes!"
+	para "Wanna see your"
+	line "POKEMON go past"
+	cont "level 100?"
+
+	para "ROCKET TRADE is"
+	line "the place for"
+	cont "you!"
 	done
 
 _CeladonCityGramps3Text::
@@ -63,12 +69,14 @@ _CeladonCityGramps3TM41NoRoomText::
 	done
 
 _CeladonCityFisherText::
-	text "This is my trusted"
-	line "pal, POLIWRATH!"
+	text "Am I in your way?"
 
-	para "It evolved from"
-	line "POLIWHIRL when I"
-	cont "used WATER STONE!"
+	para "Well I ain't "
+	line "moving!"
+
+	para "Now get lost"
+	line "before I sic my"
+	cont "EXEGGUTOR on you!"
 	done
 
 _CeladonCityPoliwrathText::
@@ -82,24 +90,27 @@ _CeladonCityRocket1Text::
 	done
 
 _CeladonCityRocket2Text::
-	text "Keep out of TEAM"
-	line "ROCKET's way!"
+	text "Oww..."
+
+	para "My pinky's rather"
+	line "sore."
 	done
 
 _CeladonCityTrainerTips1Text::
-	text "TRAINER TIPS"
+	text "We train and"
+	line "sustain your"
+	cont "trusted partners!"
 
-	para "X ACCURACY boosts"
-	line "the accuracy of"
-	cont "techniques!"
+	para "You could be the"
+	line "next CHAMPION"
+	cont "of this year's"
+	cont "TOURNAMENT!"
 
-	para "DIRE HIT jacks up"
-	line "the likelihood of"
-	cont "critical hits!"
+	para "Come visit the"
+	line "nearby ROCKET"
+	cont "TRADE building"
 
-	para "Get your items at"
-	line "CELADON DEPT."
-	cont "STORE!"
+	para "..."
 	done
 
 _CeladonCitySignText::
