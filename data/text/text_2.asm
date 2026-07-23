@@ -339,11 +339,6 @@ _CinnabarQuizQuestionsText1::
 	line "STADIUM?"
 	done
 
-CinnabarQuizQuestionsText1::
-	text "CATERPIE evolves"
-	line "into BUTTERFREE?"
-	done
-
 _CinnabarQuizQuestionsText2::
 	text "TAUROS or CHANSEY"
 	para "Best #MON in"
