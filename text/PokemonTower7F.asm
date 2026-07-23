@@ -73,18 +73,18 @@ _PokemonTower7FRocket2AfterBattleText::
 	done
 
 _PokemonTower7FRocket3BattleText::
-	text "...IGULA! ... you"
+	text ".IGULA! ... you"
 	line "will PAAAY!!!"
 	done
 
 _PokemonTower7FRocket3EndBattleText::
 	text "...Can't"
-	line "rem... <RIVAL>?"
+	line "rem.. <RIVAL>?"
 	cont "<PLAYER>????"
 	prompt
 
 _PokemonTower7FRocket3AfterBattleText::
-	text "... please, br..."
-	line "ustice... to HIM."
+	text "... please, br.."
+	line "ustice.. to HIM."
 	done
 

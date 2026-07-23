@@ -127,18 +127,21 @@ _PokemonFanClubBagFullText::
 	done
 
 _PokemonFanClubReceptionistText::
-	text "Our Chairman is"
-	line "very vocal about"
-	cont "#MON."
+	text "No one else may"
+	line "speak to"
+	cont "the GOVERNOR."
 	done
 
 _PokemonFanClubSign1Text::
-	text "Let's all listen"
-	line "politely to other"
-	cont "trainers!"
+	text "MEDAL OF HONORS:"
+
+	para "POLICE COMMANDER"
+	line "EPIFANIO "
 	done
 
 _PokemonFanClubSign2Text::
-	text "If someone brags,"
-	line "brag right back!"
+	text "MOST WANTED:"
+
+	para "ROCKET CHIEF"
+	line "SUPERIOR"
 	done

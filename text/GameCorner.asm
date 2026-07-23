@@ -145,7 +145,7 @@ _GameCornerGentlemanReceived20CoinsText::
 	text_end
 
 _GameCornerGentlemanYouGotYourOwnCoinsText::
-	text "You'vee got your"
+	text "You've got your"
 	line "own coins!"
 	done
 

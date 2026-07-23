@@ -15,6 +15,6 @@ _VermilionPokecenterFishingGuruText::
 _VermilionPokecenterSailorText::
 	text "Thanks to the"
 	line "TRADE, the"
-	cont "ROCKETS surpassed"
-	cont "their limit"
+	cont "ROCKETs surpassed"
+	cont "their limit!"
 	done
