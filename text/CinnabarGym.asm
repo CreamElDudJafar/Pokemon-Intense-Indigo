@@ -153,7 +153,7 @@ _CinnabarGymSuperNerd5BattleText::
 
 _CinnabarGymSuperNerd5EndBattleText::
 	text "I"
-	line "surrender!"
+	line "Ow!"
 	prompt
 
 _CinnabarGymSuperNerd5AfterBattleText::

@@ -100,7 +100,7 @@ _ChampionsRoomOakDisappointedWithRivalText::
 	cont "have, OKIDO and"
 	cont "I are proud of"
 	cont "you too <RIVAL>."
-	para "<RIVAL>:..."
+	para "<RIVAL>: ..."
 	para "MEWTWO's gone..."
 	para "OAK: Not exactly"
 	line "pleased with"
