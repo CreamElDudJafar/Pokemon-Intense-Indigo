@@ -10,9 +10,9 @@ Route15Gate2FOaksAideText:
 	text_asm
 	CheckEvent EVENT_GOT_EXP_ALL
 	jr nz, .got_item
-	ld a, 50
+	ld a, 150
 	ldh [hOaksAideRequirement], a
-	ld a, EXP_ALL
+	ld a, MASTER_BALL
 	ldh [hOaksAideRewardItem], a
 	ld [wNamedObjectIndex], a
 	call GetItemName

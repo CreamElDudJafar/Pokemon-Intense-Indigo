@@ -10,9 +10,9 @@ Route2GateOaksAideText:
 	text_asm
 	CheckEvent EVENT_GOT_HM05
 	jr nz, .got_item
-	ld a, 10
+	ld a, 3
 	ldh [hOaksAideRequirement], a
-	ld a, HM_FLASH
+	ld a, ITEMFINDER
 	ldh [hOaksAideRewardItem], a
 	ld [wNamedObjectIndex], a
 	call GetItemName

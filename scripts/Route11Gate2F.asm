@@ -20,9 +20,9 @@ Route11Gate2FOaksAideText:
 	text_asm
 	CheckEvent EVENT_GOT_ITEMFINDER, 1
 	jr c, .got_item
-	ld a, 30
+	ld a, 50
 	ldh [hOaksAideRequirement], a
-	ld a, ITEMFINDER
+	ld a, TM_SUBSTITUTE
 	ldh [hOaksAideRewardItem], a
 	ld [wNamedObjectIndex], a
 	call GetItemName
