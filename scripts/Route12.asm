@@ -32,7 +32,7 @@ Route12DefaultScript:
 	call DisplayTextID
 	ld a, SNORLAX
 	ld [wCurOpponent], a
-	ld a, 60
+	ld a, 20
 	ld [wCurEnemyLevel], a
 	ld a, TOGGLE_ROUTE_12_SNORLAX
 	ld [wToggleableObjectIndex], a
