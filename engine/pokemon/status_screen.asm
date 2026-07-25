@@ -164,6 +164,8 @@ StatusScreen:
 	call PrintNumber ; ID Number
 	ld d, STATUS_SCREEN_STATS_BOX
 	call PrintStatsBox
+	xor a
+	ld [wDumbByteToToggleStatusScreen], a
 	call Delay3
 	call GBPalNormal
 	hlcoord 1, 0
@@ -186,6 +188,7 @@ StatusScreen:
 	and a
 	jr z, .advanceTo1
 	cp 1
+	jr z, .advanceTo2
 ; return to 0
 	call ClearStatsValues
 	hlcoord 11, 3
@@ -200,6 +203,12 @@ StatusScreen:
 	ld [wDumbByteToToggleStatusScreen], a
 	call PrintStatsBox_DVs
 	jr .continue
+.advanceTo2
+	inc a
+	ld [wDumbByteToToggleStatusScreen], a
+	call PrintStatsBox_StatExp
+	jr .continue
+	
 .vanilla
 ; back to vanilla
 ;	call WaitForTextScrollButtonPress
@@ -408,24 +417,68 @@ ClearCurHpMaxHP: ; new
 	ret
 
 ClearStatsValues: ; new
+; Clear x=4 through x=8 so both 3-digit stats and 5-digit Stat Exp are erased.
 	ld a, ' '
-	hlcoord 6, 10
+	hlcoord 4, 10
+	ld [hli], a
+	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	ld [hl], a
-	hlcoord 6, 12
+	hlcoord 4, 12
+	ld [hli], a
+	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	ld [hl], a
-	hlcoord 6, 14
+	hlcoord 4, 14
+	ld [hli], a
+	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	ld [hl], a
-	hlcoord 6, 16
+	hlcoord 4, 16
+	ld [hli], a
+	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	ld [hl], a
 	ret
+
+PrintStatsBox_StatExp: ; new
+	call ClearStatsValues
+	call ClearCurHpMaxHP
+
+; Print the full 16-bit Stat Exp values (0-65535).
+; The normal stat values begin at x=6, but five digits need to begin at x=4.
+	hlcoord 1, 9
+	ld bc, SCREEN_WIDTH + 5
+	add hl, bc
+	dec hl
+	dec hl
+
+; Attack Stat Exp
+	ld de, wLoadedMonAttackExp
+	lb bc, 2, 5
+	call PrintStat
+
+; Defense Stat Exp
+	ld de, wLoadedMonDefenseExp
+	call PrintStat
+
+; Speed Stat Exp
+	ld de, wLoadedMonSpeedExp
+	call PrintStat
+
+; Special Stat Exp
+	ld de, wLoadedMonSpecialExp
+	call PrintNumber
+
+; HP Stat Exp replaces the current/max HP fraction.
+	hlcoord 12, 4
+	ld de, wLoadedMonHPExp
+	lb bc, 2, 5
+	jp PrintNumber
 
 StatusScreen2:
 	ldh a, [hTileAnimations]
