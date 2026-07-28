@@ -76,7 +76,7 @@ _Route13CooltrainerF4EndBattleText::
 _Route13CooltrainerF4AfterBattleText::
 	text "I got my #MON"
 	line "from the ROCKET"
-	cont "TRADE..."
+	cont "TRADE."
 	done
 
 _Route13CooltrainerM2BattleText::

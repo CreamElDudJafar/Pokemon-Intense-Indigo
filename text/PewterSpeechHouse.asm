@@ -14,5 +14,5 @@ _PewterSpeechHouseYoungsterText::
 	cont "an ADMIN of an"
 	cont "organization"
 	cont "known as the"
-	line "#MON TRADE."
+	cont "#MON TRADE."
 	done

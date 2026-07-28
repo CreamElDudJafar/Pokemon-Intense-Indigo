@@ -87,8 +87,8 @@ _CeruleanCityRocketIBetterGetMovingText::
 
 _CeruleanCityRocketTM28NoRoomText::
 	text "No.3: Get lost!"
-	line "Or else I'll lash"
-	cont "at you with my"
+	para "Or else I'll lash"
+	line "at you with my"
 	cont "whip!!"
 	done
 
@@ -219,10 +219,10 @@ _CeruleanCitySignText::
 
 _CeruleanCityTrainerTipsText::
 	text "Lowest level:"
-	line "L:30"
+	line "L:30."
 
 	para "Average Level:"
-	line "L:36"
+	line "L:36."
 
 	para "Maximum level:"
 	line "L:100"
