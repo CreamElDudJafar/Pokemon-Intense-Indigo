@@ -14,7 +14,7 @@ _CinnabarPokecenterGentlemanText::
 	text "The TRADE"
 	line "dedicated to the"
 	cont "study of #MON"
-	line "in the past."
+	cont "in the past."
 
 	para "Then TRADE ADMIN"
 	line "Dr.I changed"

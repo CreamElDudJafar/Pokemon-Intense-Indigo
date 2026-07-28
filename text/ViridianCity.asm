@@ -62,7 +62,7 @@ _ViridianCityOldManSleepyPrivatePropertyText::
 	text "Id D OT ugh..."
 	line "catching"
 	cont "weedle..."
-	cont "...MISSINGNO...."
+	para "...MISSINGNO...."
 	done
 
 ViridianCityFisherYouCanHaveThisText::
@@ -158,23 +158,23 @@ _ViridianCityTrainerTips1Text::
 
 _ViridianCityTrainerTips2Text::
 	text "Last year's"
-	line "CHAMPION"
+	line "CHAMPION..."
 
 	para "OKIDO for his"
 	line "final battle"
-	cont "with MYRTLE"
+	cont "with MYRTLE."
 
 	para "Don't miss out"
 	line "on this year's"
 	cont "TOURNAMENT!"
 
 	para "32 participants"
-	line "are minimum"
+	line "are minimum."
 	done
 
 _ViridianCityGymSignText::
 	text "Battle level:"
-	line "MAXIMUM"
+	line "MAXIMUM."
 	done
 
 _ViridianCityGymLockedText::

@@ -161,7 +161,7 @@ _SilphCo7FRocket3AfterBattleText::
 _SilphCo7FRivalText::
 	text "<RIVAL>: Someone's"
 	line "coming!"
-	prompt
+	done
 
 _SilphCo7FRivalWaitedHereText::
 	text "<RIVAL>: Don't tell"
