@@ -201,8 +201,8 @@ _CeladonGymAfterBattleText7::
 _CeladonGymBattleText8::
 	text "I anchor this"
 	line "GYM."
-	cont "I use only the"
-	cont "absolute best"
+	para "I use only the"
+	line "absolute best"
 	cont "#MON of all."
 	done
 
