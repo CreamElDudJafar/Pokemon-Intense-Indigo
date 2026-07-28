@@ -219,10 +219,10 @@ _CeruleanCitySignText::
 
 _CeruleanCityTrainerTipsText::
 	text "Lowest level:"
-	line "L:30"
+	line "L:30."
 
 	para "Average Level:"
-	line "L:36"
+	line "L:36."
 
 	para "Maximum level:"
 	line "L:100"
