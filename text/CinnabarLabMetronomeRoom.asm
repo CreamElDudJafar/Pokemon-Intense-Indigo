@@ -37,21 +37,23 @@ _CinnabarLabMetronomeRoomScientist2Text::
 
 _CinnabarLabMetronomeRoomPCText::
 	text "..."
-	line "After much"
-	cont "research,"
+	para "After much"
+	line "research,"
 	cont "ARTICUNO, ZAPDOS"
 	cont "and MOLTRES, has"
 	cont "been confirmed to"
 	cont "have multiple"
 	cont "species."
-	cont "For further"
-	cont "analysis, all"
+
+	para "For further"
+	line "analysis, all"
 	cont "3 wild species"
 	cont "will remain in"
 	cont "captivity."
-	cont "From: TRADE"
-	cont "ADMINISTRATOR"
-	cont "..."
+
+	para "From: TRADE"
+	line "ADMINISTRATOR"
+	para "..."
 	done
 
 _CinnabarLabMetronomeRoomAmberPipeText::

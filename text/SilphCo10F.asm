@@ -1,7 +1,7 @@
 _SilphCo10FSilphWorkerFImScaredText::
 	text "You can't stop"
 	line "us."
-	prompt
+	done
 
 _SilphCo10FSilphWorkerFQuietAboutMyCryingText::
 	text "BOSS will be back!"

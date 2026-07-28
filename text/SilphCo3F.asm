@@ -29,7 +29,7 @@ _SilphCo3FScientistBattleText::
 	text "LORD CALIGULA"
 	line "founded ROCKET"
 	cont "TRADE."
-	cont "You're done."
+	para "You're done."
 	done
 
 _SilphCo3FScientistEndBattleText::
