@@ -87,8 +87,8 @@ _CeruleanCityRocketIBetterGetMovingText::
 
 _CeruleanCityRocketTM28NoRoomText::
 	text "No.3: Get lost!"
-	line "Or else I'll lash"
-	cont "at you with my"
+	para "Or else I'll lash"
+	line "at you with my"
 	cont "whip!!"
 	done
 

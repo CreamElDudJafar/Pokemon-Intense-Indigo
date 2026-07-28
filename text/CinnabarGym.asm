@@ -152,8 +152,7 @@ _CinnabarGymSuperNerd5BattleText::
 	done
 
 _CinnabarGymSuperNerd5EndBattleText::
-	text "I"
-	line "Ow!"
+	text "Ow!"
 	prompt
 
 _CinnabarGymSuperNerd5AfterBattleText::
