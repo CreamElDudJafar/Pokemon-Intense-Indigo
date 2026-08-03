@@ -12,11 +12,12 @@ _Route15CooltrainerF1EndBattleText::
 
 _Route15CooltrainerF1AfterBattleText::
 	text "The ROCKET TRADE?"
+
 	para "Only people that"
 	line "can pay enough"
 	cont "money can get"
 	cont "#MON past "
-	cont "lv100 from them."
+	cont "lv100 from them<DOT>"
 	done
 
 _Route15CooltrainerF2BattleText::
@@ -68,9 +69,10 @@ _Route15CooltrainerM2EndBattleText::
 _Route15CooltrainerM2AfterBattleText::
 	text "I fought trainers"
 	line "from outside"
-	cont "AIZOME."
+	cont "AIZOME<DOT>"
+
 	para "You're the"
-	line "toughest by far."
+	line "toughest by far<DOT>"
 	done
 
 _Route15Beauty1BattleText::
@@ -172,6 +174,8 @@ _Route15CooltrainerF4AfterBattleText::
 
 _Route15SignText::
 	text "ROUTE 15"
+
 	para "L:106"
-	para "Almost there."
+
+	para "Almost there<DOT> "
 	done

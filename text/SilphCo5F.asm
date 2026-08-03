@@ -3,7 +3,7 @@ _SilphCo5FSilphWorkerMThatsYouRightText::
 	line "sold will obey"
 	cont "LORD CALIGULA"
 	cont "when the time"
-	cont "comes."
+	cont "comes<DOT>"
 	done
 
 _SilphCo5FSilphWorkerMYoureOurHeroText::
@@ -11,11 +11,11 @@ _SilphCo5FSilphWorkerMYoureOurHeroText::
 	line "perfect!"
 
 	para "POLICE are holding"
-	line "us up!"
+	line "us up! "
 	done
 
 _SilphCo5FRocket1BattleText::
-	text "No.3: My #MON"
+	text "No<DOT>3: My #MON"
 	line "will make yours"
 	cont "DIE!!"
 	done
@@ -25,16 +25,16 @@ _SilphCo5FRocket1EndBattleText::
 	prompt
 
 _SilphCo5FRocket1AfterBattleText::
-	text "No.3: Our BOSS"
+	text "No<DOT>3: Our BOSS"
 	line "has big plans in"
-	cont "store for you."
+	cont "store for you<DOT> "
 	done
 
 _SilphCo5FScientistBattleText::
 	text "You are seriously"
 	line "our worst enemy?"
 
-	para "Wow..."
+	para "Wow<DOT><DOT><DOT>"
 	done
 
 _SilphCo5FScientistEndBattleText::
@@ -46,7 +46,7 @@ _SilphCo5FScientistAfterBattleText::
 	text "We have money,"
 	line "power, and soon,"
 	cont "control thanks to"
-	cont "our TRADE."
+	cont "our TRADE<DOT>"
 	done
 
 _SilphCo5FRockerBattleText::
@@ -54,4 +54,3 @@ _SilphCo5FRockerBattleText::
 	line "from the TRADE"
 	cont "will stop you!"
 	done
-

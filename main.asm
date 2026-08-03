@@ -37,6 +37,8 @@ INCLUDE "engine/battle/move_effects/drain_hp.asm"
 INCLUDE "engine/menus/players_pc.asm"
 INCLUDE "engine/pokemon/remove_mon.asm"
 INCLUDE "engine/events/display_pokedex.asm"
+	ds $17, $00
+MewPicFront:: INCBIN "gfx/pokemon/front/mew.pic"
 
 
 SECTION "bank3", ROMX

@@ -1,14 +1,19 @@
 _PewterCityCooltrainerFText::
-	text "It's rumored that"
-	line "the TEAM ROCKET"
-	cont "CHIEF works with"
-	cont "the TRADE ADMIN. "
+	text "PAGADO's a"
+	line "small town, but"
+	cont "relatively safe<DOT>"
+
+	para "Unlike the"
+	line "CAPITAL, where"
+	cont "it got taken"
+	cont "over by THEM<DOT>"
 	done
 
 _PewterCityCooltrainerMText::
 	text "There aren't many"
 	line "serious #MON"
-	cont "trainers here."
+	cont "trainers here<DOT>"
+
 	para "They're like"
 	line "BUG CATCHERs,"
 	cont "but the PAGADO"
@@ -18,12 +23,12 @@ _PewterCityCooltrainerMText::
 
 _PewterCitySuperNerd1DidYouCheckOutMuseumText::
 	text "You checked out"
-	line "the STATION?"
+	line "the STATION? "
 	done
 
 _PewterCitySuperNerd1WerentThoseFossilsAmazingText::
 	text "Weren't those"
-	line "fossils from MT."
+	line "fossils from MT<DOT>"
 	cont "DOOM amazing?"
 	done
 
@@ -35,10 +40,12 @@ _PewterCitySuperNerd1YouHaveToGoText::
 
 _PewterCitySuperNerd1ItsRightHereText::
 	text "It's right here!"
+
 	para "They also have a"
 	line "fossil exhibit"
 	cont "in the waiting"
-	cont "area. "
+	cont "area<DOT> "
+
 	para "Later!"
 	done
 
@@ -61,32 +68,32 @@ _PewterCitySuperNerd2ImSprayingRepelText::
 
 _PewterCityYoungsterYoureATrainerFollowMeText::
 	text "You don't have"
-	line "CUT? That's OK."
-	cont "I'm a PSYCHIC!"
+	line "CUT? That's OK<DOT>"
+	cont "I'm a PSYCHIC! "
 	cont "I'll take you"
-	cont "to the GYM!"
+	cont "to the GYM! "
 	done
 
 _PewterCityYoungsterGoTakeOnBrockText::
 	text "If you have the"
 	line "right stuff, you"
-	cont "MIGHT win."
+	cont "MIGHT win<DOT>   "
 	done
 
 _PewterCityTrainerTipsText::
-	text "Battle L:20."
+	text "Battle L:20<DOT>"
 
 	para "Highest level"
-	line "in ROUTE 3...  "
+	line "in ROUTE 3<DOT><DOT><DOT> "
 
 	para "Worry about the"
-	line "first GYM first."
+	line "first GYM first<DOT>"
 	done
 
 _PewterCityPoliceNoticeSignText::
 	text "There have been"
 	line "reported attacks"
-	cont "at MT.DOOM due"
+	cont "at MT<DOT>DOOM due"
 	cont "to evolution"
 	cont "stones!"
 
@@ -96,18 +103,18 @@ _PewterCityPoliceNoticeSignText::
 
 _PewterCityMuseumSignText::
 	text "PAGADO MONORAIL"
-	line "STATION."
+	line "STATION<DOT>"
 	done
 
 _PewterCityGymSignText::
-	text "PAGADO TOWN"
+	text "PAGADO TOWN "
 	line "#MON GYM"
 
 	para "LEADER: SIMIL"
 
 	para "A #MON"
 	line "Trainer's first"
-	cont "test."
+	cont "test<DOT>"
 	done
 
 _PewterCitySignText::
@@ -115,4 +122,3 @@ _PewterCitySignText::
 
 	para "A Tranquil Town"
 	done
-

@@ -1,17 +1,20 @@
 _CeruleanGymMistyPreBattleText::
 	text "Hi, you're new"
 	line "around here!"
+
 	para "Trainers who want"
 	line "to turn pro have"
 	cont "to have a policy"
 	cont "about #MON!"
+
 	para "What is your"
 	line "approach when you"
 	cont "train #MON?"
+
 	para "My policy is "
 	line "putting foes"
 	cont "to SLEEP, as"
-	cont "you'll see."
+	cont "you'll see<DOT>"
 	done
 
 _CeruleanGymMistyTM11ExplanationText::
@@ -27,17 +30,21 @@ _CeruleanGymMistyCascadeBadgeInfoText::
 	text "The SAPHIREBADGE"
 	line "makes all #MON"
 	cont "up to L30 obey!"
-	para "Thats for"
-	line "outsiders only."
-	para "So... that's not"
-	line "so helpful."
+
+	para "Thats for "
+	line "outsiders only<DOT>"
+
+	para "So<DOT><DOT><DOT> that's not"
+	line "so helpful<DOT>"
+
 	para "But at least"
 	line "you can CUT down"
 	cont "small bushes to"
 	cont "open new paths!"
+
 	para "You might end up"
 	line "doing that"
-	cont "often..."
+	cont "often<DOT><DOT><DOT>  "
 	done
 
 _CeruleanGymMistyReceivedTM11Text::
@@ -53,7 +60,9 @@ _CeruleanGymMistyTM11NoRoomText::
 _CeruleanGymMistyReceivedCascadeBadgeText::
 	text "Wow!"
 	line "You're too good!!"
-	para "OK fine!"
+
+	para "OK fine! "
+
 	para "You can have the"
 	line "SAPHIREBADGE to"
 	cont "show you beat me!@"
@@ -119,4 +128,3 @@ _CeruleanGymGymGuideBeatMistyText::
 	cont "a pretty darn"
 	cont "good team!"
 	done
-

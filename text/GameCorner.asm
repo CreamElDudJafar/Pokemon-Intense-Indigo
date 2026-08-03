@@ -46,7 +46,7 @@ _GameCornerMiddleAgedMan1Text::
 	text "It's rumored that"
 	line "the TEAM ROCKET"
 	cont "CHIEF works with"
-	cont "the TRADE ADMIN."
+	cont "the TRADE ADMIN<DOT> "
 	done
 
 _GameCornerBeauty2Text::
@@ -82,15 +82,19 @@ _GameCornerMiddleAgedWomanText::
 
 _GameCornerGymGuideChampInMakingText::
 	text "Hey!"
+
 	para "How did you find"
 	line "me here?"
-	cont "Well then..."
+	cont "Well then<DOT><DOT><DOT>"
+
 	para "DONYOKU GYM's"
 	line "LEADER is a"
 	cont "master of FLYING"
 	cont "types!"
+
 	para "This might be the"
-	line "end though..."
+	line "end though<DOT><DOT><DOT>"
+
 	para "She is far beyond"
 	line "level 100!"
 	done
@@ -156,21 +160,21 @@ _GameCornerGentlemanCloselyWatchTheReelsText::
 	done
 
 _GameCornerRocketImGuardingThisPosterText::
-	text "No.4: If you"
+	text "No<DOT>4: If you"
 	line "can win, you'll"
 	cont "get a prrrize!"
 	done
 
 _GameCornerRocketBattleEndText::
-	text "... !"
+	text "<DOT><DOT><DOT> !"
 	prompt
 
 _GameCornerRocketAfterBattleText::
-	text "No.4: Hold on."
+	text "No<DOT>4: Hold on<DOT>"
 
 	para "I shall go and"
 	line "get yourrr"
-	cont "prrrize..."
+	cont "prrrize<DOT><DOT><DOT> "
 	done
 
 _GameCornerPosterSwitchBehindPosterText::

@@ -1,7 +1,7 @@
 _Route18CooltrainerM1BattleText::
 	text "I always wanted"
 	line "to go to CYCLING"
-	cont "ROAD..."
+	cont "ROAD<DOT><DOT><DOT>      "
 	done
 
 _Route18CooltrainerM1EndBattleText::
@@ -42,7 +42,7 @@ _Route18CooltrainerM3EndBattleText::
 
 _Route18CooltrainerM3AfterBattleText::
 	text "ROCKETs poached  "
-	line "the SAFARI ZONE."
+	line "the SAFARI ZONE<DOT>"
 	done
 
 _Route18SignText::

@@ -10,11 +10,11 @@ _SaffronCityRocket2Text::
 
 _SaffronCityRocket3Text::
 	text "GYM's on"
-	line "probation!"
+	line "probation! "
 	done
 
 _SaffronCityRocket4Text::
-	text "KOUMAN belongs"
+	text "KOUMAN belongs "
 	line "to TEAM ROCKET!"
 	done
 
@@ -30,7 +30,7 @@ _SaffronCityRocket6Text::
 
 _SaffronCityRocket7Text::
 	text "We can be found"
-	line "everywhere..."
+	line "everywhere<DOT><DOT><DOT>"
 
 	para "Even in places"
 	line "you'd least"
@@ -47,13 +47,13 @@ _SaffronCitySilphWorkerMText::
 	text "I'm in so much"
 	line "trouble with the"
 	cont "BOSS and the"
-	cont "POLICE."
+	cont "POLICE<DOT> "
 	done
 
 _SaffronCitySilphWorkerFText::
 	text "People should be"
 	line "flocking back to"
-	cont "KOUMAN now. "
+	cont "KOUMAN now<DOT> "
 	done
 
 _SaffronCityGentlemanText::
@@ -75,23 +75,24 @@ _SaffronCityPidgeotText::
 _SaffronCityRockerText::
 	text "I saw ROCKET"
 	line "BOSS abandoning"
-	cont "his fortress. "
+	cont "his fortress<DOT> "
 	done
 
 _SaffronCityRocket8Text::
-	text "Stay out."
+	text "Stay out<DOT>"
 
 	para "Day after day,"
-	line "no shifts."
+	line "no shifts<DOT> "
 
-	para "I hate this job."
+	para "I hate this job<DOT>"
 	done
 
 _SaffronCityRocket9Text::
 	text "I'm awake!"
 	line "DON'T KILL ME! "
-	para "..."
-	line "Snore..."
+
+	para "<DOT><DOT><DOT>"
+	line "Snore<DOT><DOT><DOT>"
 	done
 
 _SaffronCitySignText::
@@ -99,10 +100,11 @@ _SaffronCitySignText::
 
 	para "Grand Pinnacle"
 	line "City of AIZOME"
+	cont ""
 	done
 
 _SaffronCityFightingDojoSignText::
-	text "FIGHTING GYM."
+	text "FIGHTING GYM<DOT>"
 	done
 
 _SaffronCityGymSignText::
@@ -111,7 +113,7 @@ _SaffronCityGymSignText::
 	cont "LEADER: ZENOBIA"
 
 	para "Former #MON"
-	line "World Champ!"
+	line "World Champ! "
 	done
 
 _SaffronCityTrainerTips1Text::
@@ -122,7 +124,7 @@ _SaffronCityTrainerTips1Text::
 	cont "into a worthy"
 	cont "fighting specimen!"
 
-	para "-TRADE CORP."
+	para "-TRADE CORP<DOT>"
 	done
 
 _SaffronCityTrainerTips2Text::
@@ -140,13 +142,13 @@ _SaffronCityTrainerTips2Text::
 
 _SaffronCitySilphCoSignText::
 	text "TEAM ROCKET"
-	line "HEADQUARTERS."
+	line "HEADQUARTERS<DOT>"
 	done
 
 _SaffronCityMrPsychicsHouseSignText::
 	text "L:105-108-114"
 
-	para "..."
+	para "<DOT><DOT><DOT>"
 	done
 
 _SaffronCitySilphCoLatestProductSignText::
@@ -154,6 +156,5 @@ _SaffronCitySilphCoLatestProductSignText::
 	line "ROCKETS!"
 
 	para "In a few days, we"
-	line "shall rule."
+	line "shall rule<DOT>"
 	done
-

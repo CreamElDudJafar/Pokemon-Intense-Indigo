@@ -11,20 +11,22 @@ _ViridianCityYoungster1Text::
 
 _ViridianCityGambler1GymAlwaysClosedText::
 	text "This GYM"
-	line "is always closed."
+	line "is always closed<DOT>"
+
 	para "And yet, I hear"
-	line "alot of noise..."
+	line "alot of noise<DOT><DOT><DOT>"
 	done
 
 _ViridianCityGambler1GymLeaderReturnedText::
 	text "RIPPUKU GYM's"
-	line "now recruiting..."
+	line "now recruiting<DOT><DOT><DOT>"
 	done
 
 _ViridianCityYoungster2YouWantToKnowAboutText::
 	text "You wanna know"
 	line "about the STAT"
-	cont "EXP?"
+	cont "EXP? "
+
 	para "You won't"
 	line "regret it!"
 	done
@@ -36,19 +38,21 @@ ViridianCityYoungster2OkThenText::
 ViridianCityYoungster2CaterpieAndWeedleDescriptionText::
 	text "You get it by"
 	line "beating strong"
-	cont "#MON."
+	cont "#MON<DOT>"
+
 	para "It doesn't split"
 	line "if you use more"
-	cont "#MON."
+	cont "#MON<DOT>"
 	done
 
 _ViridianCityGirlHasntHadHisCoffeeYetText::
 	text "You're blocking"
-	line "everyone's way!"
+	line "everyone's way! "
 
 	para "That'll get you"
 	line "in trouble!"
 	done
+
 _ViridianCityGirlWhenIGoShopText::
 	text "Some men in black"
 	line "locked up Gramps"
@@ -59,10 +63,12 @@ _ViridianCityGirlWhenIGoShopText::
 	para "The shore!"
 	done
 _ViridianCityOldManSleepyPrivatePropertyText::
-	text "Id D OT ugh..."
+	text "Id D OT ugh<DOT><DOT><DOT>"
 	line "catching"
-	cont "weedle..."
-	para "...MISSINGNO...."
+	cont "weedle<DOT><DOT><DOT>"
+
+	para "<DOT><DOT><DOT>MISSINGNO<DOT><DOT><DOT><DOT>"
+	line ""
 	done
 
 ViridianCityFisherYouCanHaveThisText::
@@ -158,23 +164,23 @@ _ViridianCityTrainerTips1Text::
 
 _ViridianCityTrainerTips2Text::
 	text "Last year's"
-	line "CHAMPION..."
+	line "CHAMPION<DOT><DOT><DOT>"
 
 	para "OKIDO for his"
 	line "final battle"
-	cont "with MYRTLE."
+	cont "with MYRTLE<DOT>"
 
 	para "Don't miss out"
 	line "on this year's"
 	cont "TOURNAMENT!"
 
 	para "32 participants"
-	line "are minimum."
+	line "are minimum<DOT> "
 	done
 
 _ViridianCityGymSignText::
 	text "Battle level:"
-	line "MAXIMUM."
+	line "MAXIMUM<DOT>"
 	done
 
 _ViridianCityGymLockedText::

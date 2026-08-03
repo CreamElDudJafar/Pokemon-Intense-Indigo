@@ -1,11 +1,11 @@
 _SaffronPidgeyHouseBrunetteGirlText::
 	text "We arrested most"
 	line "ROCKETs trying to"
-	cont "escape."
+	cont "escape<DOT>"
 
 	para "The rest are"
 	line "trapped in the"
-	cont "HQ. "
+	cont "HQ<DOT> "
 	done
 
 _SaffronPidgeyHousePidgeyText::
@@ -15,15 +15,14 @@ _SaffronPidgeyHousePidgeyText::
 _SaffronPidgeyHouseYoungsterText::
 	text "There are still"
 	line "important members"
-	cont "at large.  "
+	cont "at large<DOT>  "
 	done
 
 _SaffronPidgeyHousePaperText::
-	text "The HQ is strong."
+	text "The HQ is strong<DOT>"
 
 	para "But if any ROCKET"
 	line "tries to walk out,"
 	cont "we'll nab and bag"
-	cont "em. "
+	cont "em<DOT> "
 	done
-

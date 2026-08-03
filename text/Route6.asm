@@ -1,8 +1,8 @@
 _Route6CooltrainerM1BattleText::
 	text "The route was"
-	line "urbanized."
+	line "urbanized<DOT>"
 
-	para "Let's fight."
+	para "Let's fight<DOT>"
 	done
 
 _Route6CooltrainerM1EndBattleText::
@@ -12,7 +12,7 @@ _Route6CooltrainerM1EndBattleText::
 
 _Route6CooltrainerAfterBattleText::
 	text "So many"
-	line "buildings..."
+	line "buildings<DOT><DOT><DOT> "
 	done
 
 _Route6CooltrainerF1BattleText::
@@ -42,7 +42,7 @@ _Route6Youngster1AfterBattleText::
 	text "Despite being"
 	line "high leveled,"
 	cont "they are very"
-	cont "weak..."
+	cont "weak<DOT><DOT><DOT>"
 	done
 
 _Route6CooltrainerM2BattleText::
@@ -79,7 +79,7 @@ _Route6CooltrainerF2AfterBattleText::
 
 _Route6Youngster2BattleText::
 	text "My BUTTERFREE's"
-	line "named SPRINKLE."
+	line "named SPRINKLE<DOT>"
 
 	para "Know why?"
 	done
@@ -92,12 +92,11 @@ _Route6Youngster2EndBattleText::
 _Route6Youngster2AfterBattleText::
 	text "How can poor"
 	line "SPRINKLE be"
-	cont "defeated..."
+	cont "defeated<DOT><DOT><DOT>"
 	done
 
 _Route6UndergroundPathSignText::
 	text "MAGIC STAIRHOUSE"
 	line "SAKAYUME TOWN -"
-	cont "PORT HOURITSU"
+	cont "PORT HOURITSU "
 	done
-

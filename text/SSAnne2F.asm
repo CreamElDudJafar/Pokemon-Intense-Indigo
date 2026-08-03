@@ -18,19 +18,19 @@ _SSAnne2FRivalText::
 	para "The CAPTAIN"
 	line "was talking"
 	cont "about battle"
-	cont "strategies."
+	cont "strategies<DOT>"
 
 	para "After a couple"
-	line "of Margaritas."
+	line "of Margaritas<DOT>"
 
 	para "And with JEFF's"
-	line "help... "
+	line "help<DOT><DOT><DOT> "
 
 	para "<PLAYER>, I hate"
-	line "to say it..."
+	line "to say it<DOT><DOT><DOT>"
 
 	para "Nah, you're"
-	line "done for."
+	line "done for<DOT>"
 	done
 
 _SSAnne2FRivalDefeatedText::
@@ -52,18 +52,17 @@ _SSAnne2FRivalCutMasterText::
 	text "The CAPTAIN also"
 	line "said something"
 	cont "about surpassing"
-	cont "the peak."
+	cont "the peak<DOT>"
 
 	para "The secret to"
-	line "that is..."
+	line "that is<DOT><DOT><DOT>"
 
 	para "CAPTAIN: BLRRGH! "
 
 	para "<RIVAL>: And"
 	line "THAT's my cue to"
-	cont "go."
+	cont "go<DOT>"
 
 	para "Try not to fail"
-	line "<PLAYER>."
+	line "<PLAYER><DOT>"
 	done
-

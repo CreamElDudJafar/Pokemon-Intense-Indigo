@@ -1,16 +1,16 @@
 _SSAnneCaptainsRoomRubCaptainsBackText::
-	text "CAPTAIN: Ooargh..."
+	text "CAPTAIN: Ooargh<DOT><DOT><DOT>"
 
-	para "I feel hideous..."
+	para "I feel hideous<DOT><DOT><DOT>"
 
-	para "Agh! Hangover..."
+	para "Agh! Hangover<DOT><DOT><DOT>"
 
 	para "<PLAYER> rubbed"
 	line "the CAPTAIN's"
 	cont "back!"
 
-	para "Rub-rub..."
-	line "Rub-rub...@"
+	para "Rub-rub<DOT><DOT><DOT>"
+	line "Rub-rub<DOT><DOT><DOT>@"
 	text_end
 
 _SSAnneCaptainsRoomCaptainIFeelMuchBetterText::
@@ -19,10 +19,10 @@ _SSAnneCaptainsRoomCaptainIFeelMuchBetterText::
 	cont "feel much better!"
 
 	para "Aye, I had too"
-	line "many Margaritas..."
+	line "many Margaritas<DOT><DOT><DOT>"
 
 	para "Alas, the party"
-	line "has concluded."
+	line "has concluded<DOT>"
 
 	para "I will make this"
 	line "up to ye!"
@@ -62,8 +62,8 @@ _SSAnneCaptainsRoomTrashText::
 
 _SSAnneCaptainsRoomSeasickBookText::
 	text "The strongest"
-	line "Margaritas...  "
+	line "Margaritas<DOT><DOT><DOT>  "
+
 	para "The CAPTAIN's"
 	line "reading this!"
 	done
-

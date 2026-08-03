@@ -1,17 +1,17 @@
 _SilphCo6FSilphWorkerM1TookOverTheBuildingText::
 	text "BOSS has a code"
 	line "to control every"
-	cont "TRADE #MON."
+	cont "TRADE #MON<DOT>"
 	done
 
 _SilphCo6FSilphWorkerM1BackToWorkText::
 	text "All we need to"
-	line "do is wait..."
+	line "do is wait<DOT><DOT><DOT>  "
 	done
 
 _SilphCo6FSilphWorkerMHelpMePleaseText::
 	text "We are working  "
-	line "on PROJECT 151."
+	line "on PROJECT 151<DOT> "
 	done
 
 _SilphCo6FSilphWorkerMWeGotEngagedText::
@@ -21,14 +21,14 @@ _SilphCo6FSilphWorkerMWeGotEngagedText::
 
 _SilphCo6FSilphWorkerF1SuchACowardText::
 	text "We lost comms"
-	line "with MT.DOOM LAB!"
+	line "with MT<DOT>DOOM LAB!"
 	done
 
 _SilphCo6FSilphWorkerF1HaveToMarryHimText::
 	text "So that's the"
 	line "result of the"
 	cont "specimen's"
-	cont "power..."
+	cont "power<DOT><DOT><DOT>"
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketConquerWorldText::
@@ -61,7 +61,7 @@ _SilphCo6FSilphWorkerM3WorkForSilphText::
 
 _SilphCo6FRocket1BattleText::
 	text "GET A LOAD OF   "
-	line "THIS!!!"
+	line "THIS!!!          "
 	done
 
 _SilphCo6FRocket1EndBattleText::
@@ -78,7 +78,7 @@ _SilphCo6FScientistBattleText::
 	text "All that stands"
 	line "between the TEAM"
 	cont "ROCKET TRADE and"
-	cont "the world is you!"
+	cont "the world is you! "
 	done
 
 _SilphCo6FScientistEndBattleText::
@@ -111,4 +111,3 @@ _SilphCo6FRocket2AfterBattleText::
 	line "gonna to get"
 	cont "away with this!"
 	done
-

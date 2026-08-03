@@ -11,8 +11,8 @@ _PewterMartYoungsterText::
 _PewterMartSuperNerdText::
 	text "I heard that"
 	line "the ROCKET CHIEF"
-	cont "was around. "
-	para "He loves dealing"
-	line "with fossils. "
-	done
+	cont "was around<DOT>"
 
+	para "He loves dealing"
+	line "with fossils<DOT>"
+	done

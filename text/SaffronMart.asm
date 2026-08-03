@@ -1,14 +1,14 @@
 _SaffronMartSuperNerdText::
-	text "We managed to"
-	line "put TEAM ROCKET"
-	cont "into house"
-	cont "arrest!  "
+	text "I can't imagine"
+	line "why the TRADE"
+	cont "ADMIN is working"
+	cont "with the ROCKET"
+	cont "CHIEF! "
 	done
 
 _SaffronMartCooltrainerFText::
-	text "ROCKET TRADE"
-	line "made sales and"
-	cont "services"
-	cont "worldwide."
+	text "TEAM ROCKET"
+	line "sells stolen"
+	cont "REVIVEs as  "
+	cont "prizes! "
 	done
-

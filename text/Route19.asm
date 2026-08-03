@@ -45,7 +45,7 @@ _Route19Swimmer1AfterBattleText::
 
 _Route19Swimmer2BattleText::
 	text "SHOUBAI is rather"
-	line "far... "
+	line "far<DOT><DOT><DOT> "
 	done
 
 _Route19Swimmer2EndBattleText::
@@ -60,7 +60,7 @@ _Route19Swimmer2AfterBattleText::
 _Route19Swimmer3BattleText::
 	text "BOULDERs land far"
 	line "from the hole"
-	cont "they fell..."
+	cont "they fell<DOT><DOT><DOT>"
 	done
 
 _Route19Swimmer3EndBattleText::
@@ -101,7 +101,7 @@ _Route19Swimmer5EndBattleText::
 _Route19Swimmer5AfterBattleText::
 	text "It's still a long"
 	line "way to go to"
-	cont "SHOUHOU ISLANDS."
+	cont "SHOUHOU ISLANDS<DOT>"
 	done
 
 _Route19Swimmer6BattleText::
@@ -116,7 +116,7 @@ _Route19Swimmer6EndBattleText::
 _Route19Swimmer6AfterBattleText::
 	text "My boy friend"
 	line "wanted to swim to"
-	cont "SHOUHOU ISLANDS."
+	cont "SHOUHOU ISLANDS<DOT>"
 	done
 
 _Route19Swimmer7BattleText::
@@ -152,8 +152,9 @@ _Route19Swimmer8AfterBattleText::
 
 _Route19SignText::
 	text "SEA ROUTE 19"
-	para "L:107"
-	para "SHOUHOU ISLANDS"
-	line "ahead..."
-	done
 
+	para "L:107"
+
+	para "SHOUHOU ISLANDS"
+	line "ahead<DOT><DOT><DOT>"
+	done

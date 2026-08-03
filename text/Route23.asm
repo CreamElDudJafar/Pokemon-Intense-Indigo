@@ -8,7 +8,7 @@ _Route23YouDontHaveTheBadgeYetText::
 	para "You do not have  "
 	line "@"
 	text_ram wNameBuffer
-	text "... "
+	text "<DOT><DOT><DOT> "
 
 	para "Only those with"
 	line "the BADGE can go"

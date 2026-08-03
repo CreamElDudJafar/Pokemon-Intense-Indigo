@@ -601,13 +601,13 @@ CooltrainerMData:
 	db 110, TANGELA, ELECTRODE, SANDSLASH, GYARADOS, MR_MIME, ARCANINE, 0
 	db 109, EXEGGUTOR, TAUROS, GENGAR, HYPNO, DRAGONITE, STARMIE, 0
 ; Unused
-	db 126, 0
+	db 0
 ; Victory Road 1F
 	db 126, PORYGON, JOLTEON, SLOWBRO, DRAGONITE, CHANSEY, ALAKAZAM, 0
 ; Unused
-	db 7, 0
-	db 44, 0
-	db 139, 0
+	db 0
+	db 0
+	db 0
 ; Viridian Gym
 	db 126, ARTICUNO, RHYDON, CHANSEY, 0
 	db 108, MOLTRES, EXEGGUTOR, TAUROS, 0
@@ -705,15 +705,15 @@ ChannelerData:
 	db 105, NIDOQUEEN, 0
 	db 105, HAUNTER, GOLBAT, 0
 ; Unused
-	db 112, 0
-; Pokemon Tower 4F
+	db 0
+; Pokémon Tower 4F
 	db 111, JYNX, 0
 ; Unused
 	db 24, 0
 ; Pokemon Tower 5F
 	db 105, GENGAR, VICTREEBEL, 0
 ; Unused
-	db 24, 0
+	db 0
 ; Pokémon Tower 5F
 	db 113, JYNX, GOLDUCK, VILEPLUME, 0
 	db 100, PERSIAN, HYPNO, 0

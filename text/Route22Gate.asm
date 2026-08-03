@@ -1,11 +1,11 @@
 _Route22GateGuardNoBoulderbadgeText::
 	text "Only truly skilled"
 	line "trainers are"
-	cont "allowed through."
+	cont "allowed through<DOT>"
 
 	para "You don't have the"
-	line "DIAMONDBADGE yet!"
-	done
+	line "DIAMONDBADGE yet!@"
+	text_end
 
 _Route22GateGuardICantLetYouPassText::
 	text_start
@@ -18,6 +18,5 @@ _Route22GateGuardICantLetYouPassText::
 _Route22GateGuardGoRightAheadText::
 	text "Oh! That is the"
 	line "DIAMONDBADGE!"
-	cont "Go right ahead!"
-	done
-
+	cont "Go right ahead!@"
+	text_end

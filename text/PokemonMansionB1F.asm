@@ -10,36 +10,35 @@ _PokemonMansionB1FBurglarEndBattleText::
 _PokemonMansionB1FBurglarAfterBattleText::
 	text "To be fair, I"
 	line "only had one"
-	cont "#MON."
+	cont "#MON<DOT>"
 	done
 
 _PokemonMansionB1FScientistBattleText::
 	text "The weapon has"
-	line "been delivered."
+	line "been delivered<DOT>"
 	done
 
 _PokemonMansionB1FScientistEndBattleText::
 	text "Its"
-	line "too late boy!"
+	line "too late boy! "
 	prompt
 
 _PokemonMansionB1FScientistAfterBattleText::
-	text "SUPERIORs Dr.I"
-	line "and No.0 are"
-	cont "pleased with me."
+	text "SUPERIORs Dr<DOT>I"
+	line "and No<DOT>0 are"
+	cont "pleased with me<DOT>"
 	done
 
 _PokemonMansionB1FDiaryText::
 	text "PROJECT 151"
 	line "NOW COMPLETE"
 
-	para "However..."
+	para "However<DOT><DOT><DOT>"
 
 	para "Specimen has"
 	line "unlimited"
-	cont "potential."
+	cont "potential<DOT>"
 
 	para "Caution is"
-	line "advised..."
+	line "advised<DOT><DOT><DOT>"
 	done
-

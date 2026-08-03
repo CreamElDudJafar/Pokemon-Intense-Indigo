@@ -4,12 +4,12 @@ _GameCornerPrizeRoomBaldingGuyText::
 
 	para "We got some guys"
 	line "infiltrating the"
-	cont "exchange."
+	cont "exchange<DOT> "
 	done
 
 _GameCornerPrizeRoomGamblerText::
 	text "Shh!"
 
 	para "<PLAYER>, try the"
-	line "items..."
+	line "items<DOT><DOT><DOT> "
 	done

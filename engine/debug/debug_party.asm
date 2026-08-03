@@ -17,17 +17,17 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; "Tsunekazu Ishihara: Exeggutor is my favorite. That's because I was
 	; always using this character while I was debugging the program."
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
-	db AERODACTYL, 100
+	db EXEGGUTOR, 90
 IF DEF(_DEBUG)
-	db SNORLAX, 100
+	db MEW, 5
 ELSE
-	db SNORLAX, 100
+	db MEW, 20
 ENDC
-	db JOLTEON, 100
-	db DUGTRIO, 100
-	db STARMIE, 100
+	db JOLTEON, 56
+	db DUGTRIO, 56
+	db ARTICUNO, 57
 IF DEF(_DEBUG)
-	db SLOWBRO, 100
+	db PIKACHU, 5
 ENDC
 	db -1 ; end
 
@@ -47,7 +47,7 @@ IF DEF(_DEBUG)
 
 	call SetDebugNewGameParty
 
-	; Aerodactyl gets four HM moves.
+	; Exeggutor gets four HM moves.
 	ld hl, wPartyMon1Moves
 	ld a, FLY
 	ld [hli], a
@@ -66,23 +66,23 @@ IF DEF(_DEBUG)
 	ld [hli], a
 	ld [hl], a
 
-	; Jolteon gets Substitute.
+	; Jolteon gets Thunderbolt.
 	ld hl, wPartyMon3Moves + 3
-	ld a, SUBSTITUTE
+	ld a, THUNDERBOLT
 	ld [hl], a
 	ld hl, wPartyMon3PP + 3
 	ld a, 15
 	ld [hl], a
 
-	; Starmie gets Flash.
+	; Articuno gets Fly.
 	ld hl, wPartyMon5Moves
-	ld a, FLASH
+	ld a, FLY
 	ld [hl], a
 	ld hl, wPartyMon5PP
 	ld a, 15
 	ld [hl], a
 
-	; Slowbro gets Surf.
+	; Pikachu gets Surf.
 	ld hl, wPartyMon6Moves + 2
 	ld a, SURF
 	ld [hl], a
@@ -147,8 +147,6 @@ DebugNewGameItemsList:
 	db CARD_KEY, 1
 	db S_S_TICKET, 1
 	db LIFT_KEY, 1
-	db SILPH_SCOPE, 1
-	db POKE_FLUTE, 1
 	db -1 ; end
 
 DebugUnusedList: ; unreferenced

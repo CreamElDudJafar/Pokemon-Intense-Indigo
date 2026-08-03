@@ -8,7 +8,7 @@
 ; slot Mew in there. What we did would be unthinkable nowadays!"
 ; https://iwataasks.nintendo.com/interviews/ds/pokemon/0/0/
 
-MewPicFront:: INCBIN "gfx/pokemon/front/mew.pic"
+MewBluePicFront:: INCBIN "gfx/pokemon/front/mew_blue.pic"
 MewPicBack::  INCBIN "gfx/pokemon/back/mewb.pic"
 
 MewBaseStats::

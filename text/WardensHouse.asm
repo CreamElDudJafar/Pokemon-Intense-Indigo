@@ -33,15 +33,17 @@ _WardensHouseWardenTeethPoppedInHisTeethText::
 _WardensHouseWardenThanksText::
 	text "WARDEN: Thanks,"
 	line "kid!"
+
 	para "Those ROCKETs"
 	line "thought it would"
 	cont "be funny, doing"
 	cont "this, for not"
 	cont "letting them"
 	cont "steal more"
-	cont "#MON."
+	cont "#MON<DOT>"
+
 	para "You can have this"
-	line "HM."
+	line "HM<DOT>"
 	prompt
 
 _WardensHouseWardenReceivedHM04Text::
@@ -54,17 +56,21 @@ _WardensHouseWardenReceivedHM04Text::
 _WardensHouseWardenHM04ExplanationText::
 	text "WARDEN: HM04"
 	line "teaches STRENGTH!"
+
 	para "It lets #MON"
 	line "move boulders"
 	cont "when you're out-"
-	cont "side of battle."
+	cont "side of battle<DOT>"
+
 	para "So you saved"
 	line "KOUMAN and  "
 	cont "beat my daughter?"
+
 	para "You are a very"
 	line "skilled trainer!"
+
 	para "Good luck on"
-	line "your journey.  "
+	line "your journey<DOT>  "
 	done
 
 _WardensHouseWardenHM04NoRoomText::
