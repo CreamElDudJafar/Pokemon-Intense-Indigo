@@ -9,16 +9,17 @@ _ViridianMartClerkYouCameFromPalletTownText::
 	done
 
 _ViridianMartClerkParcelQuestText::
-	text "You know PROF."
+	text "You know PROF<DOT>"
 	line "OAK, right?"
 
-	para "His order came in."
+	para "His order came in<DOT>"
 	line "Will you take it"
 	cont "to him?"
 
 	para "<PLAYER> got"
 	line "VIP TICKETS!@"
 	text_end
+
 _ViridianMartYoungsterText::
 	text "Yes!"
 
@@ -27,6 +28,5 @@ _ViridianMartYoungsterText::
 	done
 _ViridianMartCooltrainerMText::
 	text "Try to search "
-	line "for NUGGETs.   "
+	line "for NUGGETs<DOT>  "
 	done
-

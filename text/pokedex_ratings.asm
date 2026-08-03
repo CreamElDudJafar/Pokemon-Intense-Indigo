@@ -14,7 +14,7 @@ _DexCompletionText::
 	prompt
 
 _DexRatingText_Own0To9::
-	text "Hmmm. Try to see "
+	text "Hmmm<DOT> Try to see "
 	line "if my AIDE will"
 	cont "give you an"
 	cont "ITEMFINDER!"
@@ -37,14 +37,15 @@ _DexRatingText_Own20To29::
 _DexRatingText_Own30To39::
 	text "Good, you're"
 	line "trying hard!   "
-	para "Get an EXP.ALL"
+
+	para "Get an EXP<DOT>ALL"
 	line "from my AIDE!"
 	done
 
 _DexRatingText_Own40To49::
-	text "Looking good!"
+	text "Looking good!   "
 	line "Let's see if you"
-	cont "get 50 #MON!"
+	cont "get 50 #MON! "
 	done
 
 _DexRatingText_Own50To59::
@@ -56,7 +57,7 @@ _DexRatingText_Own50To59::
 
 _DexRatingText_Own60To69::
 	text "Ho! This is just"
-	line "got better!"
+	line "got better!   "
 	done
 
 _DexRatingText_Own70To79::
@@ -92,8 +93,8 @@ _DexRatingText_Own110To119::
 
 _DexRatingText_Own120To129::
 	text "Excellent! Try"
-	line "to search in"
-	cont "MT.DOOM east"
+	line "to search in "
+	cont "MT<DOT>DOOM east"
 	cont "cave!"
 	done
 

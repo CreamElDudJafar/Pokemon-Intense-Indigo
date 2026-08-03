@@ -1,17 +1,21 @@
 _BillsHouseBillImNotAPokemonText::
 	text "MEW: Mew!"
-	para "...No, I'm not a"
-	line "MEW..."
+
+	para "<DOT><DOT><DOT>No, I'm not a"
+	line "MEW<DOT><DOT><DOT>"
+
 	para "Call me JEFF!"
 	line "I'm a true blue"
 	cont "#MANIAC! Hey!"
 	cont "What's with that"
 	cont "skeptical look?"
+
 	para "I'm not joshing"
 	line "you, I screwed up"
 	cont "an experiment and"
 	cont "got combined with"
 	cont "a #MON!"
+
 	para "So, how about it?"
 	line "Help me out here!"
 	done
@@ -38,16 +42,20 @@ _BillsHouseBillThankYouText::
 	text "JEFF: Yeehah!"
 	line "Thanks, bud! I"
 	cont "owe you one!"
+
 	para "I'm sorry, I don't"
 	line "have anymore"
 	cont "#MON to give"
-	cont "away."
+	cont "away<DOT>"
+
 	para "<RIVAL> had a"
-	line "MEW..."
+	line "MEW<DOT><DOT><DOT>"
+
 	para "I've got to thank"
-	line "you somehow. "
+	line "you somehow<DOT> "
+
 	para "Oh here, maybe"
-	line "this'll do."
+	line "this'll do<DOT>"
 	prompt
 
 _SSTicketReceivedText::
@@ -64,14 +72,17 @@ _SSTicketNoRoomText::
 
 _BillsHouseBillWhyDontYouGoInsteadOfMeText::
 	text "That cruise ship,"
-	line "S.S.ANNE, is in"
-	cont "PORT HOURITSU."
+	line "S<DOT>S<DOT>ANNE, is in"
+	cont "PORT HOURITSU<DOT>"
+
 	para "Its passengers"
 	line "are all trainers!"
+
 	para "They invited me"
 	line "to their party,"
 	cont "but I can't stand"
-	cont "fancy do's. "
+	cont "fancy do's<DOT> "
+
 	para "Why don't you go"
 	line "instead of me?"
 	done
@@ -82,4 +93,3 @@ _BillsHouseBillCheckOutMyRarePokemonText::
 	cont "some of my rare"
 	cont "#MON on my PC!"
 	done
-

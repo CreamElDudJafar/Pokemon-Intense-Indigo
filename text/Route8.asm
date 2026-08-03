@@ -41,8 +41,8 @@ _Route8SuperNerd2EndBattleText::
 
 _Route8SuperNerd2AfterBattleText::
 	text "Go with ELECTRODE"
-	line "first...and..."
-	cont "...then..."
+	line "first<DOT><DOT><DOT>and<DOT><DOT><DOT>"
+	cont "<DOT><DOT><DOT>then<DOT><DOT><DOT>   "
 	done
 
 _Route8CooltrainerF1BattleText::
@@ -56,7 +56,7 @@ _Route8CooltrainerF1EndBattleText::
 
 _Route8CooltrainerF1AfterBattleText::
 	text "Why didn't DOUBLE"
-	line "TEAM work?"
+	line "TEAM work?   "
 
 	para "You should always"
 	line "miss!"
@@ -74,30 +74,30 @@ _Route8SuperNerd3EndBattleText::
 
 _Route8SuperNerd3AfterBattleText::
 	text "We're stuck here"
-	line "because of the"
-	cont "gates at KOUMAN."
+	line "because of the "
+	cont "gates at KOUMAN<DOT>"
 	done
 
 _Route8CooltrainerF2BattleText::
 	text "My pets don't"
 	line "like each other"
-	cont "much..."
+	cont "much<DOT><DOT><DOT>"
 	done
 
 _Route8CooltrainerF2EndBattleText::
-	text "Tch!"
+	text "Tch! "
 	prompt
 
 _Route8CooltrainerF2AfterBattleText::
 	text "I buffed my pets"
 	line "from the ROCKET"
-	cont "TRADE."
+	cont "TRADE<DOT> "
 	done
 
 _Route8CooltrainerF3BattleText::
 	text "Lady ANILA has"
 	line "traveled all"
-	cont "over the world."
+	cont "over the world<DOT>"
 	done
 
 _Route8CooltrainerF3EndBattleText::
@@ -109,7 +109,7 @@ _Route8CooltrainerF3AfterBattleText::
 	text "ANILA returned"
 	line "recently, and"
 	cont "wasn't happy"
-	cont "with DONYOKU."
+	cont "with DONYOKU<DOT>"
 	done
 
 _Route8Gambler2BattleText::
@@ -139,8 +139,9 @@ _Route8CooltrainerF4BattleText::
 
 _Route8CooltrainerF4EndBattleText::
 	text "Stop!"
+
 	para "Don't be so rough"
-	line "to my DODRIO!"
+	line "to my DODRIO! "
 	prompt
 
 _Route8CooltrainerF4AfterBattleText::
@@ -148,15 +149,14 @@ _Route8CooltrainerF4AfterBattleText::
 	line "the TRADE used"
 	cont "to deal in"
 	cont "urbanization of"
-	cont "ROUTEs."
+	cont "ROUTEs<DOT> "
 	done
 
 _Route8UndergroundSignText::
 	text "L:108"
 
-	para "Stay Sharp."
+	para "Stay Sharp<DOT>"
 
 	para "KYUUSOKU TOWN -"
 	line "The CAPITAL"
 	done
-

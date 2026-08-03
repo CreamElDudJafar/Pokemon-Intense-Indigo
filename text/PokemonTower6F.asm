@@ -6,7 +6,8 @@ _PokemonTower6FGhostWasCubonesMotherText::
 
 _PokemonTower6FSoulWasCalmedText::
 	text "The father's soul"
-	line "was calmed."
+	line "was calmed<DOT>"
+
 	para "It departed to"
 	line "the afterlife!"
 	done

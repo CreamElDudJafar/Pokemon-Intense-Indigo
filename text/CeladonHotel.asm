@@ -21,5 +21,5 @@ _CeladonHotelBeautyText::
 
 _CeladonHotelSuperNerdText::
 	text "We are making such"
-	line "a killing!"
+	line "a killing! "
 	done

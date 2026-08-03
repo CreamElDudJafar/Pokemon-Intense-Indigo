@@ -30,7 +30,7 @@ _VictoryRoad3FCooltrainerF1AfterBattleText::
 
 _VictoryRoad3FCooltrainerM2BattleText::
 	text "If you can't win,"
-	line "then get out."
+	line "then get out<DOT>"
 	done
 
 _VictoryRoad3FCooltrainerM2EndBattleText::
@@ -44,13 +44,13 @@ _VictoryRoad3FCooltrainerM2AfterBattleText::
 
 	para "No cheap scandal"
 	line "from ROCKET"
-	cont "TRADE!"
+	cont "TRADE! "
 	done
 
 _VictoryRoad3FCooltrainerF2BattleText::
 	text "Everyone here"
 	line "must beat each"
-	cont "other once!"
+	cont "other once! "
 	done
 
 _VictoryRoad3FCooltrainerF2EndBattleText::
@@ -60,9 +60,8 @@ _VictoryRoad3FCooltrainerF2EndBattleText::
 
 _VictoryRoad3FCooltrainerF2AfterBattleText::
 	text "Don't get so"
-	line "cocky."
+	line "cocky<DOT>"
 
 	para "Former champs"
-	line "are strong."
+	line "are strong<DOT>"
 	done
-

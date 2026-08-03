@@ -1,19 +1,19 @@
 _MtMoonPokecenterYoungsterText::
 	text "A good idea is to"
 	line "have many #MON"
-	cont "with you."
+	cont "with you<DOT> "
 
 	para "I have six"
-	line "#MON."
+	line "#MON<DOT>"
 	done
 
 _MtMoonPokecenterGentlemanText::
 	text "The ROCKET TRADE"
 	line "is open to all,"
-	cont "selling..."
+	cont "selling<DOT><DOT><DOT>"
 
 	para "AIZOME was much"
-	line "better off..."
+	line "better off<DOT><DOT><DOT>  "
 	done
 
 _MtMoonPokecenterMagikarpSalesmanIGotADealText::

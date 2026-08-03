@@ -53,7 +53,7 @@ _Route11SuperNerd1BattleText::
 
 _Route11SuperNerd1EndBattleText::
 	text "That"
-	line "was intense!"
+	line "was intense! "
 	prompt
 
 _Route11SuperNerd1AfterBattleText::
@@ -64,7 +64,8 @@ _Route11SuperNerd1AfterBattleText::
 _Route11Youngster2BattleText::
 	text "How long have"
 	line "you been training?"
-	para "I beat 2 GYMS!"
+
+	para "I beat 2 GYMS! "
 	done
 
 _Route11Youngster2EndBattleText::
@@ -103,8 +104,8 @@ _Route11Gambler4EndBattleText::
 	prompt
 
 _Route11Gambler4AfterBattleText::
-	text "MYRTLE is an"
-	line "amazing gambler."
+	text "MYRTLE is an   "
+	line "amazing gambler<DOT>"
 	done
 
 _Route11Youngster3BattleText::
@@ -121,11 +122,11 @@ _Route11Youngster3EndBattleText::
 _Route11Youngster3AfterBattleText::
 	text "Many #MON"
 	line "were driven out"
-	cont "by the TRADE."
+	cont "by the TRADE<DOT>   "
 
 	para "You might see"
 	line "some sleeping"
-	cont "#MON nearby."
+	cont "#MON nearby<DOT>"
 	done
 
 _Route11SuperNerd2BattleText::

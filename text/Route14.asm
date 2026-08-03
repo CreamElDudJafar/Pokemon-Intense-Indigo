@@ -14,7 +14,7 @@ _Route14CooltrainerM1AfterBattleText::
 	line "everybody"
 	cont "went to the"
 	cont "ROCKET TRADE in"
-	cont "DONYOKU."
+	cont "DONYOKU<DOT>  "
 	done
 
 _Route14CooltrainerM2BattleText::
@@ -30,7 +30,7 @@ _Route14CooltrainerM2EndBattleText::
 
 _Route14CooltrainerM2AfterBattleText::
 	text "I feel really  "
-	line "tired and itchy."
+	line "tired and itchy<DOT>"
 	done
 
 _Route14CooltrainerM3BattleText::
@@ -54,7 +54,8 @@ _Route14CooltrainerM3AfterBattleText::
 
 _Route14CooltrainerM4BattleText::
 	text "I just ran out of"
-	line "REVIVEs."
+	line "REVIVEs<DOT> "
+
 	para "Go easy on me?"
 	done
 
@@ -82,7 +83,7 @@ _Route14CooltrainerM5EndBattleText::
 _Route14CooltrainerM5AfterBattleText::
 	text "ANILA is the"
 	line "toughest FLYING"
-	cont "type trainer."
+	cont "type trainer<DOT> "
 	done
 
 _Route14CooltrainerM6BattleText::
@@ -136,7 +137,7 @@ _Route14Biker2AfterBattleText::
 _Route14Biker3BattleText::
 	text "We ride out here"
 	line "because its"
-	cont "quieter here."
+	cont "quieter here<DOT>"
 	done
 
 _Route14Biker3EndBattleText::
@@ -169,6 +170,8 @@ _Route14Biker4AfterBattleText::
 
 _Route14SignText::
 	text "ROUTE 14"
+
 	para "L:116"
-	para "Marathons..."
+
+	para "Marathons<DOT><DOT><DOT>  "
 	done

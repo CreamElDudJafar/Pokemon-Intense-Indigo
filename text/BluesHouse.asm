@@ -1,7 +1,7 @@
 _BluesHouseDaisyRivalAtLabText::
 	text "OKIDO: <RIVAL>"
 	line "is out at my"
-	cont "dad's lab."
+	cont "dad's lab<DOT>"
 	done
 
 _BluesHouseDaisyOfferMapText::
@@ -9,7 +9,7 @@ _BluesHouseDaisyOfferMapText::
 
 	para "I was hoping to"
 	line "give this to you"
-	cont "before I leave."
+	cont "before I leave<DOT>"
 	prompt
 
 _GotMapText::
@@ -25,9 +25,10 @@ _BluesHouseDaisyBagFullText::
 	done
 
 _BluesHouseDaisyUseMapText::
-	text "Well, I must go."
+	text "Well, I must go<DOT>"
+
 	para "It's good to see"
-	line "you and <RIVAL>."
+	line "you and <RIVAL><DOT>"
 	done
 
 _BluesHouseDaisyWalkingText::

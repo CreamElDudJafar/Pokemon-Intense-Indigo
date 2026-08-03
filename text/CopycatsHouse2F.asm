@@ -59,7 +59,7 @@ _CopycatsHouse2FCopycatTM31Explanation2Text::
 
 _CopycatsHouse2FCopycatTM31NoRoomText::
 	text "Don't you want"
-	line "my gift?@"
+	line "this?@"
 	text_end
 
 _CopycatsHouse2FDoduoText::

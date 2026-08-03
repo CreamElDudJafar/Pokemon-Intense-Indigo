@@ -1,5 +1,5 @@
 _Route4CooltrainerF1Text::
-	text "You spoke to me."
+	text "You spoke to me<DOT>"
 	line "Let's battle!"
 
 	para "Just kidding!"
@@ -15,27 +15,26 @@ _Route4CooltrainerF2BattleText::
 _Route4CooltrainerF2EndBattleText::
 	text "Now"
 	line "I have to heal"
-	cont "again!"
+	cont "again! "
 	prompt
 
 _Route4CooltrainerF2AfterBattleText::
 	text "Be careful in"
-	line "MT.DOOM."
+	line "MT<DOT>DOOM<DOT>"
 
 	para "It is huge,"
 	line "and there are"
-	cont "strong wild"
-	cont "#MON."
+	cont "strong wild "
+	cont "#MON<DOT>"
 	done
 
 _Route4MtMoonSignText::
-	text "MT.DOOM"
-	line "West Entrance"
+	text "MT<DOT>DOOM"
+	line "West Entrance  "
 	done
 
 _Route4SignText::
 	text "ROUTE 4"
-	line "MT.DOOM -"
+	line "MT<DOT>DOOM -"
 	cont "SAKAYUME TOWN"
 	done
-

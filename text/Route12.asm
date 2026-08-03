@@ -13,9 +13,10 @@ _Route12SnorlaxWokeUpText::
 _Route12SnorlaxCalmedDownText::
 	text "SNORLAX calmed"
 	line "down!"
+
 	para "With a massive"
 	line "yawn, it returned"
-	cont "to MT.DOOM..."
+	cont "to MT<DOT>DOOM<DOT><DOT><DOT>"
 	done
 
 _Route12Fisher1BattleText::
@@ -63,12 +64,12 @@ _Route12CooltrainerMAfterBattleText::
 	text "They bought"
 	line "TEAM ROCKET, so"
 	cont "there's less"
-	cont "attacks."
+	cont "attacks<DOT> "
 	done
 
 _Route12SuperNerdBattleText::
 	text "The TRADE was"
-	line "once revered."
+	line "once revered<DOT> "
 	done
 
 _Route12SuperNerdEndBattleText::
@@ -78,9 +79,9 @@ _Route12SuperNerdEndBattleText::
 _Route12SuperNerdAfterBattleText::
 	text "The TRADE has"
 	line "influence over"
-	cont "AIZOME."
+	cont "AIZOME<DOT> "
 
-	para "Then the merge..."
+	para "Then the merge<DOT><DOT><DOT>"
 	done
 
 _Route12Fisher3BattleText::
@@ -133,7 +134,7 @@ _Route12Fisher5AfterBattleText::
 	done
 
 _Route12SignText::
-	text "ROUTE 12"
+	text "ROUTE 12 "
 	line "North to KYUUSOKU"
 	done
 
@@ -142,4 +143,3 @@ _Route12SportFishingSignText::
 
 	para "Stock up now"
 	done
-

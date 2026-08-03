@@ -40,13 +40,12 @@ _FuchsiaCitySignText::
 _FuchsiaCitySafariGameSignText::
 	text "L:119-125"
 
-	para "L:127's the MAX."
+	para "L:127's the MAX<DOT>"
 	done
 
 _FuchsiaCityWardensHomeSignText::
-	text "DAKKARA TOWN"
-	para "Behold! It's"
-	line "Natural Life!"
+	text "SAFARI ZONE"
+	line "WARDEN's HOME"
 	done
 
 _FuchsiaCitySafariZoneSignText::

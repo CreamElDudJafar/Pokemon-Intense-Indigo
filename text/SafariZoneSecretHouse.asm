@@ -8,13 +8,13 @@ _SafariZoneSecretHouseFishingGuruYouHaveWonText::
 	cont "all!"
 
 	para "Its time to"
-	line "battle."
+	line "battle<DOT>"
 
 	para "I'm joking!"
 
 	para "If anyone deserves"
 	line "this HM03 prize,"
-	cont "its you."
+	cont "its you<DOT>  "
 	prompt
 
 _SafariZoneSecretHouseFishingGuruReceivedHM03Text::
@@ -27,8 +27,8 @@ _SafariZoneSecretHouseFishingGuruReceivedHM03Text::
 _SafariZoneSecretHouseFishingGuruHM03ExplanationText::
 	text "OKIDO: You came"
 	line "very far on your"
-	cont "quest. Further"
-	cont "than most. "
+	cont "quest<DOT> Further"
+	cont "than most<DOT> "
 
 	para "The question is,"
 	line "will you keep"
@@ -36,11 +36,11 @@ _SafariZoneSecretHouseFishingGuruHM03ExplanationText::
 
 	para "Well, that's up"
 	line "to you and your"
-	cont "#MON."
+	cont "#MON<DOT>"
 
 	para "I will continue"
 	line "my preparations"
-	cont "<PLAYER>."
+	cont "<PLAYER><DOT>"
 	done
 
 _SafariZoneSecretHouseFishingGuruHM03NoRoomText::
