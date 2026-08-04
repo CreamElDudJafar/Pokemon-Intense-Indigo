@@ -4,22 +4,22 @@ _CeladonCityLittleGirlText::
 
 	para "This baby is so"
 	line "strong, I could"
-	cont "be CHAMPION!"
+	cont "be CHAMPION! "
 	done
 
 _CeladonCityGramps1Text::
-	text "Ah..."
+	text "Ah<DOT><DOT><DOT>"
 
 	para "This GYM has"
 	line "such lovely"
-	cont "little girls."
+	cont "little girls<DOT>"
 	done
 
 _CeladonCityGirlText::
 	text "The ROCKET TRADE"
 	line "is just ahead!"
 
-	para "Go for it!"
+	para "Go for it! "
 	done
 
 _CeladonCityGramps2Text::
@@ -31,7 +31,7 @@ _CeladonCityGramps2Text::
 
 	para "ROCKET TRADE is"
 	line "the place for"
-	cont "you!"
+	cont "you! "
 	done
 
 _CeladonCityGramps3Text::
@@ -90,10 +90,10 @@ _CeladonCityRocket1Text::
 	done
 
 _CeladonCityRocket2Text::
-	text "Oww..."
+	text "Oww<DOT><DOT><DOT>"
 
 	para "My pinky's rather"
-	line "sore."
+	line "sore<DOT>"
 	done
 
 _CeladonCityTrainerTips1Text::
@@ -110,7 +110,7 @@ _CeladonCityTrainerTips1Text::
 	line "nearby ROCKET"
 	cont "TRADE building"
 
-	para "..."
+	para "<DOT><DOT><DOT>"
 	done
 
 _CeladonCitySignText::
@@ -135,7 +135,7 @@ _CeladonCityMansionSignText::
 _CeladonCityDeptStoreSignText::
 	text "Find what you"
 	line "need at DONYOKU"
-	cont "DEPT. STORE!"
+	cont "DEPT<DOT> STORE!"
 	done
 
 _CeladonCityTrainerTips2Text::
@@ -148,11 +148,11 @@ _CeladonCityTrainerTips2Text::
 	cont "gratification"
 	cont "for our esteemed"
 	cont "service to"
-	cont "society."
+	cont "society<DOT>"
 
 	para "ROCKET TRADE"
 
-	para "..."
+	para "<DOT><DOT><DOT>"
 	done
 
 _CeladonCityPrizeExchangeSignText::
@@ -167,4 +167,3 @@ _CeladonCityGameCornerSignText::
 	line "playground"
 	cont "for grown-ups!"
 	done
-

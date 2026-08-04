@@ -50,8 +50,9 @@ _RockTunnel1FHiker3AfterBattleText::
 	done
 
 _RockTunnel1FSuperNerdBattleText::
-	text "#MON fight?"
-	line "Cool! Rumble!"
+	text "SNORLAX woke up!"
+
+	para "Hi<DOT>  "
 	done
 
 _RockTunnel1FSuperNerdEndBattleText::
@@ -61,7 +62,7 @@ _RockTunnel1FSuperNerdEndBattleText::
 
 _RockTunnel1FSuperNerdAfterBattleText::
 	text "This costume is"
-	line "heavy, but soft!"
+	line "heavy, but soft! "
 	done
 
 _RockTunnel1FCooltrainerF1BattleText::
@@ -77,7 +78,7 @@ _RockTunnel1FCooltrainerF1EndBattleText::
 
 _RockTunnel1FCooltrainerF1AfterBattleText::
 	text "I saw VOLTORB"
-	line "in this tunnel!"
+	line "in this tunnel! "
 	done
 
 _RockTunnel1FCooltrainerF2BattleText::
@@ -115,4 +116,3 @@ _RockTunnel1FSignText::
 	line "SAKAYUME TOWN -"
 	cont "KYUUSOKU TOWN"
 	done
-

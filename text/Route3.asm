@@ -1,11 +1,11 @@
 _Route3Text1::
-	text "MT.DOOM is named"
+	text "MT<DOT>DOOM is named"
 	line "because many"
 	cont "people went"
 	cont "in one side of"
 	cont "the mountain,"
 	cont "and never came"
-	cont "out."
+	cont "out<DOT>"
 	done
 
 _Route3Youngster1BattleText::
@@ -44,7 +44,7 @@ _Route3Youngster2AfterBattleText::
 	cont "GYM?"
 
 	para "Even we couldn't"
-	line "do it..."
+	line "do it<DOT><DOT><DOT>  "
 	done
 
 _Route3CooltrainerF1BattleText::
@@ -60,7 +60,7 @@ _Route3CooltrainerF1EndBattleText::
 _Route3CooltrainerF1AfterBattleText::
 	text "Will you tell me"
 	line "how did you beat"
-	cont "him?"
+	cont "him? "
 	done
 
 _Route3Youngster3BattleText::
@@ -76,14 +76,14 @@ _Route3Youngster3EndBattleText::
 
 _Route3Youngster3AfterBattleText::
 	text "We were training"
-	line "here because"
+	line "here because "
 	cont "the GYM LEADER"
-	cont "is pretty tough."
+	cont "is pretty tough<DOT>"
 	done
 
 _Route3CooltrainerF2BattleText::
 	text "I'm training my"
-	line "POKeMON."
+	line "POKeMON<DOT>"
 
 	para "Want to practice?"
 	done
@@ -95,7 +95,7 @@ _Route3CooltrainerF2EndBattleText::
 _Route3CooltrainerF2AfterBattleText::
 	text "GYM's GHOST and"
 	line "DRAGON types are"
-	cont "so tough..."
+	cont "so tough<DOT><DOT><DOT>"
 	done
 
 _Route3Youngster4BattleText::
@@ -116,7 +116,7 @@ _Route3Youngster4AfterBattleText::
 
 _Route3Youngster5BattleText::
 	text "I got some cool"
-	line "POKeMON."
+	line "POKeMON<DOT>  "
 	done
 
 _Route3Youngster5EndBattleText::
@@ -127,12 +127,12 @@ _Route3Youngster5EndBattleText::
 _Route3Youngster5AfterBattleText::
 	text "I heard that"
 	line "TEAM ROCKET is"
-	cont "inside MT.DOOM..."
+	cont "inside MT<DOT>DOOM<DOT><DOT><DOT>"
 	done
 
 _Route3CooltrainerF3BattleText::
 	text "I wonder if I'm"
-	line "ready?"
+	line "ready? "
 	done
 
 _Route3CooltrainerF3EndBattleText::
@@ -140,12 +140,11 @@ _Route3CooltrainerF3EndBattleText::
 	prompt
 
 _Route3CooltrainerF3AfterBattleText::
-	text "I'm never going"
-	line "to get any BADGEs."
+	text "I'm never going "
+	line "to get any BADGEs<DOT>"
 	done
 
 _Route3SignText::
 	text "ROUTE 3"
-	line "MT.DOOM AHEAD"
+	line "MT<DOT>DOOM AHEAD"
 	done
-

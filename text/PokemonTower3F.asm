@@ -11,7 +11,7 @@ _PokemonTower3FChanneler1EndBattleText::
 _PokemonTower3FChanneler1AfterBattleText::
 	text "The GHOSTs can be"
 	line "identified by the"
-	cont "TRADE SCOPE."
+	cont "TRADE SCOPE<DOT>"
 	done
 
 _PokemonTower3FChanneler2BattleText::

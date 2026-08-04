@@ -4,14 +4,14 @@ _CeladonMart2FMiddleAgedManText::
 
 	para "We'll give you"
 	line "discount prizes"
-	cont "at the EXCHANGE."
+	cont "at the EXCHANGE<DOT>"
 	done
 
 _CeladonMart2FGirlText::
 	text "We'll take this"
-	line "city back. "
+	line "city back<DOT> "
 
-	para "Eventually..."
+	para "Eventually<DOT><DOT><DOT>"
 	done
 
 _CeladonMart2FCurrentFloorSignText::

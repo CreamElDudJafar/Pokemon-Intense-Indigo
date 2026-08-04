@@ -11,8 +11,9 @@ _Route16Gate2FLittleGirlText::
 
 _Route16Gate2FLeftBinocularsText::
 	text "Looked into the"
-	line "binoculars."
-	para "It's DONYOKU DEPT."
+	line "binoculars<DOT>"
+
+	para "It's DONYOKU DEPT<DOT>"
 	line "STORE!"
 	done
 

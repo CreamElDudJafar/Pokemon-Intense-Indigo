@@ -1,13 +1,13 @@
 _MrFujisHouseSuperNerdMrFujiIsntHereText::
 	text "That's odd,"
-	line "ARISTO isn't here."
+	line "ARISTO isn't here<DOT>"
 	cont "Where'd he go??"
 	done
 
 _MrFujisHouseSuperNerdMrFujiHadBeenPrayingText::
 	text "ARISTO had been"
 	line "praying alone for"
-	cont "CUBONE's father. "
+	cont "CUBONE's father<DOT> "
 	done
 
 _MrFujisHouseLittleGirlThisIsMrFujisHouseText::
@@ -34,14 +34,16 @@ _MrFujisHouseNidorinoText::
 	text_end
 
 _MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText::
-	text "ARISTO: <PLAYER>..."
+	text "ARISTO: <PLAYER><DOT><DOT><DOT>"
+
 	para "Your quest may"
 	line "fail without"
 	cont "love for your"
-	cont "#MON."
-	para "I believe this"
+	cont "#MON<DOT>"
+
+	para "I believe this "
 	line "will help your"
-	cont "quest."
+	cont "quest<DOT>"
 	prompt
 
 _MrFujisHouseMrFujiReceivedPokeFluteText::
@@ -56,11 +58,11 @@ _MrFujisHouseMrFujiPokeFluteExplanationText::
 
 	para "I hear that you"
 	line "are collecting"
-	cont "BADGEs."
+	cont "BADGEs<DOT>"
 
 	para "I wish you good"
-	line "luck. I hope to"
-	cont "see you again."
+	line "luck<DOT> I hope to"
+	cont "see you again<DOT>"
 	done
 
 _MrFujisHouseMrFujiPokeFluteNoRoomText::
@@ -71,7 +73,7 @@ _MrFujisHouseMrFujiPokeFluteNoRoomText::
 _MrFujisHouseMrFujiHasMyFluteHelpedYouText::
 	text "ARISTO: Don't"
 	line "ever give up"
-	cont "hope <PLAYER>."
+	cont "hope <PLAYER><DOT>"
 	done
 
 _MrFujisHouseMrFujiPokedexText::

@@ -72,7 +72,7 @@ _Route17Biker5AfterBattleText::
 	text "I got my #MON"
 	line "at the ROCKET"
 	cont "TRADE at their"
-	cont "HQ."
+	cont "HQ<DOT>"
 	done
 
 _Route17Biker6BattleText::
@@ -168,9 +168,11 @@ _Route17TrainerTips1Text::
 _Route17TrainerTips2Text::
 	text "Huge reward"
 	line "for the capture"
-	cont "of <PLAYER>."
+	cont "of <PLAYER><DOT>"
+
 	para "Beware, he is"
-	line "dangerous."
+	line "dangerous<DOT>"
+
 	para "-TEAM ROCKET"
 	done
 

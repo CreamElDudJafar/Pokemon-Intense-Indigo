@@ -5,7 +5,7 @@ _PewterSpeechHouseGamblerText::
 
 	para "They weren't there"
 	line "before when we"
-	cont "passed by..."
+	cont "passed by<DOT><DOT><DOT>"
 	done
 
 _PewterSpeechHouseYoungsterText::
@@ -14,5 +14,5 @@ _PewterSpeechHouseYoungsterText::
 	cont "an ADMIN of an"
 	cont "organization"
 	cont "known as the"
-	cont "#MON TRADE."
+	cont "#MON TRADE<DOT>"
 	done

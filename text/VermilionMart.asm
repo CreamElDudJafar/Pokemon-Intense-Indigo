@@ -20,6 +20,5 @@ _VermilionMartCooltrainerFText::
 	line "calls their"
 	cont "PORYGONs a"
 	cont "prototype of"
-	cont "PROJECT 151."
+	cont "PROJECT 151<DOT>"
 	done
-

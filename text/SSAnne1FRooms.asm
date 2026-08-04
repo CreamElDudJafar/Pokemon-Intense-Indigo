@@ -14,12 +14,12 @@ _SSAnne1FRoomsGentleman1BattleText::
 
 _SSAnne1FRoomsGentleman1EndBattleText::
 	text "My"
-	line "horrid luck..."
+	line "horrid luck<DOT><DOT><DOT>"
 	prompt
 
 _SSAnne1FRoomsGentleman1AfterBattleText::
 	text "This puddle is"
-	line "so filthy..."
+	line "so filthy<DOT><DOT><DOT>   "
 	done
 
 _SSAnne1FRoomsGentleman2BattleText::
@@ -60,7 +60,7 @@ _SSAnne1FRoomsCooltrainerFBattleText::
 	line "just walk in!"
 
 	para "WIGGLYTUFF, get"
-	line "him!"
+	line "him! "
 	done
 
 _SSAnne1FRoomsCooltrainerFEndBattleText::
@@ -69,24 +69,24 @@ _SSAnne1FRoomsCooltrainerFEndBattleText::
 	para "My poor"
 	line "WIGGLYTUFF!"
 
-	para "Get out you..."
+	para "Get out you<DOT><DOT><DOT> "
 	prompt
 
 _SSAnne1FRoomsCooltrainerFAfterBattleText::
 	text "WIGGLYTUFF's"
-	line "better now..."
+	line "better now<DOT><DOT><DOT>"
 
 	para "Did you come to"
 	line "see the party? "
 
 	para "Go upstairs"
-	line "kid..."
+	line "kid<DOT><DOT><DOT>"
 	done
 
 _SSAnne1FRoomsGirl1Text::
 	text "We got plans for"
 	line "the #MON"
-	cont "in these boxes."
+	cont "in these boxes<DOT>"
 	done
 
 _SSAnne1FRoomsMiddleAgedManText::
@@ -103,17 +103,16 @@ _SSAnne1FRoomsLittleGirlText::
 
 _SSAnne1FRoomsGirl2Text::
 	text "SUPERIOR does   "
-	line "not want delays."
+	line "not want delays<DOT>"
 	done
 
 _SSAnne1FRoomsGentleman3Text::
 	text "We're cargo"
-	line "guards."
+	line "guards<DOT>"
 
 	para "Nobody's dumb"
 	line "enough to stand"
-	cont "up to us."
+	cont "up to us<DOT>"
 
 	para "Out!"
 	done
-

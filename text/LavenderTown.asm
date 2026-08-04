@@ -53,7 +53,7 @@ _LavenderTownSilphScopeSignText::
 _LavenderTownPokemonHouseSignText::
 	text "L:108-111-116-120"
 
-	para "Be ready..."
+	para "Be ready<DOT><DOT><DOT>"
 	done
 
 _LavenderTownPokemonTowerSignText::

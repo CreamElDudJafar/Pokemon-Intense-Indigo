@@ -33,7 +33,7 @@ _SSAnneB1FRoomsSailor2AfterBattleText::
 	text "The CAPTAIN's"
 	line "friends with"
 	cont "SHOUBAI's GYM"
-	cont "LEADER."
+	cont "LEADER<DOT> "
 	done
 
 _SSAnneB1FRoomsSailor3BattleText::
@@ -82,7 +82,7 @@ _SSAnneB1FRoomsSailor5EndBattleText::
 _SSAnneB1FRoomsSailor5AfterBattleText::
 	text "TENTACOOL some-"
 	line "times drift into"
-	cont "the ship."
+	cont "the ship<DOT>"
 	done
 
 _SSAnneB1FRoomsFisherBattleText::
@@ -112,6 +112,5 @@ _SSAnneB1FRoomsSuperNerdText::
 
 	para "Probably hanging"
 	line "out with the"
-	cont "SAILORs."
+	cont "SAILORs<DOT>"
 	done
-

@@ -13,7 +13,7 @@ _MtMoon1FHikerEndBattleText::
 _MtMoon1FHikerAfterBattleText::
 	text "I thought you"
 	line "were one of"
-	cont "THEM."
+	cont "THEM<DOT>"
 	done
 
 _MtMoon1FYoungster1BattleText::
@@ -29,7 +29,7 @@ _MtMoon1FYoungster1EndBattleText::
 _MtMoon1FYoungster1AfterBattleText::
 	text "We came together,"
 	line "so we don't get"
-	cont "hurt."
+	cont "hurt<DOT>"
 	done
 
 _MtMoon1FCooltrainerF1BattleText::
@@ -49,27 +49,27 @@ _MtMoon1FCooltrainerF1AfterBattleText::
 	done
 
 _MtMoon1FSuperNerdBattleText::
-	text "Heheh."
+	text "Heheh<DOT>"
 
 	para "I beat the 1st"
-	line "GYM."
+	line "GYM<DOT>"
 	done
 
 _MtMoon1FSuperNerdEndBattleText::
 	text "You"
-	line "stalled me!"
+	line "stalled me! "
 	prompt
 
 _MtMoon1FSuperNerdAfterBattleText::
-	text "I better go find"
-	line "stronger ones!"
+	text "My tactics usually"
+	line "nail foes!"
 	done
 
 _MtMoon1FCooltrainerF2BattleText::
 	text "My SEADRA is"
 	line "going to wreck"
 	cont "you like the"
-	cont "others."
+	cont "others<DOT>"
 	done
 
 _MtMoon1FCooltrainerF2EndBattleText::
@@ -77,10 +77,10 @@ _MtMoon1FCooltrainerF2EndBattleText::
 	prompt
 
 _MtMoon1FCooltrainerF2AfterBattleText::
-	text "Careful."
+	text "Careful<DOT> "
 
 	para "One of our friends"
-	line "has gone missing."
+	line "has gone missing<DOT>"
 	done
 
 _MtMoon1FYoungster2BattleText::
@@ -103,7 +103,7 @@ _MtMoon1FYoungster2AfterBattleText::
 _MtMoon1FYoungster3BattleText::
 	text "You know that"
 	line "we are in 1 of 2"
-	cont "MT.DOOM caves?"
+	cont "MT<DOT>DOOM caves?"
 	done
 
 _MtMoon1FYoungster3EndBattleText::
@@ -115,12 +115,11 @@ _MtMoon1FYoungster3AfterBattleText::
 	text "The second cave"
 	line "is so dangerous,"
 	cont "it became"
-	cont "blocked off."
+	cont "blocked off<DOT>"
 	done
 
 _MtMoon1FBewareZubatSign::
-	text "Highest lv.27"
+	text "Highest lv<DOT>27"
 
 	para "Beware of VOLTORB!"
 	done
-

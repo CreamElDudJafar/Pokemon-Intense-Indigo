@@ -1,7 +1,8 @@
 _Route24CooltrainerM1YouBeatOurContestText::
-	text "Congratulations!"
-	line "You beat our 5"
-	cont "contest trainers!@"
+	text "No<DOT>2: Excellent!"
+
+	para "You beat our 5"
+	line "contest trainers!@"
 	text_end
 
 _Route24CooltrainerM1YouJustEarnedAPrizeText::
@@ -26,7 +27,7 @@ _Route24CooltrainerM1NoRoomText::
 _Route24CooltrainerM1JoinTeamRocketText::
 	text "I am the second"
 	line "member of the new"
-	cont "TEAM ROCKET."
+	cont "TEAM ROCKET<DOT>"
 
 	para "You too can be"
 	line "one of us!"
@@ -35,31 +36,31 @@ _Route24CooltrainerM1JoinTeamRocketText::
 	line "strong, you get"
 	cont "respect and you"
 	cont "pretty much own"
-	cont "AIZOME."
+	cont "AIZOME<DOT>"
 
 	para "Oh, and something"
 	line "about taking over"
-	cont "the world."
+	cont "the world<DOT>"
 
 	para "Want to join up?"
 
 	para "No?"
 
-	para "BAD MOVE."
+	para "BAD MOVE<DOT> "
 	done
 
 _Route24CooltrainerM1DefeatedText::
-	text "Yargh!"
-	line "You're good!"
+	text "What"
+	line "wasted talent<DOT> "
 	prompt
 
 _Route24CooltrainerM1YouCouldBecomeATopLeaderText::
-	text "No.2: Reconsider"
-	line "your option."
+	text "No<DOT>2: Reconsider"
+	line "your option<DOT>"
 
 	para "Because I'm not"
 	line "even at full"
-	cont "power."
+	cont "power<DOT>"
 	done
 
 _Route24CooltrainerM2BattleText::

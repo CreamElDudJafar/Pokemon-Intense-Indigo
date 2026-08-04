@@ -138,7 +138,7 @@ _Route20Swimmer8AfterBattleText::
 _Route20Swimmer9BattleText::
 	text "SHOUBAI, in the"
 	line "west, has a LAB"
-	cont "for #MON. "
+	cont "for #MON<DOT> "
 	done
 
 _Route20Swimmer9EndBattleText::
@@ -153,4 +153,3 @@ _Route20Swimmer9AfterBattleText::
 _Route20SeafoamIslandsSignText::
 	text "SHOUHOU ISLANDS"
 	done
-

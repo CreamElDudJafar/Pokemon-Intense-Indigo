@@ -38,11 +38,11 @@ PokemonFanClubPikachuFanText:
 	jp TextScriptEnd
 
 .NormalText:
-	text_far _PokemonFanClubPikachuFanNormalText
+	text_far _PokemonFanClubPikachuFanBetterText
 	text_end
 
 .BetterText:
-	text_far _PokemonFanClubPikachuFanBetterText
+	text_far _PokemonFanClubSeelFanNormalText
 	text_end
 
 PokemonFanClubSeelFanText:
@@ -61,11 +61,11 @@ PokemonFanClubSeelFanText:
 	jp TextScriptEnd
 
 .NormalText:
-	text_far _PokemonFanClubSeelFanNormalText
+	text_far _PokemonFanClubSeelFanBetterText
 	text_end
 
 .BetterText:
-	text_far _PokemonFanClubSeelFanBetterText
+	text_far _VermilionPokecenterSailorText
 	text_end
 
 PokemonFanClubPikachuText:

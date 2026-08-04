@@ -1,5 +1,5 @@
 _RocketHideoutB2FRocketBattleText::
-	text "No.4: Herrre's"
+	text "No<DOT>4: Herrre's"
 	line "the prrrize!"
 
 	para "A ferrrocious"
@@ -12,7 +12,7 @@ _RocketHideoutB2FRocketEndBattleText::
 	prompt
 
 _RocketHideoutB2FRocketAfterBattleText::
-	text "No.4: Have fun"
+	text "No<DOT>4: Have fun"
 	line "with the floorrr"
 	cont "tiles that arrre"
 	cont "invisible!"

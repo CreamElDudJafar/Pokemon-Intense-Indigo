@@ -28,13 +28,13 @@ _CeladonMart3FClerkTM18NoRoomText::
 
 _CeladonMart3FGameBoyKid1Text::
 	text "We hid the POLICE"
-	line "in the EXCHANGE."
+	line "in the EXCHANGE<DOT>"
 
 	para "They'll sell"
 	line "NUGGETs only"
 	cont "to people they"
-	cont "trust. But"
-	cont "nobody else..."
+	cont "trust<DOT> But"
+	cont "nobody else<DOT><DOT><DOT>"
 	done
 
 _CeladonMart3FGameBoyKid2Text::
@@ -61,9 +61,9 @@ _CeladonMart3FGameBoyKid3Text::
 
 _CeladonMart3FLittleBoyText::
 	text "We found out that"
-	line "Dr.I may be one"
+	line "Dr<DOT>I may be one"
 	cont "of the two"
-	cont "SUPERIORS..."
+	cont "SUPERIORS<DOT><DOT><DOT>   "
 	done
 
 _CeladonMart3FSNESText::

@@ -15,3 +15,4 @@ TitleMons:
 	db SLOWBRO
 	db TAUROS
 	db ALAKAZAM
+	db RAICHU
