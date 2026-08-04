@@ -15,3 +15,4 @@ TitleMons:
 	db LICKITUNG
 	db KANGASKHAN
 	db KOFFING
+	db RAICHU

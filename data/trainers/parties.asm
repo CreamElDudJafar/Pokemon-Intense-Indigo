@@ -603,13 +603,13 @@ CooltrainerMData:
 ; Unused
 	db 0
 ; Victory Road 1F
-	db 126, PORYGON, JOLTEON, SLOWBRO, DRAGONITE, CHANSEY, ALAKAZAM, 0
+	db 109, PORYGON, JOLTEON, SLOWBRO, DRAGONITE, CHANSEY, ALAKAZAM, 0
 ; Unused
 	db 0
 	db 0
 	db 0
 ; Viridian Gym
-	db 126, ARTICUNO, RHYDON, CHANSEY, 0
+	db 108, ARTICUNO, RHYDON, CHANSEY, 0
 	db 108, MOLTRES, EXEGGUTOR, TAUROS, 0
 
 CooltrainerFData:
@@ -707,7 +707,7 @@ ChannelerData:
 ; Unused
 	db 0
 ; Pokémon Tower 4F
-	db 111, JYNX, 0
+	db 100, JYNX, 0
 ; Unused
 	db 24, 0
 ; Pokemon Tower 5F
@@ -715,7 +715,7 @@ ChannelerData:
 ; Unused
 	db 0
 ; Pokémon Tower 5F
-	db 113, JYNX, GOLDUCK, VILEPLUME, 0
+	db 105, JYNX, GOLDUCK, VILEPLUME, 0
 	db 100, PERSIAN, HYPNO, 0
 	db 105, VENUSAUR, 0
 ; Pokemon Tower 6F

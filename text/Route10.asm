@@ -50,10 +50,10 @@ _Route10SuperNerd2AfterBattleText::
 _Route10CooltrainerF1BattleText::
 	text "I beat the"
 	line "first 3 GYMs"
-	cont "with #MON"
-	cont "above lv100<DOT>"
+	cont "with high"
+	cont "level #MON<DOT>"
 
-	para "Not others<DOT>"
+	para "Not others<DOT> "
 	done
 
 _Route10CooltrainerF1EndBattleText::
