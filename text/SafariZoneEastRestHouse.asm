@@ -1,16 +1,24 @@
 _SafariZoneEastRestHouseScientistText::
-	text "I wish I could"
-	line "catch #MON."
+	text "Hahahahahaa!"
+
+	para "You can't help"
+	line "him kid!"
+
+	para "Now go away!"
 	done
 
 _SafariZoneEastRestHouseRockerText::
-	text "I'm tired from"
-	line "all the fun..."
+	text "HEELP!"
+
+	para "These monsters"
+	line "stole the"
+	cont "WARDEN's GOLD"
+	cont "TEETH!"
 	done
 
 _SafariZoneEastRestHouseSilphWorkerMText::
-	text "The ROCKET TRADE"
-	line "has alot of "
-	cont "powerful #MON."
-	done
+	text "Silence!"
 
+	para "No one's coming"
+	line "to help!"
+	done

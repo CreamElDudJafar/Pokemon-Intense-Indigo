@@ -1,5 +1,5 @@
 _SilphCo11FSilphPresidentText::
-	text "Thats impossible."
+	text "Thats impossible<DOT>"
 
 	para "There is no way"
 	line "at all to enter"
@@ -7,7 +7,7 @@ _SilphCo11FSilphPresidentText::
 
 	para "I had the"
 	line "secret passage"
-	cont "sealed."
+	cont "sealed<DOT>"
 
 	para "You must have"
 	line "cheated, how else"
@@ -35,16 +35,16 @@ _SilphCo11FSilphPresidentMasterBallDescriptionText::
 	para "I have nothing"
 	line "more to give "
 	cont "to cheaters "
-	cont "like you."
+	cont "like you<DOT>"
 
 	para "You've"
 	line "done enough"
-	cont "damage."
+	cont "damage<DOT>"
 
 	para "All I have to"
 	line "say is get the"
 	cont "fuck out of"
-	cont "HEADQUARTERS."
+	cont "HEADQUARTERS<DOT>"
 	done
 
 _SilphCo11FSilphPresidentNoRoomText::
@@ -54,7 +54,7 @@ _SilphCo11FSilphPresidentNoRoomText::
 
 _SilphCo11FBeautyText::
 	text "Don't get over"
-	line "confident boy."
+	line "confident boy<DOT>"
 
 	para "Our leaders will"
 	line "make you pay for"
@@ -62,68 +62,68 @@ _SilphCo11FBeautyText::
 	done
 
 _SilphCo11FGiovanniText::
-	text "<PLAYER>."
-	line "We meet again. "
+	text "<PLAYER><DOT>"
+	line "We meet again<DOT> "
 
 	para "Unfortunately"
 	line "boy, I recently"
 	cont "acquired one of"
 	cont "the keys for"
-	cont "conquest."
+	cont "conquest<DOT>"
 
 	para "The day of"
 	line "reckoning is at"
-	cont "hand."
+	cont "hand<DOT>"
 
 	para "You will sadly"
 	line "not be able to"
-	cont "witness it."
+	cont "witness it<DOT>"
 	done
 
 _SilphCo10FGiovanniILostAgainText::
 	text "MEW"
 	line "alone isn't"
-	cont "enough."
+	cont "enough<DOT>"
 	prompt
 
 _SilphCo11FGiovanniYouRuinedOurPlansText::
 	text "I must be off"
 	line "to obtain my"
 	cont "newly enhanced"
-	cont "specimen."
+	cont "specimen<DOT>"
 
 	para "Capable"
 	line "of unmatched"
 	cont "psychokinesis,"
 	cont "manipulation of"
 	cont "all life, and"
-	cont "illusions."
+	cont "illusions<DOT>"
 
 	para "The final result"
-	line "of PROJECT 151..."
+	line "of PROJECT 151<DOT><DOT><DOT>"
 	done
 
 _SilphCo11FRocket1BattleText::
-	text "No.0: You'll"
+	text "No<DOT>0: You'll"
 	line "NEVER escape now"
-	cont "<PLAYER>!"
+	cont "<PLAYER>! "
 	done
 
 _SilphCo11FRocket1EndBattleText::
 	text "What"
-	line "ARE you?!"
+	line "ARE you?! "
 	prompt
 
 _SilphCo11FRocket1AfterBattleText::
-	text "No.0: Y-you ARE"
+	text "No<DOT>0: Y-you ARE"
 	line "dangerous!!!"
 	done
 
 _SilphCo11FRocket2BattleText::
-	text "Dr.I: As CHIEF"
-	line "of my TRADE..."
+	text "Dr<DOT>I: As CHIEF"
+	line "of my TRADE<DOT><DOT><DOT>"
 
-	para "I will stop you."
+	para "I will stop you<DOT>"
 	done
 
 _SilphCo11FRocket2EndBattleText::
@@ -132,9 +132,10 @@ _SilphCo11FRocket2EndBattleText::
 	prompt
 
 _SilphCo11FRocket2AfterBattleText::
-	text "Dr.I: CALIGULA"
-	line "has his weapon."
-	para "You cannot win."
+	text "Dr<DOT>I: CALIGULA"
+	line "has his weapon<DOT>"
+
+	para "You cannot win<DOT>"
 	done
 
 _SilphCo10FPorygonText::

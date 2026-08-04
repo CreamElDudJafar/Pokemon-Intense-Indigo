@@ -26,7 +26,7 @@ _Route21Fisher2EndBattleText::
 
 _Route21Fisher2AfterBattleText::
 	text "Some #MON can"
-	line "only be fished. "
+	line "only be fished<DOT> "
 	done
 
 _Route21Swimmer1BattleText::

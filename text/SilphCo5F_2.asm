@@ -12,7 +12,7 @@ _SilphCo5FRockerAfterBattleText::
 
 _SilphCo5FRocket2BattleText::
 	text "We brought another"
-	line "kid in here!"
+	line "kid in here!   "
 	done
 
 _SilphCo5FRocket2EndBattleText::
@@ -25,7 +25,7 @@ _SilphCo5FRocket2AfterBattleText::
 	line "this kid!"
 
 	para "He had THAT"
-	line "#MON."
+	line "#MON<DOT> "
 	done
 
 _SilphCo5FPokemonReport1Text::
@@ -33,7 +33,7 @@ _SilphCo5FPokemonReport1Text::
 
 	para "MEW has taken"
 	line "residence with"
-	cont "<RIVAL> OAK."
+	cont "<RIVAL> OAK<DOT>"
 
 	para "ROCKETS!"
 
@@ -44,10 +44,10 @@ _SilphCo5FPokemonReport2Text::
 	text "TRADE REPORT"
 
 	para "Targets have been"
-	line "captured."
+	line "captured<DOT>"
 
 	para "Extraction has"
-	line "begun..."
+	line "begun<DOT><DOT><DOT>"
 	done
 
 _SilphCo5FPokemonReport3Text::
@@ -56,6 +56,5 @@ _SilphCo5FPokemonReport3Text::
 	para "ROCKET TAGS have"
 	line "been planted in"
 	cont "every TRADE"
-	cont "#MON."
+	cont "#MON<DOT> "
 	done
-

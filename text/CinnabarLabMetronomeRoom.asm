@@ -32,28 +32,30 @@ _CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
 _CinnabarLabMetronomeRoomScientist2Text::
 	text "We left the TRADE"
 	line "when the merge"
-	cont "was made."
+	cont "was made<DOT> "
 	done
 
 _CinnabarLabMetronomeRoomPCText::
-	text "..."
+	text "<DOT><DOT><DOT>  "
+
 	para "After much"
 	line "research,"
 	cont "ARTICUNO, ZAPDOS"
 	cont "and MOLTRES, has"
 	cont "been confirmed to"
 	cont "have multiple"
-	cont "species."
+	cont "species<DOT>"
 
 	para "For further"
 	line "analysis, all"
 	cont "3 wild species"
 	cont "will remain in"
-	cont "captivity."
+	cont "captivity<DOT>"
 
 	para "From: TRADE"
 	line "ADMINISTRATOR"
-	para "..."
+
+	para "<DOT><DOT><DOT>"
 	done
 
 _CinnabarLabMetronomeRoomAmberPipeText::

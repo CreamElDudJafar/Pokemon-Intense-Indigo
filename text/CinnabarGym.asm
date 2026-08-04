@@ -5,9 +5,9 @@ _CinnabarGymBlainePreBattleText::
 	line "see you again!"
 
 	para "So you are here"
-	line "for this BADGE."
+	line "for this BADGE<DOT>"
 
-	para "You must defeat"
+	para "You must defeat "
 	line "me then!"
 
 	para "I won't go down"
@@ -16,8 +16,8 @@ _CinnabarGymBlainePreBattleText::
 	done
 
 _CinnabarGymBlaineReceivedVolcanoBadgeText::
-	text "<PLAYER>!"
-	line "Well done!!!"
+	text "<PLAYER>! "
+	line "Well done!!! "
 
 	para "You have earned"
 	line "the PEARLY BADGE!@"
@@ -26,21 +26,21 @@ _CinnabarGymBlaineReceivedVolcanoBadgeText::
 _CinnabarGymBlainePostBattleAdviceText::
 	text "The BLACKBADGE"
 	line "was given by"
-	cont "the FIGHTING GYM."
+	cont "the FIGHTING GYM<DOT>"
 
 	para "TEAM ROCKET's"
-	line "behind this."
+	line "behind this<DOT>"
 	done
 
 _CinnabarGymBlaineVolcanoBadgeInfoText::
-	text "Its been so long."
+	text "Its been so long<DOT>"
 
 	para "These BADGEs are"
 	line "based on the old"
-	cont "ones."
+	cont "ones<DOT>"
 
 	para "The guards will"
-	line "let you through."
+	line "let you through<DOT>"
 
 	para "Here!"
 	done
@@ -63,7 +63,7 @@ _CinnabarGymBlaineTM38ExplanationText::
 
 	para "So KOUMAN's"
 	line "FIGHTING GYM ran"
-	cont "out..."
+	cont "out<DOT><DOT><DOT>  "
 	done
 
 _CinnabarGymBlaineTM38NoRoomText::
@@ -80,7 +80,7 @@ _CinnabarGymSuperNerd1BattleText::
 	done
 
 _CinnabarGymSuperNerd1EndBattleText::
-	text "I"
+	text "I "
 	line "sure fooled you!"
 	prompt
 
@@ -90,15 +90,15 @@ _CinnabarGymSuperNerd1AfterBattleText::
 	cont "on your face!"
 
 	para "The real guide"
-	line "is up ahead."
+	line "is up ahead<DOT>"
 	done
 
 _CinnabarGymSuperNerd2BattleText::
 	text "We fish as our"
-	line "1st hobby."
+	line "1st hobby<DOT>"
 
 	para "Our 2nd hobby"
-	line "however..."
+	line "however<DOT><DOT><DOT>"
 	done
 
 _CinnabarGymSuperNerd2EndBattleText::
@@ -110,7 +110,7 @@ _CinnabarGymSuperNerd2AfterBattleText::
 	text "Okay, I admit it!"
 
 	para "I didn't fish"
-	line "OMASTAR!"
+	line "OMASTAR! "
 	done
 
 _CinnabarGymSuperNerd3BattleText::
@@ -132,23 +132,23 @@ _CinnabarGymSuperNerd3AfterBattleText::
 
 _CinnabarGymSuperNerd4BattleText::
 	text "I went straight"
-	line "years ago."
+	line "years ago<DOT>  "
 	done
 
 _CinnabarGymSuperNerd4EndBattleText::
 	text "You"
-	line "are skilled!"
+	line "are skilled!  "
 	prompt
 
 _CinnabarGymSuperNerd4AfterBattleText::
 	text "I spied on the"
 	line "ROCKET TRADE for"
-	cont "the POLICE."
+	cont "the POLICE<DOT>"
 	done
 
 _CinnabarGymSuperNerd5BattleText::
 	text "The criminals are"
-	line "quite deceptive."
+	line "quite deceptive<DOT> "
 	done
 
 _CinnabarGymSuperNerd5EndBattleText::
@@ -161,9 +161,9 @@ _CinnabarGymSuperNerd5AfterBattleText::
 	cont "of the TRADE, who"
 	cont "revived TEAM"
 	cont "ROCKET, used"
-	cont "No.0 and Dr.I"
-	cont "as public"
-	cont "SUPERIORs..."
+	cont "No<DOT>0 and Dr<DOT>I"
+	cont "as public   "
+	cont "SUPERIORs<DOT><DOT><DOT>"
 	done
 
 _CinnabarGymSuperNerd6BattleText::
@@ -174,13 +174,13 @@ _CinnabarGymSuperNerd6BattleText::
 
 _CinnabarGymSuperNerd6EndBattleText::
 	text "That"
-	line "misfired!"
+	line "misfired! "
 	prompt
 
 _CinnabarGymSuperNerd6AfterBattleText::
 	text "The PSYCHIC type"
 	line "are very popular,"
-	cont "but rare."
+	cont "but rare<DOT>"
 	done
 
 _CinnabarGymSuperNerd7BattleText::
@@ -208,15 +208,14 @@ _CinnabarGymGymGuideChampInMakingText::
 	cont "LEADER yet!"
 
 	para "He uses PSYCHIC"
-	line "types."
+	line "types<DOT>"
 
-	para "...I don't know"
-	line "their weakness."
-	cont "Sorry <PLAYER>."
+	para "<DOT><DOT><DOT>I don't know"
+	line "their weakness<DOT>"
+	cont "Sorry <PLAYER><DOT> "
 	done
 
 _CinnabarGymGymGuideBeatBlaineText::
 	text "<PLAYER>! You are"
-	line "almost there!"
+	line "almost there!    "
 	done
-

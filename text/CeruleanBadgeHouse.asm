@@ -1,9 +1,11 @@
 _CeruleanBadgeHouseMiddleAgedManText::
-	text "In the old days.. "
+	text "In the old days<DOT><DOT>"
+
 	para "There were 8"
 	line "different BADGES"
 	cont "from our gyms"
-	cont "predecessors. "
+	cont "predecessors<DOT>"
+
 	para "Those BADGEs have"
 	line "amazing secrets!!"
 	prompt
@@ -24,67 +26,75 @@ _CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText::
 _CeruleanBadgeHouseBoulderBadgeText::
 	text "The ATTACK of all"
 	line "#MON increases"
-	cont "slightly.   "
+	cont "slightly<DOT>  "
+
 	para "And it does let"
 	line "you use HM05 any"
-	cont "time you desire. "
+	cont "time you desire<DOT>"
 	prompt
 
 _CeruleanBadgeHouseCascadeBadgeText::
 	text "#MON up to L30"
-	line "will obey you. "
+	line "will obey you<DOT>"
+
 	para "Though thats for"
 	line "traded #MON!!!"
+
 	para "It also lets you"
 	line "use CUT outside"
-	cont "of battle. "
+	cont "of battle<DOT>"
 	prompt
 
 _CeruleanBadgeHouseThunderBadgeText::
 	text "The SPEED of all"
-	line "#MON increases. "
+	line "#MON increases<DOT>"
+
 	para "You wouldn't"
 	line "notice it, but"
-	cont "yes. "
+	cont "yes<DOT>"
+
 	para "Now, you can"
-	line "always FLY. "
+	line "always FLY<DOT>"
 	prompt
 
 _CeruleanBadgeHouseRainbowBadgeText::
 	text "#MON up to L50"
-	line "will obey you. "
+	line "will obey you<DOT>"
+
 	para "I'm reading off"
-	line "an old pamphlet. "
+	line "an old pamphlet<DOT>"
+
 	para "It also lets you"
 	line "use STRENGTH out-"
-	cont "side of battle. "
+	cont "side of battle<DOT>"
 	prompt
 
 _CeruleanBadgeHouseSoulBadgeText::
 	text "The DEFENSE of all"
 	line "#MON really"
 	cont "does increase a"
-	cont "bit.  "
+	cont "bit<DOT> "
+
 	para "It lets you"
 	line "use SURF outside"
-	cont "of battle. "
+	cont "of battle<DOT>"
 	prompt
 
 _CeruleanBadgeHouseMarshBadgeText::
 	text "#MON up to L70"
-	line "will obey.   "
+	line "will obey<DOT>  "
+
 	para "Not that it will"
-	line "be too relevant. "
+	line "be too relevant<DOT>"
 	prompt
 
 _CeruleanBadgeHouseVolcanoBadgeText::
 	text "Your SPECIAL"
 	line "increases, which"
-	cont "is very good.  "
+	cont "is very good<DOT> "
 	prompt
 
 _CeruleanBadgeHouseEarthBadgeText::
 	text "All #MON will"
-	line "obey you. "
+	line "obey you<DOT>"
 	prompt
-

@@ -1,12 +1,15 @@
 _FightingDojoKarateMasterText::
 	text "I am BRUCE, the"
 	line "second GYM leader"
-	cont "of KOUMAN!"
+	cont "of KOUMAN! "
+
 	para "<PLAYER>!"
+
 	para "We will grind you"
 	line "with our superior"
 	cont "power!"
-	para "HOO HAH!"
+
+	para "HOO HAH!  "
 	done
 
 _FightingDojoKarateMasterDefeatedText::
@@ -15,8 +18,8 @@ _FightingDojoKarateMasterDefeatedText::
 	prompt
 
 _FightingDojoKarateMasterIWillGiveYouAPokemonText::
-	text "... This gym ran"
-	line "out of badges."
+	text "<DOT><DOT><DOT> This gym ran"
+	line "out of badges<DOT>"
 
 	para "Everyone kept"
 	line "defeating me!"
@@ -26,7 +29,7 @@ _FightingDojoKarateMasterIWillGiveYouAPokemonText::
 	cont "can't win!!"
 
 	para "I apologize"
-	line "<PLAYER>."
+	line "<PLAYER><DOT>"
 
 	para "I know its not"
 	line "much, but feel"
@@ -35,10 +38,10 @@ _FightingDojoKarateMasterIWillGiveYouAPokemonText::
 	done
 
 _FightingDojoKarateMasterStayAndTrainWithUsText::
-	text "<PLAYER>..."
+	text "<PLAYER><DOT><DOT><DOT>"
 
 	para "I'm afraid to say"
-	line "my job is done."
+	line "my job is done<DOT>"
 	done
 
 _FightingDojoBlackbelt1BattleText::
@@ -127,4 +130,3 @@ _FightingDojoBetterNotGetGreedyText::
 	text "BRUCE: THATS"
 	line "ALL I HAVE!"
 	done
-

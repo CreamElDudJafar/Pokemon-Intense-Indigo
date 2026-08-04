@@ -7,20 +7,20 @@ _CinnabarIslandGirlText::
 	text "ARISTO is a kind"
 	line "old man, but even"
 	cont "among GYM LEADERs"
-	cont "he's powerful."
+	cont "he's powerful<DOT>"
 	done
 
 _CinnabarIslandGamblerText::
 	text "I think there's"
 	line "a way in the"
 	cont "abandoned TRADE"
-	cont "HEADQUARTERS."
+	cont "HEADQUARTERS<DOT> "
 	done
 
 _CinnabarIslandSignText::
 	text "SHOUBAI ISLANDS"
 
-	para "Birth of the"
+	para "Birth of the  "
 	line "TRADE CORPERATION"
 	done
 
@@ -34,6 +34,5 @@ _CinnabarIslandGymSignText::
 	cont "LEADER: ARISTO"
 
 	para "World Renowned"
-	line "Professor."
+	line "Professor<DOT>  "
 	done
-

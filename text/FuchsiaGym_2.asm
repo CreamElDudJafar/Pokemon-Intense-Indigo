@@ -2,13 +2,13 @@ _FuchsiaGymKogaPostBattleAdviceText::
 	text "Arrr!"
 
 	para "I can get to"
-	line "the S.S.ANNE and"
+	line "the S<DOT>S<DOT>ANNE and"
 	cont "run this GYM,"
 	cont "easily!"
-	
-	para "...with the help"
+
+	para "<DOT><DOT><DOT>with the help"
 	line "of the PSYCHIC"
-	cont "GYM LEADER..."
+	cont "GYM LEADER<DOT><DOT><DOT>"
 	done
 
 _FuchsiaGymKogaSoulBadgeInfoText::
@@ -21,9 +21,9 @@ _FuchsiaGymKogaSoulBadgeInfoText::
 	line "skill and"
 	cont "adaptation with"
 	cont "yer crew!"
-	
+
 	para "Arrr! Take this"
-	line "too!"
+	line "too!  "
 	done
 
 _FuchsiaGymKogaReceivedTM06Text::
@@ -35,11 +35,12 @@ _FuchsiaGymKogaReceivedTM06Text::
 
 _FuchsiaGymKogaTM06ExplanationText::
 	text_start
+
 	para "Those ROCKET bilge"
 	line "rats are no good!"
 
 	para "Make em walk the"
-	line "plank <PLAYER>!"
+	line "plank <PLAYER>!   "
 	done
 
 _FuchsiaGymKogaTM06NoRoomText::
@@ -71,7 +72,7 @@ _FuchsiaGymRocker1AfterBattleText::
 	done
 
 _FuchsiaGymRocker2BattleText::
-	text "We have standards."
+	text "We have standards<DOT>"
 
 	para "We don't use"
 	line "the ROCKET TRADE! "
@@ -127,18 +128,18 @@ _FuchsiaGymRocker4AfterBattleText::
 	cont "and some"
 	cont "challengers got"
 	cont "past lv100"
-	cont "without the TRADE."
+	cont "without the TRADE<DOT>"
 	done
 
 _FuchsiaGymRocker5BattleText::
 	text "Some trainers"
 	line "figure out how"
 	cont "to get past lv100"
-	cont "on their own."
+	cont "on their own<DOT>"
 
 	para "The #MON"
 	line "LEAGUE is full"
-	cont "of them.  "
+	cont "of them<DOT>  "
 	done
 
 _FuchsiaGymRocker5EndBattleText::
@@ -156,9 +157,9 @@ _FuchsiaGymRocker6BattleText::
 	line "TRADE was the"
 	cont "1st one to"
 	cont "ever get past"
-	cont "lv100."
+	cont "lv100<DOT>"
 
-	para "He profits."
+	para "He profits<DOT>"
 	done
 
 _FuchsiaGymRocker6EndBattleText::
@@ -167,31 +168,31 @@ _FuchsiaGymRocker6EndBattleText::
 	prompt
 
 _FuchsiaGymRocker6AfterBattleText::
-	text "...Shut up guys."
+	text "<DOT><DOT><DOT>Shut up guys<DOT>"
 
 	para "So yea, TEAM"
 	line "ROCKET became"
 	cont "a BIG threat"
 	cont "thanks to the"
-	cont "TRADE."
+	cont "TRADE<DOT>"
 	done
 
 _FuchsiaGymGymGuideChampInMakingText::
 	text "Hey <PLAYER>!"
 
 	para "NIMO is CAPTAIN"
-	line "of the S.S.ANNE,"
+	line "of the S<DOT>S<DOT>ANNE,"
 	cont "and a very tough"
 	cont "opponent!  "
 
 	para "Beat him and"
 	line "you'll be able"
-	cont "to use SURF."
+	cont "to use SURF<DOT>"
 
 	para "Watch out for"
 	line "BLIZZARD and"
 	cont "any kind of"
-	cont "surprise... "
+	cont "surprise<DOT><DOT><DOT> "
 	done
 
 _FuchsiaGymGymGuideBeatKogaText::
@@ -201,4 +202,3 @@ _FuchsiaGymGymGuideBeatKogaText::
 	para "You're finally"
 	line "able to SURF!"
 	done
-

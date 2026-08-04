@@ -68,7 +68,7 @@ _VictoryRoad2FSuperNerd2AfterBattleText::
 	text "I hope I don't"
 	line "run into YOU"
 	cont "in the WORLD"
-	cont "TOURNAMENT..."
+	cont "TOURNAMENT<DOT><DOT><DOT>"
 	done
 
 _VictoryRoad2FSuperNerd3BattleText::
@@ -84,6 +84,5 @@ _VictoryRoad2FSuperNerd3EndBattleText::
 _VictoryRoad2FSuperNerd3AfterBattleText::
 	text "Many TRADE abusers"
 	line "get weeded out"
-	cont "easily."
+	cont "easily<DOT>"
 	done
-

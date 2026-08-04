@@ -4,18 +4,18 @@ _Route15Gate2FOaksAideExpAllText::
 	cont "any #MON,"
 	cont "even with the"
 	cont "lowest catch"
-	cont "rate."
+	cont "rate<DOT>"
 
 	para "It should really"
 	line "be used as a"
-	cont "very last resort."
+	cont "very last resort<DOT>"
 
-	para "PROF.OAK is"
+	para "PROF<DOT>OAK is"
 	line "very proud of you"
-	cont "<PLAYER>."
+	cont "<PLAYER><DOT>"
 
 	para "Even he couldn't"
-	line "get this many."
+	line "get this many<DOT>"
 	done
 
 _Route15Gate2FBinocularsText::

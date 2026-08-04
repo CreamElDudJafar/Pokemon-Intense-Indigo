@@ -1,13 +1,14 @@
 _CeladonPokecenterGentlemanText::
-	text "No pedestrians"
-	line "are allowed on"
-	cont "CYCLING ROAD!"
+	text "The ROCKET"
+	line "SUPERIOR was"
+	cont "in the CASINO<DOT>"
+
+	para "Don't mess"
+	line "with him<DOT>"
 	done
 
 _CeladonPokecenterBeautyText::
-	text "CYCLING ROAD is a"
-	line "downhill course"
-	cont "by the sea. It's"
-	cont "a great ride."
+	text "My #MON became"
+	line "stronger from"
+	cont "ROCKET TRADE! "
 	done
-

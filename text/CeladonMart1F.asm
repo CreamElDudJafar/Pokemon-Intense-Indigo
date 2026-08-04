@@ -1,10 +1,11 @@
 _CeladonMart1FReceptionistText::
 	text "Hello! Welcome to"
-	line "DONYOKU DEPT."
-	cont "STORE."
+	line "DONYOKU DEPT<DOT>"
+	cont "STORE<DOT>"
+
 	para "The board on the"
 	line "right describes"
-	cont "the store layout."
+	cont "the store layout<DOT>"
 	done
 
 _CeladonMart1FDirectorySignText::

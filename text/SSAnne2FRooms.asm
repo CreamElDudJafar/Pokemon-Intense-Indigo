@@ -3,7 +3,8 @@ _SSAnne2FRoomsGentleman3Text::
 	line "#MON was very"
 	cont "popular during"
 	cont "the last"
-	cont "TOURNAMENT."
+	cont "TOURNAMENT<DOT>"
+
 	para "It was something"
 	line "like this!"
 	prompt
@@ -23,28 +24,29 @@ _SSAnne2FRoomsGrampsText::
 _SSAnne2FRoomsGentleman5Text::
 	text "I heard that the"
 	line "TRADE merged with"
-	cont "the ROCKETs."
+	cont "the ROCKETs<DOT>"
+
 	para "They had very"
 	line "successful"
-	cont "business."
+	cont "business<DOT>"
 	done
 
 _SSAnne2FRoomsLittleBoyText::
 	text "How many years"
 	line "was it since"
 	cont "the TRADE"
-	cont "merged?"
+	cont "merged?    "
 	done
 
 _SSAnne2FRoomsBrunetteGirlText::
-	text "I heard the"
+	text "I heard the "
 	line "CAPTAIN was"
-	cont "a GYM leader..."
+	cont "a GYM leader<DOT><DOT><DOT>"
 	done
 
 _SSAnne2FRoomsBeautyText::
 	text "DONYOKU used to"
-	line "be a nice city."
+	line "be a nice city<DOT>"
 	done
 
 _SSAnne2FRoomsGentleman1BattleText::

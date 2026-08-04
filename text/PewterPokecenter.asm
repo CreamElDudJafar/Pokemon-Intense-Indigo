@@ -1,8 +1,10 @@
 _PewterPokecenterGentlemanText::
 	text "What!?"
+
 	para "TEAM ROCKET is"
-	line "at MT.DOOM? Huh?"
+	line "at MT<DOT>DOOM? Huh?"
 	cont "I'm on the phone!"
+
 	para "Scram!"
 	done
 

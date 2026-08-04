@@ -4,16 +4,16 @@ _VermilionGymLTSurgePostBattleAdviceText::
 	cont "ROCKET falls may"
 	cont "come at last!"
 
-	para "At least I hope."
+	para "At least I hope<DOT>"
 
 	para "Beware of their"
-	line "SUPERIOR...   "
+	line "SUPERIOR<DOT><DOT><DOT>   "
 	done
 
 _VermilionGymLTSurgeThunderBadgeInfoText::
 	text "I sadly reached"
 	line "the peak of my"
-	cont "strength."
+	cont "strength<DOT>"
 
 	para "<PLAYER>!"
 
@@ -47,7 +47,7 @@ _TM24ExplanationText::
 _VermilionGymLTSurgeTM24NoRoomText::
 	text "You need HM05"
 	line "for your quest"
-	cont "<PLAYER>."
+	cont "<PLAYER><DOT>"
 	done
 
 _VermilionGymLTSurgeReceivedThunderBadgeText::
@@ -92,11 +92,11 @@ _VermilionGymSuperNerdEndBattleText::
 
 _VermilionGymSuperNerdAfterBattleText::
 	text "Well, I'm off the"
-	line "hook.    "
+	line "hook<DOT>    "
 
 	para "I won't steal"
 	line "#MON from the"
-	cont "SAFARI ZONE."
+	cont "SAFARI ZONE<DOT>"
 	done
 
 _VermilionGymSailorBattleText::
@@ -114,31 +114,31 @@ _VermilionGymSailorAfterBattleText::
 	line "are given"
 	cont "service hours"
 	cont "as GYM TRAINERs"
-	cont "here."
+	cont "here<DOT>"
 
 	para "Don't go playing"
 	line "with the prison"
-	cont "locks.   "
+	cont "locks<DOT>   "
 	done
 
 _VermilionGymGymGuideChampInMakingText::
 	text "This poor guy has"
-	line "a sad history."
+	line "a sad history<DOT>"
 
 	para "He fought in a"
 	line "war that has"
 	cont "left many POLICE"
 	cont "officers and"
 	cont "#MON to their"
-	cont "doom."
+	cont "doom<DOT>"
 
 	para "They fought"
 	line "armies of very"
 	cont "powerful #MON"
-	cont "from TEAM ROCKET."
+	cont "from TEAM ROCKET<DOT>"
 
 	para "They didn't last"
-	line "long..."
+	line "long<DOT><DOT><DOT>"
 
 	para "But this guy is"
 	line "tough! "
@@ -152,4 +152,3 @@ _VermilionGymGymGuideBeatLTSurgeText::
 	text "You are in expert"
 	line "level? Nice!"
 	done
-

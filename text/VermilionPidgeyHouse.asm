@@ -2,7 +2,7 @@ _VermilionPidgeyHouseYoungsterText::
 	text "I'm getting my "
 	line "PIDGEY to fly a"
 	cont "letter to KOUMAN"
-	cont "in the north."
+	cont "in the north<DOT>"
 	done
 
 _VermilionPidgeyHousePidgeyText::
@@ -12,14 +12,13 @@ _VermilionPidgeyHousePidgeyText::
 _VermilionPidgeyHouseLetterText::
 	text "The ROCKETs have"
 	line "not taken "
-	cont "HOURITSU yet."
+	cont "HOURITSU yet<DOT>"
 
 	para "I heard they"
 	line "settled in"
 	cont "DONYOKU and"
-	cont "KOUMAN. "
+	cont "KOUMAN<DOT> "
 
 	para "I hope you"
-	line "are safe MIKE."
+	line "are safe MIKE<DOT>"
 	done
-

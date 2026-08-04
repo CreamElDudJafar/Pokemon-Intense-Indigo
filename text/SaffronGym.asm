@@ -5,7 +5,7 @@ _SaffronGymSabrinaText::
 	para "I was working on"
 	line "that!"
 
-	para "Hmph."
+	para "Hmph<DOT>"
 
 	para "So you think I"
 	line "should give you"
@@ -15,7 +15,7 @@ _SaffronGymSabrinaText::
 	para "I would like to,"
 	line "but its my job"
 	cont "to test you"
-	cont "<PLAYER>."
+	cont "<PLAYER><DOT>"
 
 	para "And my #MON"
 	line "needs excercise!"
@@ -23,15 +23,15 @@ _SaffronGymSabrinaText::
 
 _SaffronGymSabrinaReceivedMarshBadgeText::
 	text "I got"
-	line "really sloppy..."
+	line "really sloppy<DOT><DOT><DOT>"
 
 	para "Sure I was stuck"
 	line "in this GYM, but"
-	cont "a loss is a loss."
+	cont "a loss is a loss<DOT>"
 
 	para "You earned the "
-	line "WHITEBADGE!"
-	prompt
+	line "WHITEBADGE!@"
+	text_end
 
 _SaffronGymSabrinaPostBattleAdviceText::
 	text "Try not to "
@@ -39,18 +39,18 @@ _SaffronGymSabrinaPostBattleAdviceText::
 	cont "TOURNAMENT!"
 
 	para "You'll embarrass"
-	line "me!"
+	line "me! "
 	done
 
 _SaffronGymSabrinaMarshBadgeInfoText::
 	text "TEAM ROCKET made"
 	line "quite a mess of"
-	cont "this city."
+	cont "this city<DOT>"
 
 	para "They have been"
-	line "expanding too. At"
+	line "expanding too<DOT> At"
 	cont "least they're"
-	cont "gone."
+	cont "gone<DOT>"
 
 	para "Can I ask you for"
 	line "a favor? "
@@ -72,7 +72,7 @@ _TM46ExplanationText::
 	para "I stole this from"
 	line "the TEAM ROCKET"
 	cont "CHIEF, who stole"
-	cont "it from my DAD."
+	cont "it from my DAD<DOT>"
 	done
 
 _SaffronGymSabrinaTM46NoRoomText::
@@ -93,7 +93,7 @@ _SaffronGymGuideChampInMakingText::
 
 	para "Fighting #MON"
 	line "ARE good against"
-	cont "them."
+	cont "them<DOT>"
 
 	para "But she actually"
 	line "can put up a"
@@ -126,19 +126,19 @@ _SaffronGymChanneler1EndBattleText::
 
 _SaffronGymChanneler1AfterBattleText::
 	text "The TRADE had the"
-	line "right idea."
+	line "right idea<DOT>"
 
-	para "But its a misuse."
+	para "But its a misuse<DOT>"
 
 	para "The secret lvs"
 	line "works best only"
 	cont "for the ones who"
-	cont "earned it."
+	cont "earned it<DOT>"
 	done
 
 _SaffronGymYoungster1BattleText::
 	text "Does our levels"
-	line "intimidate you?"
+	line "intimidate you? "
 	done
 
 _SaffronGymYoungster1EndBattleText::
@@ -149,7 +149,7 @@ _SaffronGymYoungster1EndBattleText::
 _SaffronGymYoungster1AfterBattleText::
 	text "Our levels weren't"
 	line "easy at all to"
-	cont "get!"
+	cont "get!  "
 	done
 
 _SaffronGymChanneler2BattleText::
@@ -175,7 +175,7 @@ _SaffronGymChanneler2AfterBattleText::
 _SaffronGymYoungster2BattleText::
 	text "We are here to"
 	line "COUNTER FIGHTING"
-	cont "types."
+	cont "types<DOT>"
 	done
 
 _SaffronGymYoungster2EndBattleText::
@@ -187,7 +187,7 @@ _SaffronGymYoungster2AfterBattleText::
 	text "Everyone here"
 	line "can easily wipe"
 	cont "out BRUCE next"
-	cont "door!"
+	cont "door! "
 	done
 
 _SaffronGymChanneler3BattleText::
@@ -210,10 +210,10 @@ _SaffronGymChanneler3AfterBattleText::
 _SaffronGymYoungster3BattleText::
 	text "ZENOBIA actually"
 	line "took out BRUCE's"
-	cont "FIGHTING TYPEs. "
+	cont "FIGHTING TYPEs<DOT> "
 
 	para "It sucks to be"
-	line "him."
+	line "him<DOT> "
 	done
 
 _SaffronGymYoungster3EndBattleText::
@@ -223,15 +223,15 @@ _SaffronGymYoungster3EndBattleText::
 
 _SaffronGymYoungster3AfterBattleText::
 	text "If that wasn't"
-	line "bad enough... "
+	line "bad enough<DOT><DOT><DOT> "
 
 	para "Every single"
 	line "ROCKET member"
-	cont "trounced him. "
+	cont "trounced him<DOT> "
 
 	para "And to spite him,"
 	line "they stole all of"
-	cont "his BADGEs."
+	cont "his BADGEs<DOT> "
 	done
 
 _SaffronGymYoungster4BattleText::
@@ -239,7 +239,7 @@ _SaffronGymYoungster4BattleText::
 	line "time after time,"
 	cont "you're not-"
 
-	para "Wait... "
+	para "Wait<DOT><DOT><DOT> "
 
 	para "Wait, an actual"
 	line "challenger?"
@@ -256,4 +256,3 @@ _SaffronGymYoungster4AfterBattleText::
 	line "from TEAM ROCKET"
 	cont "TRADE!"
 	done
-

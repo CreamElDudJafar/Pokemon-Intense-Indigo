@@ -1,32 +1,33 @@
 _SafariZoneNorthRestHouseScientistText::
-	text "Since TEAM ROCKET"
-	line "usually has"
-	cont "PSYCHIC #MON,"
-	cont "among very strong"
-	cont "#MON..."
+	text "No<DOT>1: Now do you"
+	line "see <PLAYER>? "
 
-	para "Most other"
-	line "#MON, and even"
-	cont "conventional"
-	cont "weapons can't"
-	cont "stop them. "
+	para "Our presence is"
+	line "all over AIZOME"
+	cont "and the world!"
 
-	para "So they took"
-	line "over INDIGO..."
+	para "The POLICE can't"
+	line "stop us<DOT>"
+
+	para "Neither can you<DOT>"
 	done
 
 _SafariZoneNorthRestHouseSafariZoneWorkerText::
-	text "If I had a BIKE,"
-	line "I would go to"
-	cont "CYCLING ROAD!"
+	text "We don't need"
+	line "the WARDEN's"
+	cont "Co-OP<DOT>"
+
+	para "He deserves whats"
+	line "coming to him<DOT>"
 	done
 
 _SafariZoneNorthRestHouseGentlemanText::
-	text "TEAM ROCKET stole"
-	line "almost all"
-	cont "PSYCHIC #MON"
-	cont "in AIZOME, making"
-	cont "them hard to"
-	cont "find."
-	done
+	text "Thanks to the"
+	line "SAFARI GAME"
+	cont "system, no one"
+	cont "can find or stop"
+	cont "us<DOT>"
 
+	para "We stole ALL the"
+	line "best #MON<DOT>"
+	done

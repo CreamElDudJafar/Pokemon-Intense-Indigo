@@ -22,9 +22,11 @@ _SilphCo2FSilphWorkerFReceivedTM36Text::
 _SilphCo2FSilphWorkerFTM36ExplanationText::
 	text "TM36 is"
 	line "SELFDESTRUCT!"
-	para "ROCKET No.3 tends"
+
+	para "ROCKET No<DOT>3 tends"
 	line "to use moves"
 	cont "like these!"
+
 	para "Now leave me"
 	line "be!"
 	done
@@ -36,19 +38,19 @@ _SilphCo2FSilphWorkerFTM36NoRoomText::
 
 _SilphCo2FScientist1BattleText::
 	text "I am in need of"
-	line "a lab rat."
+	line "a lab rat<DOT>"
 	done
 
 _SilphCo2FScientist1EndBattleText::
 	text "You"
 	line "are the most"
-	cont "skilled by far."
+	cont "skilled by far<DOT>"
 	prompt
 
 _SilphCo2FScientist1AfterBattleText::
 	text "You would've been"
 	line "a ROCKET TRADE"
-	cont "ELITE."
+	cont "ELITE<DOT>"
 	done
 
 _SilphCo2FScientist2BattleText::
@@ -70,7 +72,7 @@ _SilphCo2FRocket1BattleText::
 	text "All right!"
 
 	para "No more games"
-	line "<PLAYER>!"
+	line "<PLAYER>! "
 	done
 
 _SilphCo2FRocket1EndBattleText::
@@ -81,9 +83,9 @@ _SilphCo2FRocket1AfterBattleText::
 	text "LORD CALIGULA"
 	line "discovered how"
 	cont "#MON surpass"
-	cont "their limits."
+	cont "their limits<DOT>"
 
-	para "We got rich."
+	para "We got rich<DOT>  "
 	done
 
 _SilphCo2FRocket2BattleText::
@@ -100,6 +102,5 @@ _SilphCo2FRocket2EndBattleText::
 _SilphCo2FRocket2AfterBattleText::
 	text "PHONE: What is"
 	line "happening ROCKET"
-	cont "No.96?!"
+	cont "No<DOT>96?!   "
 	done
-
