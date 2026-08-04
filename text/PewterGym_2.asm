@@ -4,15 +4,15 @@ _PewterGymBrockPostBattleAdviceText::
 	para "You aren't the"
 	line "only one after"
 	cont "the championship"
-	cont "title."
+	cont "title<DOT>"
 
 	para "And former champs"
-	line "do participate."
+	line "do participate<DOT>"
 
 	para "Head to the GYM"
-	line "in SAKAYUME."
+	line "in SAKAYUME<DOT>"
 
-	para "Good luck."
+	para "Good luck<DOT>"
 	done
 
 _PewterGymBrockWaitTakeThisText::
@@ -29,26 +29,26 @@ _TM34ExplanationText::
 	text_start
 
 	para "Feel free to take"
-	line "this gift. You"
-	cont "earned it."
+	line "this gift<DOT> You"
+	cont "earned it<DOT>"
 
-	para "You are now"
+	para "You are now "
 	line "officially in"
 	cont "the Beginner"
-	cont "level."
+	cont "level<DOT>"
 
 	para "There are 3:"
 	line "Beginner, expert,"
-	cont "Master."
+	cont "Master<DOT>"
 
 	para "You might be"
 	line "eligible for"
 	cont "the #MON"
 	cont "LEAGUE TOURNAMENT"
-	cont "round. But you"
+	cont "round<DOT> But you"
 	cont "have to get at"
 	cont "least 8 GYM"
-	cont "BADGES."
+	cont "BADGES<DOT>"
 	done
 
 _PewterGymTM34NoRoomText::
@@ -100,15 +100,15 @@ _PewterGymCooltrainerMEndBattleText::
 	cont "be really easy!"
 
 	para "Darn that liar"
-	line "<RIVAL>..."
+	line "<RIVAL><DOT><DOT><DOT>"
 	prompt
 
 _PewterGymCooltrainerMAfterBattleText::
 	text "<RIVAL> told me"
-	line "about you."
+	line "about you<DOT> "
 
 	para "He said to"
-	line "ambush <PLAYER>."
+	line "ambush <PLAYER><DOT>"
 	done
 
 _PewterGymGuidePreAdviceText::
@@ -134,15 +134,17 @@ _PewterGymGuideAdviceText::
 	line "of POKeMON that"
 	cont "has one evolution"
 	cont "family!"
+
 	para "Make sure you"
 	line "are at least"
-	cont "lv.16, and have"
-	cont "alot of POKeMON."
+	cont "lv<DOT>16, and have"
+	cont "alot of POKeMON<DOT> "
 	done
 
 _PewterGymGuideFreeServiceText::
-	text "All right! Let's"
-	line "get happening!"
+	text "<DOT><DOT><DOT> Still, you"
+	line "don't want to"
+	cont "lose badly!"
 	prompt
 
 _PewterGymGuidePostBattleText::

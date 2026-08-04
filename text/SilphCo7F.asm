@@ -1,14 +1,14 @@
 _SilphCo7FSilphWorkerM1HaveThisPokemonText::
 	text "We tried facing"
 	line "the BOSS, but"
-	cont "it went BADLY."
+	cont "it went BADLY<DOT>"
 
 	para "I stole this"
 	line "from the TEAM"
-	cont "ROCKET TRADE."
+	cont "ROCKET TRADE<DOT>"
 
 	para "I hope it helps"
-	line "you."
+	line "you<DOT>  "
 	prompt
 
 _SilphCo7FSilphWorkerM1LaprasDescriptionText::
@@ -16,30 +16,30 @@ _SilphCo7FSilphWorkerM1LaprasDescriptionText::
 	line "very rare #MON"
 	cont "from the SAFARI"
 	cont "ZONE for the"
-	cont "TRADE years ago."
+	cont "TRADE years ago<DOT>"
 
 	para "When they merged,"
 	line "all of the stolen"
 	cont "#MON became"
-	cont "trained killers."
+	cont "trained killers<DOT>"
 
 	para "The ROCKET EMPIRE"
 	line "emerged, ruling"
-	cont "AIZOME."
+	cont "AIZOME<DOT> "
 	done
 
 _SilphCo7FSilphWorkerM1IsOurPresidentOkText::
 	text "Their BOSS is as"
 	line "strong as he is"
-	cont "cruel. "
+	cont "cruel<DOT> "
 
 	para "You're our last"
-	line "hope."
+	line "hope<DOT>"
 	done
 
 _SilphCo7FSilphWorkerM1SavedText::
 	text "I called in the"
-	line "calvary!"
+	line "calvary! "
 	done
 
 _SilphCo7FSilphWorkerM2AfterTheMasterBallText::
@@ -47,16 +47,16 @@ _SilphCo7FSilphWorkerM2AfterTheMasterBallText::
 	line "pay us, we level"
 	cont "their #MON,"
 	cont "then we'll"
-	cont "control them."
+	cont "control them<DOT>"
 	done
 
 _SilphCo7FSilphWorkerM2CancelledMasterBallText::
 	text "PORYGON was the"
 	line "first to be"
-	cont "enhanced."
+	cont "enhanced<DOT>"
 
 	para "The clone is"
-	line "next..."
+	line "next<DOT><DOT><DOT> "
 	done
 
 _SilphCo7FSilphWorkerM3ItWouldBeBadText::
@@ -64,33 +64,33 @@ _SilphCo7FSilphWorkerM3ItWouldBeBadText::
 	line "made sales all"
 	cont "over worldwide!"
 
-	para "We won the war."
+	para "We won the war<DOT>"
 	done
 
 _SilphCo7FSilphWorkerM3YouChasedOffTeamRocketText::
 	text "Its too late"
 	line "for the POLICE"
 	cont "due to PROJECT"
-	cont "151."
+	cont "151<DOT> "
 	done
 
 _SilphCo7FSilphWorkerM4ItsReallyDangerousHereText::
-	text "No.0 is the"
+	text "No<DOT>0 is the"
 	line "CHIEF of "
-	cont "TEAM ROCKET."
+	cont "TEAM ROCKET<DOT>"
 
-	para "Dr.I is CHIEF of"
-	line "the TRADE."
+	para "Dr<DOT>I is CHIEF of"
+	line "the TRADE<DOT>"
 	done
 
 _SilphCo7FSilphWorkerM4SafeAtLastText::
 	text "Where did our"
-	line "founders go?"
+	line "founders go? "
 	done
 
 _SilphCo7FRocket1BattleText::
 	text "PA: Do not deny"
-	line "your fate."
+	line "your fate<DOT>  "
 	done
 
 _SilphCo7FRocket1EndBattleText::
@@ -144,7 +144,7 @@ _SilphCo7FRocket2AfterBattleText::
 _SilphCo7FRocket3BattleText::
 	text "PA: Soon, all"
 	line "enemies shall"
-	cont "perish."
+	cont "perish<DOT>"
 	done
 
 _SilphCo7FRocket3EndBattleText::
@@ -173,7 +173,7 @@ _SilphCo7FRivalWaitedHereText::
 	cont "MEW!"
 
 	para "He's a dangerous"
-	line "psycho..."
+	line "psycho<DOT><DOT><DOT>"
 
 	para "For your own sake,"
 	line "if you can't beat"
@@ -202,28 +202,27 @@ _SilphCo7FRivalVictoryText::
 _SilphCo7FRivalGoodLuckToYouText::
 	text "Thanks for"
 	line "clearing the"
-	cont "way."
+	cont "way<DOT>"
 
 	para "The BOSS cloned"
 	line "my MEW a while"
-	cont "ago..."
+	cont "ago<DOT><DOT><DOT>"
 
 	para "MEW managed to"
 	line "escape and come"
-	cont "back."
+	cont "back<DOT>"
 
 	para "The BOSS kept"
 	line "gloating about"
 	cont "obtaining the"
 	cont "key to enhancing"
 	cont "his ultimate"
-	cont "creation."
+	cont "creation<DOT>"
 
 	para "And that it"
 	line "could control its"
 	cont "hidden army"
-	cont "around the world."
+	cont "around the world<DOT>"
 
 	para "Now to escape!"
 	done
-

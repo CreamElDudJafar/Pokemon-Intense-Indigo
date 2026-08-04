@@ -27,14 +27,14 @@ _SilphCo9FRocket1EndBattleText::
 _SilphCo9FRocket1AfterBattleText::
 	text "I wanted power,"
 	line "that's why I"
-	cont "joined CALIGULA."
+	cont "joined CALIGULA<DOT>"
 	done
 
 _SilphCo9FScientistBattleText::
 	text "My #MON will"
 	line "recover easily! "
 
-	para "You can't win!"
+	para "You can't win! "
 	done
 
 _SilphCo9FScientistEndBattleText::
@@ -43,16 +43,16 @@ _SilphCo9FScientistEndBattleText::
 	prompt
 
 _SilphCo9FScientistAfterBattleText::
-	text "I may have lost."
+	text "I may have lost<DOT>"
 
-	para "But in the end..."
+	para "But in the end<DOT><DOT><DOT>"
 
 	para "It's all"
-	line "inconsequential."
+	line "inconsequential<DOT>"
 	done
 
 _SilphCo9FRocket2BattleText::
-	text "No.4: You fool."
+	text "No<DOT>4: You fool<DOT>"
 
 	para "Quake with"
 	line "fearrr!"
@@ -64,7 +64,6 @@ _SilphCo9FRocket2EndBattleText::
 	prompt
 
 _SilphCo9FRocket2AfterBattleText::
-	text "No.4: My powerrr"
+	text "No<DOT>4: My powerrr"
 	line "failed me!"
 	done
-

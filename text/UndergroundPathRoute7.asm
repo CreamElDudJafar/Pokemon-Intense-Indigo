@@ -1,5 +1,5 @@
 _UndergroundPathRoute7MiddleAgedManText::
-	text "The UNDERGROUND"
+	text "The UNDERGROUND "
 	line "collapsed due to"
-	cont "migrating #MON."
+	cont "migrating #MON<DOT>"
 	done

@@ -7,16 +7,17 @@ _OaksLabRivalGrampsIsntAroundText::
 
 _OaksLabRivalGoAheadAndChooseText::
 	text "<RIVAL>: Go ahead"
-	line "and pick <PLAYER>."
+	line "and pick <PLAYER><DOT>"
+
 	para "Doesn't really"
 	line "matter what you"
-	cont "pick though."
+	cont "pick though<DOT>"
 	done
 
 _OaksLabRivalMyPokemonLooksStrongerText::
 	text "<RIVAL>: I am not"
 	line "using THAT one,"
-	cont "<PLAYER>..."
+	cont "<PLAYER><DOT><DOT><DOT>"
 	done
 
 _OaksLabThoseArePokeBallsText::
@@ -82,23 +83,30 @@ _OaksLabOak1RaiseYourYoungPokemonText::
 
 _OaksLabOak1DeliverParcelText::
 	text "OAK: Oh, <PLAYER>!"
+
 	para "How is my old"
 	line "#MON?"
+
 	para "Well, it seems to"
-	line "like you a lot."
+	line "like you a lot<DOT>"
+
 	para "You must be"
 	line "talented as a"
 	cont "#MON trainer!"
+
 	para "What? You have"
 	line "something for me?"
+
 	para "<PLAYER> delivered"
-	line "VIP TICKETS.@"
+	line "VIP TICKETS<DOT>@"
 	text_end
 
 _OaksLabOak1ParcelThanksText::
 	text_start
+
 	para "Ah! These came"
-	line "just in time."
+	line "just in time<DOT>"
+
 	para "OKIDO will"
 	line "be pleased!"
 	done
@@ -185,22 +193,29 @@ _OaksLabRivalFedUpWithWaitingText::
 
 _OaksLabOakChooseMonText::
 	text "OAK: <RIVAL>?"
-	line "Let me think..."
+	line "Let me think<DOT><DOT><DOT>"
+
 	para "Oh, that's right,"
 	line "I got you"
 	cont "something else"
-	cont "<RIVAL>."
+	cont "<RIVAL><DOT>"
+
 	para "Here, <PLAYER>!"
+
 	para "There are 3"
 	line "#MON here!"
+
 	para "Haha!"
+
 	para "They are inside"
-	line "the # BALLs."
+	line "the # BALLs<DOT>"
+
 	para "When I was young,"
 	line "I was a serious"
 	cont "#MON trainer!"
 	cont "Former CHAMPION"
 	cont "even! "
+
 	para "I have 3 left, but"
 	line "you can have"
 	cont "one! Choose!"
@@ -215,7 +230,7 @@ _OaksLabRivalWhatAboutMeText::
 _OaksLabOakBePatientText::
 	text "OAK: He's doing"
 	line "quite well, I"
-	cont "should say!"
+	cont "should say! "
 	done
 
 _OaksLabOakDontGoAwayYetText::
@@ -226,7 +241,7 @@ _OaksLabOakDontGoAwayYetText::
 _OaksLabRivalIllTakeThisOneText::
 	text "<RIVAL>: Guess"
 	line "I'll have this"
-	cont "too."
+	cont "too<DOT>"
 	done
 
 _OaksLabRivalReceivedMonText::
@@ -239,30 +254,38 @@ _OaksLabRivalReceivedMonText::
 _OaksLabRivalIllTakeYouOnText::
 	text "<RIVAL>: Not yet"
 	line "<PLAYER>!"
+
 	para "You haven't seen"
 	line "my OTHER #MON"
 	cont "yet!"
+
 	para "Let's go <PLAYER>!"
+	line ""
+	line ""
 	done
 
 _OaksLabRivalIPickedTheWrongPokemonText::
 	text "WHAT?"
+
 	para "Unbelievable!"
+
 	para "I should've used"
-	line "2 #MON.."
+	line "2 #MON<DOT><DOT>"
 	prompt
 
 _OaksLabRivalAmIGreatOrWhatText::
 	text "<RIVAL>: I'm too"
 	line "strong for you"
-	cont "<PLAYER>!"
+	cont "<PLAYER>! "
 	prompt
 
 _OaksLabRivalSmellYouLaterText::
 	text "<RIVAL>: Okay!"
+
 	para "I'll get some new"
-	line "#MON, and"
+	line "#MON, and  "
 	cont "level up MEW!"
+
 	para "Try not to fall"
 	line "behind <PLAYER>!"
 	done
@@ -309,18 +332,23 @@ _OaksLabOakThatWasMyDreamText::
 	text "To make a complete"
 	line "guide on all the"
 	cont "#MON in the"
-	cont "world..."
+	cont "world<DOT><DOT><DOT>"
+
 	para "Not an easy task!"
+
 	para "There are 151"
 	line "#MON out"
 	cont "there!"
+
 	para "Do you think you"
 	line "can catch them"
 	cont "all?"
+
 	para "There are many"
 	line "dangers out there"
 	cont "in the AIZOME"
-	cont "region."
+	cont "region<DOT>"
+
 	para "Your quest begins"
 	line "now!"
 	done

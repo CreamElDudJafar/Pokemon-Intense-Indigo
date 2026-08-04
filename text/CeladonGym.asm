@@ -1,15 +1,15 @@
 _CeladonGymErikaPreBattleText::
-	text "Hello. So your"
+	text "Hello<DOT> So your"
 	line "name is <PLAYER>?"
 	cont "Pleased to meet"
-	cont "you."
+	cont "you<DOT>"
 
 	para "You are expert"
 	line "level I assume?"
 
 	para "My #MON are"
 	line "of the FLYING"
-	cont "type. "
+	cont "type<DOT> "
 
 	para "I see, just like"
 	line "<RIVAL>, you too"
@@ -17,47 +17,52 @@ _CeladonGymErikaPreBattleText::
 	cont "in the #MON"
 	cont "LEAGUE TOURNAMENT"
 	cont "in the AIZOME"
-	cont "PLATEAU."
+	cont "PLATEAU<DOT>"
 
 	para "We higher ranking"
 	line "GYM leaders"
 	cont "discovered a way"
 	cont "to surpass our"
-	cont "limits."
+	cont "limits<DOT>"
 
 	para "I urge you to do"
-	line "your best."
+	line "your best<DOT>"
 	done
 
 _CeladonGymErikaReceivedRainbowBadgeText::
 	text "How"
-	line "unprecidented..."
+	line "unprecidented<DOT><DOT><DOT>"
+
 	para "You are remarkably"
-	line "skilled."
+	line "skilled<DOT>"
+
 	para "I must confer you"
-	line "the CRYSTALBADGE."
+	line "the CRYSTALBADGE<DOT>"
 	prompt
 
 _CeladonGymErikaPostBattleAdviceText::
 	text "You are cataloging"
 	line "#MON too? I'm"
-	cont "very impressed."
+	cont "very impressed<DOT>"
+
 	para "Have you acquired"
 	line "the HM02 FLY? Its"
 	cont "past CYCLING"
-	cont "ROAD. "
+	cont "ROAD<DOT> "
 	done
 
 _CeladonGymRainbowBadgeInfoText::
 	text "You are the first"
 	line "one to ever beat"
-	cont "me underleveled."
+	cont "me underleveled<DOT>"
+
 	para "Truly impressive"
-	line "<PLAYER>. You are"
+	line "<PLAYER><DOT> You are"
 	cont "indeed a worthy"
-	cont "opponent."
+	cont "opponent<DOT>"
+
 	para "Please also take"
-	line "this with you."
+	line "this with you<DOT>"
 	done
 
 _CeladonGymReceivedTM21Text::
@@ -68,15 +73,15 @@ _CeladonGymReceivedTM21Text::
 	text_end
 
 _TM21ExplanationText::
-	text ""
+	db 0
 
 	para "Take it to the"
-	line "BIKE shop."
+	line "BIKE shop<DOT>"
 
 	para "My brother will"
 	line "give you a bike"
-	cont "for free. You'll"
-	cont "need it."
+	cont "for free<DOT> You'll"
+	cont "need it<DOT> "
 	done
 
 _CeladonGymTM21NoRoomText::
@@ -120,7 +125,7 @@ _CeladonGymAfterBattleText3::
 	line "ANILA, says we"
 	cont "must have use"
 	cont "other types"
-	cont "alongside!"
+	cont "alongside!   "
 	done
 
 _CeladonGymBattleText4::
@@ -136,12 +141,12 @@ _CeladonGymEndBattleText4::
 _CeladonGymAfterBattleText4::
 	text "That ROCKET perv"
 	line "outside really"
-	cont "creeps me out."
+	cont "creeps me out<DOT>  "
 	done
 
 _CeladonGymBattleText5::
 	text "I got one FLYING"
-	line "type."
+	line "type<DOT>"
 
 	para "I also got"
 	line "EEVEELUTIONs!"
@@ -158,14 +163,14 @@ _CeladonGymAfterBattleText5::
 	cont "challengers!"
 
 	para "ANILA only uses"
-	line "FLYING!"
+	line "FLYING!   "
 	done
 
 _CeladonGymBattleText6::
-	text "Let me show you..."
+	text "Let me show you<DOT><DOT><DOT>"
 
 	para "my DOUBLE TEAM"
-	line "abuse!"
+	line "abuse! "
 	done
 
 _CeladonGymEndBattleText6::
@@ -200,10 +205,11 @@ _CeladonGymAfterBattleText7::
 
 _CeladonGymBattleText8::
 	text "I anchor this"
-	line "GYM."
+	line "GYM<DOT>    "
+
 	para "I use only the"
 	line "absolute best"
-	cont "#MON of all."
+	cont "#MON of all<DOT>"
 	done
 
 _CeladonGymEndBattleText8::
@@ -218,4 +224,3 @@ _CeladonGymAfterBattleText8::
 	para "I'll pay you"
 	line "back!"
 	done
-

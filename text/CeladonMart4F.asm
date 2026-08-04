@@ -1,7 +1,7 @@
 _CeladonMart4FSuperNerdText::
 	text "This store is"
 	line "our only safe"
-	cont "haven...   "
+	cont "haven<DOT><DOT><DOT>   "
 	done
 
 _CeladonMart4FYoungsterText::
@@ -10,7 +10,7 @@ _CeladonMart4FYoungsterText::
 	cont "is the mastermind"
 	cont "behind all of  "
 	cont "TEAM ROCKET's "
-	cont "actions. "
+	cont "actions<DOT> "
 	done
 
 _CeladonMart4FCurrentFloorSignText::

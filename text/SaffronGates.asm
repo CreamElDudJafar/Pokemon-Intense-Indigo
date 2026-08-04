@@ -1,13 +1,13 @@
 _SaffronGateGuardGeeImThirstyText::
 	text "I have strict"
-	line "orders."
+	line "orders<DOT>"
 
 	para "No one"
 	line "unauthorized can"
 	cont "enter!"
 
 	para "Man, I need a"
-	line "drink..."
+	line "drink<DOT><DOT><DOT>"
 	done
 
 _SaffronGateGuardImParchedText::
@@ -21,24 +21,28 @@ _SaffronGateGuardImParchedText::
 
 _SaffronGateGuardYouCanGoOnThroughText::
 	text_start
-	para "..."
-	line "Glug glug..."
-	cont "..."
-	para "Gulp..."
+
+	para "<DOT><DOT><DOT>"
+	line "Glug glug<DOT><DOT><DOT>"
+	cont "<DOT><DOT><DOT>"
+
+	para "Gulp<DOT><DOT><DOT>"
+
 	para "We will grant you"
 	line "safe passage"
-	cont "inside... "
+	cont "inside<DOT><DOT><DOT> "
+
 	para ""
 	line "Just don't tell"
 	cont "our employer!"
+
 	para "That would be"
-	line "very dangerous."
+	line "very dangerous<DOT>"
 	done
 
 _SaffronGateGuardThanksForTheDrinkText::
 	text "I hate those"
-	line "ROCKETs. "
+	line "ROCKETs<DOT> "
 
-	para "So much."
+	para "So much<DOT>"
 	done
-

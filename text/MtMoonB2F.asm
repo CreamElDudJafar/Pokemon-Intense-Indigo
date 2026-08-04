@@ -16,50 +16,50 @@ _MtMoonB2FReceivedFossilText::
 	text_end
 
 _MtMoonB2FYouHaveNoRoomText::
-	text "You have no"
-	line "room for this."
-	done
+	text "Look, you've got"
+	line "no room for this.@"
+	text_end
 
 _MtMoonB2FSuperNerdTheyreBothMineText::
-	text "No.0: You got"
+	text "No<DOT>0: You got"
 	line "past my men?"
 
 	para "Prepare for"
-	line "your doom..."
+	line "your doom<DOT><DOT><DOT>"
 	done
 
 _MtMoonB2FSuperNerdOkIllShareText::
-	text "..."
+	text "<DOT><DOT><DOT>"
 
-	para "<PLAYER> was it?"
+	para "<PLAYER> was it? "
 	prompt
 
 _MtMoonB2fSuperNerdEachTakeOneText::
-	text "No.0: Fine."
+	text "No<DOT>0: Fine<DOT>"
 
 	para "You can have only"
-	line "one..."
+	line "one<DOT><DOT><DOT>"
 	done
 
 _MtMoonB2FSuperNerdTheresAPokemonLabText::
-	text "No.0: Understand"
-	line "this boy."
+	text "No<DOT>0: Understand"
+	line "this boy<DOT>"
 
 	para "I did not bring"
-	line "my best."
+	line "my best<DOT>"
 
 	para "TEAM ROCKET won't"
 	line "forget about you"
-	cont "<PLAYER>..."
+	cont "<PLAYER><DOT><DOT><DOT>"
 	done
 
 _MtMoonB2FSuperNerdThenThisIsMineText::
-	text "Then THIS one"
+	text "Then THIS one "
 	line "belongs to me!@"
 	text_end
 
 _MtMoonB2FRocket1BattleText::
-	text "Who are you?!"
+	text "Who are you?!   "
 
 	para "Are you their"
 	line "spy?"
@@ -70,17 +70,17 @@ _MtMoonB2FRocket1BattleText::
 
 _MtMoonB2FRocket1EndBattleText::
 	text "You're"
-	line "not with..."
+	line "not with<DOT><DOT><DOT>"
 	prompt
 
 _MtMoonB2FRocket1AfterBattleText::
 	text "TEAM ROCKET likes"
 	line "robbing, mugging"
-	cont "and selling!"
+	cont "and selling! "
 	done
 
 _MtMoonB2FRocket2BattleText::
-	text "Boo."
+	text "Boo<DOT>"
 
 	para "Give us your"
 	line "#MON!"
@@ -98,7 +98,7 @@ _MtMoonB2FRocket2AfterBattleText::
 
 	para "I can't believe"
 	line "you beat all 3"
-	cont "of us!"
+	cont "of us!   "
 	done
 
 _MtMoonB2FRocket3BattleText::
@@ -117,8 +117,8 @@ _MtMoonB2FRocket3EndBattleText::
 _MtMoonB2FRocket3AfterBattleText::
 	text "SUPERIOR is"
 	line "stronger than"
-	cont "all of us"
-	cont "COMBINED."
+	cont "all of us "
+	cont "COMBINED<DOT>"
 	done
 
 _MtMoonB2FRocket4BattleText::
@@ -133,9 +133,8 @@ _MtMoonB2FRocket4EndBattleText::
 	prompt
 
 _MtMoonB2FRocket4AfterBattleText::
-	text "I warn you."
+	text "I warn you<DOT>"
 
 	para "SUPERIOR's at"
-	line "the very end..."
+	line "the very end<DOT><DOT><DOT>"
 	done
-

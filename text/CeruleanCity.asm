@@ -5,12 +5,12 @@ _CeruleanCityRivalPreBattleText::
 	para "I happen to"
 	line "have some awesome"
 	cont "#MON, being"
-	cont "awesome myself."
+	cont "awesome myself<DOT>"
 
 	para "I bet you don't"
 	line "have anything"
 	cont "NEAR as good as"
-	cont "mine."
+	cont "mine<DOT>"
 
 	para "What DO you have"
 	line "then <PLAYER>?   "
@@ -21,7 +21,7 @@ _CeruleanCityRivalDefeatedText::
 	line "Really now?"
 
 	para "You cheesed it"
-	line "<PLAYER>!"
+	line "<PLAYER>! "
 	prompt
 
 _CeruleanCityRivalVictoryText::
@@ -32,38 +32,38 @@ _CeruleanCityRivalVictoryText::
 
 _CeruleanCityRivalIWentToBillsText::
 	text "<RIVAL>: Funny"
-	line "story actually."
+	line "story actually<DOT>"
 
 	para "I went to JEFF's,"
 	line "gave up some "
 	cont "#MON, and"
 	cont "showed off my"
-	cont "MEW."
+	cont "MEW<DOT>"
 
 	para "He was so amazed,"
 	line "he gave me all of"
 	cont "these #MON!"
 
 	para "JEFF is a cool"
-	line "guy, unlike you."
+	line "guy, unlike you<DOT>"
 
 	para "He even showed"
 	line "me where to get"
 	cont "more!"
 
 	para "You're speechless,"
-	line "I know."
+	line "I know<DOT>"
 
 	para "Since you don't"
 	line "have a MEW, you"
 	cont "aren't getting"
-	cont "any."
+	cont "any<DOT>"
 
-	para "Oh well."
+	para "Oh well<DOT>"
 	done
 
 _CeruleanCityRocketText::
-	text "No.3: Didn't"
+	text "No<DOT>3: Didn't"
 	line "anyone tell you"
 	cont "its rude to"
 	cont "tresspass?"
@@ -86,7 +86,8 @@ _CeruleanCityRocketIBetterGetMovingText::
 	text_end
 
 _CeruleanCityRocketTM28NoRoomText::
-	text "No.3: Get lost!"
+	text "No<DOT>3: Get lost!"
+
 	para "Or else I'll lash"
 	line "at you with my"
 	cont "whip!!"
@@ -96,29 +97,30 @@ _CeruleanCityRocketIGiveUpText::
 	text "Arrgh!!"
 
 	para "Thats it, I am"
-	line "done here!!"
+	line "done here!! "
 	prompt
 
 _CeruleanCityRocketIllReturnTheTMText::
-	text "No.3: I'm not at"
-	line "my strongest."
+	text "No<DOT>3: I'm not at"
+	line "my strongest<DOT> "
 	prompt
 
 _CeruleanCityCooltrainerMText::
 	text "If you aren't"
-	line "above level 30..."
+	line "above level 30<DOT><DOT><DOT>"
 
 	para "I wouldn't go "
-	line "in that gym... "
+	line "in that gym<DOT><DOT><DOT> "
 	done
 
 _CeruleanCitySuperNerd1Text::
 	text "The PLWT"
-	line "is quite brutal."
+	line "is quite brutal<DOT>"
+
 	para "It's up to the"
 	line "trainers to"
 	cont "heal between"
-	cont "rounds..."
+	cont "rounds<DOT><DOT><DOT>"
 	done
 
 _CeruleanCitySuperNerd2Text::
@@ -132,14 +134,16 @@ _CeruleanCitySuperNerd2Text::
 
 _CeruleanCityGuardText::
 	text "The people here"
-	line "were attacked."
+	line "were attacked<DOT>"
+
 	para "Obviously a TEAM"
 	line "ROCKET GRUNT was"
 	cont "responsible since"
 	cont "he's standing in"
-	cont "the backyard.  "
+	cont "the backyard<DOT>  "
+
 	para "He's way too "
-	line "strong for me..."
+	line "strong for me<DOT><DOT><DOT>"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
@@ -152,7 +156,7 @@ _CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
 _CeruleanCityCooltrainerF1SlowbroPunchText::
 	text "SLOWBRO SUR-"
 	line "No, don't hurt"
-	cont "yourself!"
+	cont "yourself! "
 	done
 
 _CeruleanCityCooltrainerF1SlowbroWithdrawText::
@@ -166,10 +170,10 @@ _CeruleanCityCooltrainerF1SlowbroWithdrawText::
 	cont "with a lv100"
 	cont "SLOWBRO that I"
 	cont "traded with a"
-	cont "friend."
+	cont "friend<DOT>"
 
 	para "It doesn't"
-	line "work..."
+	line "work<DOT><DOT><DOT>"
 	done
 
 _CeruleanCitySlowbroTookASnoozeText::
@@ -197,14 +201,15 @@ _CeruleanCityCooltrainerF2Text::
 	line "think you easily"
 	cont "beat a ROCKET,"
 	cont "much stronger"
-	cont "ones come."
+	cont "ones come<DOT> "
 	done
 
 _CeruleanCitySuperNerd3Text::
 	text "This is a very"
 	line "dangerous area!"
 	cont "Its the border of"
-	cont "MT.DOOM. "
+	cont "MT<DOT>DOOM<DOT> "
+
 	para "The #MON LEAGUE"
 	line "champion is the"
 	cont "only person who"
@@ -220,15 +225,15 @@ _CeruleanCitySignText::
 
 _CeruleanCityTrainerTipsText::
 	text "Lowest level:"
-	line "L:30."
+	line "L:30<DOT>"
 
 	para "Average Level:"
-	line "L:36."
+	line "L:36<DOT>"
 
 	para "Maximum level:"
 	line "L:41 "
 
-	para "JEFF's grass."
+	para "JEFF's grass<DOT>"
 	done
 _CeruleanCityBikeShopSign::
 	text "Grass and caves"
@@ -242,6 +247,5 @@ _CeruleanCityGymSign::
 	cont "LEADER: KARMA"
 
 	para "Your worst"
-	line "nightmare!"
+	line "nightmare! "
 	done
-

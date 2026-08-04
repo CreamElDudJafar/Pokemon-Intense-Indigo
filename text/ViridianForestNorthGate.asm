@@ -1,13 +1,13 @@
 _ViridianForestNorthGateSuperNerdText::
 	text "This is such a"
-	line "waste of time..."
+	line "waste of time<DOT><DOT><DOT>"
 
 	para "Why would that"
 	line "one kid have that"
 	cont "one MEW?"
 
 	para "We'll never find"
-	line "him."
+	line "him<DOT>"
 	done
 
 _ViridianForestNorthGateGrampsText::
@@ -15,9 +15,9 @@ _ViridianForestNorthGateGrampsText::
 	line "#MON RIGHT"
 	cont "NOW!"
 
-	para "..."
+	para "<DOT><DOT><DOT>"
 
-	para "Garbage..."
+	para "Garbage<DOT><DOT><DOT>"
 
 	para "You don't have it"
 	line "either!"

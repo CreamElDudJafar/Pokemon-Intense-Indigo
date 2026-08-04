@@ -3,18 +3,12 @@ _VermilionPokecenterFishingGuruText::
 	line "merged with TEAM"
 	cont "ROCKET, they"
 	cont "became a force"
-	cont "of terror."
+	cont "of terror<DOT>"
 
 	para "Most people comply"
 	line "with them, and"
-	cont "reap benefits."
+	cont "reap benefits<DOT>"
 
-	para "If not..."
+	para "If not<DOT><DOT><DOT>   "
 	done
 
-_VermilionPokecenterSailorText::
-	text "Thanks to the"
-	line "TRADE, the"
-	cont "ROCKETs surpassed"
-	cont "their limit!"
-	done

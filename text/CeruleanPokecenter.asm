@@ -9,15 +9,14 @@ _CeruleanPokecenterSuperNerdText::
 _CeruleanPokecenterGentlemanText::
 	text "Have you heard"
 	line "of a man called"
-	cont "JEFF?"
+	cont "JEFF?  "
 
 	para "He has a very"
 	line "large collection"
-	cont "of rare #MON."
+	cont "of rare #MON<DOT>"
 
 	para "However, JEFF"
 	line "would do anything"
 	cont "just to see a new"
-	cont "specie of #MON."
+	cont "specie of #MON<DOT>"
 	done
-

@@ -4,35 +4,35 @@ _PokemonTower7FMrFujiRescueText::
 
 	para "That was the"
 	line "spirit of an"
-	cont "old friend. It"
-	cont "was tragic."
+	cont "old friend<DOT> It"
+	cont "was tragic<DOT>"
 
-	para "I came to"
+	para "I came to "
 	line "KYUUSOKU to calm"
 	cont "the souls of the"
-	cont "dead."
+	cont "dead<DOT>"
 
 	para "I think both"
 	line "spirits have gone"
-	cont "to the afterlife."
+	cont "to the afterlife<DOT>"
 
 	para "I must thank you"
 	line "for your kind"
-	cont "concern, <PLAYER>."
+	cont "concern, <PLAYER><DOT>"
 
 	para "We shall leave"
-	line "this tower."
-	cont "ALAKAZAM. Use"
-	cont "TELEPORT please."
+	line "this tower<DOT>"
+	cont "ALAKAZAM<DOT> Use"
+	cont "TELEPORT please<DOT>"
 	done
 
 _PokemonTower7FRocket1BattleText::
-	text "Oh no..."
+	text "Oh no<DOT><DOT><DOT>"
 
-	para "NO!"
+	para "NO! "
 
 	para "Why did YOU show"
-	line "up?"
+	line "up? "
 	done
 
 _PokemonTower7FRocket1EndBattleText::
@@ -40,12 +40,12 @@ _PokemonTower7FRocket1EndBattleText::
 	prompt
 
 _PokemonTower7FRocket1AfterBattleText::
-	text "No, please"
+	text "No, please    "
 	line "don't hurt me!"
 	done
 
 _PokemonTower7FRocket2BattleText::
-	text "No.3: You're"
+	text "No<DOT>3: You're"
 	line "that little"
 	cont "trespasser!"
 
@@ -58,11 +58,11 @@ _PokemonTower7FRocket2BattleText::
 
 _PokemonTower7FRocket2EndBattleText::
 	text "Useless"
-	line "#MON!"
+	line "#MON!   "
 	prompt
 
 _PokemonTower7FRocket2AfterBattleText::
-	text "No.3: What is"
+	text "No<DOT>3: What is"
 	line "THAT?!"
 
 	para "GET AWAY FROM ME!"
@@ -73,18 +73,17 @@ _PokemonTower7FRocket2AfterBattleText::
 	done
 
 _PokemonTower7FRocket3BattleText::
-	text ".IGULA! ... you"
+	text "<DOT>IGULA! <DOT><DOT><DOT> you"
 	line "will PAAAY!!!"
 	done
 
 _PokemonTower7FRocket3EndBattleText::
-	text "...Can't"
-	line "rem.. <RIVAL>?"
+	text "<DOT><DOT><DOT>Can't"
+	line "rem<DOT><DOT> <RIVAL>?"
 	cont "<PLAYER>????"
 	prompt
 
 _PokemonTower7FRocket3AfterBattleText::
-	text "... please, br.."
-	line "ustice.. to HIM."
+	text "<DOT><DOT><DOT> please, br<DOT><DOT>"
+	line "ustice<DOT><DOT> to HIM<DOT>"
 	done
-

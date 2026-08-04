@@ -14,7 +14,7 @@ _RocketHideoutB1FRocket1EndBattleText::
 
 _RocketHideoutB1FRocket1AfterBattleText::
 	text "SUPERIOR's going"
-	line "to kill us. "
+	line "to kill us<DOT> "
 	done
 
 _RocketHideoutB1FRocket2BattleText::
@@ -28,8 +28,8 @@ _RocketHideoutB1FRocket2EndBattleText::
 
 _RocketHideoutB1FRocket2AfterBattleText::
 	text "Our guys at "
-	line "MT.DOOM didn't"
-	cont "stand a chance..."
+	line "MT<DOT>DOOM didn't"
+	cont "stand a chance<DOT><DOT><DOT>"
 	done
 
 _RocketHideoutB1FRocket3BattleText::
@@ -62,7 +62,7 @@ _RocketHideoutB1FRocket4AfterBattleText::
 
 	para "Before my"
 	line "superior members"
-	cont "find you..."
+	cont "find you<DOT><DOT><DOT>"
 	done
 
 _RocketHideoutB1FRocket5BattleText::

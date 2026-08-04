@@ -60,7 +60,7 @@ TrainerNamePointers:
 .PokemaniacName:    db "POKéMANIAC@"
 .SuperNerdName:     db "SUPER NERD@"
 .BurglarName:       db "BURGLAR@"
-.EngineerName:      db "ENGINEER@"
+.EngineerName:      db "SUPERIOR@"
 .UnusedJugglerName: db "JUGGLER@"
 .SwimmerName:       db "SWIMMER@"
 .BeautyName:        db "BEAUTY@"

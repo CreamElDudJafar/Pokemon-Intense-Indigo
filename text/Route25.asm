@@ -19,7 +19,7 @@ _Route25Youngster1AfterBattleText::
 _Route25Youngster2BattleText::
 	text "Dad took me to a"
 	line "great party on"
-	cont "S.S.ANNE at"
+	cont "S<DOT>S<DOT>ANNE at"
 	cont "PORT HOURITSU! "
 	done
 
@@ -94,15 +94,16 @@ _Route25CooltrainerF2EndBattleText::
 	prompt
 
 _Route25CooltrainerF2AfterBattleText::
-	text "You came from MT."
+	text "You came from MT<DOT>"
 	line "DOOM?"
+
 	para "Not many would"
-	line "try it."
+	line "try it<DOT>"
 	done
 
 _Route25Hiker1BattleText::
 	text "I just got down"
-	line "from MT.DOOM,"
+	line "from MT<DOT>DOOM,"
 	cont "but I'm ready!"
 	done
 
@@ -147,7 +148,7 @@ _Route25Hiker3EndBattleText::
 _Route25Hiker3AfterBattleText::
 	text "The trail below"
 	line "is a shortcut to"
-	cont "SAKAYUME CITY."
+	cont "SAKAYUME CITY<DOT>"
 	done
 
 _Route25BillSignText::

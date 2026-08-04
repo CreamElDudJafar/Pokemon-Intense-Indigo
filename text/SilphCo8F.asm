@@ -1,6 +1,6 @@
 __SilphCo8FSilphWorkerMThanksForSavingUsText::
 	text "Our empire has"
-	line "been successful."
+	line "been successful<DOT> "
 	done
 
 _SilphCo8FSilphWorkerMThanksForSavingUsText::
@@ -21,7 +21,7 @@ _SilphCo8FRocket1EndBattleText::
 _SilphCo8FRocket1AfterBattleText::
 	text "If our plan goes"
 	line "through, all"
-	cont "is forgiven."
+	cont "is forgiven<DOT> "
 	done
 
 _SilphCo8FScientistBattleText::
@@ -37,21 +37,20 @@ _SilphCo8FScientistEndBattleText::
 _SilphCo8FScientistAfterBattleText::
 	text "So, what do you"
 	line "think of ROCKET"
-	cont "HEADQUARTERS?"
+	cont "HEADQUARTERS? "
 	done
 
 _SilphCo8FRocket2BattleText::
-	text "No.2: Now no one"
-	line "can save you now."
+	text "No<DOT>2: Now no one"
+	line "can save you now<DOT>"
 	done
 
 _SilphCo8FRocket2EndBattleText::
 	text "This"
-	line "might be bad."
+	line "might be bad<DOT>"
 	prompt
 
 _SilphCo8FRocket2AfterBattleText::
-	text "No.2: Its my job"
-	line "to stall you..."
+	text "No<DOT>2: Its my job"
+	line "to stall you<DOT><DOT><DOT>"
 	done
-

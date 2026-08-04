@@ -53,18 +53,18 @@ _Museum1FScientist1TakePlentyOfTimeText::
 	done
 
 _Museum1FGamblerText::
-	text "Heh..."
+	text "Heh<DOT><DOT><DOT>"
 
 	para "SUPERIOR loved"
-	line "this one."
+	line "this one<DOT>"
 	done
 
 _Museum1FScientist2TakeThisToAPokemonLabText::
 	text "I am assistant"
-	line "manager SCARLET."
+	line "manager SCARLET<DOT>"
 
 	para "I work here"
-	line "part time."
+	line "part time<DOT> "
 
 	para "This amber"
 	line "contains DNA from"
@@ -75,7 +75,7 @@ _Museum1FScientist2TakeThisToAPokemonLabText::
 	line "to deliver it to"
 	cont "the #MON LAB,"
 	cont "but something"
-	cont "came up."
+	cont "came up<DOT>"
 
 	para "Can I ask you"
 	line "to deliver this"
@@ -102,7 +102,7 @@ _Museum1FScientist3Text::
 	text "I came all this"
 	line "way by train to"
 	cont "see the #MON"
-	cont "TOURNAMENT."
+	cont "TOURNAMENT<DOT> "
 	done
 
 _Museum1FOldAmberText::

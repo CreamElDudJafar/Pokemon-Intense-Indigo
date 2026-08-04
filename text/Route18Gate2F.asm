@@ -1,6 +1,7 @@
 _Route18Gate2FLeftBinocularsText::
 	text "Looked into the"
-	line "binoculars."
+	line "binoculars<DOT>"
+
 	para "ASARAM TOWN is in"
 	line "the west!"
 	done

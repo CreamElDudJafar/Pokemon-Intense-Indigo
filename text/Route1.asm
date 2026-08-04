@@ -1,10 +1,12 @@
 _Route1Youngster1MartSampleText::
 	text "Hi! I work at a"
-	line "#MON MART."
+	line "#MON MART<DOT>"
+
 	para "It's a convenient"
 	line "shop, so please"
 	cont "visit us in"
-	cont "RIPPUKU STATE."
+	cont "RIPPUKU STATE<DOT>"
+
 	para "I know, I'll give"
 	line "you a sample!"
 	cont "Here you go!"
@@ -37,10 +39,10 @@ _Route1Youngster2Text::
 	line "full team very"
 	cont "easily if you"
 	cont "have enough"
-	cont "money."
+	cont "money<DOT>"
 
 	para "<RIVAL> came"
-	line "here as well..."
+	line "here as well<DOT><DOT><DOT>"
 	done
 
 _Route1SignText::
@@ -48,4 +50,3 @@ _Route1SignText::
 	line "ASARAM TOWN -"
 	cont "RIPPUKU STATE"
 	done
-
