@@ -76,7 +76,7 @@ _Route13CooltrainerF4EndBattleText::
 _Route13CooltrainerF4AfterBattleText::
 	text "I got my #MON"
 	line "from the ROCKET"
-	cont "TRADE."
+	cont "TRADE<DOT>"
 	done
 
 _Route13CooltrainerM2BattleText::
@@ -154,7 +154,7 @@ _Route13CooltrainerM3EndBattleText::
 _Route13CooltrainerM3AfterBattleText::
 	text "I wish I could"
 	line "fly like PIDGEOT"
-	cont "and FEAROW..."
+	cont "and FEAROW<DOT><DOT><DOT>  "
 	done
 
 _Route13TrainerTips1Text::

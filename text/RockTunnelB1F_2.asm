@@ -6,7 +6,7 @@ _RockTunnelB1FHiker3AfterBattleText::
 
 _RockTunnelB1FSuperNerd3BattleText::
 	text "Like my RHYDON"
-	line "costume?"
+	line "costume?  "
 	done
 
 _RockTunnelB1FSuperNerd3EndBattleText::
@@ -16,6 +16,5 @@ _RockTunnelB1FSuperNerd3EndBattleText::
 
 _RockTunnelB1FSuperNerd3AfterBattleText::
 	text "NIDOKING is"
-	line "badass too!"
+	line "badass too!     "
 	done
-

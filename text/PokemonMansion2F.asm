@@ -2,7 +2,7 @@ _PokemonMansion2FSuperNerdBattleText::
 	text "You talking to"
 	line "me?"
 
-	para "Fool."
+	para "Fool<DOT>  "
 
 	para "I'm hired by the"
 	line "TRADE!"
@@ -10,15 +10,15 @@ _PokemonMansion2FSuperNerdBattleText::
 
 _PokemonMansion2FSuperNerdEndBattleText::
 	text "Oh no!"
-	line "I failed them!"
+	line "I failed them! "
 	prompt
 
 _PokemonMansion2FSuperNerdAfterBattleText::
 	text "The TRIAD"
 	line "could use guys"
-	cont "like you."
+	cont "like you<DOT>"
 
-	para "But its not us."
+	para "But its not us<DOT>"
 	done
 
 _PokemonMansion2FDiary1Text::
@@ -27,19 +27,19 @@ _PokemonMansion2FDiary1Text::
 	para "We recently"
 	line "recieved"
 	cont "essential DNA"
-	cont "samples."
+	cont "samples<DOT> "
 
 	para "We began"
-	line "enhancements..."
+	line "enhancements<DOT><DOT><DOT>"
 	done
 
 _PokemonMansion2FDiary2Text::
 	text "PROJECT 151"
 
 	para "Enhancing PORYGON"
-	line "was a success."
+	line "was a success<DOT>"
 
-	para "We are ready..."
+	para "We are ready<DOT><DOT><DOT>"
 	done
 
 _PokemonMansion2FSwitchText::

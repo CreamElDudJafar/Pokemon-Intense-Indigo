@@ -1,11 +1,11 @@
 _SilphCo4FSilphWorkerMImHidingText::
 	text "BOSS has 2  "
-	line "2nd in commands."
+	line "2nd in commands<DOT>"
 	done
 
 _SilphCo4FSilphWorkerMTeamRocketIsGoneText::
 	text "Have we been"
-	line "abandoned?"
+	line "abandoned?  "
 	done
 
 _SilphCo4FRocket1BattleText::
@@ -24,7 +24,7 @@ _SilphCo4FRocket1AfterBattleText::
 	line "3 of you!"
 
 	para "How did he"
-	line "escape?!"
+	line "escape?! "
 	done
 
 _SilphCo4FScientistBattleText::
@@ -40,9 +40,9 @@ _SilphCo4FScientistEndBattleText::
 _SilphCo4FScientistAfterBattleText::
 	text "LORD CALIGULA"
 	line "has no tolerance"
-	cont "for failure...  "
+	cont "for failure<DOT><DOT><DOT>  "
 
-	para "...urgh..."
+	para "<DOT><DOT><DOT>urgh<DOT><DOT><DOT> "
 	done
 
 _SilphCo4FRocket2BattleText::
@@ -60,4 +60,3 @@ _SilphCo4FRocket2AfterBattleText::
 	para "I CAN'T"
 	line "BELIEVE THIS!!"
 	done
-

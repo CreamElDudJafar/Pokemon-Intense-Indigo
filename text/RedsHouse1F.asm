@@ -3,12 +3,12 @@ _RedsHouse1FMomWakeUpText::
 	line "leaving now?"
 
 	para "Be careful out"
-	line "there <PLAYER>."
+	line "there <PLAYER><DOT>"
 
 	para "Oh! Don't forget,"
 	line "I left something"
 	cont "for you in the"
-	cont "PC."
+	cont "PC<DOT>"
 	done
 
 _RedsHouse1FMomYouShouldRestText::
@@ -32,7 +32,7 @@ _RedsHouse1FTVStandByMeMovieText::
 	line "to see any"
 	cont "men in black,"
 	cont "do NOT make any"
-	cont "contact."
+	cont "contact<DOT>"
 	done
 
 _RedsHouse1FTVWrongSideText::

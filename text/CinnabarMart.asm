@@ -1,10 +1,10 @@
 _CinnabarMartSilphWorkerFText::
 	text "There used to"
 	line "be 3 LABs before"
-	cont "the TRADE left."
+	cont "the TRADE left<DOT>"
 	done
 
 _CinnabarMartScientistText::
 	text "The TRADE sealed"
-	line "off another lab..."
+	line "off another lab<DOT><DOT><DOT>"
 	done

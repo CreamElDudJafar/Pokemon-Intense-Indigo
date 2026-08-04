@@ -1,7 +1,7 @@
 _Route9CooltrainerF1BattleText::
 	text "Check out the"
 	line "#MON I got"
-	cont "from MOM!"
+	cont "from MOM! "
 	done
 
 _Route9CooltrainerF1EndBattleText::
@@ -13,14 +13,14 @@ _Route9CooltrainerF1AfterBattleText::
 	text "My MOM got these"
 	line "guys from the"
 	cont "TRADE in DONYOKU"
-	cont "city."
+	cont "city<DOT>"
 	done
 
 _Route9CooltrainerM1BattleText::
 	text "Everyone came"
 	line "from DONYOKU"
-	cont "with powerful"
-	cont "#MON."
+	cont "with powerful "
+	cont "#MON<DOT>"
 	done
 
 _Route9CooltrainerM1EndBattleText::
@@ -35,7 +35,7 @@ _Route9CooltrainerM1AfterBattleText::
 _Route9CooltrainerM2BattleText::
 	text "I'm never going"
 	line "back to DARK"
-	cont "TUNNEL again."
+	cont "TUNNEL again<DOT> "
 	done
 
 _Route9CooltrainerM2EndBattleText::
@@ -104,7 +104,7 @@ _Route9Youngster1BattleText::
 	text "Look at this!"
 	line "I got some super"
 	cont "cool bugs from"
-	cont "my dad!"
+	cont "my dad!  "
 	done
 
 _Route9Youngster1EndBattleText::
@@ -117,7 +117,7 @@ _Route9Youngster1EndBattleText::
 _Route9Youngster1AfterBattleText::
 	text "DAD's a SCIENTIST"
 	line "who works for the"
-	cont "TRADE in KOUMAN."
+	cont "TRADE in KOUMAN<DOT>"
 	done
 
 _Route9Hiker3BattleText::
@@ -159,4 +159,3 @@ _Route9SignText::
 
 	para "L:105"
 	done
-

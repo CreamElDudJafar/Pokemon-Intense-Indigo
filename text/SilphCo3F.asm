@@ -1,12 +1,12 @@
 _SilphCo3FSilphWorkerMWhatShouldIDoText::
 	text "We can track and"
 	line "control #MON"
-	cont "sold."
+	cont "sold<DOT>"
 	done
 
 _SilphCo3FSilphWorkerMYouSavedUsText::
 	text "At least the BOSS"
-	line "has a MEW..."
+	line "has a MEW<DOT><DOT><DOT>"
 	done
 
 _SilphCo3FRocketBattleText::
@@ -22,14 +22,15 @@ _SilphCo3FRocketEndBattleText::
 _SilphCo3FRocketAfterBattleText::
 	text "Ha! You have no"
 	line "idea what you're"
-	cont "up against."
+	cont "up against<DOT>"
 	done
 
 _SilphCo3FScientistBattleText::
 	text "LORD CALIGULA"
 	line "founded ROCKET"
-	cont "TRADE."
-	para "You're done."
+	cont "TRADE<DOT> "
+
+	para "You're done<DOT>"
 	done
 
 _SilphCo3FScientistEndBattleText::
@@ -38,13 +39,12 @@ _SilphCo3FScientistEndBattleText::
 	prompt
 
 _SilphCo3FScientistAfterBattleText::
-	text "Humph..."
+	text "Humph<DOT><DOT><DOT>"
 
 	para "You want a free"
 	line "#MON from"
 	cont "ROCKET TRADE?"
 
 	para "You will NEVER"
-	line "have one."
+	line "have one<DOT>"
 	done
-

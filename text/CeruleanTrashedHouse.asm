@@ -14,9 +14,10 @@ _CeruleanTrashedHouseFishingGuruWhatsLostIsLostText::
 	text "At least SOMEONE"
 	line "took down that"
 	cont "blasted ROCKET!"
+
 	para "My mental scar"
 	line "won't heal"
-	cont "though. "
+	cont "though<DOT>"
 	done
 
 _CeruleanTrashedHouseGirlText::

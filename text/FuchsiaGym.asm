@@ -19,8 +19,8 @@ _FuchsiaGymKogaBeforeBattleText::
 
 _FuchsiaGymKogaReceivedSoulBadgeText::
 	text "YARGH!"
-	para "I thought my"
-	line "NIDOS would..."
+	para "I thought my "
+	line "NIDOS would<DOT><DOT><DOT>"
 
 	para "Ye earned"
 	line "the RUBYBADGE!"

@@ -32,12 +32,12 @@ _RockTunnelB1FHiker1AfterBattleText::
 _RockTunnelB1FSuperNerd1BattleText::
 	text "Check out LAPRAS!"
 
-	para "The real one!"
+	para "The real one! "
 	done
 
 _RockTunnelB1FSuperNerd1EndBattleText::
 	text "You're"
-	line "just jealous!"
+	line "just jealous!  "
 	prompt
 
 _RockTunnelB1FSuperNerd1AfterBattleText::
@@ -45,7 +45,7 @@ _RockTunnelB1FSuperNerd1AfterBattleText::
 	line "cool!"
 
 	para "I'm so sorry for"
-	line "that."
+	line "that<DOT> "
 	done
 
 _RockTunnelB1FSuperNerd2BattleText::
@@ -61,7 +61,7 @@ _RockTunnelB1FSuperNerd2EndBattleText::
 _RockTunnelB1FSuperNerd2AfterBattleText::
 	text "CLEFABLE is my"
 	line "favorite to"
-	cont "dress up as!"
+	cont "dress up as!  "
 	done
 
 _RockTunnelB1FHiker2BattleText::

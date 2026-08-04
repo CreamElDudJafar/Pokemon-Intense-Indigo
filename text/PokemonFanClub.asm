@@ -13,15 +13,21 @@ _PokemonFanClubPikachuFanBetterText::
 
 _PokemonFanClubSeelFanNormalText::
 	text "The TRADE owns"
-	line "the ROCKETs"
+	line "the ROCKETs "
 	cont "and the"
-	cont "GOVERNMENT."
+	cont "GOVERNMENT<DOT>"
 	done
 
 _PokemonFanClubSeelFanBetterText::
 	text "SEEL is all we"
-	line "need to keep"
+	line "need to keep "
 	cont "away TEAM ROCKET!"
+	done
+
+_VermilionPokecenterSailorText::
+	text "They made no"
+	line "attempts on the"
+	cont "GOVERNOR<DOT>  "
 	done
 
 _PokemonFanClubPikachuText::
@@ -129,7 +135,7 @@ _PokemonFanClubBagFullText::
 _PokemonFanClubReceptionistText::
 	text "No one else may"
 	line "speak to"
-	cont "the GOVERNOR."
+	cont "the GOVERNOR<DOT>"
 	done
 
 _PokemonFanClubSign1Text::

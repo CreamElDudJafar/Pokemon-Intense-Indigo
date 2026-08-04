@@ -1,26 +1,25 @@
 _SafariZoneWestRestHouseScientistText::
-	text "The old TRADE"
-	line "lab has been"
-	cont "condemned when"
-	cont "they have left"
-	cont "to merge with"
-	cont "TEAM ROCKET. "
+	text "Someone crushed"
+	line "us<DOT>"
 
-	para "Many lab #MON"
-	line "live there..."
+	para "But its too late<DOT>"
+
+	para "He can't bring"
+	line "back the stolen"
+	cont "#MON<DOT>"
 	done
 
 _SafariZoneWestRestHouseCooltrainerMText::
-	text "TEAM ROCKET has"
-	line "4 deadly soldiers"
-	cont "working with"
-	cont "their SUPERIORs..."
+	text "If my #MON"
+	line "weren't"
+	cont "fainted<DOT><DOT><DOT>"
+
+	para "I'd crush you<DOT>"
 	done
 
 _SafariZoneWestRestHouseSilphWorkerFText::
-	text "TEAM ROCKET took"
-	line "off! We can go"
-	cont "out safely again!"
-	cont "That's great!"
+	text "No<DOT>0 wanted us"
+	line "to ambush you,"
+	cont "but then HE"
+	cont "came<DOT><DOT><DOT>"
 	done
-

@@ -1,16 +1,21 @@
 _Route22RivalBeforeBattleText1::
 	text "<RIVAL>: Hey!"
 	line "<PLAYER>!"
+
 	para "You're going to"
 	line "#MON LEAGUE?"
-	para "Not gonna happen."
+
+	para "Not gonna happen<DOT>"
+
 	para "Only strong"
-	line "trainers can go."
+	line "trainers can go<DOT>"
+
 	para "I got some more"
 	line "#MON at least!"
+
 	para "You are probably"
 	line "still weak like"
-	cont "last time."
+	cont "last time<DOT>"
 	done
 
 _Route22RivalAfterBattleText1::
@@ -18,11 +23,13 @@ _Route22RivalAfterBattleText1::
 	line "the strongest"
 	cont "trainers in the"
 	cont "world are going"
-	cont "to be there."
+	cont "to be there<DOT>"
+
 	para "So MEW and I are"
-	line "going to grind."
+	line "going to grind<DOT>"
+
 	para "Try not to fall"
-	line "behind <PLAYER>. "
+	line "behind <PLAYER><DOT> "
 	done
 
 _Route22Rival1DefeatedText::
@@ -42,14 +49,18 @@ _Route22Rival1VictoryText::
 _Route22RivalBeforeBattleText2::
 	text "<RIVAL>: I see you"
 	line "got all 8 BADGEs!"
+
 	para "I got 8 badges a "
 	line "while ago, but"
-	cont "I'm busy training."
+	cont "I'm busy training<DOT>"
+
 	para "I just met DAD,"
 	line "and he let me"
 	cont "borrow a #MON!"
+
 	para "And MEW is on my"
-	line "side."
+	line "side<DOT>"
+
 	para "Now you don't stand"
 	line "a chance <PLAYER>!"
 	done
@@ -57,10 +68,12 @@ _Route22RivalBeforeBattleText2::
 _Route22RivalAfterBattleText2::
 	text "I can't even keep"
 	line "ZAPDOS! DAD won't"
-	cont "allow it. I need"
-	cont "a new #MON. "
+	cont "allow it<DOT> I need"
+	cont "a new #MON<DOT> "
+
 	para "I'm going to"
-	line "search elsewhere."
+	line "search elsewhere<DOT>"
+
 	para "<PLAYER>! You get"
 	line "your act together!"
 	done

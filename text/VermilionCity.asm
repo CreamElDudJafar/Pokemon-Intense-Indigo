@@ -2,10 +2,10 @@ _VermilionCityBeautyText::
 	text "EPIFANIO is"
 	line "the head of the"
 	cont "AIZOME POLICE"
-	cont "FORCE."
+	cont "FORCE<DOT>"
 
 	para "He's very good in"
-	line "battles."
+	line "battles<DOT> "
 	done
 
 _VermilionCityGambler1DidYouSeeText::
@@ -15,10 +15,10 @@ _VermilionCityGambler1DidYouSeeText::
 	done
 
 _VermilionCityGambler1SSAnneDepartedText::
-	text "Once the S.S.ANNE"
+	text "Once the S<DOT>S<DOT>ANNE"
 	line "returns, you"
 	cont "can enter if"
-	cont "you got SURF."
+	cont "you got SURF<DOT>"
 	done
 
 _VermilionCitySailor1WelcomeToSSAnneText::
@@ -60,11 +60,11 @@ _VermilionCitySailor1ShipSetSailText::
 _VermilionCityGambler2Text::
 	text "The TRADE"
 	line "influences the"
-	cont "GOVERNMENT."
+	cont "GOVERNMENT<DOT>"
 
 	para "Now they bought"
 	line "TEAM ROCKET"
-	cont "muscle..."
+	cont "muscle<DOT><DOT><DOT> "
 	done
 
 _VermilionCityMachopText::
@@ -80,27 +80,32 @@ _VermilionCityMachopStompingTheLandFlatText::
 	done
 
 _VermilionCitySailor2Text::
-	text "S.S.ANNE is a"
+	text "S<DOT>S<DOT>ANNE is a"
 	line "famous luxury"
-	cont "cruise ship. "
+	cont "cruise ship<DOT> "
+
 	para "We visit HOURITSU"
-	line "once a year."
+	line "once a year<DOT>"
 	done
 
 _VermilionCitySignText::
 	text "PORT HOURITSU"
+
 	para "Don't miss out"
-	line "on the S.S.ANNE!"
+	line "on the S<DOT>S<DOT>ANNE!"
 	done
 
 _VermilionCityNoticeSignText::
 	text "NOTICE!"
+
 	para "ROUTE 12 may be"
 	line "blocked off by a"
-	cont "sleeping #MON."
+	cont "sleeping #MON<DOT>"
+
 	para "Detour through"
 	line "DARK TUNNEL to"
-	cont "KYUUSOKU TOWN. "
+	cont "KYUUSOKU TOWN<DOT> "
+
 	para "HOURITSU POLICE"
 	done
 
@@ -117,10 +122,9 @@ _VermilionCityGymSignText::
 	cont "LEADER: EPIFANIO"
 
 	para "AIZOME POLICE"
-	line "COMMANDER."
+	line "COMMANDER<DOT>"
 	done
 
 _VermilionCityHarborSignText::
 	text "HOURITSU HARBOR "
 	done
-

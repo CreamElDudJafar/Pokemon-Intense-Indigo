@@ -4,12 +4,15 @@ _SafariZoneWestRestHouseSignText::
 
 _SafariZoneWestFindWardensTeethSignText::
 	text "REQUEST NOTICE"
+
 	para "Please find the"
 	line "SAFARI WARDEN's"
-	cont "lost GOLD TEETH."
+	cont "lost GOLD TEETH<DOT>"
+
 	para "REST HOUSEs may"
 	line "have information"
 	cont "on location!"
+
 	para "Contact: WARDEN"
 	done
 

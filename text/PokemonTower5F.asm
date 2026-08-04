@@ -1,11 +1,11 @@
 _PokemonTower5FChanneler1Text::
 	text "<RIVAL> came"
 	line "through here"
-	cont "recently."
+	cont "recently<DOT> "
 
 	para "I hear noises at"
 	line "the top of the"
-	cont "tower."
+	cont "tower<DOT>"
 	done
 
 _PokemonTower5FChanneler2BattleText::

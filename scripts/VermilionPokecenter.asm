@@ -17,7 +17,7 @@ VermilionPokecenterFishingGuruText:
 	text_end
 
 VermilionPokecenterSailorText:
-	text_far _VermilionPokecenterSailorText
+	text_far _PokemonFanClubPikachuFanNormalText
 	text_end
 
 VermilionPokecenterLinkReceptionistText:

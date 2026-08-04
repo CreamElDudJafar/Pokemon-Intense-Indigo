@@ -51,19 +51,20 @@ _Route10CooltrainerF1BattleText::
 	text "I beat the"
 	line "first 3 GYMs"
 	cont "with #MON"
-	cont "above lv100."
-	para "Not others."
+	cont "above lv100<DOT>"
+
+	para "Not others<DOT>"
 	done
 
 _Route10CooltrainerF1EndBattleText::
 	text "But"
-	line "how can you...."
+	line "how can you<DOT><DOT><DOT><DOT>"
 	prompt
 
 _Route10CooltrainerF1AfterBattleText::
 	text "The next GYM"
 	line "had higher lvs,"
-	cont "so I lose."
+	cont "so I lose<DOT> "
 	done
 
 _Route10Hiker2BattleText::
@@ -107,4 +108,3 @@ _Route10RockTunnelSignText::
 _Route10PowerPlantSignText::
 	text "L:106-L:107"
 	done
-
