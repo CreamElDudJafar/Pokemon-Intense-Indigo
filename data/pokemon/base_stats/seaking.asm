@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(SeakingPicFront)
+	assert BANK(SeakingPicFront) == BANK(SeakingPicBack)

@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(HitmonchanPicFront)
+	assert BANK(HitmonchanPicFront) == BANK(HitmonchanPicBack)

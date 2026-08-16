@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(BeedrillPicFront)
+	assert BANK(BeedrillPicFront) == BANK(BeedrillPicBack)

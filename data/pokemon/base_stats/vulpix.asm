@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(VulpixPicFront)
+	assert BANK(VulpixPicFront) == BANK(VulpixPicBack)

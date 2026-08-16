@@ -27,4 +27,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(PoliwrathPicFront)
+	assert BANK(PoliwrathPicFront) == BANK(PoliwrathPicBack)

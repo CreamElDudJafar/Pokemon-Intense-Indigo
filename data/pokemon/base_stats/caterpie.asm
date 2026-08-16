@@ -22,4 +22,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(CaterpiePicFront)
+	assert BANK(CaterpiePicFront) == BANK(CaterpiePicBack)

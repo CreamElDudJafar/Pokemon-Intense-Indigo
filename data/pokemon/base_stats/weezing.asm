@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(WeezingPicFront)
+	assert BANK(WeezingPicFront) == BANK(WeezingPicBack)

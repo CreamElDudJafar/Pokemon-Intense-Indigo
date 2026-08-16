@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(TangelaPicFront)
+	assert BANK(TangelaPicFront) == BANK(TangelaPicBack)

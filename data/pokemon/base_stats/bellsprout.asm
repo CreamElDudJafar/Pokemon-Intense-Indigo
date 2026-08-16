@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(BellsproutPicFront)
+	assert BANK(BellsproutPicFront) == BANK(BellsproutPicBack)

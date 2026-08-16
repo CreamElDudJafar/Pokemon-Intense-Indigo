@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(ExeggutorPicFront)
+	assert BANK(ExeggutorPicFront) == BANK(ExeggutorPicBack)

@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(KinglerPicFront)
+	assert BANK(KinglerPicFront) == BANK(KinglerPicBack)

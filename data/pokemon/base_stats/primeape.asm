@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(PrimeapePicFront)
+	assert BANK(PrimeapePicFront) == BANK(PrimeapePicBack)

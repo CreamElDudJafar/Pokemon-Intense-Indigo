@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(PidgeotPicFront)
+	assert BANK(PidgeotPicFront) == BANK(PidgeotPicBack)

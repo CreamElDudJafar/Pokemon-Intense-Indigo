@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(ZubatPicFront)
+	assert BANK(ZubatPicFront) == BANK(ZubatPicBack)

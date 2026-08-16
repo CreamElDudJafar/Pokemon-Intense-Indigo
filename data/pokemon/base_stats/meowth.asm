@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(MeowthPicFront)
+	assert BANK(MeowthPicFront) == BANK(MeowthPicBack)

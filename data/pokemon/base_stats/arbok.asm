@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(ArbokPicFront)
+	assert BANK(ArbokPicFront) == BANK(ArbokPicBack)

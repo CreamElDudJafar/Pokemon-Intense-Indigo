@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(ScytherPicFront)
+	assert BANK(ScytherPicFront) == BANK(ScytherPicBack)

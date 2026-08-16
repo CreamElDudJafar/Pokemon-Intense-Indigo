@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(MachampPicFront)
+	assert BANK(MachampPicFront) == BANK(MachampPicBack)

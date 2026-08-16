@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(MankeyPicFront)
+	assert BANK(MankeyPicFront) == BANK(MankeyPicBack)

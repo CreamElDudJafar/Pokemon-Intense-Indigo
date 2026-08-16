@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(NidorinaPicFront)
+	assert BANK(NidorinaPicFront) == BANK(NidorinaPicBack)

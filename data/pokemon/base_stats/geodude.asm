@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(GeodudePicFront)
+	assert BANK(GeodudePicFront) == BANK(GeodudePicBack)

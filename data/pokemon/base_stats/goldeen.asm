@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(GoldeenPicFront)
+	assert BANK(GoldeenPicFront) == BANK(GoldeenPicBack)

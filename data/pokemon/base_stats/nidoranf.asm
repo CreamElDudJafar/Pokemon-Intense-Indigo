@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(NidoranFPicFront)
+	assert BANK(NidoranFPicFront) == BANK(NidoranFPicBack)

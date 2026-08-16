@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(FlareonPicFront)
+	assert BANK(FlareonPicFront) == BANK(FlareonPicBack)

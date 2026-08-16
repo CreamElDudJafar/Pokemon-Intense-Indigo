@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(KadabraPicFront)
+	assert BANK(KadabraPicFront) == BANK(KadabraPicBack)

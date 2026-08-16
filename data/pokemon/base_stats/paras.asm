@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(ParasPicFront)
+	assert BANK(ParasPicFront) == BANK(ParasPicBack)

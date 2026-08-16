@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(HaunterPicFront)
+	assert BANK(HaunterPicFront) == BANK(HaunterPicBack)

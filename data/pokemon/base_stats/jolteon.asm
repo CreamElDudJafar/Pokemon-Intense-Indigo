@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(JolteonPicFront)
+	assert BANK(JolteonPicFront) == BANK(JolteonPicBack)
