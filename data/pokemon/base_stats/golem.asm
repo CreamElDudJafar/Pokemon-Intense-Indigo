@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(GolemPicFront)
+	assert BANK(GolemPicFront) == BANK(GolemPicBack)

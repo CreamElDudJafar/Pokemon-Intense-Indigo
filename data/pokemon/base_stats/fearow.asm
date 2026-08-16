@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(FearowPicFront)
+	assert BANK(FearowPicFront) == BANK(FearowPicBack)

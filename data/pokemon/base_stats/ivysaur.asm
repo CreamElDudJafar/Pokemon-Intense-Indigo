@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(IvysaurPicFront)
+	assert BANK(IvysaurPicFront) == BANK(IvysaurPicBack)

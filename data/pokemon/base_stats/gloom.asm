@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(GloomPicFront)
+	assert BANK(GloomPicFront) == BANK(GloomPicBack)

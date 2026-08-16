@@ -29,4 +29,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(ChanseyPicFront)
+	assert BANK(ChanseyPicFront) == BANK(ChanseyPicBack)

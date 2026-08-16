@@ -27,4 +27,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(GengarPicFront)
+	assert BANK(GengarPicFront) == BANK(GengarPicBack)

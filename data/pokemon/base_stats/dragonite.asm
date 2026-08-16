@@ -27,4 +27,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(DragonitePicFront)
+	assert BANK(DragonitePicFront) == BANK(DragonitePicBack)

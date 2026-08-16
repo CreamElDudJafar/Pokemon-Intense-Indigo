@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(PikachuPicFront)
+	assert BANK(PikachuPicFront) == BANK(PikachuPicBack)

@@ -27,4 +27,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(HypnoPicFront)
+	assert BANK(HypnoPicFront) == BANK(HypnoPicBack)

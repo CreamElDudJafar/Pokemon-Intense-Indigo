@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(MachopPicFront)
+	assert BANK(MachopPicFront) == BANK(MachopPicBack)

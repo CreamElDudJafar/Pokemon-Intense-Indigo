@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(RaticatePicFront)
+	assert BANK(RaticatePicFront) == BANK(RaticatePicBack)

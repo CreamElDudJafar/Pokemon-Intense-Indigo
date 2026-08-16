@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(RhyhornPicFront)
+	assert BANK(RhyhornPicFront) == BANK(RhyhornPicBack)

@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(MachokePicFront)
+	assert BANK(MachokePicFront) == BANK(MachokePicBack)

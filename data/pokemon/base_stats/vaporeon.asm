@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(VaporeonPicFront)
+	assert BANK(VaporeonPicFront) == BANK(VaporeonPicBack)

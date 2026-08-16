@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(SandslashPicFront)
+	assert BANK(SandslashPicFront) == BANK(SandslashPicBack)

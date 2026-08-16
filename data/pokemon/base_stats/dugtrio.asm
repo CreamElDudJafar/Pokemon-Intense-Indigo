@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(DugtrioPicFront)
+	assert BANK(DugtrioPicFront) == BANK(DugtrioPicBack)

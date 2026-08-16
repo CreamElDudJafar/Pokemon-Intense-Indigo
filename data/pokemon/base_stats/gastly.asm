@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(GastlyPicFront)
+	assert BANK(GastlyPicFront) == BANK(GastlyPicBack)

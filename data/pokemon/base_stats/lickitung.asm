@@ -27,4 +27,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(LickitungPicFront)
+	assert BANK(LickitungPicFront) == BANK(LickitungPicBack)

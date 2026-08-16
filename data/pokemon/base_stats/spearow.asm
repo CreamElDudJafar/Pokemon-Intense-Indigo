@@ -24,4 +24,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(SpearowPicFront)
+	assert BANK(SpearowPicFront) == BANK(SpearowPicBack)

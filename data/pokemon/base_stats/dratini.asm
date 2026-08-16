@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(DratiniPicFront)
+	assert BANK(DratiniPicFront) == BANK(DratiniPicBack)

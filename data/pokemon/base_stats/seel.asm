@@ -25,4 +25,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(SeelPicFront)
+	assert BANK(SeelPicFront) == BANK(SeelPicBack)

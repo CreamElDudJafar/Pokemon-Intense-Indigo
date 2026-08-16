@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(DragonairPicFront)
+	assert BANK(DragonairPicFront) == BANK(DragonairPicBack)

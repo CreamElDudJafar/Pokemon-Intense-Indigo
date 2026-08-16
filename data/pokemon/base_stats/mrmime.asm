@@ -27,4 +27,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(MrMimePicFront)
+	assert BANK(MrMimePicFront) == BANK(MrMimePicBack)

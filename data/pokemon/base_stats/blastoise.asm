@@ -27,4 +27,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(BlastoisePicFront)
+	assert BANK(BlastoisePicFront) == BANK(BlastoisePicBack)

@@ -26,4 +26,5 @@
 
 	; end
 
-	db 0 ; padding
+	db BANK(PorygonPicFront)
+	assert BANK(PorygonPicFront) == BANK(PorygonPicBack)
