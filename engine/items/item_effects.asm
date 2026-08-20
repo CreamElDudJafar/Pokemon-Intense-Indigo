@@ -3160,6 +3160,37 @@ ReadSuperRodData:
 
 INCLUDE "data/wild/super_rod.asm"
 
+CopyTownMapSuperRodEncounters::
+; Copy the selected map's Super Rod group to Town Map scratch WRAM.
+; d = map ID.
+	ld a, d
+	push af
+	xor a
+	ld [wTownMapSuperRodCount], a
+	pop af
+	ld de, 3
+	ld hl, SuperRodData
+	call IsInArray
+	ret nc
+	inc hl
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	ld a, [hli]
+	ld [wTownMapSuperRodCount], a
+	ld b, a
+	ld de, wTownMapSuperRodMons
+.copy
+	ld a, [hli]
+	ld [de], a
+	inc de
+	ld a, [hli]
+	ld [de], a
+	inc de
+	dec b
+	jr nz, .copy
+	ret
+
 ; reloads map view and processes sprite data
 ; for items that cause the overworld to be displayed
 ItemUseReloadOverworldData:

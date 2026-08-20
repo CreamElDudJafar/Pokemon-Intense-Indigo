@@ -233,6 +233,10 @@ INCLUDE "engine/movie/trade2.asm"
 ; Hooks for color hack
 INCLUDE "color/trade.asm"
 
+SECTION "Town Map Wild Data", ROMX
+
+INCLUDE "engine/menus/map_wild_data.asm"
+
 
 SECTION "Pokédex Rating", ROMX
 
