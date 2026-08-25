@@ -63,17 +63,21 @@
 	const SPRITE_LORELEI                 ; $3b
 	const SPRITE_SEEL                    ; $3c
 	const SPRITE_RED2                    ; $3d
+	const SPRITE_BLAINE                  ; $3e
+	const SPRITE_CLAIR                   ; $3f
+	const SPRITE_KRIS                    ; $40
+	const SPRITE_PRYCE                   ; $41
 DEF FIRST_STILL_SPRITE EQU const_value
-	const SPRITE_POKE_BALL               ; $3e
-	const SPRITE_FOSSIL                  ; $3f
-	const SPRITE_BOULDER                 ; $40
-	const SPRITE_PAPER                   ; $41
-	const SPRITE_POKEDEX                 ; $42
-	const SPRITE_CLIPBOARD               ; $43
-	const SPRITE_SNORLAX                 ; $44
-	const SPRITE_UNUSED_OLD_AMBER        ; $45
-	const SPRITE_OLD_AMBER               ; $46
-	const SPRITE_UNUSED_GAMBLER_ASLEEP_1 ; $47
-	const SPRITE_UNUSED_GAMBLER_ASLEEP_2 ; $48
-	const SPRITE_GAMBLER_ASLEEP          ; $49
+	const SPRITE_POKE_BALL               ; $42
+	const SPRITE_FOSSIL                  ; $43
+	const SPRITE_BOULDER                 ; $44
+	const SPRITE_PAPER                   ; $45
+	const SPRITE_POKEDEX                 ; $46
+	const SPRITE_CLIPBOARD               ; $47
+	const SPRITE_SNORLAX                 ; $48
+	const SPRITE_UNUSED_OLD_AMBER        ; $49
+	const SPRITE_OLD_AMBER               ; $4a
+	const SPRITE_UNUSED_GAMBLER_ASLEEP_1 ; $4b
+	const SPRITE_UNUSED_GAMBLER_ASLEEP_2 ; $4c
+	const SPRITE_GAMBLER_ASLEEP          ; $4d
 DEF NUM_SPRITES EQU const_value - 1

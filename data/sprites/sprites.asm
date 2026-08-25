@@ -68,6 +68,10 @@ SpriteSheetPointerTable:
 	overworld_sprite LoreleiSprite, 12          ; SPRITE_LORELEI
 	overworld_sprite SeelSprite, 12             ; SPRITE_SEEL
 	overworld_sprite Red2Sprite, 12             ; SPRITE_RED2
+	overworld_sprite BlaineSprite, 12           ; SPRITE_BLAINE
+	overworld_sprite ClairSprite, 12            ; SPRITE_CLAIR
+	overworld_sprite KrisSprite, 12             ; SPRITE_KRIS
+	overworld_sprite PryceSprite, 12            ; SPRITE_PRYCE
 	overworld_sprite PokeBallSprite, 4          ; SPRITE_POKE_BALL
 	overworld_sprite FossilSprite, 4            ; SPRITE_FOSSIL
 	overworld_sprite BoulderSprite, 4           ; SPRITE_BOULDER
