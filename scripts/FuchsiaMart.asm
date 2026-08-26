@@ -14,3 +14,6 @@ FuchsiaMartMiddleAgedManText:
 FuchsiaMartCooltrainerFText:
 	text_far _FuchsiaMartCooltrainerFText
 	text_end
+
+FuchsiaMartClerkText::
+	script_mart PARLYZ_HEAL, GREAT_BALL, HYPER_POTION, ICE_HEAL, ESCAPE_ROPE, SUPER_REPEL

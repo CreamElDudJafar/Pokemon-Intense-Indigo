@@ -20,3 +20,9 @@ CeladonMart5FSailorText:
 CeladonMart5FCurrentFloorSignText:
 	text_far _CeladonMart5FCurrentFloorSignText
 	text_end
+
+CeladonMart5FClerk1Text::
+	script_mart TM_DIG, TM_MEGA_DRAIN, TM_SOLARBEAM, TM_PAY_DAY, TM_BUBBLEBEAM, TM_FIRE_BLAST, TM_TRI_ATTACK
+
+CeladonMart5FClerk2Text::
+	script_mart HP_UP, PROTEIN, IRON, CARBOS, CALCIUM
