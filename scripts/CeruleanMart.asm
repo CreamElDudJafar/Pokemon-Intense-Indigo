@@ -14,3 +14,6 @@ CeruleanMartCooltrainerMText:
 CeruleanMartCooltrainerFText:
 	text_far _CeruleanMartCooltrainerFText
 	text_end
+
+CeruleanMartClerkText::
+	script_mart GREAT_BALL, PARLYZ_HEAL, HYPER_POTION, LEAF_STONE, WATER_STONE, RARE_CANDY, FIRE_STONE

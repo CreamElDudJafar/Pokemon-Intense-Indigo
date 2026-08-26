@@ -14,3 +14,6 @@ CinnabarMartSilphWorkerFText:
 CinnabarMartScientistText:
 	text_far _CinnabarMartScientistText
 	text_end
+
+CinnabarMartClerkText::
+	script_mart PARLYZ_HEAL, GREAT_BALL, HYPER_POTION, ICE_HEAL, ESCAPE_ROPE, REPEL, TM_FIRE_BLAST

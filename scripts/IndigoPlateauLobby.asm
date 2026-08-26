@@ -35,3 +35,6 @@ IndigoPlateauLobbyCooltrainerFText:
 
 IndigoPlateauLobbyLinkReceptionistText:
 	script_cable_club_receptionist
+
+IndigoPlateauLobbyClerkText::
+	script_mart ULTRA_BALL, MAX_POTION, REVIVE, MOON_STONE, ICE_HEAL, PARLYZ_HEAL, HYPER_POTION
