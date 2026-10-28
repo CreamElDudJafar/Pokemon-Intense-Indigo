@@ -196,6 +196,7 @@ ENDC
 	jr z, .advanceTo2
 ; return to 0
 	call ClearStatsValues
+	call ClearCurHpMaxHP
 	hlcoord 11, 3
 	predef DrawHP
 	xor a
