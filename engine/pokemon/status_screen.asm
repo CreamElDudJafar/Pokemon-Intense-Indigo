@@ -218,6 +218,8 @@ ENDC
 .vanilla
 ; back to vanilla
 ;	call WaitForTextScrollButtonPress
+	xor a
+	ld [wDumbByteToToggleStatusScreen], a
 	pop af
 	ldh [hTileAnimations], a
 	ret
